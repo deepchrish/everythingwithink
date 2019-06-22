@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/withink_logo.png">
+    <title>Everything With Ink</title>
+    <!-- Custom CSS -->
+    <link href="assets/libs/flot/css/float-chart.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="dist/css/style.min.css" rel="stylesheet">
+    <link href="dist/css/custom.css" rel="stylesheet">
+    <link href="dist/css/jquery-labelauty.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<!-- ============================================================== -->
+<!-- Preloader - style you can find in spinners.css -->
+<!-- ============================================================== -->
+<div class="preloader">
+    <div class="lds-ripple">
+        <div class="lds-pos"></div>
+        <div class="lds-pos"></div>
+    </div>
+</div>
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<div id="main-wrapper">
+    <!-- ============================================================== -->
+    <!-- Topbar header - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <header class="topbar" data-navbarbg="skin5">
+        <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+            <div class="navbar-header" data-logobg="skin5">
+                <!-- This is for the sidebar toggle which is visible on mobile only -->
+                <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i
+                        class="ti-menu ti-close"></i></a>
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <a class="navbar-brand" href="index.html">
+                    <!-- Logo icon -->
+                    <b class="logo-icon p-l-10">
+                        <!-- Dark Logo icon -->
+                        <img src="./images/withink_logo.png" alt="homepage" class="light-logo"/>
+
+                    </b>
+                    <!--End Logo icon -->
+                    <!-- Logo text -->
+                    <span class="logo-text">
+                             <!-- dark Logo text -->
+                             Dashboard
+                        </span>
+                    <!-- Logo icon -->
+                    <!--End Logo icon -->
+                </a>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Toggle which is visible on mobile only -->
+                <!-- ============================================================== -->
+                <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)"
+                   data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                   aria-expanded="false" aria-label="Toggle navigation"><i class="ti-more"></i></a>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Logo -->
+            <!-- ============================================================== -->
+            <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
+                <!-- ============================================================== -->
+                <!-- toggle and nav items -->
+                <!-- ============================================================== -->
+                <ul class="navbar-nav float-left mr-auto">
+                    <li class="d-none d-md-block custom-arrow"><a
+                            class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)"
+                            data-sidebartype="mini-sidebar"><i class="mdi mdi-chevron-left font-24 left-arrow"></i></a>
+                    </li>
+                    <!-- ============================================================== -->
+                    <!-- create new -->
+                    <!-- ============================================================== -->
+                    <li class="left-dropdown">
+                        <div class="form-group top-nav-drop">
+                            <select class="form-control">
+                                <option value="">Select an option&hellip;</option>
+                                <option value="Roger">Roger & co.</option>
+                                <option value="Mark">Mark tech</option>
+                                <option value="oso">Oso</option>
+                                <option value="whoop">Whoop</option>
+                                <option value="Roger">Roger & co.</option>
+                                <option value="Mark">Mark tech</option>
+                                <option value="oso">Oso</option>
+                                <option value="whoop">Whoop</option>
+                                <option value="Roger">Roger & co.</option>
+                                <option value="Mark">Mark tech</option>
+                                <option value="oso">Oso</option>
+                                <option value="whoop">Whoop</option>
+                                <option value="Roger">Roger & co.</option>
+                                <option value="Mark">Mark tech</option>
+                                <option value="oso">Oso</option>
+                                <option value="whoop">Whoop</option>
+                                <option value="Roger">Roger & co.</option>
+                                <option value="Mark">Mark tech</option>
+                                <option value="oso">Oso</option>
+                                <option value="whoop">Whoop</option>
+                                <option value="Roger">Roger & co.</option>
+                                <option value="Mark">Mark tech</option>
+                                <option value="oso">Oso</option>
+                                <option value="whoop">Whoop</option>
+                                <option value="Roger">Roger & co.</option>
+                                <option value="Mark">Mark tech</option>
+                                <option value="oso">Oso</option>
+                                <option value="whoop">Whoop</option>
+                                <option value="Roger">Roger & co.</option>
+                                <option value="Mark">Mark tech</option>
+                                <option value="oso">Oso</option>
+                                <option value="whoop">Whoop</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+                <!-- ============================================================== -->
+                <!-- Right side toggle and nav items -->
+                <!-- ============================================================== -->
+                <ul class="navbar-nav float-right">
+                    <!-- ============================================================== -->
+                    <li>
+                        <a class="btn nav-product-btn primary-button" href="create-a-product.html"><i class="mdi mdi-tag-outline"></i> Add a new Product</a>
+                    </li>
+                    <!-- ============================================================== -->
+                    <li class="nav-item dropdown">
+                        <span class="item-numbers">10</span>
+                        <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-bell-ring-outline font-24"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <!-- ============================================================== -->
+                    <!-- End Comment -->
+                    <!-- ============================================================== -->
+                    <!-- ============================================================== -->
+                    <!-- Messages -->
+                    <!-- ============================================================== -->
+                    <li class="nav-item dropdown">
+                        <span class="item-numbers">4</span>
+                        <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" id="2"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i
+                                class="font-24 mdi mdi-cart-outline"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right mailbox animated bounceInDown"
+                             aria-labelledby="2">
+                            <ul class="list-style-none">
+                                <li>
+                                    <div class="">
+                                        <!-- Message -->
+                                        <a href="javascript:void(0)" class="link border-top">
+                                            <div class="d-flex no-block align-items-center p-10">
+                                                <span class="btn btn-success btn-circle"><i
+                                                        class="ti-calendar"></i></span>
+                                                <div class="m-l-10">
+                                                    <h5 class="m-b-0">Item 1</h5>
+                                                    <span class="mail-desc">Demo content</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <!-- Message -->
+                                        <a href="javascript:void(0)" class="link border-top">
+                                            <div class="d-flex no-block align-items-center p-10">
+                                                <span class="btn btn-info btn-circle"><i class="ti-settings"></i></span>
+                                                <div class="m-l-10">
+                                                    <h5 class="m-b-0">Item 2</h5>
+                                                    <span class="mail-desc">Demo content</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <!-- Message -->
+                                        <a href="javascript:void(0)" class="link border-top">
+                                            <div class="d-flex no-block align-items-center p-10">
+                                                <span class="btn btn-primary btn-circle"><i class="ti-user"></i></span>
+                                                <div class="m-l-10">
+                                                    <h5 class="m-b-0">Item 3</h5>
+                                                    <span class="mail-desc">Demo content</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <!-- Message -->
+                                        <a href="javascript:void(0)" class="link border-top">
+                                            <div class="d-flex no-block align-items-center p-10">
+                                                <span class="btn btn-danger btn-circle"><i
+                                                        class="fa fa-link"></i></span>
+                                                <div class="m-l-10">
+                                                    <h5 class="m-b-0">Item 4</h5>
+                                                    <span class="mail-desc">Demo content</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- ============================================================== -->
+                    <!-- End Messages -->
+                    <!-- ============================================================== -->
+
+                    <!-- ============================================================== -->
+                    <!-- User profile and search -->
+                    <!-- ============================================================== -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href=""
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                                src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31"></a>
+                        <div class="dropdown-menu dropdown-menu-right user-dd animated">
+                            <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i> My
+                                Profile</a>
+                            <a class="dropdown-item" href="javascript:void(0)"><i class="ti-wallet m-r-5 m-l-5"></i> My
+                                Balance</a>
+                            <a class="dropdown-item" href="javascript:void(0)"><i class="ti-email m-r-5 m-l-5"></i>
+                                Inbox</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="javascript:void(0)"><i class="ti-settings m-r-5 m-l-5"></i>
+                                Account Setting</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="javascript:void(0)"><i
+                                    class="fa fa-power-off m-r-5 m-l-5"></i> Logout</a>
+                            <div class="dropdown-divider"></div>
+                            <div class="p-l-30 p-10"><a href="javascript:void(0)"
+                                                        class="btn btn-sm btn-success btn-rounded">View Profile</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- ============================================================== -->
+                    <!-- User profile and search -->
+                    <!-- ============================================================== -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- ============================================================== -->
+    <!-- End Topbar header -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Left Sidebar - style you can find in sidebar.scss  -->
+    <!-- ============================================================== -->
+    <aside class="left-sidebar" data-sidebarbg="skin5">
+        <!-- Sidebar scroll-->
+        <div class="scroll-sidebar">
+            <!-- Sidebar navigation-->
+            <nav class="sidebar-nav">
+                <ul id="sidebarnav">
+                    <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                                href="index.html" aria-expanded="false"><i
+                            class="mdi mdi-home-outline"></i><span class="hide-menu">Dashboard</span></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="order-empty.html" aria-expanded="false"><i class="mdi mdi-shopping"></i><span class="hide-menu">Orders</span></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="product-empty.html" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Products</span></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="reports.html" aria-expanded="false"><i class="mdi mdi-note-text"></i><span class="hide-menu">Reports</span></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="company-empty.html" aria-expanded="false"><i class="mdi mdi-border-inside"></i><span class="hide-menu">Companies</span></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="file-library.html" aria-expanded="false"><i class="mdi mdi-library-books"></i><span class="hide-menu">File Library</span></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="setting.html" aria-expanded="false"><i class="mdi mdi-settings"></i><span class="hide-menu">Setting</span></a></li>
+
+                </ul>
+                <div class="dropdown-divider"></div>
+                <ul id="sidebarnav">
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="affiliate.html" aria-expanded="false"><i class="mdi mdi-blur-linear"></i><span class="hide-menu">Affiliate</span></a></li>
+                </ul>
+            </nav>
+            <!-- End Sidebar navigation -->
+        </div>
+        <!-- End Sidebar scroll-->
+    </aside>
+    <!-- ============================================================== -->
+    <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Page wrapper  -->
+    <!-- ============================================================== -->
+    <div class="page-wrapper">
+
+        <!-- Container fluid  -->
+        <div class="container-fluid">
+            <div class="row border-bottom">
+                <div class="col-md-12 ml-4">
+                    <h1>Settings</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 mt-2">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item createpro">
+                            <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                               aria-controls="profile" aria-selected="true">Profile </a>
+                        </li>
+                        <li class="nav-item createpro">
+                            <a class="nav-link" id="billing-tab" data-toggle="tab" href="#billing"
+                               role="tab" aria-controls="billing" aria-selected="false">Billing</a>
+                        </li>
+                        <li class="nav-item createpro">
+                            <a class="nav-link" id="api-tab" data-toggle="tab" href="#api"
+                               role="tab" aria-controls="api" aria-selected="false">API</a>
+                        </li>
+                        <li class="nav-item createpro">
+                            <a class="nav-link" id="security-tab" data-toggle="tab" href="#security"
+                               role="tab" aria-controls="security" aria-selected="false">Security</a>
+                        </li>
+
+                    </ul>
+
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="profile" role="tabpanel"
+                             aria-labelledby="profile-tab">
+                            <div class="row mt-4">
+                                <div class="col-md-8 profileform">
+                                    <div class="row">
+                                        <div class="col-md-12 prof-heading">
+                                            <h2>Profile Information</h2>
+                                            <p>This information is used to verify your account and allows you to create orders in our system.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-8 ">
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6">
+                                                        <label>First Name</label>
+                                                        <input type="text" class="form-control" placeholder="First name">
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label>Last Name</label>
+                                                        <input type="text" class="form-control" placeholder="Last name">
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        <label for="inputAddress">Email Address</label>
+                                                        <input type="email" class="form-control" id="inputAddress" placeholder="sonali@everythingwithink.com">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="col-md-4 text-center">
+                                            <p>Profile Picture</p>
+                                            <div class="imgUp">
+                                                <div class="imagePreview"></div>
+                                                <label class="btn btn-upload">
+                                                    Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+                                                </label>
+                                            </div><!-- col-2 -->
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <form>
+                                                <button type="submit" class="btn secendary-button">Update Profile Information</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-4">
+                                <div class="col-md-8 profileform">
+                                    <div class="row">
+                                        <div class="col-md-12 prof-heading">
+                                            <h2>Email Preferences</h2>
+                                            <span>Occasional emails from Everything with Ink</span>
+                                            <p>It’s the best way to hear about product updates and new features in Everything with Ink.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="setting-options">
+                                                <p>Occasional emails from Everything with Ink</p>
+                                                <div class="custom-control custom-radio">
+                                                    <input checked type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadio1">Enabled</label>
+                                                </div>
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadio2">Disabled</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-4">
+                                <div class="col-md-8 profileform">
+                                    <div class="row">
+                                        <div class="col-md-12 prof-heading">
+                                            <h2>Order and Shipping Notifications</h2>
+                                            <!--<span>Occasional emails from Everything with Ink</span>-->
+                                            <p>Receive emails when an order is placed by your customer and when an order is shipped by the Gooten vendor network</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="setting-options">
+                                                <p>Occasional emails from Everything with Ink</p>
+                                                <div class="custom-control custom-radio">
+                                                    <input checked type="radio" id="customRadio3" name="cRadio" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadio3">Enabled</label>
+                                                </div>
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" id="customRadio4" name="cRadio" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadio4">Disabled</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="billing" role="tabpanel"
+                             aria-labelledby="billing-tab">
+                            <div class="row mt-4">
+                                <div class="col-md-8 profileform">
+                                    <div class="row">
+                                        <div class="col-md-12 prof-heading">
+                                            <h2>Business Information</h2>
+                                            <p>This information must be filled in prior to recieving or placing an order. This address is also used on return address labels for the products that have this feature enabled.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-8 col-sm-12 col-12">
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6 col-sm-12 col-12">
+                                                        <label  for="ownerfirstname">Account Owner First Name *</label>
+                                                        <input type="text" class="form-control" id="ownerfirstname" placeholder="First name">
+                                                    </div>
+                                                    <div class="form-group col-md-6 col-sm-12 col-12">
+                                                        <label  for="ownerlastname">Account Owner Last Name *</label>
+                                                        <input type="text" class="form-control" id="ownerlastname" placeholder="Last name">
+                                                    </div>
+                                                    <div class="form-group col-md-12 col-sm-12 col-12">
+                                                        <label for="owneremail">Account Owner Email Address *</label>
+                                                        <input type="email" class="form-control" id="owneremail" placeholder="sonali@everythingwithink.com">
+                                                    </div>
+                                                    <div class="form-group col-md-12 col-sm-12 col-12">
+                                                        <label for="businessname">Business Name *</label>
+                                                        <input type="text" class="form-control" id="businessname" placeholder="Everything With Ink">
+                                                    </div>
+                                                    <div class="form-group col-md-12 col-sm-12 col-12">
+                                                        <label for="bussurl">Business URL *</label>
+                                                        <input type="url" class="form-control" id="bussurl" placeholder="http://www.everythingwithink.com">
+                                                    </div>
+                                                    <div class="form-group col-md-12 col-sm-12 col-12">
+                                                        <label for="bussaddress">Business Address *</label>
+                                                        <input type="text" class="form-control" id="bussaddress" placeholder="Address Line 1…">
+                                                        <input type="text" class="form-control mt-2" id="bussaddress" placeholder="Address Line 2…">
+                                                    </div>
+                                                    <div class="form-group col-md-6 col-sm-12 col-12">
+                                                        <label  for="busscity">City</label>
+                                                        <input type="text" class="form-control" id="busscity" placeholder="City….">
+                                                    </div>
+                                                    <div class="form-group col-md-6 col-sm-12 col-12">
+                                                        <label  for="bussstate">State/Province</label>
+                                                        <input type="text" class="form-control" id="bussstate" placeholder="State…">
+                                                    </div>
+                                                    <div class="form-group col-md-12 col-sm-12 col-12">
+                                                        <label for="busscountry">Country</label>
+                                                        <select class="form-control" id="busscountry">
+                                                            <option value="AFG">Afghanistan</option>
+                                                            <option value="ALA">Åland Islands</option>
+                                                            <option value="ALB">Albania</option>
+                                                            <option value="DZA">Algeria</option>
+                                                            <option value="ASM">American Samoa</option>
+                                                            <option value="AND">Andorra</option>
+                                                            <option value="AGO">Angola</option>
+                                                            <option value="AIA">Anguilla</option>
+                                                            <option value="ATA">Antarctica</option>
+                                                            <option value="ATG">Antigua and Barbuda</option>
+                                                            <option value="ARG">Argentina</option>
+                                                            <option value="ARM">Armenia</option>
+                                                            <option value="ABW">Aruba</option>
+                                                            <option value="AUS">Australia</option>
+                                                            <option value="AUT">Austria</option>
+                                                            <option value="AZE">Azerbaijan</option>
+                                                            <option value="BHS">Bahamas</option>
+                                                            <option value="BHR">Bahrain</option>
+                                                            <option value="BGD">Bangladesh</option>
+                                                            <option value="BRB">Barbados</option>
+                                                            <option value="BLR">Belarus</option>
+                                                            <option value="BEL">Belgium</option>
+                                                            <option value="BLZ">Belize</option>
+                                                            <option value="BEN">Benin</option>
+                                                            <option value="BMU">Bermuda</option>
+                                                            <option value="BTN">Bhutan</option>
+                                                            <option value="BOL">Bolivia, Plurinational State of</option>
+                                                            <option value="BES">Bonaire, Sint Eustatius and Saba</option>
+                                                            <option value="BIH">Bosnia and Herzegovina</option>
+                                                            <option value="BWA">Botswana</option>
+                                                            <option value="BVT">Bouvet Island</option>
+                                                            <option value="BRA">Brazil</option>
+                                                            <option value="IOT">British Indian Ocean Territory</option>
+                                                            <option value="BRN">Brunei Darussalam</option>
+                                                            <option value="BGR">Bulgaria</option>
+                                                            <option value="BFA">Burkina Faso</option>
+                                                            <option value="BDI">Burundi</option>
+                                                            <option value="KHM">Cambodia</option>
+                                                            <option value="CMR">Cameroon</option>
+                                                            <option value="CAN">Canada</option>
+                                                            <option value="CPV">Cape Verde</option>
+                                                            <option value="CYM">Cayman Islands</option>
+                                                            <option value="CAF">Central African Republic</option>
+                                                            <option value="TCD">Chad</option>
+                                                            <option value="CHL">Chile</option>
+                                                            <option value="CHN">China</option>
+                                                            <option value="CXR">Christmas Island</option>
+                                                            <option value="CCK">Cocos (Keeling) Islands</option>
+                                                            <option value="COL">Colombia</option>
+                                                            <option value="COM">Comoros</option>
+                                                            <option value="COG">Congo</option>
+                                                            <option value="COD">Congo, the Democratic Republic of the</option>
+                                                            <option value="COK">Cook Islands</option>
+                                                            <option value="CRI">Costa Rica</option>
+                                                            <option value="CIV">Côte d'Ivoire</option>
+                                                            <option value="HRV">Croatia</option>
+                                                            <option value="CUB">Cuba</option>
+                                                            <option value="CUW">Curaçao</option>
+                                                            <option value="CYP">Cyprus</option>
+                                                            <option value="CZE">Czech Republic</option>
+                                                            <option value="DNK">Denmark</option>
+                                                            <option value="DJI">Djibouti</option>
+                                                            <option value="DMA">Dominica</option>
+                                                            <option value="DOM">Dominican Republic</option>
+                                                            <option value="ECU">Ecuador</option>
+                                                            <option value="EGY">Egypt</option>
+                                                            <option value="SLV">El Salvador</option>
+                                                            <option value="GNQ">Equatorial Guinea</option>
+                                                            <option value="ERI">Eritrea</option>
+                                                            <option value="EST">Estonia</option>
+                                                            <option value="ETH">Ethiopia</option>
+                                                            <option value="FLK">Falkland Islands (Malvinas)</option>
+                                                            <option value="FRO">Faroe Islands</option>
+                                                            <option value="FJI">Fiji</option>
+                                                            <option value="FIN">Finland</option>
+                                                            <option value="FRA">France</option>
+                                                            <option value="GUF">French Guiana</option>
+                                                            <option value="PYF">French Polynesia</option>
+                                                            <option value="ATF">French Southern Territories</option>
+                                                            <option value="GAB">Gabon</option>
+                                                            <option value="GMB">Gambia</option>
+                                                            <option value="GEO">Georgia</option>
+                                                            <option value="DEU">Germany</option>
+                                                            <option value="GHA">Ghana</option>
+                                                            <option value="GIB">Gibraltar</option>
+                                                            <option value="GRC">Greece</option>
+                                                            <option value="GRL">Greenland</option>
+                                                            <option value="GRD">Grenada</option>
+                                                            <option value="GLP">Guadeloupe</option>
+                                                            <option value="GUM">Guam</option>
+                                                            <option value="GTM">Guatemala</option>
+                                                            <option value="GGY">Guernsey</option>
+                                                            <option value="GIN">Guinea</option>
+                                                            <option value="GNB">Guinea-Bissau</option>
+                                                            <option value="GUY">Guyana</option>
+                                                            <option value="HTI">Haiti</option>
+                                                            <option value="HMD">Heard Island and McDonald Islands</option>
+                                                            <option value="VAT">Holy See (Vatican City State)</option>
+                                                            <option value="HND">Honduras</option>
+                                                            <option value="HKG">Hong Kong</option>
+                                                            <option value="HUN">Hungary</option>
+                                                            <option value="ISL">Iceland</option>
+                                                            <option value="IND" selected>India</option>
+                                                            <option value="IDN">Indonesia</option>
+                                                            <option value="IRN">Iran, Islamic Republic of</option>
+                                                            <option value="IRQ">Iraq</option>
+                                                            <option value="IRL">Ireland</option>
+                                                            <option value="IMN">Isle of Man</option>
+                                                            <option value="ISR">Israel</option>
+                                                            <option value="ITA">Italy</option>
+                                                            <option value="JAM">Jamaica</option>
+                                                            <option value="JPN">Japan</option>
+                                                            <option value="JEY">Jersey</option>
+                                                            <option value="JOR">Jordan</option>
+                                                            <option value="KAZ">Kazakhstan</option>
+                                                            <option value="KEN">Kenya</option>
+                                                            <option value="KIR">Kiribati</option>
+                                                            <option value="PRK">Korea, Democratic People's Republic of</option>
+                                                            <option value="KOR">Korea, Republic of</option>
+                                                            <option value="KWT">Kuwait</option>
+                                                            <option value="KGZ">Kyrgyzstan</option>
+                                                            <option value="LAO">Lao People's Democratic Republic</option>
+                                                            <option value="LVA">Latvia</option>
+                                                            <option value="LBN">Lebanon</option>
+                                                            <option value="LSO">Lesotho</option>
+                                                            <option value="LBR">Liberia</option>
+                                                            <option value="LBY">Libya</option>
+                                                            <option value="LIE">Liechtenstein</option>
+                                                            <option value="LTU">Lithuania</option>
+                                                            <option value="LUX">Luxembourg</option>
+                                                            <option value="MAC">Macao</option>
+                                                            <option value="MKD">Macedonia, the former Yugoslav Republic of</option>
+                                                            <option value="MDG">Madagascar</option>
+                                                            <option value="MWI">Malawi</option>
+                                                            <option value="MYS">Malaysia</option>
+                                                            <option value="MDV">Maldives</option>
+                                                            <option value="MLI">Mali</option>
+                                                            <option value="MLT">Malta</option>
+                                                            <option value="MHL">Marshall Islands</option>
+                                                            <option value="MTQ">Martinique</option>
+                                                            <option value="MRT">Mauritania</option>
+                                                            <option value="MUS">Mauritius</option>
+                                                            <option value="MYT">Mayotte</option>
+                                                            <option value="MEX">Mexico</option>
+                                                            <option value="FSM">Micronesia, Federated States of</option>
+                                                            <option value="MDA">Moldova, Republic of</option>
+                                                            <option value="MCO">Monaco</option>
+                                                            <option value="MNG">Mongolia</option>
+                                                            <option value="MNE">Montenegro</option>
+                                                            <option value="MSR">Montserrat</option>
+                                                            <option value="MAR">Morocco</option>
+                                                            <option value="MOZ">Mozambique</option>
+                                                            <option value="MMR">Myanmar</option>
+                                                            <option value="NAM">Namibia</option>
+                                                            <option value="NRU">Nauru</option>
+                                                            <option value="NPL">Nepal</option>
+                                                            <option value="NLD">Netherlands</option>
+                                                            <option value="NCL">New Caledonia</option>
+                                                            <option value="NZL">New Zealand</option>
+                                                            <option value="NIC">Nicaragua</option>
+                                                            <option value="NER">Niger</option>
+                                                            <option value="NGA">Nigeria</option>
+                                                            <option value="NIU">Niue</option>
+                                                            <option value="NFK">Norfolk Island</option>
+                                                            <option value="MNP">Northern Mariana Islands</option>
+                                                            <option value="NOR">Norway</option>
+                                                            <option value="OMN">Oman</option>
+                                                            <option value="PAK">Pakistan</option>
+                                                            <option value="PLW">Palau</option>
+                                                            <option value="PSE">Palestinian Territory, Occupied</option>
+                                                            <option value="PAN">Panama</option>
+                                                            <option value="PNG">Papua New Guinea</option>
+                                                            <option value="PRY">Paraguay</option>
+                                                            <option value="PER">Peru</option>
+                                                            <option value="PHL">Philippines</option>
+                                                            <option value="PCN">Pitcairn</option>
+                                                            <option value="POL">Poland</option>
+                                                            <option value="PRT">Portugal</option>
+                                                            <option value="PRI">Puerto Rico</option>
+                                                            <option value="QAT">Qatar</option>
+                                                            <option value="REU">Réunion</option>
+                                                            <option value="ROU">Romania</option>
+                                                            <option value="RUS">Russian Federation</option>
+                                                            <option value="RWA">Rwanda</option>
+                                                            <option value="BLM">Saint Barthélemy</option>
+                                                            <option value="SHN">Saint Helena, Ascension and Tristan da Cunha</option>
+                                                            <option value="KNA">Saint Kitts and Nevis</option>
+                                                            <option value="LCA">Saint Lucia</option>
+                                                            <option value="MAF">Saint Martin (French part)</option>
+                                                            <option value="SPM">Saint Pierre and Miquelon</option>
+                                                            <option value="VCT">Saint Vincent and the Grenadines</option>
+                                                            <option value="WSM">Samoa</option>
+                                                            <option value="SMR">San Marino</option>
+                                                            <option value="STP">Sao Tome and Principe</option>
+                                                            <option value="SAU">Saudi Arabia</option>
+                                                            <option value="SEN">Senegal</option>
+                                                            <option value="SRB">Serbia</option>
+                                                            <option value="SYC">Seychelles</option>
+                                                            <option value="SLE">Sierra Leone</option>
+                                                            <option value="SGP">Singapore</option>
+                                                            <option value="SXM">Sint Maarten (Dutch part)</option>
+                                                            <option value="SVK">Slovakia</option>
+                                                            <option value="SVN">Slovenia</option>
+                                                            <option value="SLB">Solomon Islands</option>
+                                                            <option value="SOM">Somalia</option>
+                                                            <option value="ZAF">South Africa</option>
+                                                            <option value="SGS">South Georgia and the South Sandwich Islands</option>
+                                                            <option value="SSD">South Sudan</option>
+                                                            <option value="ESP">Spain</option>
+                                                            <option value="LKA">Sri Lanka</option>
+                                                            <option value="SDN">Sudan</option>
+                                                            <option value="SUR">Suriname</option>
+                                                            <option value="SJM">Svalbard and Jan Mayen</option>
+                                                            <option value="SWZ">Swaziland</option>
+                                                            <option value="SWE">Sweden</option>
+                                                            <option value="CHE">Switzerland</option>
+                                                            <option value="SYR">Syrian Arab Republic</option>
+                                                            <option value="TWN">Taiwan, Province of China</option>
+                                                            <option value="TJK">Tajikistan</option>
+                                                            <option value="TZA">Tanzania, United Republic of</option>
+                                                            <option value="THA">Thailand</option>
+                                                            <option value="TLS">Timor-Leste</option>
+                                                            <option value="TGO">Togo</option>
+                                                            <option value="TKL">Tokelau</option>
+                                                            <option value="TON">Tonga</option>
+                                                            <option value="TTO">Trinidad and Tobago</option>
+                                                            <option value="TUN">Tunisia</option>
+                                                            <option value="TUR">Turkey</option>
+                                                            <option value="TKM">Turkmenistan</option>
+                                                            <option value="TCA">Turks and Caicos Islands</option>
+                                                            <option value="TUV">Tuvalu</option>
+                                                            <option value="UGA">Uganda</option>
+                                                            <option value="UKR">Ukraine</option>
+                                                            <option value="ARE">United Arab Emirates</option>
+                                                            <option value="GBR">United Kingdom</option>
+                                                            <option value="USA">United States</option>
+                                                            <option value="UMI">United States Minor Outlying Islands</option>
+                                                            <option value="URY">Uruguay</option>
+                                                            <option value="UZB">Uzbekistan</option>
+                                                            <option value="VUT">Vanuatu</option>
+                                                            <option value="VEN">Venezuela, Bolivarian Republic of</option>
+                                                            <option value="VNM">Viet Nam</option>
+                                                            <option value="VGB">Virgin Islands, British</option>
+                                                            <option value="VIR">Virgin Islands, U.S.</option>
+                                                            <option value="WLF">Wallis and Futuna</option>
+                                                            <option value="ESH">Western Sahara</option>
+                                                            <option value="YEM">Yemen</option>
+                                                            <option value="ZMB">Zambia</option>
+                                                            <option value="ZWE">Zimbabwe</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-12 col-sm-12 col-12">
+                                                        <label for="bussnumber">Phone Number *</label>
+                                                        <input type="number" class="form-control" id="bussnumber" placeholder="Phone Number…">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-4">
+                                <div class="col-md-8 profileform col-sm-12 col-12">
+                                    <div class="row">
+                                        <div class="col-md-12 prof-heading col-sm-12 col-12">
+                                            <h2>Credit Card Information</h2>
+                                            <p>Your credit card or PayPal will be used to accept and charge orders placed by you or your customers.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-8 col-sm-12 col-12">
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-12 col-sm-12 col-12">
+                                                        <label for="cardnumber">Card Number *</label>
+                                                        <input type="text" class="form-control" id="cardnumber" placeholder="number...                                                                                      MM/YY   CVC">
+                                                    </div>
+                                                    <div class="form-group col-md-12 col-sm-12 col-12">
+                                                        <label for="cardname">Name on Card *</label>
+                                                        <input type="text" class="form-control" id="cardname" placeholder="Name....">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-12">
+                                            <form>
+                                                <button type="submit" class="btn secendary-button">Update Card Information</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-4">
+                                <div class="col-md-8 profileform col-sm-12 col-12">
+                                    <div class="row">
+                                        <div class="col-md-12 prof-heading col-sm-12 col-12">
+                                            <h2>Billing History</h2>
+                                            <p>Looks like you don’t have any transactions yet. When you do, you can find them here.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="api" role="tabpanel"
+                             aria-labelledby="api-tab">
+                            <div class="row mt-4">
+                                <div class="col-md-8 profileform col-sm-12 col-12">
+                                    <div class="row">
+                                        <div class="col-md-12 prof-heading col-sm-12 col-12">
+                                            <h2>Business Information</h2>
+                                            <!--<p>Your credit card or PayPal will be used to accept and charge orders placed by you or your customers.</p>-->
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-8 col-sm-12 col-12">
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-12 col-sm-12 col-12">
+                                                        <label>Recipe ID</label>
+                                                        <input type="text" class="form-control" id="foo" value="0496999e-dff4-4496-a2f8-7886e95fa0fd">
+                                                        <i class="mdi mdi-content-copy copyip-btn" data-clipboard-target="#foo"></i>
+                                                    </div>
+                                                    <div class="form-group col-md-12 col-sm-12 col-12">
+                                                        <label>Partner Billing Key</label>
+                                                        <input type="text" class="form-control" id="billingkey" value="0496999e-dff4-4496-a2f8-7886e95fa0fd">
+                                                        <i class="mdi mdi-content-copy copyip-btn" data-clipboard-target="#billingkey"></i>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-8 profileform col-sm-12 col-12">
+                                    <div class="row">
+                                        <div class="col-md-12 prof-heading col-sm-12 col-12">
+                                            <h2>Webhooks</h2>
+                                            <span>Order Status Notifications</span>
+                                            <p>Webhooks allow you to receive notifications of events that happen in Everything With Ink. For more information see the Webhook Reference.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-8 col-sm-12 col-12">
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-12 col-sm-12 col-12">
+                                                        <label for="endpoint">Endpoint *</label>
+                                                        <input type="text" class="form-control" id="endpoint" placeholder="Type Endpoint URL">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-12">
+                                            <form>
+                                                <button type="submit" class="btn secendary-button">Save Endpoint</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="security" role="tabpanel"
+                             aria-labelledby="security-tab">
+                            <div class="row mt-4">
+                                <div class="col-md-8 profileform col-sm-12 col-12">
+                                    <div class="row">
+                                        <div class="col-md-12 prof-heading col-sm-12 col-12">
+                                            <h2>Password</h2>
+                                            <!--<p>Your credit card or PayPal will be used to accept and charge orders placed by you or your customers.</p>-->
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-8 col-sm-12 col-12">
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-12">
+                                                        <label for="currentpass">Current Password</label>
+                                                        <input  type="password" class="form-control" id="currentpass" placeholder="Enter current password">
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        <label for="newpass">New Password *</label>
+                                                        <input required type="password" class="form-control" id="newpass" placeholder="New password">
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        <label for="confpass">Confirm New Password *</label>
+                                                        <input required type="password" class="form-control" id="confpass" placeholder="Confirm Password">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-12">
+                                            <form>
+                                                <button type="submit" class="btn secendary-button">Save Password</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-8 profileform col-sm-12 col-12">
+                                    <div class="row">
+                                        <div class="col-md-12 prof-heading">
+                                            <h2>Advanced Settings</h2>
+                                            <span>Deactivate Account</span>
+                                            <p>You won’t be able to log in to your account. You can reactivate your account within 30 days of deactivation by emailing us at <i>partnersupport@everythingwithink.com</i></p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-8 col-sm-12 col-12">
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-12">
+                                                        <label for="deactemail">Email address *</label>
+                                                        <input type="email" class="form-control" id="deactemail" placeholder="Enter email address">
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        <label for="deactpass">Password *</label>
+                                                        <input type="password" class="form-control" id="deactpass" placeholder="Enter password">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-12">
+                                            <form>
+                                                <button type="submit" class="btn secendary-button">Update Card Information</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- End Container fluid  -->
+
+        <!-- End footer -->
+    </div>
+    <!-- End Page wrapper  -->
+</div>
+<!-- End Wrapper -->
+<!-- ============================================================== -->
+
+<!-- All Jquery -->
+<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap tether Core JavaScript -->
+<script src="assets/libs/popper.js/dist/umd/popper.min.js"></script>
+<script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+<script src="assets/extra-libs/sparkline/sparkline.js"></script>
+<!--Check box-->
+<script src="dist/js/jquery-labelauty.js"></script>
+
+<!--inputfield copy clicpbord-->
+<script src="dist/js/clipboard.min.js"></script>
+<!--Wave Effects -->
+<script src="dist/js/waves.js"></script>
+<!--Menu sidebar -->
+<script src="dist/js/sidebarmenu.js"></script>
+<!--Custom JavaScript -->
+<script src="dist/js/custom.min.js"></script>
+<!--This page JavaScript -->
+<!-- <script src="dist/js/pages/dashboards/dashboard1.js"></script> -->
+<!-- Charts js Files -->
+<script src="assets/libs/flot/excanvas.js"></script>
+<script src="assets/libs/flot/jquery.flot.js"></script>
+<script src="assets/libs/flot/jquery.flot.pie.js"></script>
+<script src="assets/libs/flot/jquery.flot.time.js"></script>
+<script src="assets/libs/flot/jquery.flot.stack.js"></script>
+<script src="assets/libs/flot/jquery.flot.crosshair.js"></script>
+<script src="assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+<script src="dist/js/pages/chart/chart-page-init.js"></script>
+
+
+</body>
+
+</html>
