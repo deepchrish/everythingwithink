@@ -1799,3 +1799,11 @@ border-top: transparent;
 .sampleinfo{
     padding: 35px 0 35px 0;
 }
+.settingtext p{
+    font-size: 16px;
+    color: #000000;
+
+}
+.settingtext p a{
+    color: #0094FF;
+}
