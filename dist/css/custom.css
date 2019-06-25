@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900&display=swap');
 @font-face {
     font-family: 'Avenir Next';
     src: url('/font/AvenirNext-HeavyItalic.woff2') format('woff2'),
@@ -96,7 +97,8 @@
 }
 
 body{
-    font-family: 'Avenir Next';
+    /*font-family: 'Avenir Next';*/
+    font-family: 'Nunito Sans', sans-serif;
     font-weight: 500;
     font-style: normal;
 }
@@ -221,8 +223,17 @@ p{
     color: #000000;
 }
 
+.tooltip-btn{
+    background: #0094FF;
+    color: #FFFFFF;
+    border-radius: 100%;
+    padding: 0 6px;
+    margin: 10px 6px 12px 0;
+    font-size: 12px;
+}
 .primary-button{
-    font-family: 'Avenir Next';
+    /*font-family: 'Avenir Next';*/
+    font-family: 'Nunito Sans', sans-serif;
     font-weight: 500;
     background: #2B44FF;
     border: 1px solid #2B44FF;
@@ -243,7 +254,8 @@ p{
     box-shadow: 0 4px 38px -5px rgba(43,68,255,1);
 }
 .secendary-button{
-    font-family: 'Avenir Next';
+    /*font-family: 'Avenir Next';*/
+    font-family: 'Nunito Sans', sans-serif;
     font-weight: 500;
     background: #fff;
     border: 1px solid #2B44FF;
@@ -474,7 +486,8 @@ p{
 .list-anchor{
     position: relative;
     top: 8px;
-    font-family: "Avenir Next";
+    /*font-family: "Avenir Next";*/
+    font-family: 'Nunito Sans', sans-serif;
     color: #a5a5a5;
 }
 .list-circle{
@@ -494,7 +507,8 @@ p{
     top: -11px;
 }
 .list-heading{
-    font-family: "Avenir Next";
+    /*font-family: "Avenir Next";*/
+    font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #6b6b6b;
@@ -614,7 +628,8 @@ p{
     line-height: 76px;
 }
 .box-details h6{
-    font-family: "Avenir Next Demi";
+    /*font-family: "Avenir Next Demi";*/
+    font-family: 'Nunito Sans', sans-serif;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 15px;
@@ -769,7 +784,8 @@ p{
     padding: 10px 12px 20px 12px;
 }
 .product-card h4{
-    font-family: "Avenir Next";
+    /*font-family: "Avenir Next";*/
+    font-family: 'Nunito Sans', sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: #000000;
@@ -863,7 +879,7 @@ p{
     background: #eaeaea;
     border-radius: 2px;
     border: 1px solid #d2d2d2;
-    box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1);
     margin-right: 5px;
     overflow: hidden;
 }
@@ -930,7 +946,8 @@ p{
     width: 100%;
     height: 100%;
     border: 3px solid transparent;
-    border-top: 3px solid #2b44ff;
+    /*border-top: 3px solid #2b44ff;*/
+    border-top: 1px solid #3b51ff;
     border-right: 3px solid #2b44ff;
     border-left: 0 solid #2b44ff;
     border-radius: 50%;
@@ -1321,7 +1338,8 @@ p{
     padding: 0 7%;
 }
 .aff-grid h5{
-    font-family: "Avenir Next";
+    /*font-family: "Avenir Next";*/
+    font-family: 'Nunito Sans', sans-serif;
     font-weight: 500;
     color: #000000;
 }
@@ -1806,4 +1824,218 @@ border-top: transparent;
 }
 .settingtext p a{
     color: #0094FF;
+}
+.outerborder{
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    margin: 10px 20px;
+}
+.order-nav{
+    padding: 20px 20px;
+}
+.back-icon a{
+    font-size: 15px;
+    color: #000000;
+}
+.back-icon a i{
+    font-size: 20px;
+    color: #949494;
+}
+.paid{
+    font-size: 15px;
+    color: #000000;
+}
+.paid i{
+    font-size: 20px;
+    color: #1DC344;
+}
+.table-heading{
+    margin-bottom: 0;
+}
+.table-heading thead tr th{
+    border: 1px solid #d8d8d8;
+}
+.table-heading thead tr th span{
+    font-size: 14px;
+    font-weight: 600;
+    color: #5d5d5d;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+.table-heading thead tr th p{
+    font-size: 15px;
+    color: #000000;
+    margin: 10px 0 0 0;
+    font-weight: 600;
+}
+.table-heading thead tr th label{
+    font-size: 14px;
+    font-weight: 600;
+    color: #5d5d5d;
+    /*padding-bottom: 5px;*/
+    text-transform: uppercase;
+}
+.custom-sele{
+    width: 80%;
+    /* clear: both; */
+    display: list-item;
+    border-radius: 5px;
+    padding: 0 3px;
+    font-size: 14px;
+    height: calc(1.700rem + 0px);
+    vertical-align: middle;
+    line-height: 0.5;
+    border: 1px solid #c3c3c3;
+}
+.orderdetails{
+    background: #d8d8d8;
+    margin: 0;
+    padding: 5px 0;
+    text-align: center;
+}
+.orders-nums{
+    float: left;
+    vertical-align: middle;
+    border: 1px solid #6b6b6b;
+    border-radius: 100%;
+    padding: 0 1px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #6b6b6b;
+}
+.orders-lists th{
+    vertical-align: middle;
+    text-align: center;
+    border-bottom: 1px solid #d8d8d8;
+}
+.orders-lists td{
+    vertical-align: middle;
+    text-align: center;
+    border-bottom: 1px solid #d8d8d8;
+    padding: 8px 1em 15px;
+}
+.orderimg{
+    white-space: nowrap;
+}
+.orderimg img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    float: left;
+}
+.orderinfomation{
+    white-space: nowrap;
+    text-align: -webkit-auto;
+}
+.orderinfomation h6{
+    font-size: 14px;
+    color: #000000;
+    margin: 0 0 4px 0;
+}
+.orderinfomation p{
+    font-size: 12px;
+    margin: 0;
+    font-weight: 700;
+}
+.orderinfomation span{
+    font-size: 12px;
+    display: flow-root;
+    color: #4e4e4e;
+}
+.order-rate{
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    padding: 8px 0;
+}
+.perunit{
+    font-size: 14px;
+    position: relative;
+    background: #fff;
+    left: -30px;
+    top: 10px;
+}
+
+.ratespath {
+    overflow: hidden;
+    /* width: 50px; */
+    max-width: 120px;
+    white-space: inherit;
+}
+.ratespath p{
+    font-size: 14px;
+}
+.instructions{
+    font-size: 12px;
+    float: left;
+    text-align: left;
+}
+.order-address{
+    /*float: left;*/
+    text-align: left;
+    white-space: inherit;
+    overflow: hidden;
+    width: 225px;
+}
+.order-address p{
+    margin: 5px 5px;
+    font-size: 13px;
+    /*text-align: left;*/
+    color: #000000;
+    line-height: 18px;
+    text-align: justify;
+}
+.order-address span{
+    font-weight: 800;
+    margin-right: 5px;
+}
+.shopbtn{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    background: #fff;
+    border: 1px solid #2B44FF;
+    color: #2B44FF;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 4px 20px -5px rgba(43,68,255,0.2);
+    -moz-box-shadow: 0 4px 20px -5px rgba(43,68,255,0.2);
+    box-shadow: 0 4px 20px -5px rgba(43,68,255,0.2);
+    transition: all .3s ease-in-out;
+    padding: 3px 10px;
+    position: relative;
+    top: 4px;
+    font-size: 13px;
+}
+.shopbtn:hover{
+    color: #2B44FF;
+}
+.topnote{
+    display: flow-root;
+}
+.topnote span{
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+}
+.user-foto img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    object-fit: cover;
+    float: left;
+}
+.user-order-unit{
+    position: relative;
+    left: 8px;
+}
+.user-order-unit p{
+    color: #000000;
+}
+.user-order-unit span{
+    font-size: 12px;
+    font-weight: 700;
+    color: #35b779;
+    position: relative;
+    top: -12px;
+    right: 58px;
 }
