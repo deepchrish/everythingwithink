@@ -300,7 +300,7 @@
                 </div>
             </div>
             <div class="outerborder">
-                <div class="row order-nav">
+                <div class="row ordershead">
                     <div class="col-md-6">
                         <span class="back-icon"><a href="#"><i
                                 class="mdi mdi-chevron-left"></i> Back to Orders</a></span>
@@ -395,7 +395,7 @@
                                         <span class="instructions">Total Cost would be calculated upon fullfillment.</span>
                                     </td>
                                     <td>
-                                        <button class="btn btn-secondary">Fulfill Now</button>
+                                        <button class="btn btn-secondary" data-toggle="modal" data-target="#fulfillorder">Fulfill Now</button>
                                     </td>
                                     <td class="order-address">
 
@@ -454,7 +454,192 @@
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="orderdetails">Order details</p>
+                    </div>
+                </div>
+                <div class="row p-4">
+                    <div class="col-md-7">
+                        <div class="table-responsive table-borderless">
+                            <table class="table ordersinvoice">
+                                <thead>
+                                <tr>
+                                    <th colspan="2"><div class="invoicestatus"><span>Status</span> <i class="mdi mdi-checkbox-marked-circle"></i> <p>Paid by card number ending in <span>***5890</span></p></div></th>
+                                    <th colspan="2"></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td colspan="2">Discount Coupon<p>FIRSTORDER</p></td>
+                                    <td class="float-right">$08.95</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Subtotal <span>2 Item(s)</span></td>
+                                    <td class="float-right">$08.95</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Shipping <span>First Class Pkg. (0.26 Lbs)</span></td>
+                                    <td class="float-right">$08.95</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Tax</td>
+                                    <td class="float-right">$00.00</td>
+                                </tr>
+                                </tbody>
+                                <tfoot>
+                                <tr>
+                                    <td colspan="2">Total paid by customer</td>
+                                    <td class="float-right">$49.95</td>
+                                </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <!-- ============================================================== -->
+            <!-- Modal -->
+
+            <!-- order model to fulfill -->
+            <div class="modal right fade" id="fulfillorder" tabindex="-1" role="dialog" aria-labelledby="fulfillorder">
+                <div class="modal-dialog aff-dialog" role="document">
+                    <div class="modal-content ">
+
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="ptag">NOW FULFILLING</p>
+                                    <div class="table-responsive table-borderless border-bottom mb-3">
+                                        <table class="table order-checkout">
+                                            <tbody>
+                                            <tr>
+                                                <td><img src="./images/order-list-mug.png"></td>
+                                                <td>
+                                                    <div class="checkoutpro">
+                                                        <h6>Croco Rock Baby T-Shirt</h6>
+                                                        <p>SKU: EWI-4567</p>
+                                                        <span>Category: Men’s T-Shirt</span>
+                                                        <span>Size: Large</span>
+                                                        <span>Color: Black</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="quantity">
+                                                        <span>Quantity</span>
+                                                        <p>02</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>Pick a vendor to fulfill this order</p>
+                                    <div class="table-responsive">
+                                        <table class="table venders">
+                                            <thead>
+                                            <tr>
+                                                <th>Vendor Name</th>
+                                                <th>Delivery</th>
+                                                <th>Cost</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="venders-detail">
+                                                        <label>
+                                                        <input type="checkbox" >
+                                                        <img class="img-fluid" src="./assets/images/users/1.jpg">
+                                                        <span class="vender-name">
+                                                            <span>Nick Retails</span>
+                                                            <i class="mdi mdi-star"> 4.5</i>
+                                                        </span>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td>Est. June, 27</td>
+                                                <td class="text-center">
+                                                    <div class="itemcost">$12.00</div>
+                                                    <span class="perunits">Per Unit</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="venders-detail">
+                                                        <label>
+                                                        <input type="checkbox" >
+                                                        <img class="img-fluid" src="./assets/images/users/1.jpg">
+                                                        <span class="vender-name">
+                                                            <span>Stellar Designs</span>
+                                                            <i class="mdi mdi-star"> 4.5</i>
+                                                        </span>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td>Est. June, 27</td>
+                                                <td class="text-center">
+                                                    <div class="itemcost">$13.00</div>
+                                                    <span class="perunits">Per Unit</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="venders-detail">
+                                                        <label>
+                                                        <input type="checkbox" >
+                                                        <img class="img-fluid" src="./assets/images/users/1.jpg">
+                                                        <span class="vender-name">
+                                                            <span>Stellar Designs</span>
+                                                            <i class="mdi mdi-star"> 4.5</i>
+                                                        </span>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td>Est. June, 27</td>
+                                                <td class="text-center">
+                                                    <div class="itemcost">$13.00</div>
+                                                    <span class="perunits">Per Unit</span>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="total-pro-cost">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="itemsubtotal">
+                                            <p>Subtotal <span>02 Item(s)</span></p>
+                                            <p>$12.00 x 2</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="final-price">$24.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn aff-submitbtn">Submit</button>
+                        </div>
+
+                    </div><!-- modal-content -->
+                </div><!-- modal-dialog -->
+            </div><!-- modal -->
+
+
+
+
+
         </div>
         <!-- End Container fluid  -->
     </div>

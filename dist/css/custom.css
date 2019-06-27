@@ -350,7 +350,7 @@ p{
     content:"";
     width:0;
     height:0;
-    border:5px solid transparent;
+    /*border:5px solid transparent;*/
     border-color:#2B44FF transparent transparent transparent;
     position:absolute;
     top:15px;
@@ -1457,7 +1457,7 @@ p{
     position: absolute;
 }
 .aff-submitbtn{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     overflow-x: hidden;
@@ -1830,7 +1830,7 @@ border-top: transparent;
     border-radius: 5px;
     margin: 10px 20px;
 }
-.order-nav{
+.ordershead{
     padding: 20px 20px;
 }
 .back-icon a{
@@ -1892,6 +1892,8 @@ border-top: transparent;
     margin: 0;
     padding: 5px 0;
     text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 .orders-nums{
     float: left;
@@ -1904,6 +1906,9 @@ border-top: transparent;
     text-align: center;
     font-size: 12px;
     color: #6b6b6b;
+}
+.orders-lists{
+    margin-bottom: 0;
 }
 .orders-lists th{
     vertical-align: middle;
@@ -2038,4 +2043,225 @@ border-top: transparent;
     position: relative;
     top: -12px;
     right: 58px;
+}
+
+/*--------------------------------------- pending section from Orders-details page-----------------------*/
+.ordersinvoice thead th{
+    border-bottom: 1px solid #d8d8d8;
+    padding: 0;
+}
+.invoicestatus{
+    float: left;
+    display: flex;
+}
+.invoicestatus span{
+    font-size: 16px;
+    color: #000000;
+    font-style: italic;
+    font-weight: 700;
+    margin-right: 20px;
+}
+.invoicestatus i{
+    font-size: 22px;
+    color: #1DC344;
+    position: relative;
+    top: -5px;
+}
+.invoicestatus p{
+    font-size: 16px;
+    margin-left: 5px;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+.invoicestatus p span{
+    color: #1DC344;
+}
+.ordersinvoice tbody td{
+    padding: 0;
+}
+.ordersinvoice tfoot td{
+    padding: 0 0;
+    border-top: 1px solid #d8d8d8;
+}
+
+/*--------------------------------------- pending section from Orders-details page-----------------------*/
+
+.ptag{
+    font-size: 12px;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #696969;
+}
+.order-checkout{
+    padding-bottom: 10px;
+}
+.order-checkout tbody td{
+    padding: 0;
+}
+.order-checkout tbody td img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.checkoutpro{
+    margin-top: 10px;
+
+}
+.checkoutpro h6{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    color: #000000;
+}
+.checkoutpro p{
+    font-size: 13px;
+    margin: 0;
+}
+.checkoutpro span{
+    display: -webkit-box;
+    font-size: 12px;
+    color: #868686;
+}
+.quantity{
+    text-align: center;
+}
+.quantity span{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 800;
+}
+.quantity p{
+    font-size: 14px;
+    font-weight: 800;
+}
+.venders th{
+    padding: 0;
+    font-size: 11px;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700 !important;
+    color: #696969;
+}
+.venders td{
+    padding: 10px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.venders-detail input{
+    position: relative;
+    top: 4px;
+}
+.venders-detail img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+.vender-name{
+    display: inline-table;
+    position: relative;
+    top: -5px;
+    margin-left: 5px;
+}
+.vender-name span{
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    color: #000000;
+}
+.vender-name i{
+    color: #FCBF49;
+    font-weight: 700;
+    position: relative;
+    top: -4px;
+}
+.itemcost{
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    padding: 4px 2px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 800;
+}
+.total-pro-cost{
+    position: fixed;
+    bottom: 43px;
+    left: 0;
+    right: 0;
+    background: #EAEDF3;
+    padding: 10px 20px;
+}
+.itemsubtotal p{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+.itemsubtotal p span{
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: 15px;
+    line-height: 27px;
+}
+.final-price{
+    margin: 12px 0 0 0;
+    text-align: right;
+    font-weight: 800;
+}
+.perunits{
+    font-size: 11px;
+    font-weight: 600;
+}
+.floating-numbers{
+    position: absolute;
+    font-size: 115px;
+    font-weight: 800;
+    color: #E9ECFF;
+    top: -48px;
+    left: 35px;
+}
+.onboardeasyink{
+    padding: 10px 60px;
+}
+.onboardeasyink img{
+    z-index: 1;
+    position: relative;
+}
+.onboardeasyink h5{
+    font-size: 14px;
+    font-weight: 800;
+    color: #000000;
+    text-transform: uppercase;
+}
+.onboardeasyink p{
+    font-size: 14px;
+}
+.progress{
+    height: 6px;
+}
+.progress-bar{
+    background-color: #2B44FF;
+}
+.upload-img{
+
+}
+.upload-img label{
+    display: inline-grid;
+}
+.upload-img label img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px dashed #b5b5b5;
+    padding: 5px;
+}
+.upload-img label input{
+    display: none;
+}
+.upinstructions{
+    margin-top: 10px;
+}
+.upinstructions p{
+    margin: 0;
+    font-size: 12px;
 }

@@ -259,6 +259,7 @@
                     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="file-library.html" aria-expanded="false"><i class="mdi mdi-library-books"></i><span class="hide-menu">File Library</span></a></li>
                     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="setting.html" aria-expanded="false"><i class="mdi mdi-settings"></i><span class="hide-menu">Setting</span></a></li>
                     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="easy-ink-on-boarding.html" aria-expanded="false"><i class="mdi mdi-invert-colors"></i><span class="hide-menu">Easy Ink</span></a></li>
+
                 </ul>
                 <div class="dropdown-divider"></div>
                 <ul id="sidebarnav">
@@ -276,23 +277,34 @@
     <!-- Page wrapper  -->
     <!-- ============================================================== -->
     <div class="page-wrapper">
-
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
         <!-- Container fluid  -->
         <div class="container-fluid">
-            <div class="row orders-bg">
-                <div class="col-md-12">
-                    <div class="row justify-content-center">
-                        <div class="col-md-8 mt-5 text-center">
-                            <h2>Looking for good stuff?</h2>
-                            <p class="mt-2 pt-1">You haven’t designed any products yet.</p>
-                            <div class="mt-4"><img class="img-fluid" src="./images/no-product.png" alt="order cart"> </div>
-                            <a class="btn nav-product-btn primary-button mt-4" href="product-list.html"><i class="mdi mdi-tag-outline"></i> Add a new Product</a>
-                        </div>
+            <div class="row mt-5">
+                <div class="col-md-12 text-center">
+                    <h2>Let’s Get Started</h2>
+                    <p>Drag and drop your design or upload below.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-3">
+                <div class="col-md-4 text-center">
+                    <div class="upload-img">
+                        <label for="basic-url"><img id="thumbnil" class="img-fluid" src="./images/attach.png" alt="image"/>
+                        <input type="file" class="form-control" id="basic-url" accept="image/*"  onchange="showMyImage(this)"><span class="primary-button mt-2">Upload your Design</span></label>
+                    </div>
+                    <div class="upinstructions">
+                        <p>PNG, JPG and SVG formats supported.</p>
+                        <p>For optimum printing quality, we recommend using vector graphics or images with a minimum resolution of 2400px(w) x 3300px(h) at 300dpi.</p>
+                        <p class="mt-4">Maximum upload file size is <strong>25MB.</strong></p>
                     </div>
                 </div>
             </div>
         </div>
         <!-- End Container fluid  -->
+
+        <!-- End footer -->
     </div>
     <!-- End Page wrapper  -->
 </div>
