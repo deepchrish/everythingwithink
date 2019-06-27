@@ -2265,3 +2265,141 @@ border-top: transparent;
     margin: 0;
     font-size: 12px;
 }
+.custom-tabs{
+    background: #293039;
+}
+.custom-order-tabs{
+    display: -webkit-box;
+    background: #29292F;
+    padding: 0;
+    border-radius: 4px;
+}
+.custom-tab-content{
+    width: 80%;
+    color: #FFFFFF;
+    padding: 20px 12px;
+}
+
+.nav-pills .custom-tab-links{
+    background: #293039;
+    border-radius: 0;
+    color: #FFFFFF;
+}
+.click-tabs{
+    text-align: center;
+    display: grid;
+}
+.click-tabs i{
+    font-size: 28px;
+    /* padding: 0; */
+    position: relative;
+    top: 0;
+    margin: 0 0 -8px 0;
+}
+.nav-pills .custom-tab-links.active{
+    background-color: #29292f;
+}
+.tab-breadcrumbs li a{
+    color: #FFFFFF;
+}
+.bredbread{
+    padding: 0;
+}
+.detail-tab{
+    line-height: 27px;
+}
+.detail-tab h2{
+    color: #FFFFFF;
+    line-height: 27px;
+}
+.detail-tab p{
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 0;
+}
+.review-tab-links{
+    clear: both;
+    float: left;
+    position: relative;
+    top: -6px;
+}
+.review-tab-links a{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+.hr-divider{
+    border-top: 1px solid #545454;
+    height: 0;
+    margin: 0.5rem 0;
+    overflow: hidden;
+}
+.stocked span{
+    font-size: 13px;
+    font-weight: 800;
+    color: #d8d8d8;
+    text-transform: uppercase;
+}
+.stocked h2{
+    color: #FFFFFF;
+}
+.stocked  p{
+    color: #FFFFFF;
+    margin: 0;
+}
+.stockavail P{
+    color: #FFFFFF;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 27px;
+}
+.stockavail P a{
+    color: #FFFFFF;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.selectors-btn {
+    margin: 10px auto;
+}
+.checkbox-btn{
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    padding: 8px 20px;
+    color: #FFFFFF;
+    font-weight: 700;
+    margin: 0 1px;
+}
+.checkbox-btn:not(:disabled):not(.disabled).active {
+    color: #000;
+    background-color: #FFFFFF;
+    border-color: #4e555b;
+}
+.nonfilled-btn{
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    padding: 10px 50px;
+    color: #FFFFFF;
+    font-weight: 700;
+    margin: 0 2px;
+    transition: all 0.3s ease-in-out;
+}
+.nonfilled-btn:hover{
+    color: #000000;
+    background: #FFFFFF;
+
+}
+.filled-button{
+    background: #FFFFFF;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    padding: 10px 50px;
+    color: #000000;
+    font-weight: 700;
+    margin: 0 2px;
+    transition: all 0.3s ease-in-out;
+}
+.filled-button:hover{
+    color: #000000;
+    background: #e0e0e0;
+}
