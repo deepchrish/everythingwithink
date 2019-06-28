@@ -292,6 +292,7 @@
                         <a class="nav-link custom-tab-links" id="template-tab" data-toggle="pill" href="#template" role="tab" aria-controls="v-pills-settings" aria-selected="false"><div class="click-tabs"><i class="mdi mdi-tshirt-crew"></i><span>Template</span></div></a>
                         <a class="nav-link custom-tab-links" id="note-tab" data-toggle="pill" href="#note" role="tab" aria-controls="v-pills-settings" aria-selected="false"><div class="click-tabs"><i class="mdi mdi-note-text"></i><span>Note</span></div></a>
                     </div>
+
                     <div class="tab-content custom-tab-content" id="v-pills-tabContent">
                         <div class="page-breadcrumb bredbread">
                             <div class="row">
@@ -395,24 +396,70 @@
                                     <h2>$16.95</h2>
                                 </div>
                             </div>
-                            <div class="row mt-4">
-                                <div class="col-md-12">
-                                    <a href="#" class="nonfilled-btn">Go Back</a>
-                                    <a href="#" class="filled-button">Continue</a>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="tab-pane fade" id="addtext" role="tabpanel" aria-labelledby="addtext-tab">2. Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.</div>
-                        <div class="tab-pane fade" id="pickcolor" role="tabpanel" aria-labelledby="pickcolor-tab">3. Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.</div>
+                        <div class="tab-pane fade" id="pickcolor" role="tabpanel" aria-labelledby="pickcolor-tab">
+                            <div class="test"></div>
+                            <div class="result result-color"></div>
+                        </div>
                         <div class="tab-pane fade" id="addart" role="tabpanel" aria-labelledby="addart-tab">4. Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.</div>
                         <div class="tab-pane fade" id="upload" role="tabpanel" aria-labelledby="upload-tab">5. Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.</div>
                         <div class="tab-pane fade" id="numbers" role="tabpanel" aria-labelledby="number-tab">6. Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.</div>
                         <div class="tab-pane fade" id="template" role="tabpanel" aria-labelledby="template-tab">7. Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.</div>
                         <div class="tab-pane fade" id="note" role="tabpanel" aria-labelledby="note-tab">8. Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.</div>
+                        <div class="row mt-4 functional-btns">
+                            <div class="col-md-12">
+                                <a href="#" class="nonfilled-btn">Go Back</a>
+                                <a href="#" class="filled-button">Continue</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-7">
-
+                    <!--<div>-->
+                        <!--<img class="img-fluid result resultimg" src="./images/header-baseimg.png">-->
+                    <!--</div>-->
+                    <!--Carousel Wrapper-->
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators thumb-img">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                                <img src="./images/img-front.png">
+                            </li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1">
+                                <img src="./images/img-back.png">
+                            </li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2">
+                                <img src="./images/img-right.png">
+                            </li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3">
+                                <img src="./images/img-left.png">
+                            </li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="img-fluid d-block w-100 result resultimg" src="./images/img-front.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid d-block w-100 result resultimg" src="./images/img-back.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid d-block w-100 result resultimg" src="./images/img-right.png" alt="Third slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid d-block w-100 result resultimg" src="./images/img-left.png" alt="fourth slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <!--/.Carousel Wrapper-->
                 </div>
             </div>
             <!-- ============================================================== -->
@@ -452,6 +499,98 @@
 <script src="assets/libs/flot/jquery.flot.crosshair.js"></script>
 <script src="assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
 <script src="dist/js/pages/chart/chart-page-init.js"></script>
+
+<script src='https://unpkg.com/xzoom/dist/xzoom.min.js'></script>
+<script src='https://hammerjs.github.io/dist/hammer.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js'></script>
+
+
+<!--colors palette Start-->
+<script>
+    $.fn.colorPalette = function (options) {
+        this.addClass("color-palette");
+        this.colors = {};
+        this.bgColor = options.bgColor || "#e8e8e8";
+        this.css({
+            "background-color": this.bgColor
+        });
+
+        var greys = ["#222222", "#333333", "#444444", "#666666", "#888888", "#aaaaaa", "#cccccc", "#eeeeee", "#ffffff"];
+
+        for (var i = 0; i < greys.length; i++) {
+            var grey = greys[i];
+            var colorSwatch = $("<div class='color-swatch' data-color='"+grey+"'></div>");
+            colorSwatch.css({"background-color": grey});
+
+            this.colors[grey] = colorSwatch;
+            this.append(colorSwatch);
+        }
+        this.append("<div class='clear'/>");
+        this.append("<div class='break'/>");
+
+        var primes = ["#990001", "#ff0000", "#ff9900", "#ffff00", "#00ffff", "#4a86e8", "#0000ff", "#9900ff", "#ff00ff"];
+
+        for (var i = 0; i < primes.length; i++) {
+            var prime = primes[i];
+            var colorSwatch = $("<div class='color-swatch' data-color='"+prime+"'></div>");
+            colorSwatch.css({"background-color": prime});
+
+            this.colors[prime] = colorSwatch;
+            this.append(colorSwatch);
+        }
+        this.append("<div class='clear'/>");
+        this.append("<div class='break'/>");
+
+        var otherColors = ["#E6B8AF", "#F4CCCC", "#FCE5CD", "#FFF2CC", "#D9EAD3", "#D0E0E3", "#C9DAF8", "#CFE2F3", "#D9D2E9", "#EAD1DC", "#DD7E6B", "#EA9999", "#F9CB9C", "#FFE599", "#B6D7A8", "#A2C4C9", "#A4C2F4", "#9FC5E8", "#B4A7D6", "#D5A6BD", "#CC4125", "#E06666", "#F6B26B", "#FFD966", "#93C47D", "#76A5AF", "#6D9EEB", "#6FA8DC", "#8E7CC3", "#C27BA0", "#A61C00", "#CC0000", "#E69138", "#F1C232", "#6AA84F", "#45818E", "#3C78D8", "#3D85C6", "#674EA7", "#A64D79", "#85200C", "#990000", "#B45F06", "#BF9000", "#38761D", "#134F5C", "#1155CC", "#0B5394", "#351C75", "#741B47", "#5B0F00", "#660000", "#783F04", "#7F6000", "#274E13", "#0C343D", "#1C4587", "#073763", "#20124D", "#4C1130"];
+
+        for (var i = 0; i < otherColors.length; i++) {
+            var otherColor = otherColors[i]
+            var colorSwatch = $("<div class='color-swatch' data-color='"+otherColor+"'></div>");
+            colorSwatch.css({"background-color": otherColor});
+
+            this.colors[otherColor] = colorSwatch;
+            this.append(colorSwatch);
+        }
+
+        for (var color in this.colors) {
+            if (color == "#900") { console.log("yup") }
+            var swatch = this.colors[color];
+
+            swatch.click(function () {
+                $(this).siblings().removeClass("selected");
+                $(this).addClass("selected");
+
+                var color = $(this).data("color");
+
+                options.colorChange(color);
+            });
+        }
+
+        this.append("<div class='clear'/>");
+
+        this.changeSelected = function (color) {
+            var swatch = this.colors[color];
+            if (swatch) {
+                swatch.siblings().removeClass("selected");
+                swatch.addClass("selected");
+                options.colorChange(color);
+            }
+        };
+
+        return this;
+    }
+
+    var colorPalette = $(".test").colorPalette({
+        colorChange: function (color) {
+            $(".result").css("background", color);
+        },
+        bgColor: "#fff"
+    });
+
+    colorPalette.changeSelected("#ff9900");
+
+    <!--colors palette END-->
+</script>
 
 
 </body>
