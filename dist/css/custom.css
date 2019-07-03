@@ -1381,7 +1381,7 @@ p{
 }
 
 .modal.right .modal-body {
-    padding: 15px 15px 80px;
+    padding: 0 15px 80px;
 }
 
 /*Right*/
@@ -1404,8 +1404,8 @@ p{
 }
 
 .modal-header {
-    border-bottom-color: #EEEEEE;
-    background-color: #FAFAFA;
+    border-bottom-color: #fff;
+    background-color: #fff;
 }
 .aff-works{
     padding: 0 0 0 30px;
@@ -2726,6 +2726,11 @@ border-top: transparent;
     width: 156px;
     height: 156px;
     object-fit: contain;
+}
+.del-btn{
+    font-size: 22px;
+    /*position: relative;*/
+    /*top: 30px;*/
 }
 /*.before-art{*/
     /*display: none;*/
