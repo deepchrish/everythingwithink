@@ -307,7 +307,7 @@
 
             <div class="row">
                 <div class="col-md-12 mt-2">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
                         <li class="nav-item createpro">
                             <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
                                aria-controls="profile" aria-selected="true">Profile </a>
@@ -808,13 +808,13 @@
                                                 <div class="form-row">
                                                     <div class="form-group col-md-12 col-sm-12 col-12">
                                                         <label>Recipe ID</label>
-                                                        <input type="text" class="form-control" id="foo" value="0496999e-dff4-4496-a2f8-7886e95fa0fd">
-                                                        <i class="mdi mdi-content-copy copyip-btn" data-clipboard-target="#foo"></i>
+                                                        <input type="text" class="form-control" id="apiKey1" value="0496999e-dff4-4496-a2f8-7886e95fa0fd">
+                                                        <i class="mdi mdi-content-copy copyip-btn"  onclick="copyAPIcontent('apiKey1')"></i>
                                                     </div>
                                                     <div class="form-group col-md-12 col-sm-12 col-12">
                                                         <label>Partner Billing Key</label>
-                                                        <input type="text" class="form-control" id="billingkey" value="0496999e-dff4-4496-a2f8-7886e95fa0fd">
-                                                        <i class="mdi mdi-content-copy copyip-btn" data-clipboard-target="#billingkey"></i>
+                                                        <input type="text" class="form-control" id="apiKey2" value="0496999e-dff4-4496-a2f8-7886e95fa0fd">
+                                                        <i class="mdi mdi-content-copy copyip-btn" onclick="copyAPIcontent('apiKey2')"></i>
                                                     </div>
                                                 </div>
                                             </form>
@@ -955,9 +955,8 @@
 <script src="assets/extra-libs/sparkline/sparkline.js"></script>
 <!--Check box-->
 <script src="dist/js/jquery-labelauty.js"></script>
-
 <!--inputfield copy clicpbord-->
-<script src="dist/js/clipboard.min.js"></script>
+<!--<script src="dist/js/clipboard.min.js"></script>-->
 <!--Wave Effects -->
 <script src="dist/js/waves.js"></script>
 <!--Menu sidebar -->

@@ -301,11 +301,11 @@
                         <li class="nav-item createpro dropdown">
                             <a class="nav-link " id="accessories-tab" data-toggle="tab" href="#accessories"
                                role="tab" aria-controls="accessories" aria-selected="false" onclick="setdropdown('2');">Accessories</a>
-                            <div class="dropdown-menu menus myaccessories" aria-labelledby="accessories-tab">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
+                            <!--<div class="dropdown-menu menus myaccessories" aria-labelledby="accessories-tab">-->
+                                <!--<a class="dropdown-item" href="#">Action</a>-->
+                                <!--<a class="dropdown-item" href="#">Another action</a>-->
+                                <!--<a class="dropdown-item" href="#">Something else here</a>-->
+                            <!--</div>-->
                         </li>
                         <li class="nav-item createpro">
                             <a class="nav-link" id="homeliving-tab" data-toggle="tab" href="#homeliving"
@@ -608,6 +608,13 @@
 
                         <div class="tab-pane fade" id="accessories" role="tabpanel"
                              aria-labelledby="accessories-tab">
+                            <div class="drop-menu-test">
+                                <ul>
+                                    <li><a href="#">All</a></li>
+                                    <li><a href="#">Abc</a></li>
+                                    <li><a href="#">def</a></li>
+                                </ul>
+                            </div>
                             22222222222
                         </div>
 
@@ -868,13 +875,13 @@ Heather CVC/Blend Colors - 52% Airlume combed and ring-spun cotton, 48% poly</sp
 
 
 <script>
-    function setdropdown(a) {
-        // alert()
-        if(a==2){
-            $('.myaccessories').css('display','block');
-        }
-
-    }
+    // function setdropdown(a) {
+    //     // alert()
+    //     if(a==2){
+    //         $('.myaccessories').css('display','block');
+    //     }
+    //
+    // }
 </script>
 </body>
 
