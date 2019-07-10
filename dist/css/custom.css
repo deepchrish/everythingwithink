@@ -1935,7 +1935,7 @@ p{
 }
 
 .nav-tabs .warehousepricing-nav{
-    width: 25%;
+    /*width: 25%;*/
     text-align: center;
 }
 .nav-tabs .warehousepricing-nav a{
@@ -2247,7 +2247,7 @@ border-top: transparent;
     border: 1px solid #c3c3c3;
 }
 .orderdetails{
-    background: #d8d8d8;
+    background: #E2E5ED;
     margin: 0;
     padding: 5px 0;
     text-align: center;
@@ -2973,7 +2973,7 @@ border-top: transparent;
     border: 1px dashed #b5b5b5;
     padding: 0;
     border-radius: 8px;
-    filter: invert(100%);
+    /*filter: invert(100%);*/
 }
 .upload-design label input {
     display: none;
@@ -3125,16 +3125,24 @@ border-top: transparent;
     width: 156px;
     height: 156px;
     object-fit: contain;
-    border: 1px solid #b1b1b1;
+    border: 1px solid #efefef;
 }
 .del-btn{
     font-size: 22px;
     /*position: relative;*/
     /*top: 30px;*/
 }
-/*.before-art{*/
-    /*display: none;*/
-/*}*/
+.before-art{
+    display: none;
+}
+.ds-goback a{
+    color: #000000;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.ds-goback a i{
+    font-size: 18px;
+}
 
 /*form styles*/
 
