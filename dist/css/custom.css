@@ -2836,38 +2836,34 @@ border-top: transparent;
     padding: 44px 0;
 }
 .video-button a{
-    /*border: 1px solid #000;*/
-    /*border-radius: 4px;*/
-    /*color: #000000;*/
+    border: 1px solid #000;
+    border-radius: 4px;
+    color: #000000;
     font-weight: 700;
     display: inline-block;
     position: relative;
     background-color: #fff;
-    background-image: linear-gradient( /* chrome */ hsla(0, 0%, 100%, 0.6), hsla(0, 0%, 100%, 0) 50%, hsla(0, 0%, 100%, 0.3) 50%, hsla(0, 0%, 100%, 0.2));
-    color: #000000;
+    /*background-image: linear-gradient( !* chrome *! hsla(0, 0%, 100%, 0.6), hsla(0, 0%, 100%, 0) 50%, hsla(0, 0%, 100%, 0.3) 50%, hsla(0, 0%, 100%, 0.2));*/
+    /*color: #000000;*/
     padding: 5px 30px;
-    text-shadow:
-            0 0 15px hsla(0, 0%, 100%, 1), /* bloom */
-            0 2px 4px hsla(0, 0%, 0%, 0.7); /* drop shadow */
+    /*text-shadow:*/
+            /*0 0 15px hsla(0, 0%, 100%, 1), !* bloom *!*/
+            /*0 2px 4px hsla(0, 0%, 0%, 0.7); !* drop shadow *!*/
     /*border: none;*/
-    border: 1px solid #000;
-    border-radius: 5px;
-    box-shadow:
-            inset 0 -5px 15px hsla(0, 0%, 0%, 0.2), /* top light */
-            inset 0 5px 15px hsla(0, 0%, 50%, 0.2), /* bottom shadow */
-                /* multiple light sources yall */
-            -8px 8px 5px hsla(0, 0%, 0%, 0.1), /* drop shadow 1 */
-            5px 18px 10px hsla(0, 0%, 0%, 0); /* drop shadow 2 */
+    /*border: 1px solid #000;*/
+    /*border-radius: 5px;*/
+    /*box-shadow:*/
+            /*inset 0 -5px 15px hsla(0, 0%, 0%, 0.2), !* top light *!*/
+            /*inset 0 5px 15px hsla(0, 0%, 50%, 0.2), !* bottom shadow *!*/
+                /*!* multiple light sources yall *!*/
+            /*-8px 8px 5px hsla(0, 0%, 0%, 0.1), !* drop shadow 1 *!*/
+            /*5px 18px 10px hsla(0, 0%, 0%, 0); !* drop shadow 2 *!*/
     cursor: pointer;
-    transition: transform 0.1s, box-shadow 0.1s;
+    transition: all .3s ease-in-out;
 }
 .video-button a:hover{
-    box-shadow:
-            inset 0 -5px 20px hsla(0, 0%, 0%, 0.4), /* top light */
-            inset 0 5px 20px hsla(0, 0%, 50%, 0.4), /* bottom shadow */
-                /* multiple light sources yall */
-            -8px 8px 5px hsla(0, 0%, 0%, 0.1), /* drop shadow 1 */
-            5px 18px 10px hsla(0, 0%, 0%, 0); /* drop shadow 2 */
+    background: #111111;
+    color: #FFFFFF;
 }
 
 .upload-design{
@@ -3569,4 +3565,142 @@ span.round-tab:hover {
     color: #2B44FF;
     font-weight: 700;
     font-style: italic;
+}
+.join-workspace{
+    background: url("../../images/join-workspace.png") center no-repeat;
+    height: 100vh;
+}
+.ws-join-box{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100vh;
+}
+.ws-white-box{
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
+    margin: 0 auto;
+    padding: 50px 20px;
+    background: #FFFFFF;
+}
+.ws-invite-details{
+    margin: 20px 0;
+    line-height: 27px;
+}
+.ws-invite-details span{
+    font-size: 15px;
+    color: #8e8e8e;
+    font-weight: 600;
+}
+.ws-invite-details p{
+    font-weight: 700;
+}
+.ws-invite-details  .form-group{
+    margin: 0;
+}
+.ws-invite-details  .form-group label{
+    font-size: 15px;
+    color: #8e8e8e;
+    font-weight: 600;
+}
+.ws-invite-details .form-group input{
+    color: #111111;
+}
+.ws-invite-details .form-group a{
+    color: #0094FF;
+    text-decoration: underline;
+}
+.ws-invite-button{
+    line-height: 27px;
+    background: #2B44FF;
+    color: #fff;
+    width: 60%;
+    padding: 5px 20px;
+    transition: all .3s ease-in-out;
+}
+.ws-invite-button:hover{
+    background: #1c30c3;
+    color: #FFFFFF;
+}
+.ws-invite-details p a{
+    color: #0094FF;
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 10px auto;
+}
+.ws-invite-joining-pic{
+    margin: 0 auto;
+}
+
+.ws-invite-joining-pic img{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border: 1px solid #e9ecef;
+    /* padding: 5px; */
+    border-radius: 100%;
+    margin: 0 auto;
+}
+.ws-invite-joining-pic label{
+    display: inline-grid;
+}
+.ws-invite-joining-pic input{
+    display: none;
+}
+.ws-invite-joining-pic label span{
+    text-decoration: underline;
+    color: #0094FF;
+}
+.custom-control-label:before{
+    background-color: #ffffff;
+    border: 1px solid #e2e2e2;
+}
+.teamrole-radio-btn{
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 8px 20px;
+    color: #000000;
+    font-weight: 700;
+    margin: 0 1px;
+    background: #cacaca;
+}
+
+.teamrole-radio-btn:not(:disabled):not(.disabled).active{
+    color: #fff;
+    background-color: #2b44ff;
+    border-color: #2b44ff;
+}
+.ws-team-role{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 1px solid #e2e2e2;
+}
+.ws-teams-set{
+    color: #111111;
+    font-size: 20px;
+    font-weight: 700;
+}
+.ws-team-role p{
+    margin: 0;
+}
+.ws-team-role p span{
+    color: #111111;
+    font-weight: 700;
+    margin-right: 5px;
+}
+.radio-btn-group{
+    text-align: right;
 }
