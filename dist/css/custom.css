@@ -182,9 +182,9 @@ p{
     border: 1px solid #2B44FF;
     color: #ffffff;
     border-radius: 4px;
-    -webkit-box-shadow: 0 4px 20px -5px rgba(43,68,255,1);
-    -moz-box-shadow: 0 4px 20px -5px rgba(43,68,255,1);
-    box-shadow: 0 4px 20px -5px rgba(43,68,255,1);
+    -webkit-box-shadow: 0 4px 20px -5px rgba(43,68,255,0.4);
+    -moz-box-shadow: 0 4px 20px -5px rgba(43,68,255,0.4);
+    box-shadow: 0 4px 20px -5px rgba(43,68,255,0.4);
     transition: all .3s ease-in-out;
     padding: 5px 20px;
 }
@@ -192,30 +192,30 @@ p{
 .primary-button:hover{
     color: #FFFFFF;
     background: #1b33e2;
-    -webkit-box-shadow: 0 4px 38px -5px rgba(43,68,255,1);
-    -moz-box-shadow: 0 4px 38px -5px rgba(43,68,255,1);
-    box-shadow: 0 4px 38px -5px rgba(43,68,255,1);
+    -webkit-box-shadow: 0 4px 38px -5px rgba(43,68,255,0.2);
+    -moz-box-shadow: 0 4px 38px -5px rgba(43,68,255,0.2);
+    box-shadow: 0 4px 38px -5px rgba(43,68,255,0.2);
 }
 .secendary-button{
     /*font-family: 'Avenir Next';*/
     font-family: 'Nunito Sans', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     background: #fff;
     border: 1px solid #2B44FF;
     color: #2B44FF;
     border-radius: 4px;
-    -webkit-box-shadow: 0 4px 20px -5px rgba(43,68,255,0.2);
-    -moz-box-shadow: 0 4px 20px -5px rgba(43,68,255,0.2);
-    box-shadow: 0 4px 20px -5px rgba(43,68,255,0.2);
+    /*-webkit-box-shadow: 0 4px 20px -5px rgba(43,68,255,0.2);*/
+    /*-moz-box-shadow: 0 4px 20px -5px rgba(43,68,255,0.2);*/
+    /*box-shadow: 0 4px 20px -5px rgba(43,68,255,0.2);*/
     transition: all .3s ease-in-out;
     padding: 5px 20px;
 }
 .secendary-button:hover{
     color: #2B44FF;
-    /*background: #e4e7ff;*/
-    -webkit-box-shadow: 0 4px 20px -5px rgba(43,68,255,0.5);
-    -moz-box-shadow: 0 4px 20px -5px rgba(43,68,255,0.5);
-    box-shadow: 0 4px 20px -5px rgba(43,68,255,0.5);
+    background: #edefff;
+    /*-webkit-box-shadow: 0 4px 20px -5px rgba(43,68,255,0.5);*/
+    /*-moz-box-shadow: 0 4px 20px -5px rgba(43,68,255,0.5);*/
+    /*box-shadow: 0 4px 20px -5px rgba(43,68,255,0.5);*/
 }
 .sidebar-nav ul .sidebar-item.selected>.sidebar-link i{
     color: #2B44FF;
@@ -1121,6 +1121,7 @@ p{
     white-space: nowrap;
     font-size: 12px;
     text-transform: uppercase;
+    font-weight: 700;
 }
 .inactive-status{
     background: #ffdee7;
@@ -1131,6 +1132,7 @@ p{
     white-space: nowrap;
     font-size: 12px;
     text-transform: uppercase;
+    font-weight: 700;
 }
 .workspacepro{
     display: inline-block;
@@ -3551,4 +3553,20 @@ span.round-tab:hover {
     width: 36px;
     height: 36px;
     object-fit: contain;
+}
+.ws-store-teamlist{
+    position: relative;
+    left: 25%;
+}
+.invite-frnd{
+    border: 1px solid #e9ecef;
+    border-radius: 2px;
+}
+.invite-instruct{
+    color: #8e8e8e;
+}
+.invite-instruct span{
+    color: #2B44FF;
+    font-weight: 700;
+    font-style: italic;
 }
