@@ -824,7 +824,7 @@ p{
 .product-card h4{
     /*font-family: "Avenir Next";*/
     font-family: 'Nunito Sans', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     color: #000000;
     white-space: nowrap;
@@ -839,7 +839,7 @@ p{
     float: none;
     width: 100%;
     background-color: #fff;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
@@ -875,8 +875,25 @@ p{
 .item.list-group-item .caption
 {
     float: left;
-    width: 75%;
-    margin: 20px 0;
+    width: 80%;
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    vertical-align: middle;
+}
+.item.list-group-item .caption h4{
+    margin: 0;
+    width: 40%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.item.list-group-item .caption span{
+    width: 30%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .item.list-group-item:before, .item.list-group-item:after
@@ -4070,4 +4087,9 @@ h4.panel-title {
     font-size: 14px;
     color: #777777;
     font-weight: 600;
+}
+.ds-pro-wanders{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
 }

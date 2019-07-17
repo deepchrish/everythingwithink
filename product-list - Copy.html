@@ -121,7 +121,8 @@
                 <ul class="navbar-nav float-right">
                     <!-- ============================================================== -->
                     <li>
-                        <a class="btn nav-product-btn primary-button" href="create-a-product.html"><i class="mdi mdi-tag-outline"></i> Add a new Product</a>
+                        <a class="btn nav-product-btn primary-button" href="create-a-product.html"><i class="mdi mdi-tag-outline"></i> Add a
+                            new Product</a>
                     </li>
                     <!-- ============================================================== -->
                     <li class="nav-item dropdown">
@@ -282,151 +283,281 @@
 
         <!-- Container fluid  -->
         <div class="container-fluid mt-5 pt-5">
-            <div class="row justify-content-center">
-                <div class="col-md-8 mt-5 text-center">
-                    <h2>Product successfully created!</h2>
-                    <p class="mt-2 pt-1 ds-final-product">Do you want to <span>Sync</span> this product to your stores right now?</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="table-responsive">
-                        <table class="table ds-pro-created text-center">
-                            <thead>
-                            <tr>
-                                <th>ORDER DETAILS</th>
-                                <th>PRINTABLE FILE</th>
-                                <th>WORKSPACE</th>
-                                <th>CREATED BY</th>
-                                <th>RETAIL PRICE</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>
-                                    <div class="ds-final-sync-pro">
-                                        <img class="img-fluid" src="./images/header-base.png">
-                                    </div>
-                                    <div class="ds-final-sync-info">
-                                        <h6 title="Croco Rock Travel Mug">Croco Rock Travel Mug</h6>
-                                        <span>Size: Large</span>
-                                        <span>Color: Black, Green</span>
-                                        <span>SKU: EWI-6902</span>
-                                    </div>
-                                </td>
-                                <td align="center">
-                                    <div class="ds-final-art-down">
-                                        <img class="img-fluid" src="./images/dino.png">
-                                    </div>
-                                    <span class="ds-download-art"><a href="#"><i class="mdi mdi-download"></i> Download Artwork</a></span>
-                                </td>
-                                <td><h6>PMGOA</h6></td>
-                                <td><h6>Akash Pathak</h6><span>July 28, 2019</span></td>
-                                <td>
-                                    <form class="form-inline float-right ds-price-form">
-                                        <div class="input-group">
-                                            <label for="currency"></label>
-                                            <select class="ds-select-crunncy" id="currency">
-                                                <option selected>USD</option>
-                                                <option>CAD</option>
-                                                <option>AUS</option>
-                                                <option>INR</option>
-                                            </select>
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text ds-input-text" id="basic-addon1">$</span>
-                                            </div>
-                                            <input type="text" class="ds-price-input" placeholder="16.66">
-                                        </div>
-                                        <small>Pick a Retail Price <span class="remove-red">*</span></small>
-                                    </form>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
+            <div class="row border-bottom">
+                <div class="col-md-12 ml-4">
+                    <h1>Products</h1>
                 </div>
             </div>
             <!-- ============================================================== -->
             <div class="row">
-                <div class="col-md-12 text-center">
-                    <div>
-                        <a href="#" class="btn secendary-button mr-3" data-toggle="modal" data-target="#pickstore">Pick Stores</a><a href="#" class="btn primary-button">Sync to all Stores</a>
+                <div class="col-md-12 mt-2">
+                    <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                        <li class="nav-item procustom">
+                            <a class="nav-link active" id="allitem-tab" data-toggle="tab" href="#allitem" role="tab"
+                               aria-controls="allitem" aria-selected="true">All </a>
+                        </li>
+                        <li class="nav-item procustom">
+                            <a class="nav-link" id="fulfilled-tab" data-toggle="tab" href="#fulfilled"
+                               role="tab" aria-controls="fulfilled" aria-selected="false">Shopify</a>
+                        </li>
+                        <li class="nav-item procustom">
+                            <a class="nav-link" id="returned-tab" data-toggle="tab" href="#returned"
+                               role="tab" aria-controls="returned" aria-selected="false">ETSY</a>
+                        </li>
+                        <li class="nav-item procustom">
+                            <a class="nav-link" id="cancelled-tab" data-toggle="tab" href="#cancelled"
+                               role="tab" aria-controls="cancelled" aria-selected="false">Amazon</a>
+                        </li>
+                        <li class="nav-item procustom">
+                            <a class="nav-link" id="waiting-tab" data-toggle="tab" href="#waiting"
+                               role="tab" aria-controls="waiting" aria-selected="false">Woo Commerce</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="allitem" role="tabpanel"
+                             aria-labelledby="allitem-tab">
+                            <div class="row mt-4">
+                                <div class="col-md-3 ">
+                                    <div class="form-group all-select">
+                                        <input type="checkbox" name="selected" class="selectall " id="all"/> <label for='all'>All</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-9 ">
+                                    <div class="form-group float-right orders-list-form">
+                                        <select name="" id="" class="form-control">
+                                            <option selected>All Orders</option>
+                                            <option value="1">Fulfilled</option>
+                                            <option value="2">Returned</option>
+                                            <option value="3">Cancelled</option>
+                                            <option value="4">Waiting to fulfill</option>
+                                            <option value="5">Being Fulfilled</option>
+                                            <option value="6">Cancelled</option>
+                                        </select>
+                                        <div class="pull-right mr-2">
+                                            <div class="btn-group">
+                                                <button class="btn btn-light active" id="grid">
+                                                    <i class="mdi mdi-view-grid"></i>
+                                                </button>
+                                                <button class="btn btn-secondary " id="list">
+                                                    <i class="mdi mdi-view-list"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-magnify"></i></span>
+                                            </div>
+                                            <input type="search" class="form-control" placeholder="Search Order" aria-label="Search">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="products" class="row view-group mt-4">
+                                <div class="item col-md-3 col-lg-3 form-group">
+                                    <input type="checkbox" name="selected[]" id="box_1" value="1"
+                                           class="form-control romiwills checkbox-custom"/>
+                                    <label for="box_1" class="custom-lable">
+                                        <div class="thumbnail card">
+                                            <div class="img-event">
+                                                <img class="group list-group-image img-fluid"
+                                                     src="./images/demo-product-3.png" alt=""/>
+                                            </div>
+                                            <div class="dropdown-divider"></div>
+                                            <div class="caption product-card">
+                                                <h4 class="group inner list-group-item-heading">
+                                                    Avengers Endgame: 3000
+                                                </h4>
+                                                <span>Workspace: PMGOA</span>
+                                                <div class="row mt-3">
+                                                    <div class="col-xs-12 col-md-10">
+                                                        <ul class="total-product mt-1">
+                                                            <li><img class="img-fluid" src="./images/3-woo.png" title="Woo Commerce"> </li>
+                                                            <li><img class="img-fluid" src="./images/4-ink.png" title="Everything With ink"> </li>
+                                                            <li><img class="img-fluid" src="./images/etsy-logo.png" title="ETSY"> </li>
+                                                            <!--<li>+40 </li>-->
+                                                        </ul>
+                                                        <a class="viewall mt-1" href="#" data-toggle="tooltip" data-html="true" title="" data-original-title="Amazon</br>Shopify">+2 more</a>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-2">
+                                                        <div class="dropdown lead float-right product-drop">
+                                                            <i class="mdi mdi-dots-vertical" id="dropdownMenuButton"
+                                                               data-toggle="dropdown" aria-haspopup="true"
+                                                               aria-expanded="false"></i>
+                                                            <div class="dropdown-menu"
+                                                                 aria-labelledby="dropdownMenuButton">
+                                                                <a class="dropdown-item" href="#">Action</a>
+                                                                <a class="dropdown-item" href="#">Another action</a>
+                                                                <a class="dropdown-item" href="#">Something else
+                                                                    here</a>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item col-md-3 col-lg-3 form-group">
+                                    <input type="checkbox" name="selected[]" id="box_2" value="2"
+                                           class="form-control romiwills checkbox-custom"/>
+                                    <label for="box_2" class="custom-lable">
+                                        <div class="thumbnail card">
+                                            <div class="img-event">
+                                                <img class="group list-group-image img-fluid"
+                                                     src="./images/demo-product-1.png" alt=""/>
+                                            </div>
+                                            <div class="dropdown-divider"></div>
+                                            <div class="caption product-card">
+                                                <h4 class="group inner list-group-item-heading">
+                                                    Captain America: Logo
+                                                </h4>
+                                                <div class="row mt-3">
+                                                    <div class="col-xs-12 col-md-6">
+                                                        <a class="btn green green-text" href="#">Amazon</a>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-6">
+                                                        <div class="dropdown lead float-right product-drop">
+                                                            <i class="mdi mdi-dots-vertical" id="dropdownMenuButton"
+                                                               data-toggle="dropdown" aria-haspopup="true"
+                                                               aria-expanded="false"></i>
+                                                            <div class="dropdown-menu"
+                                                                 aria-labelledby="dropdownMenuButton">
+                                                                <a class="dropdown-item" href="#">Action</a>
+                                                                <a class="dropdown-item" href="#">Another action</a>
+                                                                <a class="dropdown-item" href="#">Something else
+                                                                    here</a>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+
+                                </div>
+
+                                <div class="item col-md-3 col-lg-3 form-group">
+                                    <input type="checkbox" name="selected[]" id="box_3" value="3"
+                                           class="form-control romiwills checkbox-custom"/>
+                                    <label for="box_3" class="custom-lable">
+                                        <div class="thumbnail card">
+                                            <div class="img-event">
+                                                <img class="group list-group-image img-fluid"
+                                                     src="./images/demo-product-2.png" alt=""/>
+                                            </div>
+                                            <div class="dropdown-divider"></div>
+                                            <div class="caption product-card">
+                                                <h4 class="group inner list-group-item-heading">
+                                                    Marvel: Logo
+                                                </h4>
+                                                <div class="row mt-3">
+                                                    <div class="col-xs-12 col-md-6">
+                                                        <a class="btn green green-text" href="#">ETSY</a>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-6">
+                                                        <div class="dropdown lead float-right product-drop">
+                                                            <i class="mdi mdi-dots-vertical" id="dropdownMenuButton"
+                                                               data-toggle="dropdown" aria-haspopup="true"
+                                                               aria-expanded="false"></i>
+                                                            <div class="dropdown-menu"
+                                                                 aria-labelledby="dropdownMenuButton">
+                                                                <a class="dropdown-item" href="#">Action</a>
+                                                                <a class="dropdown-item" href="#">Another action</a>
+                                                                <a class="dropdown-item" href="#">Something else
+                                                                    here</a>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+
+                                </div>
+
+                                <div class="item col-md-3 col-lg-3 form-group">
+                                    <input type="checkbox" name="sele cted[]" id="box_4" value="4"
+                                           class="form-control romiwills checkbox-custom"/>
+                                    <label for="box_4" class="custom-lable">
+                                        <div class="thumbnail card">
+                                            <div class="img-event">
+                                                <img class="group list-group-image img-fluid"
+                                                     src="./images/demo-product-4.png" alt=""/>
+                                            </div>
+                                            <div class="dropdown-divider"></div>
+                                            <div class="caption product-card">
+                                                <h4 class="group inner list-group-item-heading">
+                                                    Spiderman: Homecoming
+                                                </h4>
+                                                <div class="row mt-3">
+                                                    <div class="col-xs-12 col-md-6">
+                                                        <a class="btn red" href="#">Unpublished</a>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-6">
+                                                        <div class="dropdown lead float-right product-drop">
+                                                            <i class="mdi mdi-dots-vertical" id="dropdownMenuButton"
+                                                               data-toggle="dropdown" aria-haspopup="true"
+                                                               aria-expanded="false"></i>
+                                                            <div class="dropdown-menu"
+                                                                 aria-labelledby="dropdownMenuButton">
+                                                                <a class="dropdown-item" href="#">Action</a>
+                                                                <a class="dropdown-item" href="#">Another action</a>
+                                                                <a class="dropdown-item" href="#">Something else
+                                                                    here</a>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="tab-pane fade" id="fulfilled" role="tabpanel"
+                             aria-labelledby="fulfilled-tab">
+                            22222222222
+                        </div>
+
+                        <div class="tab-pane fade" id="returned" role="tabpanel"
+                             aria-labelledby="returned-tab">
+                            3333333333
+                        </div>
+
+                        <div class="tab-pane fade" id="cancelled" role="tabpanel"
+                             aria-labelledby="cancelled-tab">
+                            44444444
+                        </div>
+
+                        <div class="tab-pane fade" id="waiting" role="tabpanel"
+                             aria-labelledby="waiting-tab">
+                            5555555
+                        </div>
+
                     </div>
-                    <div class="mt-3">
-                        <a href="#" class="ds-bl-link">Skip this, I’ll Sync this product later</a>
-                    </div>
+
                 </div>
+
             </div>
-
-            <!-- Modal Pick stores -->
-            <div class="modal right fade" id="pickstore" tabindex="-1" role="dialog" aria-labelledby="pickstore">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        </div>
-
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <h4 class="ds-store-pick-head">NOW SYNCING</h4>
-                                </div>
-                            </div>
-                            <div class="row mt-3">
-                                <div class="col-md-4">
-                                    <div class="ds-final-store-pick">
-                                        <img class="img-fluid" src="./images/simson.png">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="ds-final-store-pick-info">
-                                        <h6>Champion Fannypack bag</h6>
-                                        <p>Size: Large</p>
-                                        <p>Color: Black, Green</p>
-                                        <p>SKU: EWI-6902</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="dropdown-divider"></div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div>
-                                        <p>Pick stores to sync this product.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-8 billing-page">
-                                    <div class="">
-                                        <h4 class="ds-store-pick-head">CONNECTED STORES TO PMGOA</h4>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 text-right">
-                                    <a href="#" class="btn secendary-button">Sync all</a>
-                                </div>
-                            </div>
-                            <div class="dropdown-divider"></div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="d-flex bd-highlight billing-page">
-                                        <div class="p-2 bd-highlight"><img class="img-fluid ds-pro-wanders" src="./images/2-shopify.png"></div>
-                                        <div class="p-2 w-100 bd-highlight">Shopify</div>
-                                        <div class="p-2 flex-shrink-1 bd-highlight"><a href="#" class="btn btn-success">Synced</a> </div>
-                                    </div>
-                                    <div class="d-flex bd-highlight billing-page">
-                                        <div class="p-2 bd-highlight"><img class="img-fluid ds-pro-wanders" src="./images/etsy.png"></div>
-                                        <div class="p-2 w-100 bd-highlight">ETSY</div>
-                                        <div class="p-2 flex-shrink-1 bd-highlight"><a href="#" class="btn btn-light">Sync</a> </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- modal-content -->
-                </div><!-- modal-dialog -->
-            </div><!-- modal -->
 
         </div>
         <!-- End Container fluid  -->
+
+        <!-- footer START-->
+
+        <!--<footer class="footer text-center">-->
+        <!--All Rights Reserved by Matrix-admin. Designed and Developed by <a href="https://wrappixel.com">WrapPixel</a>.-->
+        <!--</footer>-->
 
         <!-- End footer -->
     </div>

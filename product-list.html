@@ -318,13 +318,57 @@
                         <div class="tab-pane fade show active" id="allitem" role="tabpanel"
                              aria-labelledby="allitem-tab">
                             <div class="row mt-4">
-                                <div class="col-md-3 ">
+                                <div class="col-md-2 ">
                                     <div class="form-group all-select">
                                         <input type="checkbox" name="selected" class="selectall " id="all"/> <label for='all'>All</label>
                                     </div>
                                 </div>
-                                <div class="col-md-9 ">
-                                    <div class="form-group float-right orders-list-form">
+                                <div class="col-md-10 ">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <select class="form-control">
+                                                    <option selected>All Orders</option>
+                                                    <option value="1">Fulfilled</option>
+                                                    <option value="2">Returned</option>
+                                                    <option value="3">Cancelled</option>
+                                                    <option value="4">Waiting to fulfill</option>
+                                                    <option value="5">Being Fulfilled</option>
+                                                    <option value="6">Cancelled</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <select class="form-control">
+                                                    <option selected>All Stores</option>
+                                                    <option value="1">Fulfilled</option>
+                                                    <option value="2">Returned</option>
+                                                    <option value="3">Cancelled</option>
+                                                    <option value="4">Waiting to fulfill</option>
+                                                    <option value="5">Being Fulfilled</option>
+                                                    <option value="6">Cancelled</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-magnify"></i></span>
+                                                    </div>
+                                                    <input type="search" class="form-control" placeholder="Search Order" aria-label="Search">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div>
+                                                    <div class="btn-group">
+                                                        <button class="btn btn-light active" id="grid">
+                                                            <i class="mdi mdi-view-grid"></i>
+                                                        </button>
+                                                        <button class="btn btn-secondary " id="list">
+                                                            <i class="mdi mdi-view-list"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <div class="form-group orders-list-form">
                                         <select name="" id="" class="form-control">
                                             <option selected>All Orders</option>
                                             <option value="1">Fulfilled</option>
@@ -334,22 +378,6 @@
                                             <option value="5">Being Fulfilled</option>
                                             <option value="6">Cancelled</option>
                                         </select>
-                                        <div class="pull-right mr-2">
-                                            <div class="btn-group">
-                                                <button class="btn btn-light active" id="grid">
-                                                    <i class="mdi mdi-view-grid"></i>
-                                                </button>
-                                                <button class="btn btn-secondary " id="list">
-                                                    <i class="mdi mdi-view-list"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-magnify"></i></span>
-                                            </div>
-                                            <input type="search" class="form-control" placeholder="Search Order" aria-label="Search">
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -369,11 +397,18 @@
                                                 <h4 class="group inner list-group-item-heading">
                                                     Avengers Endgame: 3000
                                                 </h4>
-                                                <div class="row mt-3">
-                                                    <div class="col-xs-12 col-md-6">
-                                                        <a class="btn red" href="#">Unpublished</a>
+                                                <span>PMGOA</span>
+                                                <div class="row ">
+                                                    <div class="col-xs-12 col-md-10">
+                                                        <ul class="total-product mt-1">
+                                                            <li><img class="img-fluid" src="./images/3-woo.png" title="Woo Commerce"> </li>
+                                                            <li><img class="img-fluid" src="./images/4-ink.png" title="Everything With ink"> </li>
+                                                            <li><img class="img-fluid" src="./images/etsy-logo.png" title="ETSY"> </li>
+                                                            <!--<li>+40 </li>-->
+                                                        </ul>
+                                                        <a class="viewall" href="#" data-toggle="tooltip" data-html="true" title="" data-original-title="Amazon</br>Shopify">+2 more</a>
                                                     </div>
-                                                    <div class="col-xs-12 col-md-6">
+                                                    <div class="col-xs-12 col-md-2">
                                                         <div class="dropdown lead float-right product-drop">
                                                             <i class="mdi mdi-dots-vertical" id="dropdownMenuButton"
                                                                data-toggle="dropdown" aria-haspopup="true"
@@ -392,8 +427,8 @@
                                             </div>
                                         </div>
                                     </label>
-
                                 </div>
+
                                 <div class="item col-md-3 col-lg-3 form-group">
                                     <input type="checkbox" name="selected[]" id="box_2" value="2"
                                            class="form-control romiwills checkbox-custom"/>
@@ -408,11 +443,18 @@
                                                 <h4 class="group inner list-group-item-heading">
                                                     Captain America: Logo
                                                 </h4>
-                                                <div class="row mt-3">
-                                                    <div class="col-xs-12 col-md-6">
-                                                        <a class="btn green green-text" href="#">Amazon</a>
+                                                <span>PMGOA</span>
+                                                <div class="row ">
+                                                    <div class="col-xs-12 col-md-10">
+                                                        <ul class="total-product mt-1">
+                                                            <li><img class="img-fluid" src="./images/3-woo.png" title="Woo Commerce"> </li>
+                                                            <li><img class="img-fluid" src="./images/4-ink.png" title="Everything With ink"> </li>
+                                                            <li><img class="img-fluid" src="./images/etsy-logo.png" title="ETSY"> </li>
+                                                            <!--<li>+40 </li>-->
+                                                        </ul>
+                                                        <a class="viewall" href="#" data-toggle="tooltip" data-html="true" title="" data-original-title="Amazon</br>Shopify">+2 more</a>
                                                     </div>
-                                                    <div class="col-xs-12 col-md-6">
+                                                    <div class="col-xs-12 col-md-2">
                                                         <div class="dropdown lead float-right product-drop">
                                                             <i class="mdi mdi-dots-vertical" id="dropdownMenuButton"
                                                                data-toggle="dropdown" aria-haspopup="true"
@@ -431,8 +473,8 @@
                                             </div>
                                         </div>
                                     </label>
-
                                 </div>
+
                                 <div class="item col-md-3 col-lg-3 form-group">
                                     <input type="checkbox" name="selected[]" id="box_3" value="3"
                                            class="form-control romiwills checkbox-custom"/>
@@ -447,11 +489,18 @@
                                                 <h4 class="group inner list-group-item-heading">
                                                     Marvel: Logo
                                                 </h4>
-                                                <div class="row mt-3">
-                                                    <div class="col-xs-12 col-md-6">
-                                                        <a class="btn green green-text" href="#">ETSY</a>
+                                                <span>PMGOA</span>
+                                                <div class="row ">
+                                                    <div class="col-xs-12 col-md-10">
+                                                        <ul class="total-product mt-1">
+                                                            <li><img class="img-fluid" src="./images/3-woo.png" title="Woo Commerce"> </li>
+                                                            <li><img class="img-fluid" src="./images/4-ink.png" title="Everything With ink"> </li>
+                                                            <li><img class="img-fluid" src="./images/etsy-logo.png" title="ETSY"> </li>
+                                                            <!--<li>+40 </li>-->
+                                                        </ul>
+                                                        <a class="viewall" href="#" data-toggle="tooltip" data-html="true" title="" data-original-title="Amazon</br>Shopify">+2 more</a>
                                                     </div>
-                                                    <div class="col-xs-12 col-md-6">
+                                                    <div class="col-xs-12 col-md-2">
                                                         <div class="dropdown lead float-right product-drop">
                                                             <i class="mdi mdi-dots-vertical" id="dropdownMenuButton"
                                                                data-toggle="dropdown" aria-haspopup="true"
@@ -472,6 +521,7 @@
                                     </label>
 
                                 </div>
+
                                 <div class="item col-md-3 col-lg-3 form-group">
                                     <input type="checkbox" name="sele cted[]" id="box_4" value="4"
                                            class="form-control romiwills checkbox-custom"/>
@@ -486,11 +536,18 @@
                                                 <h4 class="group inner list-group-item-heading">
                                                     Spiderman: Homecoming
                                                 </h4>
-                                                <div class="row mt-3">
-                                                    <div class="col-xs-12 col-md-6">
-                                                        <a class="btn red" href="#">Unpublished</a>
+                                                <span>PMGOA</span>
+                                                <div class="row ">
+                                                    <div class="col-xs-12 col-md-10">
+                                                        <ul class="total-product mt-1">
+                                                            <li><img class="img-fluid" src="./images/3-woo.png" title="Woo Commerce"> </li>
+                                                            <li><img class="img-fluid" src="./images/4-ink.png" title="Everything With ink"> </li>
+                                                            <li><img class="img-fluid" src="./images/etsy-logo.png" title="ETSY"> </li>
+                                                            <!--<li>+40 </li>-->
+                                                        </ul>
+                                                        <a class="viewall" href="#" data-toggle="tooltip" data-html="true" title="" data-original-title="Amazon</br>Shopify">+2 more</a>
                                                     </div>
-                                                    <div class="col-xs-12 col-md-6">
+                                                    <div class="col-xs-12 col-md-2">
                                                         <div class="dropdown lead float-right product-drop">
                                                             <i class="mdi mdi-dots-vertical" id="dropdownMenuButton"
                                                                data-toggle="dropdown" aria-haspopup="true"
