@@ -252,7 +252,9 @@
                 <ul id="sidebarnav">
                     <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark sidebar-link"
                                                 href="index.html" aria-expanded="false"><i
-                            class="mdi mdi-home-outline"></i><span class="hide-menu">My Home</span></a></li>
+                            class="mdi mdi-home-outline"></i><span class="hide-menu">My Home</span>
+                        <small class="new-item">New</small>
+                    </a></li>
                     <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark sidebar-link"
                                                 href="order-empty.html" aria-expanded="false"><i
                             class="mdi mdi-shopping"></i><span class="hide-menu">Orders</span></a></li>
@@ -267,12 +269,12 @@
                             class="mdi mdi-store"></i><span class="hide-menu">Workspaces</span></a></li>
                     <!--<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="company-empty.html" aria-expanded="false"><i class="mdi mdi-border-inside"></i><span class="hide-menu">Companies</span></a></li>-->
                     <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark sidebar-link"
-                                                href="workspace-connect-store.html" aria-expanded="false"><i
+                                                href="warehouse.html" aria-expanded="false"><i
                             class="mdi mdi-package-variant-closed"></i><span class="hide-menu">Warehouse</span></a></li>
                     <!--<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="file-library.html" aria-expanded="false"><i class="mdi mdi-library-books"></i><span class="hide-menu">File Library</span></a></li>-->
-                    <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark sidebar-link" href="#"
-                                                aria-expanded="false"><i class="mdi mdi-credit-card"></i><span
-                            class="hide-menu">Billing</span></a></li>
+                    <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                                href="billing.html" aria-expanded="false"><i
+                            class="mdi mdi-credit-card"></i><span class="hide-menu">Billing</span></a></li>
                     <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark sidebar-link"
                                                 href="easy-ink-on-boarding.html" aria-expanded="false"><i
                             class="mdi mdi-invert-colors"></i><span class="hide-menu">Easy Ink</span></a></li>
@@ -342,6 +344,12 @@
                            aria-controls="v-pills-settings" aria-selected="false">
                             <div class="click-tabs"><i class="mdi mdi-note-text"></i><span>Note</span></div>
                         </a>
+
+                        <a class="nav-link custom-tab-links" id="layers-tab" data-toggle="pill" href="#layers"
+                           role="tab"
+                           aria-controls="v-pills-settings" aria-selected="false">
+                            <div class="click-tabs"><i class="mdi mdi-layers"></i><span>Layers</span></div>
+                        </a>
                     </div>
                     <div class="tab-content custom-tab-content" id="v-pills-tabContent">
 
@@ -399,7 +407,8 @@
                                             class="half" for="starhalf"
                                             title="Sucks big time - 0.5 stars"></label>
                                     </fieldset>
-                                    <span class="review-tab-links"><a href="#">38 Reviews</a></span>
+                                    <span class="review-tab-links"><a href="#" data-toggle="modal"
+                                                                      data-target="#pricingandreviews">38 Reviews</a></span>
                                 </div>
                             </div>
                             <div class="hr-divider"></div>
@@ -447,15 +456,16 @@
                                             <input type="checkbox" name="options" id="option2" autocomplete="off"> 2XL
                                         </label>
                                     </div>
-                                    <p class="review-tab-links"><a href="#">See size guide</a></p>
+                                    <p class="review-tab-links"><a href="#" data-toggle="modal"
+                                                                   data-target="#pricingandreviews">See size guide</a></p>
                                 </div>
                             </div>
-                            <div class="row mb-5">
-                                <div class="col-md-12 stocked mt-3">
-                                    <span>Total Price</span>
-                                    <h2>$16.95</h2>
-                                </div>
-                            </div>
+                            <!--<div class="row mb-5">-->
+                            <!--<div class="col-md-12 stocked mt-3">-->
+                            <!--<span>Total Price</span>-->
+                            <!--<h2>$16.95</h2>-->
+                            <!--</div>-->
+                            <!--</div>-->
                         </div>
                         <!--Product Details END-->
 
@@ -728,23 +738,23 @@
                                                 </div>
                                             </div>
                                             <!--<div class="card">-->
-                                                <!--<div class="card-header" role="tab" id="headingThree2">-->
-                                                    <!--<h5 class="mb-0">-->
-                                                        <!--<a class="collapsed" data-toggle="collapse"-->
-                                                           <!--data-parent="#accordion2" href="#collapseThree2"-->
-                                                           <!--aria-expanded="false" aria-controls="collapseThree2">-->
-                                                            <!--Collapsible Group Item #3-->
-                                                            <!--<span class="float-right">Click me</span>-->
+                                            <!--<div class="card-header" role="tab" id="headingThree2">-->
+                                            <!--<h5 class="mb-0">-->
+                                            <!--<a class="collapsed" data-toggle="collapse"-->
+                                            <!--data-parent="#accordion2" href="#collapseThree2"-->
+                                            <!--aria-expanded="false" aria-controls="collapseThree2">-->
+                                            <!--Collapsible Group Item #3-->
+                                            <!--<span class="float-right">Click me</span>-->
 
-                                                        <!--</a>-->
-                                                    <!--</h5>-->
-                                                <!--</div>-->
-                                                <!--<div id="collapseThree2" class="collapse" role="tabpanel"-->
-                                                     <!--aria-labelledby="headingThree2">-->
-                                                    <!--<div class="card-block">-->
-                                                        <!--3-->
-                                                    <!--</div>-->
-                                                <!--</div>-->
+                                            <!--</a>-->
+                                            <!--</h5>-->
+                                            <!--</div>-->
+                                            <!--<div id="collapseThree2" class="collapse" role="tabpanel"-->
+                                            <!--aria-labelledby="headingThree2">-->
+                                            <!--<div class="card-block">-->
+                                            <!--3-->
+                                            <!--</div>-->
+                                            <!--</div>-->
                                             <!--</div>-->
                                         </div>
                                     </div>
@@ -881,10 +891,34 @@
                             </div>
                         </div>
                         <!--Add notes END-->
-                        <div class="row mt-4 functional-btns">
-                            <div class="col-md-12">
-                                <a href="#" class="nonfilled-btn">Go Back</a>
-                                <a href="#" class="filled-button">Continue</a>
+
+                        <!--Add Layers START-->
+                        <div class="tab-pane fade" id="layers" role="tabpanel" aria-labelledby="layers-tab">
+                            <div class="row default-templates">
+                                <div class="col-md-12 text-center">
+                                   <h6 class="mt-3">LAYERS</h6>
+                                    <div class="d-flex bd-highlight billing-page mt-2">
+                                        <div class="p-2 w-5 bd-highlight"><strong>01</strong></div>
+                                        <div class="p-2 flex-shrink-1 bd-highlight ds-layers-border"><img class="img-fluid" src="./images/simson.png"><span class="ml-2">simson.png</span></div>
+                                    </div>
+                                    <div class="d-flex bd-highlight billing-page mt-2">
+                                        <div class="p-2 w-5 bd-highlight"><strong>02</strong></div>
+                                        <div class="p-2 flex-shrink-1 bd-highlight ds-layers-border"><img class="img-fluid" src="./images/clip-2.png"><span class="ml-2">clip-2.png</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Add Layers END-->
+
+                        <div class="row numbers-price">
+                            <div class="col-md-6 billing-page">
+                                Average Price
+                            </div>
+                            <div class="col-md-6 billing-page">
+                                <small class="ds-perunit">(Per unit)</small>
+                                <div class="ds-price-box">
+                                    $09.00-14.00
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -966,7 +1000,282 @@
                 </div>
             </div>
 
+            <div class="row mt-4 justify-content-end">
+                <div class="col-md-4 functional-btns">
+                    <a href="#" class="nonfilled-btn">Go Back</a>
+                    <a href="#" class="filled-button">Continue</a>
+                </div>
+            </div>
+
             <!-- Modal -->
+
+            <!--Add product into, pricing, file templates, review START -->
+            <div class="modal right fade" id="pricingandreviews" tabindex="-1" role="dialog"
+                 aria-labelledby="pricingandreviews">
+                <div class="modal-dialog ds-pro-review" role="document">
+                    <div class="modal-content ">
+
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body ds-model-area">
+                            <h2 class="pl-4">Champion T-Shirt Flex</h2>
+                            <hr>
+
+                                <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                                    <li class="nav-item ds-pro-infoandreview">
+                                        <a class="nav-link active show" id="allitem-tab" data-toggle="tab" href="#allitem" role="tab" aria-controls="allitem" aria-selected="true">INFO</a>
+                                    </li>
+                                    <li class="nav-item ds-pro-infoandreview">
+                                        <a class="nav-link" id="fulfilled-tab" data-toggle="tab" href="#fulfilled" role="tab" aria-controls="fulfilled" aria-selected="false">PRICING</a>
+                                    </li>
+                                    <li class="nav-item ds-pro-infoandreview">
+                                        <a class="nav-link" id="returned-tab" data-toggle="tab" href="#returned" role="tab" aria-controls="returned" aria-selected="false">FILE TEMPLATES</a>
+                                    </li>
+                                    <li class="nav-item ds-pro-infoandreview">
+                                        <a class="nav-link" id="cancelled-tab" data-toggle="tab" href="#cancelled" role="tab" aria-controls="cancelled" aria-selected="false">REVIEWS</a>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content ds-model-content-area" id="myTabContent">
+                                    <div class="tab-pane fade active show" id="allitem" role="tabpanel" aria-labelledby="allitem-tab">
+                                        <div class="row">
+                                            <div class="col-md-12 ds-pro-general-info">
+                                                <h3>Price</h3>
+                                                <p class="ds-avrage-price">Average price <span>$17.95 - $23.95</span></p>
+                                                <h6>Description</h6>
+                                                <p>This t-shirt is made from all-natural organic cotton that is grown and harvested without using any pesticides, synthetic fertilizers and other harmful chemicals. The cotton is ring-spun into high-quality yarns, ensuring an extra soft and durable fabric. It’s the perfect choice for people looking to invest in ethical clothing with a lower environmental impact.</p>
+                                                <ul class="ds-pro-info-list">
+                                                    <li>100% certified organic ringspun cotton</li>
+                                                    <li>Fabric weight: 5.5 oz/yd² (150 g/m²)</li>
+                                                    <li>1x1 rib neck</li>
+                                                    <li>Shoulder seam finished with self-fabric tape</li>
+                                                    <li>Sideseam construction</li>
+                                                    <li>Double-needle cover stitched seams</li>
+                                                    <li>Low environmental impact</li>
+                                                </ul>
+                                                <p>Join the ethical fashion movement—turn to custom organic t-shirts. Organic cotton clothing is the result of farming which relies on fertilizers of organic origin, for example, compost manure, and uses biological pest control. There are no synthetic substances or genetical modifications used during the production.</p>
+                                                <p>This product is made on demand. No minimums.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="fulfilled" role="tabpanel" aria-labelledby="fulfilled-tab">
+                                        <div class="row">
+                                            <div class="col-md-12 ds-pro-general-info">
+                                                <p>The product price depends on factors like production technique, print placement, product color, size and fulfillment location. You also have to take into account that shipping and taxes are extra.</p>
+                                                <h6>1.  Printing (DTG)</h6>
+                                                <p>Your design will be printed directly on the product with the DTG (direct-to-garment) technique that yields bold and vibrant prints. Our base price includes one print, these are the extras you can get.</p>
+
+                                                <!--Start Accordion-->
+                                                <div class="panel-group mb-4">
+                                                    <div class="panel collapsed">
+                                                        <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a>Additional Print</a>
+                                                                    <span>$5.95</span>
+                                                                </h4>
+                                                        </div>
+                                                        <div class="panel-body">
+                                                            <p>The product price includes one print, but you can add another (back print, or front print) for a separate fee.</p>
+                                                        </div>
+                                                    </div><!-- end of panel -->
+
+                                                    <div class="panel collapsed">
+                                                        <div class="panel-heading" id="headingTwo">
+                                                            <h4 class="panel-title">
+                                                                <a>Sleeve Print</a>
+                                                                <span>$2.49</span>
+                                                            </h4>
+                                                        </div>
+                                                        <div class="panel-body">
+                                                            <p>Sleeve prints can be added to either one or both sleeves of the product.</p>
+                                                        </div>
+                                                    </div><!-- end of panel -->
+
+                                                    <div class="panel collapsed">
+                                                        <div class="panel-heading" id="headingThree">
+                                                            <h4 class="panel-title">
+                                                                <a>Outside Label</a>
+                                                                <span>$2.49</span>
+                                                            </h4>
+                                                        </div>
+                                                        <div class="panel-body">
+                                                            <p>Outside label (3" x 3") is printed on the outside of the garment underneath the collar. Note that inside and outside labels can't both be printed on one shirt – it's one or the other.</p>
+                                                        </div>
+                                                    </div><!-- end of panel -->
+
+                                                    <div class="panel collapsed">
+                                                        <div class="panel-heading" id="headingFour">
+                                                            <h4 class="panel-title">
+                                                                <a>Inside Label</a>
+                                                                <span>$2.49</span>
+                                                            </h4>
+                                                        </div>
+                                                        <div class="panel-body">
+                                                            <p>Inside label (3" x 3") is printed on the inside of the garment, and require the removal of the original manufacturer's tag. It must include the country of manufacturing origin, original garment size, and care instructions. Note that inside and outside labels can't both be printed on one shirt – it's one or the other.</p>
+                                                        </div>
+                                                    </div><!-- end of panel -->
+                                                </div><!-- end of panel-group -->
+                                                <!-- end of #accordion -->
+                                                <h6>2. Embroidery</h6>
+                                                <p>Your design will be machine-embroidered on the product. Embroidery costs more than printed clothing because it takes more time and has higher production costs. </p>
+                                                <p>Embroidery also comes with digitization and adjustment costs. We don't accept files that have been digitized elsewhere and we only charge files that are part of an order.</p>
+
+                                                <!--Start Accordion-->
+                                                <div class="panel-group mb-4">
+                                                    <div class="panel collapsed">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a>Digitization</a>
+                                                                <span>$6.50<small> / file</small></span>
+                                                            </h4>
+                                                        </div>
+                                                        <div class="panel-body">
+                                                            <p>The product price includes one print, but you can add another (back print, or front print) for a separate fee.</p>
+                                                        </div>
+                                                    </div><!-- end of panel -->
+
+                                                    <div class="panel collapsed">
+                                                        <div class="panel-heading" id="headingTwo">
+                                                            <h4 class="panel-title">
+                                                                <a>Digitization adjustment</a>
+                                                                <span>$6.50<small> / file</small></span>
+                                                            </h4>
+                                                        </div>
+                                                        <div class="panel-body">
+                                                            <p>Sleeve prints can be added to either one or both sleeves of the product.</p>
+                                                        </div>
+                                                    </div><!-- end of panel -->
+                                                </div><!-- end of panel-group -->
+                                                <!-- end of #accordion -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="returned" role="tabpanel" aria-labelledby="returned-tab">
+                                        <div class="table-responsive">
+                                            <table class="table text-center ds-filetemplates">
+                                                <thead>
+                                                <tr>
+                                                    <th>PLACEMENT</th>
+                                                    <th>SIZES</th>
+                                                    <th>Embroidery file size</th>
+                                                    <th>Embroidery file template</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>Front & Back print</td>
+                                                    <td>All Sizes</td>
+                                                    <td>12” x 16”</td>
+                                                    <td><a href="#">Download</a> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Front & Back print</td>
+                                                    <td>All Sizes</td>
+                                                    <td>12” x 16”</td>
+                                                    <td><a href="#">Download</a> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Front & Back print</td>
+                                                    <td>All Sizes</td>
+                                                    <td>12” x 16”</td>
+                                                    <td><a href="#">Download</a> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Front & Back print</td>
+                                                    <td>All Sizes</td>
+                                                    <td>12” x 16”</td>
+                                                    <td><a href="#">Download</a> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Front & Back print</td>
+                                                    <td>All Sizes</td>
+                                                    <td>12” x 16”</td>
+                                                    <td><a href="#">Download</a> </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="cancelled" role="tabpanel" aria-labelledby="cancelled-tab">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="d-flex flex-column bd-highlight mb-3">
+                                                    <div class="bd-highlight ds-review-stars"><i class="mdi mdi-star"></i><i class="mdi mdi-star"></i><i class="mdi mdi-star"></i><i class="mdi mdi-star"></i><i class="mdi mdi-star-half"></i></div>
+                                                    <div class="bd-highlight ds-reviewer-name"><h5>Deepak Kumar</h5></div>
+                                                    <div class="bd-highlight ds-user-reviews"><p>I absolutely love this t-shirt! Sweatshop free + organic is the way to go! It's super soft, I don't have an issue with the neckline being tight whatsoever and the fit is great and sturdy.</p></div>
+                                                    <div class="bd-highlight"><span>July 20, 2019</span></div>
+                                                </div>
+                                                <div class="d-flex flex-column bd-highlight mb-3">
+                                                    <div class="bd-highlight ds-review-stars"><i class="mdi mdi-star"></i><i class="mdi mdi-star"></i><i class="mdi mdi-star"></i><i class="mdi mdi-star"></i><i class="mdi mdi-star-half"></i></div>
+                                                    <div class="bd-highlight ds-reviewer-name"><h5>Nitika Joshi</h5></div>
+                                                    <div class="bd-highlight ds-user-reviews"><p>I absolutely love this t-shirt! Sweatshop free + organic is the way to go! It's super soft, I don't have an issue with the neckline being tight whatsoever and the fit is great and sturdy.</p></div>
+                                                    <div class="bd-highlight"><span>July 20, 2019</span></div>
+                                                </div>
+                                                <div class="d-flex flex-column bd-highlight mb-3">
+                                                    <div class="bd-highlight ds-review-stars"><i class="mdi mdi-star"></i><i class="mdi mdi-star"></i><i class="mdi mdi-star"></i><i class="mdi mdi-star"></i><i class="mdi mdi-star-half"></i></div>
+                                                    <div class="bd-highlight ds-reviewer-name"><h5>Simran Kapoor</h5></div>
+                                                    <div class="bd-highlight ds-user-reviews"><p>I absolutely love this t-shirt! Sweatshop free + organic is the way to go! It's super soft, I don't have an issue with the neckline being tight whatsoever and the fit is great and sturdy.</p></div>
+                                                    <div class="bd-highlight"><span>July 20, 2019</span></div>
+                                                </div>
+                                                <div class="d-flex flex-column bd-highlight mb-3">
+                                                    <div class="bd-highlight ds-review-stars"><i class="mdi mdi-star"></i><i class="mdi mdi-star"></i><i class="mdi mdi-star"></i><i class="mdi mdi-star"></i><i class="mdi mdi-star-half"></i></div>
+                                                    <div class="bd-highlight ds-reviewer-name"><h5>Priyanka Momani</h5></div>
+                                                    <div class="bd-highlight ds-user-reviews"><p>I absolutely love this t-shirt! Sweatshop free + organic is the way to go! It's super soft, I don't have an issue with the neckline being tight whatsoever and the fit is great and sturdy.</p></div>
+                                                    <div class="bd-highlight"><span>July 20, 2019</span></div>
+                                                </div>
+                                                <div class="d-flex flex-column bd-highlight mb-3">
+                                                    <div class="bd-highlight ds-review-stars"><i class="mdi mdi-star"></i><i class="mdi mdi-star"></i><i class="mdi mdi-star"></i><i class="mdi mdi-star"></i><i class="mdi mdi-star-half"></i></div>
+                                                    <div class="bd-highlight ds-reviewer-name"><h5>Akash Pathak</h5></div>
+                                                    <div class="bd-highlight ds-user-reviews"><p>I absolutely love this t-shirt! Sweatshop free + organic is the way to go! It's super soft, I don't have an issue with the neckline being tight whatsoever and the fit is great and sturdy.</p></div>
+                                                    <div class="bd-highlight"><span>July 20, 2019</span></div>
+                                                </div>
+                                                <div class="d-flex flex-column bd-highlight mb-3">
+                                                    <div class="bd-highlight ds-review-stars"><i class="mdi mdi-star"></i><i class="mdi mdi-star"></i><i class="mdi mdi-star"></i><i class="mdi mdi-star"></i><i class="mdi mdi-star-half"></i></div>
+                                                    <div class="bd-highlight ds-reviewer-name"><h5>Sonali Pathak</h5></div>
+                                                    <div class="bd-highlight ds-user-reviews"><p>I absolutely love this t-shirt! Sweatshop free + organic is the way to go! It's super soft, I don't have an issue with the neckline being tight whatsoever and the fit is great and sturdy.</p></div>
+                                                    <div class="bd-highlight"><span>July 20, 2019</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <nav aria-label="Page navigation">
+                                                    <ul class="pagination justify-content-center">
+                                                        <li class="page-item disabled">
+                                                            <span class="page-link">Previous</span>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                        <li class="page-item active" aria-current="page">
+      <span class="page-link">
+        2
+        <span class="sr-only">(current)</span>
+      </span>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">Next</a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                        </div>
+
+                    </div><!-- modal-content -->
+                </div><!-- modal-dialog -->
+            </div>
+            <!--Add product into, pricing, file templates, review END -->
+
             <!--Add Names & Numbers START -->
             <div class="modal right fade" id="nameandnumbers" tabindex="-1" role="dialog"
                  aria-labelledby="nameandnumbers">
@@ -1132,6 +1441,7 @@
                 </div><!-- modal-dialog -->
             </div>
             <!--Add Names & Numbers END -->
+
             <!-- modal -->
 
         </div>
@@ -1261,7 +1571,16 @@
     <!--colors palette END-->
 </script>
 
-
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        var elements = document.getElementsByClassName('collapsed');
+        Array.prototype.forEach.call(elements, function(element) { // get son panel heading
+            element.addEventListener('click', () => {
+                element.classList.toggle('collapsed');
+            });
+        });
+    });
+</script>
 </body>
 
 </html>

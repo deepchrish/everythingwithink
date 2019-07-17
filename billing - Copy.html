@@ -16,6 +16,7 @@
     <!-- Custom CSS -->
     <link href="dist/css/style.min.css" rel="stylesheet">
     <link href="dist/css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -63,6 +64,7 @@
                              <!-- dark Logo text -->
                              Dashboard
                         </span>
+                    <!-- Logo icon -->
                     <!--End Logo icon -->
                 </a>
                 <!-- ============================================================== -->
@@ -120,7 +122,8 @@
                 <ul class="navbar-nav float-right">
                     <!-- ============================================================== -->
                     <li>
-                        <a class="btn nav-product-btn primary-button" href="create-a-product.html"><i class="mdi mdi-tag-outline"></i> Add a
+                        <a class="btn nav-product-btn primary-button" href="create-a-product.html"><i
+                                class="mdi mdi-tag-outline"></i> Add a
                             new Product</a>
                     </li>
                     <!-- ============================================================== -->
@@ -283,124 +286,114 @@
         <!-- Container fluid  -->
         <div class="container-fluid mt-5 pt-5">
             <div class="row border-bottom">
-                <div class="col-md-12 ml-4">
-                    <h1>Companies</h1>
+                <div class="col-md-12 ml-1">
+                    <h1>Billing</h1>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <h2>Billing: Payment History</h2>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-12">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-2">
+                                <label for="workspacelist"></label>
+                                <select class="form-control" id="workspacelist">
+                                    <option selected>All Workspaces</option>
+                                    <option>Akil mug Store</option>
+                                    <option>Akil Tees</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-2">
+                                <label for="workspacelist"></label>
+                                <select class="form-control" id="workspacelist">
+                                    <option selected>Payment History</option>
+                                    <option>One Week</option>
+                                    <option>Previous Month</option>
+                                    <option>Last 3 month</option>
+                                    <option>Last 6 month</option>
+                                    <option>Last year</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-3">
+                                <label for="workspacelist"></label>
+                                <input type="text" name="daterange" value="06/01/2019 - 07/15/2019"  class="form-control" id="workspacelist">
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="card-companies">
-                        <div class="company-details">
-                            <span class="float-left">RK</span>
-                            <p class="float-left"><a href="workspace-with-product.html">Rogers and Co.</a></p>
-                            <a class="btn active-status float-right">Active</a>
-                        </div>
-                        <hr>
-                        <div class="product-range">
-                            <span class="float-left clearfix">Product</span>
-                            <br>
-                            <ul class="total-product mt-1">
-                                <li><img class="img-fluid" src="./images/demo-product-2.png"> </li>
-                                <li><img class="img-fluid" src="./images/demo-product-2.png"> </li>
-                                <li><img class="img-fluid" src="./images/demo-product-2.png"> </li>
-                                <li>+40 </li>
-                            </ul>
-                            <a class="viewall" href="#">See all</a>
-                            <div class="dropdown lead float-right ">
-                                <i class="mdi mdi-dots-vertical" id="dropdownMenuButton"
-                                   data-toggle="dropdown" aria-haspopup="true"
-                                   aria-expanded="false"></i>
-                                <div class="dropdown-menu"
-                                     aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else
-                                        here</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card-companies">
-                        <div class="company-details">
-                            <span class="float-left">PC</span>
-                            <p class="float-left"><a href="workspace-connect-store.html">Priyanka Coffee</a></p>
-                            <a class="btn inactive-status float-right">INActive</a>
-                        </div>
-                        <hr>
-                        <div class="product-range">
-                            <span class="float-left clearfix">Product is Empty</span>
-                            <br>
-                            <a class="btn secendary-button" href="#">Add Product</a>
-                            <div class="dropdown lead float-right ">
-                                <i class="mdi mdi-dots-vertical" id="dropdownMenuButton"
-                                   data-toggle="dropdown" aria-haspopup="true"
-                                   aria-expanded="false"></i>
-                                <div class="dropdown-menu"
-                                     aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else
-                                        here</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="empty-card">
-                        <a class="text-center" data-toggle="modal" data-target="#createworkspace">
-                            <div class="empty-card-box">
-                                <i class="mdi mdi-plus-circle"></i>
-                                <p>Create Workspace</p>
-                            </div>
-                        </a>
+                <div class="col-md-12 mt-2">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered orderlist">
+                            <thead>
+                            <tr>
+                                <th>STORE</th>
+                                <th>ID</th>
+                                <th>ORDER</th>
+                                <th>DATE</th>
+                                <th>FROM</th>
+                                <th>STATUS</th>
+                                <th>TOTAL</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><img class="img-fluid" src="./images/1-amazon.png"
+                                         alt="amazon">
+                                </td>
+                                <td>D2563</td>
+                                <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Click on the order name to fulfill it">Cat T-shirt Woo Woo Paw</a></td>
+                                <td>1 hour ago</td>
+                                <td>Joan Wells</td>
+                                <td><span class="btn btn-success">Paid</span>
+                                </td>
+                                <td>$32</td>
+                            </tr>
+                            <tr>
+                                <td><img class="img-fluid" src="./images/2-shopify.png"
+                                         alt="amazon">
+                                </td>
+                                <td>N2563</td>
+                                <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Click on the order name to fulfill it">Crew Neck Tshirt</a></td>
+                                <td>Jul 02, 2019</td>
+                                <td>Raymond Walsh</td>
+                                <td><span class="btn btn-orange text-white">Waiting for confirmation</span></td>
+                                <td>$17</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
-
-            <!-- Modal Create a Workspace -->
-            <div class="modal right fade" id="createworkspace" tabindex="-1" role="dialog" aria-labelledby="createworkspace">
-                <div class="modal-dialog aff-dialog" role="document">
-                    <div class="modal-content ">
-
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        </div>
-
-                        <div class="modal-body">
-                            <div>
-                                <h2>Create a workspace</h2>
-                                <hr>
-                                <p>Workspaces help you manage your different businesses under one dashboard. Create different workspaces to manage your different kind of products.</p>
-                                <form>
-                                    <div class="form-group aff-form">
-                                        <label for="exampleInputEmail1">Name your Workspace</label>
-                                        <input type="Text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Workspace Name (e.g. Akash’s Coffee Mugs)">
-                                    </div>
-                                    <div class="form-group aff-form">
-                                        <label for="affstatus">Status</label>
-                                        <select class="custom-select form-control" id="affstatus">
-                                            <option selected>Active</option>
-                                            <option value="1">Inactive</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group aff-form">
-                                        <label for="exampleInputPassword1">Connect Stores</label>
-                                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Active">
-                                    </div>
-
-                                    <button type="submit" class="btn aff-submitbtn">Submit</button>
-                                </form>
-                            </div>
-                        </div>
-
-                    </div><!-- modal-content -->
-                </div><!-- modal-dialog -->
-            </div><!-- modal -->
         </div>
         <!-- End Container fluid  -->
+        <!-- footer -->
+
+        <footer class="footer">
+            <div class="row samplefiles">
+                <div class="col-md-2">
+                    <img class="img-fluid" src="./images/handshake-colour.png">
+                </div>
+                <div class="col-md-8">
+                    <div class="sampleinfo">
+                        <h2>Learn more about vendors & fulfillment.</h2>
+                        <span>Watch this video to learn how choosing right vendors may help you earn more. </span>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="video-button">
+                        <a href="#" class="btn"><i class="mdi mdi-play"></i> Watch video</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- End footer -->
+
     </div>
     <!-- End Page wrapper  -->
 </div>
@@ -420,6 +413,10 @@
 <script src="dist/js/sidebarmenu.js"></script>
 <!--Custom JavaScript -->
 <script src="dist/js/custom.min.js"></script>
+<!--Date range picker-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 <!--This page JavaScript -->
 <!-- <script src="dist/js/pages/dashboards/dashboard1.js"></script> -->
 <!-- Charts js Files -->
@@ -431,7 +428,15 @@
 <script src="assets/libs/flot/jquery.flot.crosshair.js"></script>
 <script src="assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
 <script src="dist/js/pages/chart/chart-page-init.js"></script>
-
+<script>
+    $(function() {
+        $('input[name="daterange"]').daterangepicker({
+            opens: 'left'
+        }, function(start, end, label) {
+            console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+        });
+    });
+</script>
 
 </body>
 

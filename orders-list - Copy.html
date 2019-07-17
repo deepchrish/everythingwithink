@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/withink_logo.png">
+    <title>Everything With Ink</title>
+    <!-- Custom CSS -->
+    <link href="assets/libs/flot/css/float-chart.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="dist/css/style.min.css" rel="stylesheet">
+    <link href="dist/css/custom.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<!-- ============================================================== -->
+<!-- Preloader - style you can find in spinners.css -->
+<!-- ============================================================== -->
+<div class="preloader">
+    <div class="lds-ripple">
+        <div class="lds-pos"></div>
+        <div class="lds-pos"></div>
+    </div>
+</div>
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<div id="main-wrapper">
+    <!-- ============================================================== -->
+    <!-- Topbar header - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <header class="topbar" data-navbarbg="skin5">
+        <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+            <div class="navbar-header" data-logobg="skin5">
+                <!-- This is for the sidebar toggle which is visible on mobile only -->
+                <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i
+                        class="ti-menu ti-close"></i></a>
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <a class="navbar-brand" href="index.html">
+                    <!-- Logo icon -->
+                    <b class="logo-icon p-l-10">
+                        <!-- Dark Logo icon -->
+                        <img src="./images/withink_logo.png" alt="homepage" class="light-logo"/>
+
+                    </b>
+                    <!--End Logo icon -->
+                    <!-- Logo text -->
+                    <span class="logo-text">
+                             <!-- dark Logo text -->
+                             Dashboard
+                        </span>
+                    <!-- Logo icon -->
+                    <!--End Logo icon -->
+                </a>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Toggle which is visible on mobile only -->
+                <!-- ============================================================== -->
+                <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)"
+                   data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                   aria-expanded="false" aria-label="Toggle navigation"><i class="ti-more"></i></a>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Logo -->
+            <!-- ============================================================== -->
+            <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
+                <!-- ============================================================== -->
+                <!-- toggle and nav items -->
+                <!-- ============================================================== -->
+                <ul class="navbar-nav float-left mr-auto">
+                    <li class="d-none d-md-block custom-arrow"><a
+                            class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)"
+                            data-sidebartype="mini-sidebar"><i class="mdi mdi-chevron-left font-24 left-arrow"></i></a>
+                    </li>
+                    <!-- ============================================================== -->
+                    <!-- create new -->
+                    <!-- ============================================================== -->
+                    <li class="left-dropdown">
+                        <div class="form-group top-nav-drop">
+                            <select id="selectbox1" name="selectbox1" class="form-control">
+                                <option value="">Select an option&hellip;</option>
+                                <option value="Roger">Roger & co.</option>
+                                <option value="Mark">Mark tech</option>
+                                <option value="oso">Oso</option>
+                                <option value="whoop">Whoop</option>
+                                <option value="Roger">Roger & co.</option>
+                                <option value="Mark">Mark tech</option>
+                                <option value="oso">Oso</option>
+                                <option value="whoop">Whoop</option>
+                                <option value="Roger">Roger & co.</option>
+                                <option value="Mark">Mark tech</option>
+                                <option value="oso">Oso</option>
+                                <option value="whoop">Whoop</option>
+                                <option value="Roger">Roger & co.</option>
+                                <option value="Mark">Mark tech</option>
+                                <option value="oso">Oso</option>
+                                <option value="whoop">Whoop</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+                <!-- ============================================================== -->
+                <!-- Right side toggle and nav items -->
+                <!-- ============================================================== -->
+                <ul class="navbar-nav float-right">
+                    <!-- ============================================================== -->
+                    <li>
+                        <a class="btn nav-product-btn primary-button" href="create-a-product.html"><i
+                                class="mdi mdi-tag-outline"></i> Add a
+                            new Product</a>
+                    </li>
+                    <!-- ============================================================== -->
+                    <li class="nav-item dropdown">
+                        <span class="item-numbers">10</span>
+                        <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-bell-ring-outline font-24"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <!-- ============================================================== -->
+                    <!-- End Comment -->
+                    <!-- ============================================================== -->
+                    <!-- ============================================================== -->
+                    <!-- Messages -->
+                    <!-- ============================================================== -->
+                    <li class="nav-item dropdown">
+                        <span class="item-numbers">4</span>
+                        <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" id="2"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i
+                                class="font-24 mdi mdi-cart-outline"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right mailbox animated bounceInDown"
+                             aria-labelledby="2">
+                            <ul class="list-style-none">
+                                <li>
+                                    <div class="">
+                                        <!-- Message -->
+                                        <a href="javascript:void(0)" class="link border-top">
+                                            <div class="d-flex no-block align-items-center p-10">
+                                                <span class="btn btn-success btn-circle"><i
+                                                        class="ti-calendar"></i></span>
+                                                <div class="m-l-10">
+                                                    <h5 class="m-b-0">Item 1</h5>
+                                                    <span class="mail-desc">Demo content</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <!-- Message -->
+                                        <a href="javascript:void(0)" class="link border-top">
+                                            <div class="d-flex no-block align-items-center p-10">
+                                                <span class="btn btn-info btn-circle"><i class="ti-settings"></i></span>
+                                                <div class="m-l-10">
+                                                    <h5 class="m-b-0">Item 2</h5>
+                                                    <span class="mail-desc">Demo content</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <!-- Message -->
+                                        <a href="javascript:void(0)" class="link border-top">
+                                            <div class="d-flex no-block align-items-center p-10">
+                                                <span class="btn btn-primary btn-circle"><i class="ti-user"></i></span>
+                                                <div class="m-l-10">
+                                                    <h5 class="m-b-0">Item 3</h5>
+                                                    <span class="mail-desc">Demo content</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <!-- Message -->
+                                        <a href="javascript:void(0)" class="link border-top">
+                                            <div class="d-flex no-block align-items-center p-10">
+                                                <span class="btn btn-danger btn-circle"><i
+                                                        class="fa fa-link"></i></span>
+                                                <div class="m-l-10">
+                                                    <h5 class="m-b-0">Item 4</h5>
+                                                    <span class="mail-desc">Demo content</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- ============================================================== -->
+                    <!-- End Messages -->
+                    <!-- ============================================================== -->
+
+                    <!-- ============================================================== -->
+                    <!-- User profile and search -->
+                    <!-- ============================================================== -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href=""
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                                src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31"></a>
+                        <div class="dropdown-menu dropdown-menu-right user-dd animated">
+                            <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i> My
+                                Profile</a>
+                            <a class="dropdown-item" href="javascript:void(0)"><i class="ti-wallet m-r-5 m-l-5"></i> My
+                                Balance</a>
+                            <a class="dropdown-item" href="javascript:void(0)"><i class="ti-email m-r-5 m-l-5"></i>
+                                Inbox</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="javascript:void(0)"><i class="ti-settings m-r-5 m-l-5"></i>
+                                Account Setting</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="javascript:void(0)"><i
+                                    class="fa fa-power-off m-r-5 m-l-5"></i> Logout</a>
+                            <div class="dropdown-divider"></div>
+                            <div class="p-l-30 p-10"><a href="javascript:void(0)"
+                                                        class="btn btn-sm btn-success btn-rounded">View Profile</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- ============================================================== -->
+                    <!-- User profile and search -->
+                    <!-- ============================================================== -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- ============================================================== -->
+    <!-- End Topbar header -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Left Sidebar - style you can find in sidebar.scss  -->
+    <!-- ============================================================== -->
+    <aside class="left-sidebar" data-sidebarbg="skin5">
+        <!-- Sidebar scroll-->
+        <div class="scroll-sidebar">
+            <!-- Sidebar navigation-->
+            <nav class="sidebar-nav">
+                <ul id="sidebarnav">
+                    <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.html" aria-expanded="false"><i class="mdi mdi-home-outline"></i><span class="hide-menu">My Home</span><small class="new-item">New</small></a> </li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="order-empty.html" aria-expanded="false"><i class="mdi mdi-shopping"></i><span class="hide-menu">Orders</span></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="product-empty.html" aria-expanded="false"><i class="mdi mdi-tag"></i><span class="hide-menu">Products</span></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="file-library.html" aria-expanded="false"><i class="mdi mdi-image-multiple"></i><span class="hide-menu">File Library</span></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="company-empty.html" aria-expanded="false"><i class="mdi mdi-store"></i><span class="hide-menu">Workspaces</span></a></li>
+                    <!--<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="company-empty.html" aria-expanded="false"><i class="mdi mdi-border-inside"></i><span class="hide-menu">Companies</span></a></li>-->
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="warehouse.html" aria-expanded="false"><i class="mdi mdi-package-variant-closed"></i><span class="hide-menu">Warehouse</span></a></li>
+                    <!--<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="file-library.html" aria-expanded="false"><i class="mdi mdi-library-books"></i><span class="hide-menu">File Library</span></a></li>-->
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="billing.html" aria-expanded="false"><i class="mdi mdi-credit-card"></i><span class="hide-menu">Billing</span></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="easy-ink-on-boarding.html" aria-expanded="false"><i class="mdi mdi-invert-colors"></i><span class="hide-menu">Easy Ink</span></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="reports.html" aria-expanded="false"><i class="mdi mdi-file-chart"></i><span class="hide-menu">Reports</span></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="setting.html" aria-expanded="false"><i class="mdi mdi-tune"></i><span class="hide-menu">Account Setting</span></a></li>
+
+                </ul>
+                <div class="dropdown-divider"></div>
+                <ul id="sidebarnav">
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="affiliate.html" aria-expanded="false"><i class="mdi mdi-account-multiple"></i><span class="hide-menu">Affiliate</span></a></li>
+                </ul>
+            </nav>
+            <!-- End Sidebar navigation -->
+        </div>
+        <!-- End Sidebar scroll-->
+    </aside>
+    <!-- ============================================================== -->
+    <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Page wrapper  -->
+    <!-- ============================================================== -->
+    <div class="page-wrapper">
+
+        <!-- Container fluid  -->
+        <div class="container-fluid mt-5 pt-5">
+            <div class="row border-bottom">
+                <div class="col-md-12 ml-4">
+                    <h1>Orders</h1>
+                </div>
+            </div>
+            <div class="row mt-4 mb-2">
+                <div class="col-md-3">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-magnify"></i></span>
+                        </div>
+                        <input type="search" class="form-control" placeholder="Search Order" aria-label="Search">
+                    </div>
+                </div>
+                <div class="col-md-9 ">
+                    <div class="form-group float-right orders-list-form">
+                        <select name="" id="" class="form-control custom-select">
+                            <option selected>All Orders</option>
+                            <option value="1">Fulfilled</option>
+                            <option value="2">Returned</option>
+                            <option value="3">Cancelled</option>
+                            <option value="4">Waiting to fulfill</option>
+                            <option value="5">Being Fulfilled</option>
+                            <option value="6">Cancelled</option>
+                        </select>
+                        <select class="form-control custom-select" id="inputGroupSelect04">
+                            <option selected>All Stores</option>
+                            <option value="1">Amazon</option>
+                            <option value="2">Shopify</option>
+                            <option value="3">Woo</option>
+                            <option value="3">Everything With ink</option>
+                        </select>
+                        <select class="form-control custom-select" id="inputGroupSelect05">
+                            <option selected>21 Per Pages</option>
+                            <option value="1">25 Per Pages</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 mt-2">
+                    <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                        <li class="nav-item order-nav">
+                            <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab"
+                               aria-controls="all" aria-selected="true">All <span
+                                    class="order-numbers blue-bg">1123</span></a>
+                        </li>
+                        <li class="nav-item order-nav">
+                            <a class="nav-link" id="fulfilled-tab" data-toggle="tab" href="#fulfilled"
+                               role="tab" aria-controls="fulfilled" aria-selected="false">Fulfilled <span
+                                    class="order-numbers green-bg">621</span></a>
+                        </li>
+                        <li class="nav-item order-nav">
+                            <a class="nav-link" id="returned-tab" data-toggle="tab" href="#returned"
+                               role="tab" aria-controls="returned" aria-selected="false">Returned <span
+                                    class="order-numbers grey-bg">108</span></a>
+                        </li>
+                        <li class="nav-item order-nav">
+                            <a class="nav-link" id="cancelled-tab" data-toggle="tab" href="#cancelled"
+                               role="tab" aria-controls="cancelled" aria-selected="false">Cancelled <span
+                                    class="order-numbers red-bg">40</span></a>
+                        </li>
+                        <li class="nav-item order-nav">
+                            <a class="nav-link" id="waiting-tab" data-toggle="tab" href="#waiting"
+                               role="tab" aria-controls="waiting" aria-selected="false">Waiting to Fulfill
+                                <span class="order-numbers yellow-bg">102</span></a>
+                        </li>
+                        <li class="nav-item order-nav">
+                            <a class="nav-link" id="being-tab" data-toggle="tab" href="#being" role="tab"
+                               aria-controls="being" aria-selected="false">Being Fulfilled <span
+                                    class="order-numbers orange-bg">82</span></a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="all" role="tabpanel"
+                             aria-labelledby="all-tab">
+                            <div class="row border-bottom">
+                                <div class="col-md-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="table-responsive">
+                                                <table class="table table-striped table-bordered orderlist">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>STORE</th>
+                                                        <th>ID</th>
+                                                        <th>ORDER</th>
+                                                        <th>DATE</th>
+                                                        <th>FROM</th>
+                                                        <th>STATUS</th>
+                                                        <th>COST</th>
+                                                        <th>TOTAL</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td><img class="img-fluid" src="./images/1-amazon.png"
+                                                                 alt="amazon"><small class="new-item">New</small>
+                                                        </td>
+                                                        <td>2563</td>
+                                                        <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Click on the order name to fulfill it">Cat T-shirt Woo Woo Paw</a></td>
+                                                        <td>1 hour ago</td>
+                                                        <td>Joan Wells</td>
+                                                        <td><span class="yellow">Waiting to Fulfill</span>
+                                                        </td>
+                                                        <td>$22</td>
+                                                        <td>$32</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img class="img-fluid" src="./images/2-shopify.png"
+                                                                 alt="amazon">
+                                                        </td>
+                                                        <td>2563</td>
+                                                        <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Click on the order name to fulfill it">Crew Neck Tshirt</a></td>
+                                                        <td>4 hours ago</td>
+                                                        <td>Raymond Walsh</td>
+                                                        <td><span class="green">Fulfilled</span></td>
+                                                        <td>$7</td>
+                                                        <td>$17</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img class="img-fluid" src="./images/1-amazon.png"
+                                                                 alt="amazon">
+                                                        </td>
+                                                        <td>2563</td>
+                                                        <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Click on the order name to fulfill it">Modern Scoop neck</a></td>
+                                                        <td>05/27/2019</td>
+                                                        <td>Kathryn Ferguson</td>
+                                                        <td><span class="red">Cancelled</span></td>
+                                                        <td>$76</td>
+                                                        <td>$86</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img class="img-fluid" src="./images/1-amazon.png"
+                                                                 alt="amazon">
+                                                        </td>
+                                                        <td>2563</td>
+                                                        <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Click on the order name to fulfill it">SBatman-DC Comics T-shirt</a></td>
+                                                        <td>05/24/2019</td>
+                                                        <td>Lauren Burns</td>
+                                                        <td><span class="yellow">Waiting to Fulfill</span>
+                                                        </td>
+                                                        <td>$33</td>
+                                                        <td>$43</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img class="img-fluid" src="./images/3-woo.png"
+                                                                 alt="amazon"></td>
+                                                        <td>2563</td>
+                                                        <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Click on the order name to fulfill it">Team Shirt Wildkats</a></td>
+                                                        <td>04/29/2019</td>
+                                                        <td>Joseph Wood</td>
+                                                        <td><span class="orange">Being Fulfilled</span></td>
+                                                        <td>$16</td>
+                                                        <td>$26</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img class="img-fluid" src="./images/3-woo.png"
+                                                                 alt="amazon"></td>
+                                                        <td>2563</td>
+                                                        <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Click on the order name to fulfill it">Golf Sports</a></td>
+                                                        <td>04/29/2019</td>
+                                                        <td>Sonali Pathak</td>
+                                                        <td><span class="orange">Being Fulfilled</span></td>
+                                                        <td>$27</td>
+                                                        <td>$37</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img class="img-fluid" src="./images/4-ink.png"
+                                                                 alt="amazon"></td>
+                                                        <td>2563</td>
+                                                        <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Click on the order name to fulfill it">Cricket Jersey</a></td>
+                                                        <td>03/16/2019</td>
+                                                        <td>Akash Pathak</td>
+                                                        <td><span class="green">Fulfilled</span></td>
+                                                        <td>$23</td>
+                                                        <td>$33</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img class="img-fluid" src="./images/1-amazon.png"
+                                                                 alt="amazon">
+                                                        </td>
+                                                        <td>2563</td>
+                                                        <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Click on the order name to fulfill it">Football Trainies</a></td>
+                                                        <td>02/21/2019</td>
+                                                        <td>Austin Gray</td>
+                                                        <td><span class="red">Cancelled</span></td>
+                                                        <td>$32</td>
+                                                        <td>$22</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img class="img-fluid" src="./images/4-ink.png"
+                                                                 alt="amazon"></td>
+                                                        <td>2563</td>
+                                                        <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Click on the order name to fulfill it">Team Shirt Knighrider</a></td>
+                                                        <td>02/25/2019</td>
+                                                        <td>Martin Gray</td>
+                                                        <td><span class="yellow">Waiting to Fulfill</span>
+                                                        </td>
+                                                        <td>$10</td>
+                                                        <td>$20</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img class="img-fluid" src="./images/1-amazon.png"
+                                                                 alt="amazon">
+                                                        </td>
+                                                        <td>2563</td>
+                                                        <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Click on the order name to fulfill it">T-Shirt Superking</a></td>
+                                                        <td>02/29/2019</td>
+                                                        <td>Laura Wills</td>
+                                                        <td><span class="grey">Returned</span></td>
+                                                        <td>$20</td>
+                                                        <td>$30</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="fulfilled" role="tabpanel"
+                             aria-labelledby="fulfilled-tab">
+                            <div class="row border-bottom">
+                                <div class="col-md-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="table-responsive">
+                                                <table class="table table-striped table-bordered">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>STORE</th>
+                                                        <th>ID</th>
+                                                        <th>ORDER</th>
+                                                        <th>DATE</th>
+                                                        <th>FROM</th>
+                                                        <th>STATUS</th>
+                                                        <th>COST</th>
+                                                        <th>TOTAL</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td><img src="./images/1-amazon.png" alt="amazon">
+                                                        </td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Cat T-shirt Woo Woo Paw</a></td>
+                                                        <td>1 hour ago</td>
+                                                        <td>Joan Wells</td>
+                                                        <td><span class="green">Fulfilled</span></td>
+                                                        <td>$22</td>
+                                                        <td>$32</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/2-shopify.png" alt="amazon">
+                                                        </td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Crew Neck Tshirt</a></td>
+                                                        <td>4 hours ago</td>
+                                                        <td>Raymond Walsh</td>
+                                                        <td><span class="green">Fulfilled</span></td>
+                                                        <td>$7</td>
+                                                        <td>$17</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/1-amazon.png" alt="amazon">
+                                                        </td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Modern Scoop neck</a></td>
+                                                        <td>05/27/2019</td>
+                                                        <td>Kathryn Ferguson</td>
+                                                        <td><span class="green">Fulfilled</span></td>
+                                                        <td>$76</td>
+                                                        <td>$86</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/1-amazon.png" alt="amazon">
+                                                        </td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">SBatman-DC Comics T-shirt</a></td>
+                                                        <td>05/24/2019</td>
+                                                        <td>Lauren Burns</td>
+                                                        <td><span class="green">Fulfilled</span></td>
+                                                        <td>$33</td>
+                                                        <td>$43</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/3-woo.png" alt="amazon"></td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Team Shirt Wildkats</a></td>
+                                                        <td>04/29/2019</td>
+                                                        <td>Joseph Wood</td>
+                                                        <td><span class="green">Fulfilled</span></td>
+                                                        <td>$6</td>
+                                                        <td>$16</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/3-woo.png" alt="amazon"></td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Golf Sports</a></td>
+                                                        <td>04/29/2019</td>
+                                                        <td>Sonali Pathak</td>
+                                                        <td><span class="green">Fulfilled</span></td>
+                                                        <td>$27</td>
+                                                        <td>$37</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/4-ink.png" alt="amazon"></td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Cricket Jersey</a></td>
+                                                        <td>03/16/2019</td>
+                                                        <td>Akash Pathak</td>
+                                                        <td><span class="green">Fulfilled</span></td>
+                                                        <td>$3</td>
+                                                        <td>$13</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/1-amazon.png" alt="amazon">
+                                                        </td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Football Trainies</a></td>
+                                                        <td>02/21/2019</td>
+                                                        <td>Austin Gray</td>
+                                                        <td><span class="green">Fulfilled</span></td>
+                                                        <td>$22</td>
+                                                        <td>$32</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/4-ink.png" alt="amazon"></td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Team Shirt Knighrider</a></td>
+                                                        <td>02/25/2019</td>
+                                                        <td>Martin Gray</td>
+                                                        <td><span class="green">Fulfilled</span></td>
+                                                        <td>$10</td>
+                                                        <td>$20</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/1-amazon.png" alt="amazon">
+                                                        </td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">T-Shirt Superking</a></td>
+                                                        <td>02/29/2019</td>
+                                                        <td>Laura Wills</td>
+                                                        <td><span class="green">Fulfilled</span></td>
+                                                        <td>$30</td>
+                                                        <td>$30</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="returned" role="tabpanel"
+                             aria-labelledby="returned-tab">
+                            <div class="row border-bottom">
+                                <div class="col-md-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="table-responsive">
+                                                <table class="table table-striped table-bordered">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>STORE</th>
+                                                        <th>ID</th>
+                                                        <th>ORDER</th>
+                                                        <th>DATE</th>
+                                                        <th>FROM</th>
+                                                        <th>STATUS</th>
+                                                        <th>COST</th>
+                                                        <th>TOTAL</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td><img src="./images/1-amazon.png" alt="amazon">
+                                                        </td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Cat T-shirt Woo Woo Paw</a></td>
+                                                        <td>1 hour ago</td>
+                                                        <td>Joan Wells</td>
+                                                        <td><span class="grey">Returned</span></td>
+                                                        <td>$22</td>
+                                                        <td>$32</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/2-shopify.png" alt="amazon">
+                                                        </td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Crew Neck Tshirt</a></td>
+                                                        <td>4 hours ago</td>
+                                                        <td>Raymond Walsh</td>
+                                                        <td><span class="grey">Returned</span></td>
+                                                        <td>$7</td>
+                                                        <td>$17</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/1-amazon.png" alt="amazon">
+                                                        </td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Modern Scoop neck</a></td>
+                                                        <td>05/27/2019</td>
+                                                        <td>Kathryn Ferguson</td>
+                                                        <td><span class="grey">Returned</span></td>
+                                                        <td>$76</td>
+                                                        <td>$86</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/1-amazon.png" alt="amazon">
+                                                        </td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">SBatman-DC Comics T-shirt</a></td>
+                                                        <td>05/24/2019</td>
+                                                        <td>Lauren Burns</td>
+                                                        <td><span class="grey">Returned</span></td>
+                                                        <td>$33</td>
+                                                        <td>$43</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/3-woo.png" alt="amazon"></td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Team Shirt Wildkats</a></td>
+                                                        <td>04/29/2019</td>
+                                                        <td>Joseph Wood</td>
+                                                        <td><span class="grey">Returned</span></td>
+                                                        <td>$6</td>
+                                                        <td>$16</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/3-woo.png" alt="amazon"></td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Golf Sports</a></td>
+                                                        <td>04/29/2019</td>
+                                                        <td>Sonali Pathak</td>
+                                                        <td><span class="grey">Returned</span></td>
+                                                        <td>$27</td>
+                                                        <td>$37</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/4-ink.png" alt="amazon"></td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Cricket Jersey</a></td>
+                                                        <td>03/16/2019</td>
+                                                        <td>Akash Pathak</td>
+                                                        <td><span class="grey">Returned</span></td>
+                                                        <td>$3</td>
+                                                        <td>$13</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/1-amazon.png" alt="amazon">
+                                                        </td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Football Trainies</a></td>
+                                                        <td>02/21/2019</td>
+                                                        <td>Austin Gray</td>
+                                                        <td><span class="grey">Returned</span></td>
+                                                        <td>$22</td>
+                                                        <td>$32</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/4-ink.png" alt="amazon"></td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Team Shirt Knighrider</a></td>
+                                                        <td>02/25/2019</td>
+                                                        <td>Martin Gray</td>
+                                                        <td><span class="grey">Returned</span></td>
+                                                        <td>$10</td>
+                                                        <td>$20</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/1-amazon.png" alt="amazon">
+                                                        </td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">T-Shirt Superking</a></td>
+                                                        <td>02/29/2019</td>
+                                                        <td>Laura Wills</td>
+                                                        <td><span class="grey">Returned</span></td>
+                                                        <td>$30</td>
+                                                        <td>$30</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="cancelled" role="tabpanel"
+                             aria-labelledby="cancelled-tab">
+                            <div class="row border-bottom">
+                                <div class="col-md-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="table-responsive">
+                                                <table class="table table-striped table-bordered">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>STORE</th>
+                                                        <th>ID</th>
+                                                        <th>ORDER</th>
+                                                        <th>DATE</th>
+                                                        <th>FROM</th>
+                                                        <th>STATUS</th>
+                                                        <th>COST</th>
+                                                        <th>TOTAL</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td><img src="./images/1-amazon.png" alt="amazon">
+                                                        </td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Cat T-shirt Woo Woo Paw</a></td>
+                                                        <td>1 hour ago</td>
+                                                        <td>Joan Wells</td>
+                                                        <td><span class="red">Cancelled</span></td>
+                                                        <td>$22</td>
+                                                        <td>$32</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/2-shopify.png" alt="amazon">
+                                                        </td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Crew Neck Tshirt</a></td>
+                                                        <td>4 hours ago</td>
+                                                        <td>Raymond Walsh</td>
+                                                        <td><span class="red">Cancelled</span></td>
+                                                        <td>$7</td>
+                                                        <td>$17</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/1-amazon.png" alt="amazon">
+                                                        </td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Modern Scoop neck</a></td>
+                                                        <td>05/27/2019</td>
+                                                        <td>Kathryn Ferguson</td>
+                                                        <td><span class="red">Cancelled</span></td>
+                                                        <td>$76</td>
+                                                        <td>$86</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/1-amazon.png" alt="amazon">
+                                                        </td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">SBatman-DC Comics T-shirt</a></td>
+                                                        <td>05/24/2019</td>
+                                                        <td>Lauren Burns</td>
+                                                        <td><span class="red">Cancelled</span></td>
+                                                        <td>$33</td>
+                                                        <td>$43</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/3-woo.png" alt="amazon"></td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Team Shirt Wildkats</a></td>
+                                                        <td>04/29/2019</td>
+                                                        <td>Joseph Wood</td>
+                                                        <td><span class="red">Cancelled</span></td>
+                                                        <td>$6</td>
+                                                        <td>$16</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/3-woo.png" alt="amazon"></td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Golf Sports</a></td>
+                                                        <td>04/29/2019</td>
+                                                        <td>Sonali Pathak</td>
+                                                        <td><span class="red">Cancelled</span></td>
+                                                        <td>$27</td>
+                                                        <td>$37</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/4-ink.png" alt="amazon"></td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Cricket Jersey</a></td>
+                                                        <td>03/16/2019</td>
+                                                        <td>Akash Pathak</td>
+                                                        <td><span class="red">Cancelled</span></td>
+                                                        <td>$3</td>
+                                                        <td>$13</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/1-amazon.png" alt="amazon">
+                                                        </td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Football Trainies</a></td>
+                                                        <td>02/21/2019</td>
+                                                        <td>Austin Gray</td>
+                                                        <td><span class="red">Cancelled</span></td>
+                                                        <td>$22</td>
+                                                        <td>$32</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/4-ink.png" alt="amazon"></td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Team Shirt Knighrider</a></td>
+                                                        <td>02/25/2019</td>
+                                                        <td>Martin Gray</td>
+                                                        <td><span class="red">Cancelled</span></td>
+                                                        <td>$10</td>
+                                                        <td>$20</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/1-amazon.png" alt="amazon">
+                                                        </td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">T-Shirt Superking</a></td>
+                                                        <td>02/29/2019</td>
+                                                        <td>Laura Wills</td>
+                                                        <td><span class="red">Cancelled</span></td>
+                                                        <td>$30</td>
+                                                        <td>$30</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="waiting" role="tabpanel"
+                             aria-labelledby="waiting-tab">
+                            <div class="row border-bottom">
+                                <div class="col-md-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="table-responsive">
+                                                <table class="table table-striped table-bordered">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>STORE</th>
+                                                        <th>ID</th>
+                                                        <th>ORDER</th>
+                                                        <th>DATE</th>
+                                                        <th>FROM</th>
+                                                        <th>STATUS</th>
+                                                        <th>COST</th>
+                                                        <th>TOTAL</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td><img src="./images/1-amazon.png" alt="amazon">
+                                                        </td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Cat T-shirt Woo Woo Paw</a></td>
+                                                        <td>1 hour ago</td>
+                                                        <td>Joan Wells</td>
+                                                        <td><span class="yellow">Waiting to Fulfill</span>
+                                                        </td>
+                                                        <td>$22</td>
+                                                        <td>$32</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/2-shopify.png" alt="amazon">
+                                                        </td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Crew Neck Tshirt</a></td>
+                                                        <td>4 hours ago</td>
+                                                        <td>Raymond Walsh</td>
+                                                        <td><span class="yellow">Waiting to Fulfill</span>
+                                                        </td>
+                                                        <td>$7</td>
+                                                        <td>$17</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/1-amazon.png" alt="amazon">
+                                                        </td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Modern Scoop neck</a></td>
+                                                        <td>05/27/2019</td>
+                                                        <td>Kathryn Ferguson</td>
+                                                        <td><span class="yellow">Waiting to Fulfill</span>
+                                                        </td>
+                                                        <td>$76</td>
+                                                        <td>$86</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/1-amazon.png" alt="amazon">
+                                                        </td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">SBatman-DC Comics T-shirt</a></td>
+                                                        <td>05/24/2019</td>
+                                                        <td>Lauren Burns</td>
+                                                        <td><span class="yellow">Waiting to Fulfill</span>
+                                                        </td>
+                                                        <td>$33</td>
+                                                        <td>$43</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/3-woo.png" alt="amazon"></td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Team Shirt Wildkats</a></td>
+                                                        <td>04/29/2019</td>
+                                                        <td>Joseph Wood</td>
+                                                        <td><span class="yellow">Waiting to Fulfill</span>
+                                                        </td>
+                                                        <td>$6</td>
+                                                        <td>$16</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/3-woo.png" alt="amazon"></td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Golf Sports</a></td>
+                                                        <td>04/29/2019</td>
+                                                        <td>Sonali Pathak</td>
+                                                        <td><span class="yellow">Waiting to Fulfill</span>
+                                                        </td>
+                                                        <td>$27</td>
+                                                        <td>$37</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/4-ink.png" alt="amazon"></td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Cricket Jersey</a></td>
+                                                        <td>03/16/2019</td>
+                                                        <td>Akash Pathak</td>
+                                                        <td><span class="yellow">Waiting to Fulfill</span>
+                                                        </td>
+                                                        <td>$3</td>
+                                                        <td>$13</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/1-amazon.png" alt="amazon">
+                                                        </td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Football Trainies</a></td>
+                                                        <td>02/21/2019</td>
+                                                        <td>Austin Gray</td>
+                                                        <td><span class="yellow">Waiting to Fulfill</span>
+                                                        </td>
+                                                        <td>$22</td>
+                                                        <td>$32</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/4-ink.png" alt="amazon"></td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Team Shirt Knighrider</a></td>
+                                                        <td>02/25/2019</td>
+                                                        <td>Martin Gray</td>
+                                                        <td><span class="yellow">Waiting to Fulfill</span>
+                                                        </td>
+                                                        <td>$10</td>
+                                                        <td>$20</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/1-amazon.png" alt="amazon">
+                                                        </td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">T-Shirt Superking</a></td>
+                                                        <td>02/29/2019</td>
+                                                        <td>Laura Wills</td>
+                                                        <td><span class="yellow">Waiting to Fulfill</span>
+                                                        </td>
+                                                        <td>$30</td>
+                                                        <td>$30</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="being" role="tabpanel" aria-labelledby="being-tab">
+                            <div class="row border-bottom">
+                                <div class="col-md-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="table-responsive">
+                                                <table class="table table-striped table-bordered">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>STORE</th>
+                                                        <th>ID</th>
+                                                        <th>ORDER</th>
+                                                        <th>DATE</th>
+                                                        <th>FROM</th>
+                                                        <th>STATUS</th>
+                                                        <th>COST</th>
+                                                        <th>TOTAL</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td><img src="./images/1-amazon.png" alt="amazon">
+                                                        </td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Cat T-shirt Woo Woo Paw</a></td>
+                                                        <td>1 hour ago</td>
+                                                        <td>Joan Wells</td>
+                                                        <td><span class="orange">Being Fulfilled</span></td>
+                                                        <td>$22</td>
+                                                        <td>$32</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/2-shopify.png" alt="amazon">
+                                                        </td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Crew Neck Tshirt</a></td>
+                                                        <td>4 hours ago</td>
+                                                        <td>Raymond Walsh</td>
+                                                        <td><span class="orange">Being Fulfilled</span></td>
+                                                        <td>$7</td>
+                                                        <td>$17</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/1-amazon.png" alt="amazon">
+                                                        </td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Modern Scoop neck</a></td>
+                                                        <td>05/27/2019</td>
+                                                        <td>Kathryn Ferguson</td>
+                                                        <td><span class="orange">Being Fulfilled</span></td>
+                                                        <td>$76</td>
+                                                        <td>$86</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/1-amazon.png" alt="amazon">
+                                                        </td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">SBatman-DC Comics T-shirt</a></td>
+                                                        <td>05/24/2019</td>
+                                                        <td>Lauren Burns</td>
+                                                        <td><span class="orange">Being Fulfilled</span></td>
+                                                        <td>$33</td>
+                                                        <td>$43</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/3-woo.png" alt="amazon"></td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Team Shirt Wildkats</a></td>
+                                                        <td>04/29/2019</td>
+                                                        <td>Joseph Wood</td>
+                                                        <td><span class="orange">Being Fulfilled</span></td>
+                                                        <td>$6</td>
+                                                        <td>$16</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/3-woo.png" alt="amazon"></td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Golf Sports</a></td>
+                                                        <td>04/29/2019</td>
+                                                        <td>Sonali Pathak</td>
+                                                        <td><span class="orange">Being Fulfilled</span></td>
+                                                        <td>$27</td>
+                                                        <td>$37</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/4-ink.png" alt="amazon"></td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Cricket Jersey</a></td>
+                                                        <td>03/16/2019</td>
+                                                        <td>Akash Pathak</td>
+                                                        <td><span class="orange">Being Fulfilled</span></td>
+                                                        <td>$3</td>
+                                                        <td>$13</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/1-amazon.png" alt="amazon">
+                                                        </td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Football Trainies</a></td>
+                                                        <td>02/21/2019</td>
+                                                        <td>Austin Gray</td>
+                                                        <td><span class="orange">Being Fulfilled</span></td>
+                                                        <td>$22</td>
+                                                        <td>$32</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/4-ink.png" alt="amazon"></td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">Team Shirt Knighrider</a></td>
+                                                        <td>02/25/2019</td>
+                                                        <td>Martin Gray</td>
+                                                        <td><span class="orange">Being Fulfilled</span></td>
+                                                        <td>$10</td>
+                                                        <td>$20</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./images/1-amazon.png" alt="amazon">
+                                                        </td>
+                                                        <td>2653</td>
+                                                        <td><a href="#">T-Shirt Superking</a></td>
+                                                        <td>02/29/2019</td>
+                                                        <td>Laura Wills</td>
+                                                        <td><span class="orange">Being Fulfilled</span></td>
+                                                        <td>$30</td>
+                                                        <td>$30</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Container fluid  -->
+        <!-- footer -->
+
+        <footer class="footer">
+            <div class="row samplefiles">
+                <div class="col-md-2">
+                    <img class="img-fluid" src="./images/handshake-colour.png">
+                </div>
+                <div class="col-md-8">
+                    <div class="sampleinfo">
+                        <h2>Learn more about vendors & fulfillment.</h2>
+                        <span>Watch this video to learn how choosing right vendors may help you earn more. </span>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="video-button">
+                        <a href="#" class="btn"><i class="mdi mdi-play"></i> Watch video</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- End footer -->
+
+    </div>
+    <!-- End Page wrapper  -->
+</div>
+<!-- End Wrapper -->
+<!-- ============================================================== -->
+
+<!-- All Jquery -->
+<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap tether Core JavaScript -->
+<script src="assets/libs/popper.js/dist/umd/popper.min.js"></script>
+<script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+<script src="assets/extra-libs/sparkline/sparkline.js"></script>
+<!--Wave Effects -->
+<script src="dist/js/waves.js"></script>
+<!--Menu sidebar -->
+<script src="dist/js/sidebarmenu.js"></script>
+<!--Custom JavaScript -->
+<script src="dist/js/custom.min.js"></script>
+<!--This page JavaScript -->
+<!-- <script src="dist/js/pages/dashboards/dashboard1.js"></script> -->
+<!-- Charts js Files -->
+<script src="assets/libs/flot/excanvas.js"></script>
+<script src="assets/libs/flot/jquery.flot.js"></script>
+<script src="assets/libs/flot/jquery.flot.pie.js"></script>
+<script src="assets/libs/flot/jquery.flot.time.js"></script>
+<script src="assets/libs/flot/jquery.flot.stack.js"></script>
+<script src="assets/libs/flot/jquery.flot.crosshair.js"></script>
+<script src="assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+<script src="dist/js/pages/chart/chart-page-init.js"></script>
+
+
+</body>
+
+</html>

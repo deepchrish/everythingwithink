@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/everythingwithink.iml" filepath="$PROJECT_DIR$/.idea/everythingwithink.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../strato-project/.idea/strato-project.iml" filepath="$PROJECT_DIR$/../strato-project/.idea/strato-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../wander/.idea/wander.iml" filepath="$PROJECT_DIR$/../wander/.idea/wander.iml" />
     </modules>
   </component>
 </project>
