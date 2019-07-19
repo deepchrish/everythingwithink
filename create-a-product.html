@@ -89,35 +89,35 @@
                     <!-- ============================================================== -->
                     <!-- create new -->
                     <!-- ============================================================== -->
-                    <li class="left-dropdown">
-                        <div class="form-group top-nav-drop">
-                            <select id="selectbox1" name="selectbox1" class="form-control">
-                                <option value="">Select an option&hellip;</option>
-                                <option value="Roger">Roger & co.</option>
-                                <option value="Mark">Mark tech</option>
-                                <option value="oso">Oso</option>
-                                <option value="whoop">Whoop</option>
-                                <option value="Roger">Roger & co.</option>
-                                <option value="Mark">Mark tech</option>
-                                <option value="oso">Oso</option>
-                                <option value="whoop">Whoop</option>
-                                <option value="Roger">Roger & co.</option>
-                                <option value="Mark">Mark tech</option>
-                                <option value="oso">Oso</option>
-                                <option value="whoop">Whoop</option>
-                                <option value="Roger">Roger & co.</option>
-                                <option value="Mark">Mark tech</option>
-                                <option value="oso">Oso</option>
-                                <option value="whoop">Whoop</option>
-                            </select>
-                        </div>
-                    </li>
+                    <!--<li class="left-dropdown">-->
+                        <!--<div class="form-group top-nav-drop">-->
+                            <!--<select id="selectbox1" name="selectbox1" class="form-control">-->
+                                <!--<option value="">Select an option&hellip;</option>-->
+                                <!--<option value="Roger">Roger & co.</option>-->
+                                <!--<option value="Mark">Mark tech</option>-->
+                                <!--<option value="oso">Oso</option>-->
+                                <!--<option value="whoop">Whoop</option>-->
+                                <!--<option value="Roger">Roger & co.</option>-->
+                                <!--<option value="Mark">Mark tech</option>-->
+                                <!--<option value="oso">Oso</option>-->
+                                <!--<option value="whoop">Whoop</option>-->
+                                <!--<option value="Roger">Roger & co.</option>-->
+                                <!--<option value="Mark">Mark tech</option>-->
+                                <!--<option value="oso">Oso</option>-->
+                                <!--<option value="whoop">Whoop</option>-->
+                                <!--<option value="Roger">Roger & co.</option>-->
+                                <!--<option value="Mark">Mark tech</option>-->
+                                <!--<option value="oso">Oso</option>-->
+                                <!--<option value="whoop">Whoop</option>-->
+                            <!--</select>-->
+                        <!--</div>-->
+                    <!--</li>-->
                 </ul>
 
                 <!-- Right side toggle and nav items -->
                 <ul class="navbar-nav float-right">
                     <li>
-                        <a class="btn nav-product-btn primary-button" href="create-a-product.html"><i
+                        <a class="btn nav-product-btn primary-button" href="add-new-product-step-1.html"><i
                                 class="mdi mdi-tag-outline"></i> Add a
                             new Product</a>
                     </li>
@@ -234,18 +234,25 @@
             <!-- Sidebar navigation-->
             <nav class="sidebar-nav">
                 <ul id="sidebarnav">
-                    <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.html" aria-expanded="false"><i class="mdi mdi-home-outline"></i><span class="hide-menu">My Home</span><small class="new-item">New</small></a> </li>
-                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="order-empty.html" aria-expanded="false"><i class="mdi mdi-shopping"></i><span class="hide-menu">Orders</span></a></li>
-                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="product-empty.html" aria-expanded="false"><i class="mdi mdi-tag"></i><span class="hide-menu">Products</span></a></li>
-                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="file-library.html" aria-expanded="false"><i class="mdi mdi-image-multiple"></i><span class="hide-menu">File Library</span></a></li>
+                    <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.html" aria-expanded="false"><i class="mdi mdi-home-outline"></i><span class="hide-menu">My Home</span></a> </li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="orders-list.html" aria-expanded="false"><i class="mdi mdi-shopping"></i><span class="hide-menu">Orders</span><small class="new-item">New</small></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="product-list.html" aria-expanded="false"><i class="mdi mdi-tag"></i><span class="hide-menu">Products</span></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="file-library-files.html" aria-expanded="false"><i class="mdi mdi-image-multiple"></i><span class="hide-menu">File Library</span></a></li>
                     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="company-empty.html" aria-expanded="false"><i class="mdi mdi-store"></i><span class="hide-menu">Workspaces</span></a></li>
                     <!--<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="company-empty.html" aria-expanded="false"><i class="mdi mdi-border-inside"></i><span class="hide-menu">Companies</span></a></li>-->
-                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="warehouse.html" aria-expanded="false"><i class="mdi mdi-package-variant-closed"></i><span class="hide-menu">Warehouse</span></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-package-variant-closed"></i><span class="hide-menu">Warehouse</span></a>
+                        <ul aria-expanded="false" class="collapse  first-level">
+                            <li class="sidebar-item"><a href="warehouse.html" class="sidebar-link"><i class="mdi mdi-hospital-building"></i><span class="hide-menu">Inventory</span></a></li>
+                            <li class="sidebar-item"><a href="warehouse-pricing.html" class="sidebar-link"><i class="mdi mdi-cards-playing-outline"></i><span class="hide-menu">Pricing</span></a></li>
+                            <li class="sidebar-item"><a href="warehouse-pricing.html" class="sidebar-link"><i class="mdi mdi-currency-btc"></i><span class="hide-menu">Currency</span></a></li>
+                            <li class="sidebar-item"><a href="warehouse-shipment.html" class="sidebar-link"><i class="mdi mdi-truck-delivery"></i><span class="hide-menu">Shipment</span></a></li>
+                        </ul>
+                    </li>
                     <!--<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="file-library.html" aria-expanded="false"><i class="mdi mdi-library-books"></i><span class="hide-menu">File Library</span></a></li>-->
                     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="billing.html" aria-expanded="false"><i class="mdi mdi-credit-card"></i><span class="hide-menu">Billing</span></a></li>
                     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="easy-ink-on-boarding.html" aria-expanded="false"><i class="mdi mdi-invert-colors"></i><span class="hide-menu">Easy Ink</span></a></li>
                     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="reports.html" aria-expanded="false"><i class="mdi mdi-file-chart"></i><span class="hide-menu">Reports</span></a></li>
-                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="setting.html" aria-expanded="false"><i class="mdi mdi-tune"></i><span class="hide-menu">Account Setting</span></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="setting.html" aria-expanded="false"><i class="mdi mdi-tune"></i><span class="hide-menu">Account Settings</span></a></li>
 
                 </ul>
                 <div class="dropdown-divider"></div>
@@ -357,7 +364,7 @@
                                                                 <p>Details</p>
                                                             </div>
                                                         </a>
-                                                        <a href="#">
+                                                        <a href="design-studio.html">
                                                             <div class="righthover">
                                                                 <p>Pick This</p>
                                                             </div>
@@ -386,7 +393,7 @@
                                                                 <p>Details</p>
                                                             </div>
                                                         </a>
-                                                        <a href="#">
+                                                        <a href="design-studio.html">
                                                             <div class="righthover">
                                                                 <p>Pick This</p>
                                                             </div>
@@ -415,7 +422,7 @@
                                                                 <p>Details</p>
                                                             </div>
                                                         </a>
-                                                        <a href="#">
+                                                        <a href="design-studio.html">
                                                             <div class="righthover">
                                                                 <p>Pick This</p>
                                                             </div>
@@ -444,7 +451,7 @@
                                                                 <p>Details</p>
                                                             </div>
                                                         </a>
-                                                        <a href="#">
+                                                        <a href="design-studio.html">
                                                             <div class="righthover">
                                                                 <p>Pick This</p>
                                                             </div>
@@ -476,7 +483,7 @@
                                                                 <p>Details</p>
                                                             </div>
                                                         </a>
-                                                        <a href="#">
+                                                        <a href="design-studio.html">
                                                             <div class="righthover">
                                                                 <p>Pick This</p>
                                                             </div>
@@ -505,7 +512,7 @@
                                                                 <p>Details</p>
                                                             </div>
                                                         </a>
-                                                        <a href="#">
+                                                        <a href="design-studio.html">
                                                             <div class="righthover">
                                                                 <p>Pick This</p>
                                                             </div>
@@ -534,7 +541,7 @@
                                                                 <p>Details</p>
                                                             </div>
                                                         </a>
-                                                        <a href="#">
+                                                        <a href="design-studio.html">
                                                             <div class="righthover">
                                                                 <p>Pick This</p>
                                                             </div>
@@ -563,7 +570,7 @@
                                                                 <p>Details</p>
                                                             </div>
                                                         </a>
-                                                        <a href="#">
+                                                        <a href="design-studio.html">
                                                             <div class="righthover">
                                                                 <p>Pick This</p>
                                                             </div>

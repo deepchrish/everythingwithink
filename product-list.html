@@ -91,29 +91,29 @@
                     <!-- ============================================================== -->
                     <!-- create new -->
                     <!-- ============================================================== -->
-                    <li class="left-dropdown">
-                        <div class="form-group top-nav-drop">
-                            <select id="selectbox1" name="selectbox1" class="form-control">
-                                <option value="">Select an option&hellip;</option>
-                                <option value="Roger">Roger & co.</option>
-                                <option value="Mark">Mark tech</option>
-                                <option value="oso">Oso</option>
-                                <option value="whoop">Whoop</option>
-                                <option value="Roger">Roger & co.</option>
-                                <option value="Mark">Mark tech</option>
-                                <option value="oso">Oso</option>
-                                <option value="whoop">Whoop</option>
-                                <option value="Roger">Roger & co.</option>
-                                <option value="Mark">Mark tech</option>
-                                <option value="oso">Oso</option>
-                                <option value="whoop">Whoop</option>
-                                <option value="Roger">Roger & co.</option>
-                                <option value="Mark">Mark tech</option>
-                                <option value="oso">Oso</option>
-                                <option value="whoop">Whoop</option>
-                            </select>
-                        </div>
-                    </li>
+                    <!--<li class="left-dropdown">-->
+                        <!--<div class="form-group top-nav-drop">-->
+                            <!--<select id="selectbox1" name="selectbox1" class="form-control">-->
+                                <!--<option value="">Select an option&hellip;</option>-->
+                                <!--<option value="Roger">Roger & co.</option>-->
+                                <!--<option value="Mark">Mark tech</option>-->
+                                <!--<option value="oso">Oso</option>-->
+                                <!--<option value="whoop">Whoop</option>-->
+                                <!--<option value="Roger">Roger & co.</option>-->
+                                <!--<option value="Mark">Mark tech</option>-->
+                                <!--<option value="oso">Oso</option>-->
+                                <!--<option value="whoop">Whoop</option>-->
+                                <!--<option value="Roger">Roger & co.</option>-->
+                                <!--<option value="Mark">Mark tech</option>-->
+                                <!--<option value="oso">Oso</option>-->
+                                <!--<option value="whoop">Whoop</option>-->
+                                <!--<option value="Roger">Roger & co.</option>-->
+                                <!--<option value="Mark">Mark tech</option>-->
+                                <!--<option value="oso">Oso</option>-->
+                                <!--<option value="whoop">Whoop</option>-->
+                            <!--</select>-->
+                        <!--</div>-->
+                    <!--</li>-->
                 </ul>
                 <!-- ============================================================== -->
                 <!-- Right side toggle and nav items -->
@@ -121,7 +121,7 @@
                 <ul class="navbar-nav float-right">
                     <!-- ============================================================== -->
                     <li>
-                        <a class="btn nav-product-btn primary-button" href="create-a-product.html"><i class="mdi mdi-tag-outline"></i> Add a
+                        <a class="btn nav-product-btn primary-button" href="add-new-product-step-1.html"><i class="mdi mdi-tag-outline"></i> Add a
                             new Product</a>
                     </li>
                     <!-- ============================================================== -->
@@ -250,18 +250,25 @@
             <!-- Sidebar navigation-->
             <nav class="sidebar-nav">
                 <ul id="sidebarnav">
-                    <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.html" aria-expanded="false"><i class="mdi mdi-home-outline"></i><span class="hide-menu">My Home</span><small class="new-item">New</small></a> </li>
-                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="order-empty.html" aria-expanded="false"><i class="mdi mdi-shopping"></i><span class="hide-menu">Orders</span></a></li>
-                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="product-empty.html" aria-expanded="false"><i class="mdi mdi-tag"></i><span class="hide-menu">Products</span></a></li>
-                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="file-library.html" aria-expanded="false"><i class="mdi mdi-image-multiple"></i><span class="hide-menu">File Library</span></a></li>
+                    <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.html" aria-expanded="false"><i class="mdi mdi-home-outline"></i><span class="hide-menu">My Home</span></a> </li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="orders-list.html" aria-expanded="false"><i class="mdi mdi-shopping"></i><span class="hide-menu">Orders</span><small class="new-item">New</small></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="product-list.html" aria-expanded="false"><i class="mdi mdi-tag"></i><span class="hide-menu">Products</span></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="file-library-files.html" aria-expanded="false"><i class="mdi mdi-image-multiple"></i><span class="hide-menu">File Library</span></a></li>
                     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="company-empty.html" aria-expanded="false"><i class="mdi mdi-store"></i><span class="hide-menu">Workspaces</span></a></li>
                     <!--<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="company-empty.html" aria-expanded="false"><i class="mdi mdi-border-inside"></i><span class="hide-menu">Companies</span></a></li>-->
-                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="warehouse.html" aria-expanded="false"><i class="mdi mdi-package-variant-closed"></i><span class="hide-menu">Warehouse</span></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-package-variant-closed"></i><span class="hide-menu">Warehouse</span></a>
+                        <ul aria-expanded="false" class="collapse  first-level">
+                            <li class="sidebar-item"><a href="warehouse.html" class="sidebar-link"><i class="mdi mdi-hospital-building"></i><span class="hide-menu">Inventory</span></a></li>
+                            <li class="sidebar-item"><a href="warehouse-pricing.html" class="sidebar-link"><i class="mdi mdi-cards-playing-outline"></i><span class="hide-menu">Pricing</span></a></li>
+                            <li class="sidebar-item"><a href="warehouse-pricing.html" class="sidebar-link"><i class="mdi mdi-currency-btc"></i><span class="hide-menu">Currency</span></a></li>
+                            <li class="sidebar-item"><a href="warehouse-shipment.html" class="sidebar-link"><i class="mdi mdi-truck-delivery"></i><span class="hide-menu">Shipment</span></a></li>
+                        </ul>
+                    </li>
                     <!--<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="file-library.html" aria-expanded="false"><i class="mdi mdi-library-books"></i><span class="hide-menu">File Library</span></a></li>-->
                     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="billing.html" aria-expanded="false"><i class="mdi mdi-credit-card"></i><span class="hide-menu">Billing</span></a></li>
                     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="easy-ink-on-boarding.html" aria-expanded="false"><i class="mdi mdi-invert-colors"></i><span class="hide-menu">Easy Ink</span></a></li>
                     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="reports.html" aria-expanded="false"><i class="mdi mdi-file-chart"></i><span class="hide-menu">Reports</span></a></li>
-                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="setting.html" aria-expanded="false"><i class="mdi mdi-tune"></i><span class="hide-menu">Account Setting</span></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="setting.html" aria-expanded="false"><i class="mdi mdi-tune"></i><span class="hide-menu">Account Settings</span></a></li>
 
                 </ul>
                 <div class="dropdown-divider"></div>
@@ -289,313 +296,235 @@
                 </div>
             </div>
             <!-- ============================================================== -->
-            <div class="row">
-                <div class="col-md-12 mt-2">
-                    <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
-                        <li class="nav-item procustom">
-                            <a class="nav-link active" id="allitem-tab" data-toggle="tab" href="#allitem" role="tab"
-                               aria-controls="allitem" aria-selected="true">All </a>
-                        </li>
-                        <li class="nav-item procustom">
-                            <a class="nav-link" id="fulfilled-tab" data-toggle="tab" href="#fulfilled"
-                               role="tab" aria-controls="fulfilled" aria-selected="false">Shopify</a>
-                        </li>
-                        <li class="nav-item procustom">
-                            <a class="nav-link" id="returned-tab" data-toggle="tab" href="#returned"
-                               role="tab" aria-controls="returned" aria-selected="false">ETSY</a>
-                        </li>
-                        <li class="nav-item procustom">
-                            <a class="nav-link" id="cancelled-tab" data-toggle="tab" href="#cancelled"
-                               role="tab" aria-controls="cancelled" aria-selected="false">Amazon</a>
-                        </li>
-                        <li class="nav-item procustom">
-                            <a class="nav-link" id="waiting-tab" data-toggle="tab" href="#waiting"
-                               role="tab" aria-controls="waiting" aria-selected="false">Woo Commerce</a>
-                        </li>
-                    </ul>
-
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="allitem" role="tabpanel"
-                             aria-labelledby="allitem-tab">
-                            <div class="row mt-4">
-                                <div class="col-md-2 ">
-                                    <div class="form-group all-select">
-                                        <input type="checkbox" name="selected" class="selectall " id="all"/> <label for='all'>All</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-10 ">
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <select class="form-control">
-                                                    <option selected>All Orders</option>
-                                                    <option value="1">Fulfilled</option>
-                                                    <option value="2">Returned</option>
-                                                    <option value="3">Cancelled</option>
-                                                    <option value="4">Waiting to fulfill</option>
-                                                    <option value="5">Being Fulfilled</option>
-                                                    <option value="6">Cancelled</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <select class="form-control">
-                                                    <option selected>All Stores</option>
-                                                    <option value="1">Fulfilled</option>
-                                                    <option value="2">Returned</option>
-                                                    <option value="3">Cancelled</option>
-                                                    <option value="4">Waiting to fulfill</option>
-                                                    <option value="5">Being Fulfilled</option>
-                                                    <option value="6">Cancelled</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="input-group">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-magnify"></i></span>
-                                                    </div>
-                                                    <input type="search" class="form-control" placeholder="Search Order" aria-label="Search">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div>
-                                                    <div class="btn-group">
-                                                        <button class="btn btn-light active" id="grid">
-                                                            <i class="mdi mdi-view-grid"></i>
-                                                        </button>
-                                                        <button class="btn btn-secondary " id="list">
-                                                            <i class="mdi mdi-view-list"></i>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    <div class="form-group orders-list-form">
-                                        <select name="" id="" class="form-control">
-                                            <option selected>All Orders</option>
-                                            <option value="1">Fulfilled</option>
-                                            <option value="2">Returned</option>
-                                            <option value="3">Cancelled</option>
-                                            <option value="4">Waiting to fulfill</option>
-                                            <option value="5">Being Fulfilled</option>
-                                            <option value="6">Cancelled</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div id="products" class="row view-group mt-4">
-                                <div class="item col-md-3 col-lg-3 form-group">
-                                    <input type="checkbox" name="selected[]" id="box_1" value="1"
-                                           class="form-control romiwills checkbox-custom"/>
-                                    <label for="box_1" class="custom-lable">
-                                        <div class="thumbnail card">
-                                            <div class="img-event">
-                                                <img class="group list-group-image img-fluid"
-                                                     src="./images/demo-product-3.png" alt=""/>
-                                            </div>
-                                            <div class="dropdown-divider"></div>
-                                            <div class="caption product-card">
-                                                <h4 class="group inner list-group-item-heading">
-                                                    Avengers Endgame: 3000
-                                                </h4>
-                                                <span>PMGOA</span>
-                                                <div class="row ">
-                                                    <div class="col-xs-12 col-md-10">
-                                                        <ul class="total-product mt-1">
-                                                            <li><img class="img-fluid" src="./images/3-woo.png" title="Woo Commerce"> </li>
-                                                            <li><img class="img-fluid" src="./images/4-ink.png" title="Everything With ink"> </li>
-                                                            <li><img class="img-fluid" src="./images/etsy-logo.png" title="ETSY"> </li>
-                                                            <!--<li>+40 </li>-->
-                                                        </ul>
-                                                        <a class="viewall" href="#" data-toggle="tooltip" data-html="true" title="" data-original-title="Amazon</br>Shopify">+2 more</a>
-                                                    </div>
-                                                    <div class="col-xs-12 col-md-2">
-                                                        <div class="dropdown lead float-right product-drop">
-                                                            <i class="mdi mdi-dots-vertical" id="dropdownMenuButton"
-                                                               data-toggle="dropdown" aria-haspopup="true"
-                                                               aria-expanded="false"></i>
-                                                            <div class="dropdown-menu"
-                                                                 aria-labelledby="dropdownMenuButton">
-                                                                <a class="dropdown-item" href="#">Action</a>
-                                                                <a class="dropdown-item" href="#">Another action</a>
-                                                                <a class="dropdown-item" href="#">Something else
-                                                                    here</a>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </label>
-                                </div>
-
-                                <div class="item col-md-3 col-lg-3 form-group">
-                                    <input type="checkbox" name="selected[]" id="box_2" value="2"
-                                           class="form-control romiwills checkbox-custom"/>
-                                    <label for="box_2" class="custom-lable">
-                                        <div class="thumbnail card">
-                                            <div class="img-event">
-                                                <img class="group list-group-image img-fluid"
-                                                     src="./images/demo-product-1.png" alt=""/>
-                                            </div>
-                                            <div class="dropdown-divider"></div>
-                                            <div class="caption product-card">
-                                                <h4 class="group inner list-group-item-heading">
-                                                    Captain America: Logo
-                                                </h4>
-                                                <span>PMGOA</span>
-                                                <div class="row ">
-                                                    <div class="col-xs-12 col-md-10">
-                                                        <ul class="total-product mt-1">
-                                                            <li><img class="img-fluid" src="./images/3-woo.png" title="Woo Commerce"> </li>
-                                                            <li><img class="img-fluid" src="./images/4-ink.png" title="Everything With ink"> </li>
-                                                            <li><img class="img-fluid" src="./images/etsy-logo.png" title="ETSY"> </li>
-                                                            <!--<li>+40 </li>-->
-                                                        </ul>
-                                                        <a class="viewall" href="#" data-toggle="tooltip" data-html="true" title="" data-original-title="Amazon</br>Shopify">+2 more</a>
-                                                    </div>
-                                                    <div class="col-xs-12 col-md-2">
-                                                        <div class="dropdown lead float-right product-drop">
-                                                            <i class="mdi mdi-dots-vertical" id="dropdownMenuButton"
-                                                               data-toggle="dropdown" aria-haspopup="true"
-                                                               aria-expanded="false"></i>
-                                                            <div class="dropdown-menu"
-                                                                 aria-labelledby="dropdownMenuButton">
-                                                                <a class="dropdown-item" href="#">Action</a>
-                                                                <a class="dropdown-item" href="#">Another action</a>
-                                                                <a class="dropdown-item" href="#">Something else
-                                                                    here</a>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </label>
-                                </div>
-
-                                <div class="item col-md-3 col-lg-3 form-group">
-                                    <input type="checkbox" name="selected[]" id="box_3" value="3"
-                                           class="form-control romiwills checkbox-custom"/>
-                                    <label for="box_3" class="custom-lable">
-                                        <div class="thumbnail card">
-                                            <div class="img-event">
-                                                <img class="group list-group-image img-fluid"
-                                                     src="./images/demo-product-2.png" alt=""/>
-                                            </div>
-                                            <div class="dropdown-divider"></div>
-                                            <div class="caption product-card">
-                                                <h4 class="group inner list-group-item-heading">
-                                                    Marvel: Logo
-                                                </h4>
-                                                <span>PMGOA</span>
-                                                <div class="row ">
-                                                    <div class="col-xs-12 col-md-10">
-                                                        <ul class="total-product mt-1">
-                                                            <li><img class="img-fluid" src="./images/3-woo.png" title="Woo Commerce"> </li>
-                                                            <li><img class="img-fluid" src="./images/4-ink.png" title="Everything With ink"> </li>
-                                                            <li><img class="img-fluid" src="./images/etsy-logo.png" title="ETSY"> </li>
-                                                            <!--<li>+40 </li>-->
-                                                        </ul>
-                                                        <a class="viewall" href="#" data-toggle="tooltip" data-html="true" title="" data-original-title="Amazon</br>Shopify">+2 more</a>
-                                                    </div>
-                                                    <div class="col-xs-12 col-md-2">
-                                                        <div class="dropdown lead float-right product-drop">
-                                                            <i class="mdi mdi-dots-vertical" id="dropdownMenuButton"
-                                                               data-toggle="dropdown" aria-haspopup="true"
-                                                               aria-expanded="false"></i>
-                                                            <div class="dropdown-menu"
-                                                                 aria-labelledby="dropdownMenuButton">
-                                                                <a class="dropdown-item" href="#">Action</a>
-                                                                <a class="dropdown-item" href="#">Another action</a>
-                                                                <a class="dropdown-item" href="#">Something else
-                                                                    here</a>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </label>
-
-                                </div>
-
-                                <div class="item col-md-3 col-lg-3 form-group">
-                                    <input type="checkbox" name="sele cted[]" id="box_4" value="4"
-                                           class="form-control romiwills checkbox-custom"/>
-                                    <label for="box_4" class="custom-lable">
-                                        <div class="thumbnail card">
-                                            <div class="img-event">
-                                                <img class="group list-group-image img-fluid"
-                                                     src="./images/demo-product-4.png" alt=""/>
-                                            </div>
-                                            <div class="dropdown-divider"></div>
-                                            <div class="caption product-card">
-                                                <h4 class="group inner list-group-item-heading">
-                                                    Spiderman: Homecoming
-                                                </h4>
-                                                <span>PMGOA</span>
-                                                <div class="row ">
-                                                    <div class="col-xs-12 col-md-10">
-                                                        <ul class="total-product mt-1">
-                                                            <li><img class="img-fluid" src="./images/3-woo.png" title="Woo Commerce"> </li>
-                                                            <li><img class="img-fluid" src="./images/4-ink.png" title="Everything With ink"> </li>
-                                                            <li><img class="img-fluid" src="./images/etsy-logo.png" title="ETSY"> </li>
-                                                            <!--<li>+40 </li>-->
-                                                        </ul>
-                                                        <a class="viewall" href="#" data-toggle="tooltip" data-html="true" title="" data-original-title="Amazon</br>Shopify">+2 more</a>
-                                                    </div>
-                                                    <div class="col-xs-12 col-md-2">
-                                                        <div class="dropdown lead float-right product-drop">
-                                                            <i class="mdi mdi-dots-vertical" id="dropdownMenuButton"
-                                                               data-toggle="dropdown" aria-haspopup="true"
-                                                               aria-expanded="false"></i>
-                                                            <div class="dropdown-menu"
-                                                                 aria-labelledby="dropdownMenuButton">
-                                                                <a class="dropdown-item" href="#">Action</a>
-                                                                <a class="dropdown-item" href="#">Another action</a>
-                                                                <a class="dropdown-item" href="#">Something else
-                                                                    here</a>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </label>
-
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="tab-pane fade" id="fulfilled" role="tabpanel"
-                             aria-labelledby="fulfilled-tab">
-                            22222222222
-                        </div>
-
-                        <div class="tab-pane fade" id="returned" role="tabpanel"
-                             aria-labelledby="returned-tab">
-                            3333333333
-                        </div>
-
-                        <div class="tab-pane fade" id="cancelled" role="tabpanel"
-                             aria-labelledby="cancelled-tab">
-                            44444444
-                        </div>
-
-                        <div class="tab-pane fade" id="waiting" role="tabpanel"
-                             aria-labelledby="waiting-tab">
-                            5555555
-                        </div>
-
+            <div class="row mt-4">
+                <div class="col-md-2">
+                    <div class="custom-control custom-checkbox pro-grid-chk">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">All</label>
                     </div>
+                </div>
+                <div class="col-md-10 ">
+                    <div class="form-row">
+                        <div class="col-3">
+                            <select class="form-control" id="allworkstation">
+                                <option selected>All Workstation</option>
+                                <option>Akil Coffee shop</option>
+                                <option>Akil Tees</option>
+                            </select>
+                        </div>
+                        <div class="col-3">
+                            <select class="form-control" id="allstores">
+                                <option selected>All Stores</option>
+                                <option>Amazon</option>
+                                <option>Shopify</option>
+                                <option>ETSY</option>
+                                <option>Woo-Commerce</option>
+                                <option>Everything with ink</option>
+                            </select>
+                        </div>
+                        <div class="col-3">
+                            <input type="search" class="form-control" id="searchitem" placeholder="Search Products">
+                        </div>
+                        <div class="col-3 pro-btns-group">
+                            <button class="btn primary-button">Search</button>
+                            <div class="btn-group">
+                                <button class="btn btn-light active" id="grid">
+                                    <i class="mdi mdi-view-grid"></i>
+                                </button>
+                                <button class="btn btn-secondary " id="list">
+                                    <i class="mdi mdi-view-list"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div id="products" class="row view-group mt-4">
+                <div class="item col-md-3 col-lg-3 col-sm-4 col-6 custom-control custom-checkbox">
+                    <input type="checkbox" name="selected[]" id="box_1" value="1"
+                           class="custom-control-input romiwills checkbox-custom"/>
+                    <label for="box_1" class="custom-control-label custom-lable">
+                        <div class="thumbnail card">
+                            <div class="img-event">
+                                <img class="group list-group-image img-fluid"
+                                     src="./images/demo-product-3.png" alt=""/>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div class="caption product-card">
+                                <h4 class="group inner list-group-item-heading">
+                                    Avengers Endgame: 3000
+                                </h4>
+                                <span>PMGOA</span>
+                                <div class="row ">
+                                    <div class="col-xs-12 col-md-10">
+                                        <ul class="total-product mt-1">
+                                            <li><img class="img-fluid" src="./images/3-woo.png" title="Woo Commerce"> </li>
+                                            <li><img class="img-fluid" src="./images/4-ink.png" title="Everything With ink"> </li>
+                                            <li><img class="img-fluid" src="./images/etsy-logo.png" title="ETSY"> </li>
+                                            <!--<li>+40 </li>-->
+                                        </ul>
+                                        <a class="viewall" href="#" data-toggle="tooltip" data-html="true" title="" data-original-title="Amazon</br>Shopify">+2 more</a>
+                                    </div>
+                                    <div class="col-xs-12 col-md-2">
+                                        <div class="dropdown lead float-right product-drop">
+                                            <i class="mdi mdi-dots-vertical" id="dropdownMenuButton"
+                                               data-toggle="dropdown" aria-haspopup="true"
+                                               aria-expanded="false"></i>
+                                            <div class="dropdown-menu"
+                                                 aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else
+                                                    here</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </label>
                 </div>
 
+                <div class="item col-md-3 col-lg-3 col-sm-4 col-6 custom-control custom-checkbox">
+                    <input type="checkbox" name="selected[]" id="box_2" value="2"
+                           class="custom-control-input romiwills checkbox-custom"/>
+                    <label for="box_2" class="custom-control-label custom-lable">
+                        <div class="thumbnail card">
+                            <div class="img-event">
+                                <img class="group list-group-image img-fluid"
+                                     src="./images/demo-product-1.png" alt=""/>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div class="caption product-card">
+                                <h4 class="group inner list-group-item-heading">
+                                    Captain America: Logo
+                                </h4>
+                                <span>PMGOA</span>
+                                <div class="row ">
+                                    <div class="col-xs-12 col-md-10">
+                                        <ul class="total-product mt-1">
+                                            <li><img class="img-fluid" src="./images/3-woo.png" title="Woo Commerce"> </li>
+                                            <li><img class="img-fluid" src="./images/4-ink.png" title="Everything With ink"> </li>
+                                            <li><img class="img-fluid" src="./images/etsy-logo.png" title="ETSY"> </li>
+                                            <!--<li>+40 </li>-->
+                                        </ul>
+                                        <a class="viewall" href="#" data-toggle="tooltip" data-html="true" title="" data-original-title="Amazon</br>Shopify">+2 more</a>
+                                    </div>
+                                    <div class="col-xs-12 col-md-2">
+                                        <div class="dropdown lead float-right product-drop">
+                                            <i class="mdi mdi-dots-vertical" id="dropdownMenuButton"
+                                               data-toggle="dropdown" aria-haspopup="true"
+                                               aria-expanded="false"></i>
+                                            <div class="dropdown-menu"
+                                                 aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else
+                                                    here</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="item col-md-3 col-lg-3 col-sm-4 col-6 custom-control custom-checkbox">
+                    <input type="checkbox" name="selected[]" id="box_3" value="3"
+                           class="custom-control-input romiwills checkbox-custom"/>
+                    <label for="box_3" class="custom-control-label custom-lable">
+                        <div class="thumbnail card">
+                            <div class="img-event">
+                                <img class="group list-group-image img-fluid"
+                                     src="./images/demo-product-2.png" alt=""/>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div class="caption product-card">
+                                <h4 class="group inner list-group-item-heading">
+                                    Marvel: Logo
+                                </h4>
+                                <span>PMGOA</span>
+                                <div class="row ">
+                                    <div class="col-xs-12 col-md-10">
+                                        <ul class="total-product mt-1">
+                                            <li><img class="img-fluid" src="./images/3-woo.png" title="Woo Commerce"> </li>
+                                            <li><img class="img-fluid" src="./images/4-ink.png" title="Everything With ink"> </li>
+                                            <li><img class="img-fluid" src="./images/etsy-logo.png" title="ETSY"> </li>
+                                            <!--<li>+40 </li>-->
+                                        </ul>
+                                        <a class="viewall" href="#" data-toggle="tooltip" data-html="true" title="" data-original-title="Amazon</br>Shopify">+2 more</a>
+                                    </div>
+                                    <div class="col-xs-12 col-md-2">
+                                        <div class="dropdown lead float-right product-drop">
+                                            <i class="mdi mdi-dots-vertical" id="dropdownMenuButton"
+                                               data-toggle="dropdown" aria-haspopup="true"
+                                               aria-expanded="false"></i>
+                                            <div class="dropdown-menu"
+                                                 aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else
+                                                    here</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="item col-md-3 col-lg-3 col-sm-4 col-6 custom-control custom-checkbox">
+                    <input type="checkbox" name="sele cted[]" id="box_4" value="4"
+                           class="custom-control-input romiwills checkbox-custom"/>
+                    <label for="box_4" class="custom-control-label custom-lable">
+                        <div class="thumbnail card">
+                            <div class="img-event">
+                                <img class="group list-group-image img-fluid"
+                                     src="./images/demo-product-4.png" alt=""/>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div class="caption product-card">
+                                <h4 class="group inner list-group-item-heading">
+                                    Spiderman: Homecoming
+                                </h4>
+                                <span>PMGOA</span>
+                                <div class="row ">
+                                    <div class="col-xs-12 col-md-10">
+                                        <ul class="total-product mt-1">
+                                            <li><img class="img-fluid" src="./images/3-woo.png" title="Woo Commerce"> </li>
+                                            <li><img class="img-fluid" src="./images/4-ink.png" title="Everything With ink"> </li>
+                                            <li><img class="img-fluid" src="./images/etsy-logo.png" title="ETSY"> </li>
+                                            <!--<li>+40 </li>-->
+                                        </ul>
+                                        <a class="viewall" href="#" data-toggle="tooltip" data-html="true" title="" data-original-title="Amazon</br>Shopify">+2 more</a>
+                                    </div>
+                                    <div class="col-xs-12 col-md-2">
+                                        <div class="dropdown lead float-right product-drop">
+                                            <i class="mdi mdi-dots-vertical" id="dropdownMenuButton"
+                                               data-toggle="dropdown" aria-haspopup="true"
+                                               aria-expanded="false"></i>
+                                            <div class="dropdown-menu"
+                                                 aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else
+                                                    here</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+
+                </div>
             </div>
 
         </div>
