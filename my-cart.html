@@ -300,11 +300,11 @@
                     <h1>My Cart</h1>
                 </div>
             </div>
-
             <!--Wizard START-->
             <div class="row">
                 <div class="col-md-12">
                     <ul class="stepper horizontal demos" id="horizontal">
+<!---------------------------Step 1--------------------------->
                         <li class="step active">
                             <div class="step-title waves-effect">Overview</div>
                             <div class="step-content">
@@ -372,12 +372,9 @@
                                                     <td><a href="#" class="btn primary-button next-step">Pick Vendor</a></td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-left">
+                                                    <td class="text-left border-0">
                                                         <button class="secendary-button">Add more Products</button>
                                                     </td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
                                                 </tr>
                                                 </tbody>
                                             </table>
@@ -390,6 +387,7 @@
                                 </div>
                             </div>
                         </li>
+<!---------------------------Step 2--------------------------->
                         <li class="step">
                             <div class="step-title waves-effect waves-dark">Shipping Address</div>
                             <div class="step-content">
@@ -766,14 +764,105 @@
                                 </div>
                             </div>
                         </li>
+<!---------------------------Step 3--------------------------->
                         <li class="step">
                             <div class="step-title waves-effect waves-dark">Payment & Review</div>
                             <div class="step-content">
+                                <div class="row mb-3">
+                                    <div class="col-md-5">
+                                        <div class="dropdown-divider"></div>
+                                    </div>
+                                    <div class="col-md-2 text-center">
+                                        <p class="mc-order-details">ORDER DETAILS</p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="dropdown-divider"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="table-responsive">
+                                            <table class="table mc-table">
+                                                <thead>
+                                                <tr>
+                                                    <th>PRODUCT DETAILS</th>
+                                                    <th>QUANTITY</th>
+                                                    <th>Price</th>
+                                                    <th>ACTION</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="mc-checkout-pro">
+                                                            <img class="img-fluid" src="./images/header-base.png">
+                                                        </div>
+                                                        <div class="mc-checkout-pro-info">
+                                                            <h6 title="Croco Rock Travel Mug">Croco Rock Travel Mug</h6>
+                                                            <p>Size: Large</p>
+                                                            <p>Color: Black, Green</p>
+                                                            <p>SKU: EWI-6902</p>
+                                                            <a href="#" class="remove-red ">Remove</a>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="mc-vender-rep">
+                                                        <input type="text" class="form-control mc-form-input" value="01">
+                                                            <a href="#">Change</a>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <p>$ 09.00 x 1 = $ 09.00</p>
+                                                    </td>
+                                                    <td>
+                                                        <div class="mc-vender-rep">
+                                                            <p>PMGOA</p>
+                                                            <a href="#">Change</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="mc-checkout-pro">
+                                                            <img class="img-fluid" src="./images/header-base.png">
+                                                        </div>
+                                                        <div class="mc-checkout-pro-info">
+                                                            <h6 title="Croco Rock Travel Mug">Croco Rock Travel Mug</h6>
+                                                            <p>Size: Large</p>
+                                                            <p>Color: Black, Green</p>
+                                                            <p>SKU: EWI-6902</p>
+                                                            <a href="#" class="remove-red">Remove</a>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="mc-vender-rep">
+                                                            <input type="text" class="form-control mc-form-input" value="01">
+                                                            <a href="#">Change</a>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <p>$ 23.00 x 2 = $ 46.00</p>
+                                                    </td>
+                                                    <td>
+                                                        <div class="mc-vender-rep">
+                                                            <p>Nick Retails</p>
+                                                            <a href="#">Change</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
                                 <div class="row justify-content-center">
                                     <div class="col-md-3">
                                         <div class="mc-billing-address">
                                             <div class="mc-bil-heading">
-                                                <h5>Billing Address</h5>
+                                                <h5>SHIPPING DETAILS</h5>
                                             </div>
                                             <div class="dropdown-divider"></div>
                                             <div class="mc-addres-info">
@@ -789,18 +878,69 @@
                                         </div>
                                     </div>
                                     <div class="col-md-9">
-                                        <a class="text-center" href="#">
-                                            <div class="ms-add-payment-box">
-                                                <i class="mdi mdi-credit-card"></i>
-                                                <p>Add Another Address</p>
+                                        <div class="mc-billing-card-opt">
+                                            <div class="mc-bil-heading">
+                                                <h5>PAYMENT OPTIONS</h5>
                                             </div>
-                                        </a>
+                                            <div class="dropdown-divider"></div>
+                                            <div class="mc-addres-info">
+                                                <form>
+                                                <div class="form-row">
+                                                    <div class="col-md-6">
+                                                        <label for="cardname">Name on Card</label>
+                                                        <input type="text" class="form-control" id="cardname" placeholder="John doe">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="cardnumbers">Card Details</label>
+                                                        <input type="text" class="form-control" id="cardnumbers" placeholder="Card number                                                MM/YY       CVC">
+                                                        <div class="custom-control custom-checkbox mt-3">
+                                                            <input type="checkbox" class="custom-control-input" id="paycheckbox">
+                                                            <label class="custom-control-label" for="paycheckbox">Remember my preference</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </form>
+                                                <div class="row mt-3">
+                                                    <div class="col-md-6">
+                                                        <p class="mb-3">or Connect to Paypal</p>
+                                                        <img class="img-fluid mr-2" src="./images/paypal.png" alt="paypal"> <button class="btn paypal-btn" href="#">Connect Paypal</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="step-actions">
-                                    <button class="waves-effect waves-dark btn-flat secendary-button previous-step">GO BACK TO OVERVIEW</button>
-                                    <button class="waves-effect waves-dark btn blue" type="submit">SUBMIT</button>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="mc-final-price-box text-center">
+                                                <div class="row justify-content-center mt-3">
+                                                    <div class="col-md-3">
+                                                        <div class="table-responsive">
+                                                            <table class="table mc-final-price">
+                                                                <tbody>
+                                                                <tr>
+                                                                    <td class="text-left border-0">Subtotal</td>
+                                                                    <td class="text-right border-0">$54.00</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="text-left">Subtotal</td>
+                                                                    <td class="text-right">$54.00</td>
+                                                                </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            <div class="step-actions">
+                                                <button class="waves-effect waves-dark btn-flat secendary-button previous-step">GO BACK TO OVERVIEW</button>
+                                                <button class="waves-effect waves-dark btn primary-button" type="submit">PICK SHIPPING ADDRESS</button>
+                                            </div>
+                                            <p class="mc-term-info">By Continuing you agree to Everything With Ink’s <br><a href="#">Terms & Conditions</a></p>
+                                        </div>
+                                    </div>
                                 </div>
+
                             </div>
                         </li>
                     </ul>

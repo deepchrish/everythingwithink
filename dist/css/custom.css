@@ -132,6 +132,7 @@ a:hover{
 /* width */
 ::-webkit-scrollbar {
     width: 5px;
+    height: 3px;
 }
 
 /* Track */
@@ -3758,9 +3759,13 @@ span.round-tab:hover {
     text-decoration: underline;
     color: #0094FF;
 }
-.custom-control-label:before{
-    background-color: #ffffff;
-    border: 1px solid #e2e2e2;
+/*.custom-control-label:before{*/
+    /*background-color: #ffffff;*/
+    /*border: 1px solid #e2e2e2;*/
+/*}*/
+.custom-checkbox .custom-control-label:before{
+    background: #fff;
+    border: 1px solid #d4d4d4;
 }
 .teamrole-radio-btn{
     border: 1px solid #e9ecef;
@@ -4192,6 +4197,8 @@ h4.panel-title {
 }
 .mc-table tbody td{
     vertical-align: middle;
+    width: 25%;
+    border-bottom: 1px solid #dee2e6;
 }
 .mc-checkout-pro img{
     float: left;
@@ -4204,17 +4211,23 @@ h4.panel-title {
     padding-left: 12px;
     text-align: left;
     line-height: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .mc-checkout-pro-info h6{
     margin: 0;
     color: #111111;
     font-size: 14px;
     font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .mc-checkout-pro-info p{
     margin: 0;
     font-size: 12px;
     color: #777;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .mc-checkout-pro-info a{
     font-size: 12px;
@@ -4222,6 +4235,7 @@ h4.panel-title {
 .mc-form-input{
     width: 60px;
     text-align: center;
+    margin: 0 auto;
 }
 .mc-pro-price{
     overflow: hidden;
@@ -4339,8 +4353,8 @@ h4.panel-title {
     background: #0d21b5;
 }
 .ms-add-payment-box{
-    border: 2px dashed #d2d2d2;
-    padding: 11% 15px 8%;
+    border: 1px solid #e9ecef;
+    /*padding: 11% 15px 8%;*/
     border-radius: 5px;
     transition: all .3s ease-in-out;
     min-height: 298px;
@@ -4352,4 +4366,96 @@ h4.panel-title {
 }
 .ms-add-payment-box p{
     color: #989898;
+}
+.mc-order-details{
+    margin: 0;
+    font-size: 14px;
+    color: #111111;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.mc-vender-rep{
+    margin: 0 auto;
+}
+.mc-vender-rep p{
+    margin: 0;
+    font-weight: 700;
+}
+.mc-vender-rep a{
+    color: #0094FF;
+    font-size: 14px;
+    font-weight: 600;
+}
+.mc-pay-title{
+    padding: 10px 10px 5px;
+    text-align: center;
+}
+.mc-pay-title span{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #777;
+}
+.mc-billing-card-opt{
+    border: 1px solid #e9ecef;
+    /*border-top-left-radius: 5px;*/
+    /*border-top-right-radius: 5px;*/
+    min-height: 298px;
+    border-radius: 5px;
+}
+.paypal-btn{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    background: #179BD7;
+    border: 1px solid #179BD7;
+    color: #ffffff;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 4px 20px -5px rgba(43,68,255,0.4);
+    -moz-box-shadow: 0 4px 20px -5px rgba(43,68,255,0.4);
+    box-shadow: 0 4px 20px -5px rgba(43,68,255,0.4);
+    transition: all .3s ease-in-out;
+    padding: 5px 20px;
+}
+.mc-final-price-box{
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    height: auto;
+}
+.paypal-btn:hover{
+    background: #0082bd;
+}
+.mc-final-price{
+    margin-bottom: 0;
+}
+.mc-final-price tbody td{
+    font-size: 14px;
+    font-weight: 700;
+    color: #111111;
+}
+
+ul.stepper.horizontal .step .step-content::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+/* Track */
+ul.stepper.horizontal .step .step-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+ul.stepper.horizontal .step .step-content::-webkit-scrollbar-thumb {
+    background: #f1f1f1;
+}
+
+/* Handle on hover */
+ul.stepper.horizontal .step .step-content::-webkit-scrollbar-thumb:hover {
+    background: #1b33e2;
+}
+.mc-term-info{
+    font-size: 13px;
+    color: #111111;
+    font-weight: 600;
+}
+.mc-term-info a{
+    color: #0094FF;
 }

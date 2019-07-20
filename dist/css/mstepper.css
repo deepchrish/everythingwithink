@@ -131,7 +131,7 @@ ul.stepper {
       position: relative;
       display: flex;
       justify-content: space-between;
-      min-height: 1050px;
+      min-height: 1060px;
       overflow: hidden; }
       ul.stepper.horizontal::before {
         content: '';
@@ -201,7 +201,7 @@ ul.stepper {
         ul.stepper.horizontal .step.wrong .step-title::before {
           content: '\e001';
           font-size: 24px;
-          font-family: 'Material Icons';
+          font-family: 'Material Design Icons';
           background-color: red; }
         ul.stepper.horizontal .step .step-content {
           position: absolute;
@@ -213,7 +213,7 @@ ul.stepper {
           overflow-y: auto;
           overflow-x: hidden;
           margin: 0;
-          padding: 0 0 76px 0;
+          /*padding: 0 0 76px 0;*/
           transition: left 400ms cubic-bezier(0.4, 0, 0.2, 1); }
           ul.stepper.horizontal .step .step-content .step-actions {
             /*position: absolute;*/
