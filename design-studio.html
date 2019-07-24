@@ -55,7 +55,6 @@
                     <b class="logo-icon p-l-10">
                         <!-- Dark Logo icon -->
                         <img src="./images/withink_logo.png" alt="homepage" class="light-logo"/>
-
                     </b>
                     <!--End Logo icon -->
                     <!-- Logo text -->
@@ -256,11 +255,11 @@
                     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="file-library-files.html" aria-expanded="false"><i class="mdi mdi-image-multiple"></i><span class="hide-menu">File Library</span></a></li>
                     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="company-empty.html" aria-expanded="false"><i class="mdi mdi-store"></i><span class="hide-menu">Workspaces</span></a></li>
                     <!--<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="company-empty.html" aria-expanded="false"><i class="mdi mdi-border-inside"></i><span class="hide-menu">Companies</span></a></li>-->
-                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-package-variant-closed"></i><span class="hide-menu">Warehouse</span></a>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-package-variant-closed"></i><span class="hide-menu">Warehouse</span><i class="mdi mdi-chevron-down open-sub-menu"></i></a>
                         <ul aria-expanded="false" class="collapse  first-level">
                             <li class="sidebar-item"><a href="warehouse.html" class="sidebar-link"><i class="mdi mdi-hospital-building"></i><span class="hide-menu">Inventory</span></a></li>
                             <li class="sidebar-item"><a href="warehouse-pricing.html" class="sidebar-link"><i class="mdi mdi-cards-playing-outline"></i><span class="hide-menu">Pricing</span></a></li>
-                            <li class="sidebar-item"><a href="warehouse-setting.html" class="sidebar-link"><i class="mdi mdi-currency-btc"></i><span class="hide-menu">Currency</span></a></li>
+                            <li class="sidebar-item"><a href="warehouse-currency-settings.html" class="sidebar-link"><i class="mdi mdi-currency-btc"></i><span class="hide-menu">Currency</span></a></li>
                             <li class="sidebar-item"><a href="warehouse-shipment.html" class="sidebar-link"><i class="mdi mdi-truck-delivery"></i><span class="hide-menu">Shipment</span></a></li>
                         </ul>
                     </li>
@@ -268,11 +267,14 @@
                     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="billing.html" aria-expanded="false"><i class="mdi mdi-credit-card"></i><span class="hide-menu">Billing</span></a></li>
                     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="easy-ink-on-boarding.html" aria-expanded="false"><i class="mdi mdi-invert-colors"></i><span class="hide-menu">Easy Ink</span></a></li>
                     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="reports.html" aria-expanded="false"><i class="mdi mdi-file-chart"></i><span class="hide-menu">Reports</span></a></li>
-                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="setting.html" aria-expanded="false"><i class="mdi mdi-tune"></i><span class="hide-menu">Account Settings</span></a></li>
-
-                </ul>
-                <div class="dropdown-divider"></div>
-                <ul id="sidebarnav">
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-tune"></i><span class="hide-menu">Settings</span><i class="mdi mdi-chevron-down open-sub-menu"></i></a>
+                        <ul aria-expanded="false" class="collapse  first-level">
+                            <li class="sidebar-item"><a href="setting.html" class="sidebar-link"><i class="mdi mdi-account-settings-variant"></i><span class="hide-menu">Account Settings</span></a></li>
+                            <li class="sidebar-item"><a href="workspace-settings.html" class="sidebar-link"><i class="mdi mdi-store-24-hour"></i><span class="hide-menu">Workspace Settings</span></a></li>
+                            <li class="sidebar-item"><a href="store-settings.html" class="sidebar-link"><i class="mdi mdi-currency-btc"></i><span class="hide-menu">Store Settings</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-divider"></li>
                     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="affiliate.html" aria-expanded="false"><i class="mdi mdi-account-multiple"></i><span class="hide-menu">Affiliate</span></a></li>
                 </ul>
             </nav>
@@ -1052,87 +1054,116 @@
                                                 <p>Your design will be printed directly on the product with the DTG (direct-to-garment) technique that yields bold and vibrant prints. Our base price includes one print, these are the extras you can get.</p>
 
                                                 <!--Start Accordion-->
-                                                <div class="panel-group mb-4">
-                                                    <div class="panel collapsed">
-                                                        <div class="panel-heading">
-                                                                <h4 class="panel-title">
-                                                                    <a>Additional Print</a>
+                                                <div class="panel-group mb-3" id="accordion">
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading ds-modal-panel" id="headingOne">
+                                                            <h4 class="panel-title">
+                                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                                    <i class="more-less mdi mdi-chevron-down"></i> Additional Print
                                                                     <span>$5.95</span>
-                                                                </h4>
+                                                                </a>
+
+                                                            </h4>
                                                         </div>
-                                                        <div class="panel-body">
+                                                        <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+                                                            <div class="card-body">
                                                             <p>The product price includes one print, but you can add another (back print, or front print) for a separate fee.</p>
+                                                            </div>
                                                         </div>
-                                                    </div><!-- end of panel -->
+                                                    </div>
 
-                                                    <div class="panel collapsed">
-                                                        <div class="panel-heading" id="headingTwo">
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading ds-modal-panel" id="headingTwo">
                                                             <h4 class="panel-title">
-                                                                <a>Sleeve Print</a>
-                                                                <span>$2.49</span>
+                                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                                    <i class="more-less mdi mdi-chevron-down"></i> Sleeve Print
+                                                                    <span>$2.95</span>
+                                                                </a>
                                                             </h4>
                                                         </div>
-                                                        <div class="panel-body">
-                                                            <p>Sleeve prints can be added to either one or both sleeves of the product.</p>
+                                                        <div id="collapseTwo" class=" collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                                            <div class="card-body">
+                                                                <p>Sleeve prints can be added to either one or both sleeves of the product.</p>
+                                                            </div>
                                                         </div>
-                                                    </div><!-- end of panel -->
+                                                    </div>
 
-                                                    <div class="panel collapsed">
-                                                        <div class="panel-heading" id="headingThree">
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading ds-modal-panel" id="headingthree">
                                                             <h4 class="panel-title">
-                                                                <a>Outside Label</a>
-                                                                <span>$2.49</span>
+                                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsethree" aria-expanded="false" aria-controls="collapseTwo">
+                                                                    <i class="more-less mdi mdi-chevron-down"></i> Outside Label
+                                                                    <span>$2.95</span>
+                                                                </a>
                                                             </h4>
                                                         </div>
-                                                        <div class="panel-body">
-                                                            <p>Outside label (3" x 3") is printed on the outside of the garment underneath the collar. Note that inside and outside labels can't both be printed on one shirt – it's one or the other.</p>
+                                                        <div id="collapsethree" class=" collapse" aria-labelledby="headingthree" data-parent="#accordion">
+                                                            <div class="card-body">
+                                                                <p>Sleeve prints can be added to either one or both sleeves of the product.</p>
+                                                            </div>
                                                         </div>
-                                                    </div><!-- end of panel -->
+                                                    </div>
 
-                                                    <div class="panel collapsed">
-                                                        <div class="panel-heading" id="headingFour">
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading ds-modal-panel" id="headingfour">
                                                             <h4 class="panel-title">
-                                                                <a>Inside Label</a>
-                                                                <span>$2.49</span>
+                                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefour" aria-expanded="false" aria-controls="collapseTwo">
+                                                                    <i class="more-less mdi mdi-chevron-down"></i> Inside Label
+                                                                    <span>$2.95</span>
+                                                                </a>
                                                             </h4>
                                                         </div>
-                                                        <div class="panel-body">
-                                                            <p>Inside label (3" x 3") is printed on the inside of the garment, and require the removal of the original manufacturer's tag. It must include the country of manufacturing origin, original garment size, and care instructions. Note that inside and outside labels can't both be printed on one shirt – it's one or the other.</p>
+                                                        <div id="collapsefour" class=" collapse" aria-labelledby="headingfour" data-parent="#accordion">
+                                                            <div class="card-body">
+                                                                <p>Inside label (3" x 3") is printed on the inside of the garment, and require the removal of the original manufacturer's tag. It must include the country of manufacturing origin, original garment size, and care instructions. Note that inside and outside labels can't both be printed on one shirt – it's one or the other.</p>
+                                                            </div>
                                                         </div>
-                                                    </div><!-- end of panel -->
-                                                </div><!-- end of panel-group -->
+                                                    </div>
+                                                </div><!-- panel-group -->
                                                 <!-- end of #accordion -->
+
                                                 <h6>2. Embroidery</h6>
                                                 <p>Your design will be machine-embroidered on the product. Embroidery costs more than printed clothing because it takes more time and has higher production costs. </p>
                                                 <p>Embroidery also comes with digitization and adjustment costs. We don't accept files that have been digitized elsewhere and we only charge files that are part of an order.</p>
 
-                                                <!--Start Accordion-->
-                                                <div class="panel-group mb-4">
-                                                    <div class="panel collapsed">
-                                                        <div class="panel-heading">
-                                                            <h4 class="panel-title">
-                                                                <a>Digitization</a>
-                                                                <span>$6.50<small> / file</small></span>
-                                                            </h4>
-                                                        </div>
-                                                        <div class="panel-body">
-                                                            <p>The product price includes one print, but you can add another (back print, or front print) for a separate fee.</p>
-                                                        </div>
-                                                    </div><!-- end of panel -->
 
-                                                    <div class="panel collapsed">
-                                                        <div class="panel-heading" id="headingTwo">
+                                                <!--Start Accordion-->
+                                                <div class="panel-group mb-3" id="accordion">
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading ds-modal-panel" id="headingsix">
                                                             <h4 class="panel-title">
-                                                                <a>Digitization adjustment</a>
-                                                                <span>$6.50<small> / file</small></span>
+                                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsesix" aria-expanded="false" aria-controls="collapseOne">
+                                                                    <i class="more-less mdi mdi-chevron-down"></i> Digitization
+                                                                    <span>$6.50<small> / file</small></span>
+                                                                </a>
+
                                                             </h4>
                                                         </div>
-                                                        <div class="panel-body">
-                                                            <p>Sleeve prints can be added to either one or both sleeves of the product.</p>
+                                                        <div id="collapsesix" class="collapse" aria-labelledby="headingsix" data-parent="#accordion">
+                                                            <div class="card-body">
+                                                                <p>The product price includes one print, but you can add another (back print, or front print) for a separate fee.</p>
+                                                            </div>
                                                         </div>
-                                                    </div><!-- end of panel -->
-                                                </div><!-- end of panel-group -->
+                                                    </div>
+
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading ds-modal-panel" id="headingfive">
+                                                            <h4 class="panel-title">
+                                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefive" aria-expanded="false" aria-controls="collapseTwo">
+                                                                    <i class="more-less mdi mdi-chevron-down"></i> Digitization adjustment
+                                                                    <span>$5.50<small> / file</small></span>
+                                                                </a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="collapsefive" class=" collapse" aria-labelledby="headingfive" data-parent="#accordion">
+                                                            <div class="card-body">
+                                                                <p>Sleeve prints can be added to either one or both sleeves of the product.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- panel-group -->
                                                 <!-- end of #accordion -->
+
                                             </div>
                                         </div>
                                     </div>
@@ -1419,12 +1450,10 @@
                                 </div>
                             </div>
                         </div>
-
                     </div><!-- modal-content -->
                 </div><!-- modal-dialog -->
             </div>
             <!--Add Names & Numbers END -->
-
             <!-- modal -->
 
         </div>
@@ -1554,15 +1583,26 @@
     <!--colors palette END-->
 </script>
 
+<!--<script>-->
+    <!--document.addEventListener("DOMContentLoaded", function(event) {-->
+        <!--var elements = document.getElementsByClassName('collapsed');-->
+        <!--Array.prototype.forEach.call(elements, function(element) { // get son panel heading-->
+            <!--element.addEventListener('click', () => {-->
+                <!--element.classList.toggle('collapsed');-->
+            <!--});-->
+        <!--});-->
+    <!--});-->
+<!--</script>-->
+
 <script>
-    document.addEventListener("DOMContentLoaded", function(event) {
-        var elements = document.getElementsByClassName('collapsed');
-        Array.prototype.forEach.call(elements, function(element) { // get son panel heading
-            element.addEventListener('click', () => {
-                element.classList.toggle('collapsed');
-            });
-        });
-    });
+    function toggleIcon(e) {
+        $(e.target)
+            .prev('.panel-heading')
+            .find(".more-less")
+            .toggleClass('mdi mdi-chevron-up mdi  mdi-chevron-down');
+    }
+    $('.panel-group').on('hidden.bs.collapse', toggleIcon);
+    $('.panel-group').on('shown.bs.collapse', toggleIcon);
 </script>
 </body>
 

@@ -257,11 +257,11 @@
                     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="file-library-files.html" aria-expanded="false"><i class="mdi mdi-image-multiple"></i><span class="hide-menu">File Library</span></a></li>
                     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="company-empty.html" aria-expanded="false"><i class="mdi mdi-store"></i><span class="hide-menu">Workspaces</span></a></li>
                     <!--<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="company-empty.html" aria-expanded="false"><i class="mdi mdi-border-inside"></i><span class="hide-menu">Companies</span></a></li>-->
-                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-package-variant-closed"></i><span class="hide-menu">Warehouse</span></a>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-package-variant-closed"></i><span class="hide-menu">Warehouse</span><i class="mdi mdi-chevron-down open-sub-menu"></i></a>
                         <ul aria-expanded="false" class="collapse  first-level">
                             <li class="sidebar-item"><a href="warehouse.html" class="sidebar-link"><i class="mdi mdi-hospital-building"></i><span class="hide-menu">Inventory</span></a></li>
                             <li class="sidebar-item"><a href="warehouse-pricing.html" class="sidebar-link"><i class="mdi mdi-cards-playing-outline"></i><span class="hide-menu">Pricing</span></a></li>
-                            <li class="sidebar-item"><a href="warehouse-setting.html" class="sidebar-link"><i class="mdi mdi-currency-btc"></i><span class="hide-menu">Currency</span></a></li>
+                            <li class="sidebar-item"><a href="warehouse-currency-settings.html" class="sidebar-link"><i class="mdi mdi-currency-btc"></i><span class="hide-menu">Currency</span></a></li>
                             <li class="sidebar-item"><a href="warehouse-shipment.html" class="sidebar-link"><i class="mdi mdi-truck-delivery"></i><span class="hide-menu">Shipment</span></a></li>
                         </ul>
                     </li>
@@ -269,11 +269,14 @@
                     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="billing.html" aria-expanded="false"><i class="mdi mdi-credit-card"></i><span class="hide-menu">Billing</span></a></li>
                     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="easy-ink-on-boarding.html" aria-expanded="false"><i class="mdi mdi-invert-colors"></i><span class="hide-menu">Easy Ink</span></a></li>
                     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="reports.html" aria-expanded="false"><i class="mdi mdi-file-chart"></i><span class="hide-menu">Reports</span></a></li>
-                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="setting.html" aria-expanded="false"><i class="mdi mdi-tune"></i><span class="hide-menu">Account Settings</span></a></li>
-
-                </ul>
-                <div class="dropdown-divider"></div>
-                <ul id="sidebarnav">
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-tune"></i><span class="hide-menu">Settings</span><i class="mdi mdi-chevron-down open-sub-menu"></i></a>
+                        <ul aria-expanded="false" class="collapse  first-level">
+                            <li class="sidebar-item"><a href="setting.html" class="sidebar-link"><i class="mdi mdi-account-settings-variant"></i><span class="hide-menu">Account Settings</span></a></li>
+                            <li class="sidebar-item"><a href="workspace-settings.html" class="sidebar-link"><i class="mdi mdi-store-24-hour"></i><span class="hide-menu">Workspace Settings</span></a></li>
+                            <li class="sidebar-item"><a href="store-settings.html" class="sidebar-link"><i class="mdi mdi-currency-btc"></i><span class="hide-menu">Store Settings</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-divider"></li>
                     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="affiliate.html" aria-expanded="false"><i class="mdi mdi-account-multiple"></i><span class="hide-menu">Affiliate</span></a></li>
                 </ul>
             </nav>
@@ -296,25 +299,25 @@
                     <h1>Orders</h1>
                 </div>
             </div>
-            <div class="outerborder">
+            <!--<div class="">-->
                 <div class="row ordershead">
                     <div class="col-md-6">
                         <span class="back-icon"><a href="#"><i
                                 class="mdi mdi-chevron-left"></i> Back to Orders</a></span>
                     </div>
                     <div class="col-md-6">
-                        <div class="form-row">
-                            <div class="col-md-2">
-                                <span class="paid"><i class="mdi mdi-checkbox-marked-circle"></i> Paid</span>
+                        <div class="form-row justify-content-end">
+                            <div class="col-md-3">
+                                <span class="paid"><i class="mdi mdi-checkbox-marked-circle"></i> Paid $48.00</span>
                             </div>
-                            <div class="col-md-5">
+                            <div class="col-md-4">
                                 <select class="form-control custom-select" id="locationlist">
                                     <option value="AFG">Lorem Lpsum</option>
                                     <option value="ALA">Lorem Lpsum 1</option>
                                     <option value="ALB">Lorem Lpsum 2</option>
                                 </select>
                             </div>
-                            <div class="col-md-5">
+                            <div class="col-md-4">
                                 <select class="form-control custom-select primary-button" id="locationlist">
                                     <option value="oa">Order Action</option>
                                     <option value="ALA">Lorem Lpsum 1</option>
@@ -348,153 +351,305 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p class="orderdetails">Order details</p>
-                    </div>
+            <!--</div>-->
+
+            <div class="row">
+                <div class="col-md-12 mt-3">
+                    <p class="orderdetails">CUSTOMER DETAILS</p>
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="table-responsive">
-                            <table class="table orders-lists">
-                                <thead>
-                                <tr>
-                                    <th></th>
-                                    <th>PRODUCT</th>
-                                    <th>QUANTITY</th>
-                                    <th>COST</th>
-                                    <th>FULFILLMENT</th>
-                                    <th>SHIPPING INFORMATION</th>
-                                </tr>
-                                </thead>
+            </div>
+            <div class="row">
+                <div class="col-md-3 p-0">
+                    <div class="od-cd-heading custom-m-lf"><h6>Shipping Information</h6></div>
+                    <div class="oc-cd-info">
+                        <div class="table-responsive table-borderless">
+                            <table class="table od-cd-ship-det">
                                 <tbody>
                                 <tr>
-                                    <th><span class="orders-nums">1</span></th>
-                                    <td>
-                                        <div></div>
-                                        <div class="orderimg">
-                                            <img class="img-fluid" src="./images/order-list-mug.png">
-                                        </div>
-                                        <div class="orderinfomation">
-                                            <h6>Green Hulk Mug</h6>
-                                            <p>SKU: EWI-4567</p>
-                                            <span>Category: Coffee Mugs</span>
-                                            <span>Size: Large</span>
-                                            <span>Color: Black, Green</span>
-                                        </div>
-                                    </td>
-                                    <td>02</td>
-                                    <td class="ratespath">
-                                        <span class="perunit">(Per unit)</span>
-                                        <div class="order-rate">
-                                            $ 06.00-$09.00
-                                        </div>
-                                        <span class="instructions">Total Cost would be calculated upon fullfillment.</span>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-secondary" data-toggle="modal" data-target="#fulfillorder">Fulfill Now</button>
-                                    </td>
-                                    <td class="order-address">
-
-                                        <p><span>Name</span> Johnathan Kaskey</p>
-                                        <p><span>Ph No.</span> 765-900-8923</p>
-                                        <p><span>Email</span> john86@gmail.com</p>
-                                        <p><span>Add.</span> 1717 Toomney Rd, #221
-                                            Austin, TX 78704</p>
-                                        <a class="shopbtn" href="#">Edit Shopping Details</a>
-
-                                    </td>
+                                    <td>Name</td>
+                                    <td>Johnathan Kaskey</td>
                                 </tr>
-
                                 <tr>
-                                    <th><span class="orders-nums">2</span></th>
-                                    <td>
-                                        <div></div>
-                                        <div class="orderimg">
-                                            <img class="img-fluid" src="./images/order-list-mug.png">
-                                        </div>
-                                        <div class="orderinfomation">
-                                            <h6>Green Hulk Mug</h6>
-                                            <p>SKU: EWI-4567</p>
-                                            <span>Category: Coffee Mugs</span>
-                                            <span>Size: Large</span>
-                                            <span>Color: Black, Green</span>
-                                        </div>
-                                    </td>
-                                    <td>02</td>
-                                    <td class="ratespath">
-                                        <!--<span class="perunit">(Per unit)</span>-->
-                                        <p>$ 23.00 x 2 = $ 46.00</p>
-                                        <!--<div class="order-rate">-->
-                                            <!--$ 06.00-$09.00-->
-                                        <!--</div>-->
-                                        <!--<span class="instructions">Total Cost would be calculated upon fullfillment.</span>-->
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-success">Fulfilled</button>
-                                    </td>
-                                    <td class="order-address">
-                                        <div class="topnote"><span class="float-left">Notes</span><span class="float-right"><a href="#">Edit</a></span></div>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
-                                        <div>
-                                            <div class="topnote"><span class="float-left">Details</span></div>
-                                            <div>
-                                                <div class="user-foto"><img class="img-fluid" src="./assets/images/users/1.jpg"> </div>
-                                                <div class="user-order-unit"><p>Johnathan Kaskey</p><span>4 Orders</span></div>
-                                            </div>
-                                        </div>
-
-                                    </td>
+                                    <td>Ph. No.</td>
+                                    <td>765-900-8923</td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td>john86@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>Add.</td>
+                                    <td>1717 Toomney Rd, #221
+                                        Austin, TX 78704</td>
                                 </tr>
                                 </tbody>
+                                <i class="mdi mdi-content-copy od-cd-copy-add"></i>
                             </table>
+                        </div>
+                        <div class="text-center mt-4">
+                            <button class="btn secendary-button text-uppercase">Edit shipping Details</button>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p class="orderdetails">Order details</p>
-                    </div>
-                </div>
-                <div class="row p-4">
-                    <div class="col-md-7">
+                <div class="col-md-5 custom-border-lf-rt p-0">
+                    <div class="od-cd-heading"><h6>Billing Information</h6></div>
+                    <div class="oc-cd-info">
                         <div class="table-responsive table-borderless">
                             <table class="table ordersinvoice">
                                 <thead>
                                 <tr>
-                                    <th colspan="2"><div class="invoicestatus"><span>Status</span> <i class="mdi mdi-checkbox-marked-circle"></i> <p>Paid by card number ending in <span>***5890</span></p></div></th>
-                                    <th colspan="2"></th>
+                                    <th><div class="invoicestatus"><span>Status</span> <i class="mdi mdi-checkbox-marked-circle"></i> <p>Calculating…</p></div></th>
+                                    <th ></th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td colspan="2">Discount Coupon<p>FIRSTORDER</p></td>
-                                    <td class="float-right">$08.95</td>
+                                    <td>Discount Coupon<p class="text-muted">FIRSTORDER</p></td>
+                                    <td class="text-right">$08.95</td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">Subtotal <span>2 Item(s)</span></td>
-                                    <td class="float-right">$08.95</td>
+                                    <td >Subtotal <span>2 Item(s)</span></td>
+                                    <td class="text-right">$08.95</td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">Shipping <span>First Class Pkg. (0.26 Lbs)</span></td>
-                                    <td class="float-right">$08.95</td>
+                                    <td >Shipping <span>First Class Pkg. (0.26 Lbs)</span></td>
+                                    <td class="text-right">$08.95</td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">Tax</td>
-                                    <td class="float-right">$00.00</td>
+                                    <td >Tax</td>
+                                    <td class="text-right">$00.00</td>
                                 </tr>
                                 </tbody>
                                 <tfoot>
                                 <tr>
-                                    <td colspan="2">Total paid by customer</td>
-                                    <td class="float-right">$49.95</td>
+                                    <td >Total paid by customer</td>
+                                    <td class="text-right">$49.95</td>
                                 </tr>
                                 </tfoot>
                             </table>
                         </div>
                     </div>
                 </div>
+                <div class="col-md-4 p-0">
+                    <div class="od-cd-heading custom-m-rt"><h6>Miscellaneous</h6></div>
+                    <div class="oc-cd-info">
+                        <div class="od-cd-mis-note-edit"><a href="#">Edit</a> </div>
+                        <div class="form-group">
+                            <label for="odcdmistext" class="od-cd-mis-note">Note</label>
+                            <textarea class="form-control od-cd-custom-textarea" id="odcdmistext" rows="5" maxlength="200" disabled >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</textarea>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <div>
+                            <div class="od-cd-mis-note pb-2">Details</div>
+                            <div class="d-flex flex-row od-cd-mis-user-img">
+                                <img class="img-fluid" src="./images/1.jpg">
+                                <div class="ml-3 ol-cd-mis-usern"><p>Johnathan Kaskey</p>
+                                    <span>4 Orders</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="orderdetails">ORDER DETAILS</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="table-responsive">
+                        <table class="table orders-lists table-bordered">
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>PRODUCT</th>
+                                <th>QUANTITY</th>
+                                <th>COST</th>
+                                <th>FULFILLMENT</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th><span class="orders-nums">1</span></th>
+                                <td>
+                                    <div class="orderimg">
+                                        <img class="img-fluid" src="./images/order-list-mug.png">
+                                    </div>
+                                    <div class="orderinfomation">
+                                        <h6>Green Hulk Mug</h6>
+                                        <p>SKU: EWI-4567</p>
+                                        <span>Category: Coffee Mugs</span>
+                                        <span>Size: Large</span>
+                                        <span>Color: Black, Green</span>
+                                    </div>
+                                    <div class="d-flex">
+                                        <button class="btn btn-outline-dark m-2">Submit issue</button>
+                                        <button class="btn btn-secondary m-2" disabled>Track Shipment</button>
+                                    </div>
+                                </td>
+                                <td>02</td>
+                                <td class="ratespath">
+                                    <span class="perunit">(Per unit)</span>
+                                    <div class="order-rate">
+                                        $ 06.00-$09.00
+                                    </div>
+                                    <span class="instructions">Total Cost would be calculated upon fullfillment.</span>
+                                </td>
+                                <td>
+                                    <div class="flex-row od-full-table">
+                                        <select class="form-control od-custom-sel">
+                                            <option selected>More Option</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                        </select>
+                                    <button class="btn btn-secondary float-right" data-toggle="modal" data-target="#fulfillorder">Fulfill Now</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--Start Accordion-->
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading od-panel-heading" id="headingOne">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Click here for fulfillment options <i class="more-less mdi mdi-chevron-down"></i>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="collapse od-fix-height-accordian show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="table-responsive">
+                                <table class="table orders-lists table-bordered">
+                                    <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>PRODUCT</th>
+                                        <th>QUANTITY</th>
+                                        <th>COST</th>
+                                        <th>FULFILLMENT</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th><span class="orders-nums">2</span></th>
+                                        <td>
+                                            <div class="orderimg">
+                                                <img class="img-fluid" src="./images/cusion.png">
+                                            </div>
+                                            <div class="orderinfomation">
+                                                <h6>Printed Whale Cusion</h6>
+                                                <p>SKU: EWI-223</p>
+                                                <span>Category: Coffee Mugs</span>
+                                                <span>Size: Large</span>
+                                                <span>Color: Multi-colored</span>
+                                            </div>
+                                            <div class="d-flex">
+                                                <button class="btn btn-outline-dark m-2">Submit issue</button>
+                                                <button class="btn btn-secondary m-2" disabled>Track Shipment</button>
+                                            </div>
+                                        </td>
+                                        <td>02</td>
+                                        <td class="ratespath">
+                                            <span class="perunit">(Per unit)</span>
+                                            <div class="order-rate">
+                                                $ 06.00-$09.00
+                                            </div>
+                                            <span class="instructions">Total Cost would be calculated upon fullfillment.</span>
+                                        </td>
+                                        <td>
+                                            <div class="flex-row od-full-table">
+                                                <select class="form-control od-custom-sel">
+                                                    <option selected>More Option</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                                <button class="btn btn-secondary float-right" data-toggle="modal" data-target="#fulfillorder">Fulfill Now</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="row mb-3">
+                                <div class="col-md-5">
+                                    <div class="dropdown-divider"></div>
+                                </div>
+                                <div class="col-md-2 text-center">
+                                    <p class="mc-order-details">ORDER DETAILS</p>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="dropdown-divider"></div>
+                                </div>
+                            </div>
+                        <div class="table-responsive">
+                                <table class="table table-borderless od-pro-availability">
+                                    <thead>
+                                    <tr>
+                                        <th>Vendor Name</th>
+                                        <th>Availability</th>
+                                        <th>Delivery</th>
+                                        <th>Action</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td><div class="d-flex flex-row od-cd-mis-user-img">
+                                            <img class="img-fluid" src="./images/1.jpg">
+                                            <div class="ml-3 ol-fullfill-opt-name"><p>Stellar Designs</p>
+                                                <span><i class="mdi mdi-star"> 4.5</i></span></div>
+                                        </div></td>
+                                        <td><div class="green-text">In Stock</div></td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <div>Normal Delivery</div>
+                                                <div>(1-2 Weeks)</div>
+                                            </div>
+                                        </td>
+                                        <td><button class="btn btn-secondary">Fulfill</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="d-flex flex-row od-cd-mis-user-img">
+                                            <img class="img-fluid" src="./images/1.jpg">
+                                            <div class="ml-3 ol-fullfill-opt-name"><p>Carrot Creative</p>
+                                                <span><i class="mdi mdi-star"> 4.3</i></span></div>
+                                        </div></td>
+                                        <td><div class="green-text">In Stock</div></td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <div>Normal Delivery</div>
+                                                <div>(1-2 Weeks)</div>
+                                            </div>
+                                        </td>
+                                        <td><button class="btn btn-secondary">Fulfill</button></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading od-panel-heading" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Hide Fulfillment options? <i class="more-less mdi mdi-chevron-up"></i>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class=" collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <!--content is Missing-->
+                        </div>
+                    </div>
+                </div>
+            </div><!-- panel-group -->
+            <!-- end of #accordion -->
+
+
 
             <!-- ============================================================== -->
             <!-- Modal -->
@@ -633,10 +788,6 @@
                 </div><!-- modal-dialog -->
             </div><!-- modal -->
 
-
-
-
-
         </div>
         <!-- End Container fluid  -->
     </div>
@@ -669,6 +820,18 @@
 <script src="assets/libs/flot/jquery.flot.crosshair.js"></script>
 <script src="assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
 <script src="dist/js/pages/chart/chart-page-init.js"></script>
+<!--Faq page plus mins START-->
+<script>
+    function toggleIcon(e) {
+        $(e.target)
+            .prev('.panel-heading')
+            .find(".more-less")
+            .toggleClass('mdi mdi-chevron-up mdi  mdi-chevron-down');
+    }
+    $('.panel-group').on('hidden.bs.collapse', toggleIcon);
+    $('.panel-group').on('shown.bs.collapse', toggleIcon);
+</script>
+<!--Faq page plus mins START-->
 
 
 </body>

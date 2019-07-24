@@ -16,6 +16,7 @@
     <!-- Custom CSS -->
     <link href="dist/css/style.min.css" rel="stylesheet">
     <link href="dist/css/custom.css" rel="stylesheet">
+    <link href="dist/css/jquery-labelauty.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -55,7 +56,6 @@
                     <b class="logo-icon p-l-10">
                         <!-- Dark Logo icon -->
                         <img src="./images/withink_logo.png" alt="homepage" class="light-logo"/>
-
                     </b>
                     <!--End Logo icon -->
                     <!-- Logo text -->
@@ -93,8 +93,24 @@
                     <!-- ============================================================== -->
                     <!--<li class="left-dropdown">-->
                         <!--<div class="form-group top-nav-drop">-->
-                            <!--<select id="selectbox1" name="selectbox1" class="form-control">-->
+                            <!--<select class="form-control">-->
                                 <!--<option value="">Select an option&hellip;</option>-->
+                                <!--<option value="Roger">Roger & co.</option>-->
+                                <!--<option value="Mark">Mark tech</option>-->
+                                <!--<option value="oso">Oso</option>-->
+                                <!--<option value="whoop">Whoop</option>-->
+                                <!--<option value="Roger">Roger & co.</option>-->
+                                <!--<option value="Mark">Mark tech</option>-->
+                                <!--<option value="oso">Oso</option>-->
+                                <!--<option value="whoop">Whoop</option>-->
+                                <!--<option value="Roger">Roger & co.</option>-->
+                                <!--<option value="Mark">Mark tech</option>-->
+                                <!--<option value="oso">Oso</option>-->
+                                <!--<option value="whoop">Whoop</option>-->
+                                <!--<option value="Roger">Roger & co.</option>-->
+                                <!--<option value="Mark">Mark tech</option>-->
+                                <!--<option value="oso">Oso</option>-->
+                                <!--<option value="whoop">Whoop</option>-->
                                 <!--<option value="Roger">Roger & co.</option>-->
                                 <!--<option value="Mark">Mark tech</option>-->
                                 <!--<option value="oso">Oso</option>-->
@@ -114,6 +130,7 @@
                             <!--</select>-->
                         <!--</div>-->
                     <!--</li>-->
+
                 </ul>
                 <!-- ============================================================== -->
                 <!-- Right side toggle and nav items -->
@@ -121,7 +138,8 @@
                 <ul class="navbar-nav float-right">
                     <!-- ============================================================== -->
                     <li>
-                        <a class="btn nav-product-btn primary-button" href="add-new-product-step-1.html"><i class="mdi mdi-tag-outline"></i> Add a new Product</a>
+                        <a class="btn nav-product-btn primary-button" href="add-new-product-step-1.html"><i
+                                class="mdi mdi-tag-outline"></i> Add a new Product</a>
                     </li>
                     <!-- ============================================================== -->
                     <li class="nav-item dropdown">
@@ -289,105 +307,50 @@
     <!-- Page wrapper  -->
     <!-- ============================================================== -->
     <div class="page-wrapper">
-        <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
+
         <!-- Container fluid  -->
         <div class="container-fluid mt-5 pt-5">
-            <div class="row mt-5 justify-content-center">
-                <div class="col-md-7 text-center">
-                    <h2>Add a new product</h2>
-                    <p>Pick a workspace to start adding a product. The product you create will be added to the slected workspace.</p>
-                </div>
-            </div>
-            <div class="row justify-content-center mt-3">
-                <div class="col-md-3">
-                    <div class="btn-group-toggle" data-toggle="buttons">
-                        <label class="btn  company-box-btn">
-                        <div class="company-store">
-                               <div class="comp-name">
-                                   <span>PM</span>
-                                   <h6>Pmgoa</h6>
-                               </div>
-                                <div class="dropdown-divider"></div>
-                            <div class="company-stores-info">
-                                <span>Stores</span>
-                                <p>Amazon, ETSY</p>
-                                <span>Products</span>
-                                <p>44</p>
-
-                            </div>
-                            <input class="" type="checkbox" name="options" id="my-checkbox" autocomplete="off">
-                            <span class="buttonoption selectoption1" >Selected</span>
-                            <span class="buttonoption selectoption2">Choose</span>
-                        </div>
-                        </label>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="btn-group-toggle" data-toggle="buttons">
-                        <label class="btn  company-box-btn">
-                            <div class="company-store">
-                                <div class="comp-name">
-                                    <span>RC</span>
-                                    <h6>Rogers & Co.</h6>
-                                </div>
-                                <div class="dropdown-divider"></div>
-                                <div class="company-stores-info">
-                                    <span>Stores</span>
-                                    <p>Amazon, ETSY</p>
-                                    <span>Products</span>
-                                    <p>12</p>
-
-                                </div>
-                                <input class="" type="checkbox" name="options" id="my-checkbox2" onclick="validate()" autocomplete="off">
-                                <span class="buttonoption selectoption1">Selected</span>
-                                <span class="buttonoption selectoption2">Choose</span>
-                            </div>
-                        </label>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="btn-group-toggle" data-toggle="buttons">
-                        <label class="btn company-box-btn">
-                            <div class="company-store">
-                                <div class="comp-name">
-                                    <span>NM</span>
-                                    <h6>Nick’s Mugs</h6>
-                                </div>
-                                <div class="dropdown-divider"></div>
-                                <div class="company-stores-info">
-                                    <span>Stores</span>
-                                    <p>Amazon, ETSY</p>
-                                    <span>Products</span>
-                                    <p>02</p>
-
-                                </div>
-                                <input class="" type="checkbox" name="options" id="my-checkbox2" onclick="validate()" autocomplete="off">
-                                <span class="buttonoption selectoption1">Selected</span>
-                                <span class="buttonoption selectoption2">Choose</span>
-                            </div>
-                        </label>
-                    </div>
-                </div>
-                <div class="col-md-3 text-center">
-                    <a  href="#" class="text-center" data-toggle="modal" data-target="#createworkspace">
-                    <div class="comp-store-workspace">
-                        <i class="mdi mdi-plus-circle"></i>
-                        <p>Create Workspace</p>
-                    </div>
-                    </a>
+            <div class="row border-bottom">
+                <div class="col-md-12 ml-4">
+                    <h1>Warehouse</h1>
                 </div>
             </div>
             <div class="row mt-5">
                 <div class="col-md-12 text-center">
-                    <a href="add-new-product-step-2.html" class="btn btn-success">NEXT STEP : ORDER TYPE</a>
-                    <p class="mt-2"><a href="#">Cancel and Exit</a></p>
+                    <h2>Warehouse: Currency</h2>
                 </div>
             </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center mt-3 settingtext">
+                    <p>Your warehousing currency settings apply to both warehouses in the US and Europe and will be used to charge the monthly warehousing storage fees.</p>
+                    <p>Fulfillment fees will be charged based on the warehouse location and your store's currency. See the full <a href="#">warehousing pricing here.</a></p>
+                    <div class="mt-4">
+                        <p>Default warehouse currency</p>
+                    </div>
+                </div>
+            </div>
+            <form>
+                <div class="row justify-content-center">
+                    <div class="col-4 text-center">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">$</span>
+                            </div>
+                            <select name="" id="" class="form-control">
+                                <option selected="">US Dollor</option>
+                                <option value="1">INR</option>
+                                <option value="2">CAD</option>
+                                <option value="3">AUS</option>
+                                <option value="4">EURO</option>
+                            </select>
+                        </div>
+                        <button class="btn secendary-button mt-2">Save</button>
+                    </div>
+                </div>
+            </form>
+
         </div>
         <!-- End Container fluid  -->
-
         <!-- End footer -->
     </div>
     <!-- End Page wrapper  -->
@@ -402,6 +365,11 @@
 <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
 <script src="assets/extra-libs/sparkline/sparkline.js"></script>
+<!--Check box-->
+<script src="dist/js/jquery-labelauty.js"></script>
+
+<!--inputfield copy clicpbord-->
+<script src="dist/js/clipboard.min.js"></script>
 <!--Wave Effects -->
 <script src="dist/js/waves.js"></script>
 <!--Menu sidebar -->
@@ -420,25 +388,6 @@
 <script src="assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
 <script src="dist/js/pages/chart/chart-page-init.js"></script>
 
-<script>
-
-    $(function()
-    {
-        $('[name="options"]').change(function()
-        {
-            if ($(this).is(':checked')) {
-                document.getElementsByClassName("selectoption1")[0].style.display = "block";
-                document.getElementsByClassName("selectoption2")[0].style.display = "none";
-            }
-            else
-            {
-                document.getElementsByClassName("selectoption1")[0].style.display = "none";
-                document.getElementsByClassName("selectoption2")[0].style.display = "block";
-            }
-        });
-    });
-
-</script>
 
 </body>
 
