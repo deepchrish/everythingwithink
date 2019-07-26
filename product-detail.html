@@ -295,232 +295,141 @@
         <div class="container-fluid mt-5 pt-5">
             <div class="row border-bottom">
                 <div class="col-md-12">
-                    <h1>Products</h1>
+                    <h1>Product Detail</h1>
                 </div>
             </div>
-            <!-- ============================================================== -->
-            <div class="row mt-4">
-                <div class="col-md-2">
-                    <div class="custom-control custom-checkbox pro-grid-chk">
-                        <input type="checkbox" class="custom-control-input" id="selectall">
-                        <label class="custom-control-label" for="selectall">All</label>
-                    </div>
-                </div>
-                <div class="col-md-10 ">
-                    <div class="form-row">
-                        <div class="col-3">
-                            <select class="form-control" id="allworkstation">
-                                <option selected>All Workstation</option>
-                                <option>Akil Coffee shop</option>
-                                <option>Akil Tees</option>
-                            </select>
-                        </div>
-                        <div class="col-3">
-                            <select class="form-control" id="allstores">
-                                <option selected>All Stores</option>
-                                <option>Amazon</option>
-                                <option>Shopify</option>
-                                <option>ETSY</option>
-                                <option>Woo-Commerce</option>
-                                <option>Everything with ink</option>
-                            </select>
-                        </div>
-                        <div class="col-3">
-                            <input type="search" class="form-control" id="searchitem" placeholder="Search Products">
-                        </div>
-                        <div class="col-3 pro-btns-group">
-                            <button class="btn primary-button">Search</button>
-                            <div class="btn-group">
-                                <button class="btn btn-light active" id="grid">
-                                    <i class="mdi mdi-view-grid"></i>
-                                </button>
-                                <button class="btn btn-secondary " id="list">
-                                    <i class="mdi mdi-view-list"></i>
-                                </button>
-                            </div>
+            <!--Bread crumb and right sidebar toggle-->
+            <div class="page-breadcrumb">
+                <div class="row">
+                    <div class="col-12 d-flex no-block align-items-center">
+                        <div class="mr-auto">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="workspace-with-product.html">Workspaces</a></li>
+                                    <li class="breadcrumb-item"><a href="workspace-product-detail.html">PMGOA</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Croco Rock Baby T-Shirt</li>
+                                </ol>
+                            </nav>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div id="products" class="row view-group mt-4">
-                <div class="item col-md-3 col-lg-3 col-sm-4 col-6 custom-control custom-checkbox">
-                    <input type="checkbox" id="box_1" name="case" value="1"
-                           class="custom-control-input romiwills checkbox-custom case"/>
-                    <label for="box_1" class="custom-control-label custom-lable"></label>
-                        <div class="thumbnail card">
-                            <a href="product-detail.html"> <div class="img-event">
-                                <img class="group list-group-image img-fluid"
-                                     src="./images/demo-product-3.png" alt=""/>
-                            </div></a>
-                            <div class="dropdown-divider"></div>
-                            <div class="caption product-card">
-                                <a href="product-detail.html"> <h4 class="group inner list-group-item-heading">
-                                    Avengers Endgame: 3000
-                                </h4></a>
-                                <span><a href="workspace-product-detail.html">PMGOA</a></span>
-                                <div class="row ">
-                                    <div class="col-xs-12 col-md-10">
-                                        <ul class="total-product mt-1">
-                                            <li><img class="img-fluid" src="./images/2-woocommerce.png" title="Woo Commerce logo" alt="Woo Commerce logo"> </li>
-                                            <li><img class="img-fluid" src="./images/2-magento.png" title="Magento logo" alt="Magento logo"> </li>
-                                            <li><img class="img-fluid" src="./images/2-etsy.png" title="ETSY" alt="ETSY"> </li>
-                                            <!--<li>+40 </li>-->
-                                        </ul>
-                                        <a class="viewall" href="#" data-toggle="tooltip" data-html="true" title="" data-original-title="Amazon</br>Shopify">+2 more</a>
-                                    </div>
-                                    <div class="col-xs-12 col-md-2">
-                                        <div class="dropdown lead float-right product-drop">
-                                            <i class="mdi mdi-dots-vertical" id="dropdownMenuButton"
-                                               data-toggle="dropdown" aria-haspopup="true"
-                                               aria-expanded="false"></i>
-                                            <div class="dropdown-menu"
-                                                 aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else
-                                                    here</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <!--End Bread crumb and right sidebar toggle-->
+            <div class="row mt-3">
+                <div class="col-md-3">
+                    <div class="pro-det-img">
+                        <img class="img-fluid" src="./images/croc-tees.png" alt="croco tees">
+                    </div>
                 </div>
-
-                <div class="item col-md-3 col-lg-3 col-sm-4 col-6 custom-control custom-checkbox">
-                    <input type="checkbox" name="case" id="box_2" value="2"
-                           class="custom-control-input romiwills checkbox-custom case"/>
-                    <label for="box_2" class="custom-control-label custom-lable"></label>
-                        <div class="thumbnail card">
-                            <a href="product-detail.html"><div class="img-event">
-                                <img class="group list-group-image img-fluid"
-                                     src="./images/demo-product-1.png" alt=""/>
-                            </div></a>
-                            <div class="dropdown-divider"></div>
-                            <div class="caption product-card">
-                                <a href="product-detail.html"><h4 class="group inner list-group-item-heading">
-                                    Captain America: Logo
-                                </h4></a>
-                                <span><a href="workspace-product-detail.html">PMGOA</a></span>
-                                <div class="row ">
-                                    <div class="col-xs-12 col-md-10">
-                                        <ul class="total-product mt-1">
-                                            <li><img class="img-fluid" src="./images/2-woocommerce.png" title="Woo Commerce logo" alt="Woo Commerce logo"> </li>
-                                            <li><img class="img-fluid" src="./images/2-magento.png" title="Magento logo" alt="Magento logo"> </li>
-                                            <li><img class="img-fluid" src="./images/2-etsy.png" title="ETSY" alt="ETSY"> </li>
-                                            <!--<li>+40 </li>-->
-                                        </ul>
-                                        <a class="viewall" href="#" data-toggle="tooltip" data-html="true" title="" data-original-title="Amazon</br>Shopify">+2 more</a>
-                                    </div>
-                                    <div class="col-xs-12 col-md-2">
-                                        <div class="dropdown lead float-right product-drop">
-                                            <i class="mdi mdi-dots-vertical" id="dropdownMenuButton"
-                                               data-toggle="dropdown" aria-haspopup="true"
-                                               aria-expanded="false"></i>
-                                            <div class="dropdown-menu"
-                                                 aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else
-                                                    here</a>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-
-                <div class="item col-md-3 col-lg-3 col-sm-4 col-6 custom-control custom-checkbox">
-                    <input type="checkbox" name="case" id="box_3" value="3"
-                           class="custom-control-input romiwills checkbox-custom case"/>
-                    <label for="box_3" class="custom-control-label custom-lable"></label>
-                        <div class="thumbnail card">
-                            <a href="product-detail.html"><div class="img-event">
-                                <img class="group list-group-image img-fluid"
-                                     src="./images/demo-product-2.png" alt=""/>
-                            </div></a>
-                            <div class="dropdown-divider"></div>
-                            <div class="caption product-card">
-                                <a href="product-detail.html"><h4 class="group inner list-group-item-heading">
-                                    Marvel: Logo
-                                </h4></a>
-                                <span><a href="workspace-product-detail.html">PMGOA</a></span>
-                                <div class="row ">
-                                    <div class="col-xs-12 col-md-10">
-                                        <ul class="total-product mt-1">
-                                            <li><img class="img-fluid" src="./images/2-woocommerce.png" title="Woo Commerce logo" alt="Woo Commerce logo"> </li>
-                                            <li><img class="img-fluid" src="./images/2-magento.png" title="Magento logo" alt="Magento logo"> </li>
-                                            <li><img class="img-fluid" src="./images/2-etsy.png" title="ETSY" alt="ETSY"> </li>
-                                            <!--<li>+40 </li>-->
-                                        </ul>
-                                        <a class="viewall" href="#" data-toggle="tooltip" data-html="true" title="" data-original-title="Amazon</br>Shopify">+2 more</a>
-                                    </div>
-                                    <div class="col-xs-12 col-md-2">
-                                        <div class="dropdown lead float-right product-drop">
-                                            <i class="mdi mdi-dots-vertical" id="dropdownMenuButton"
-                                               data-toggle="dropdown" aria-haspopup="true"
-                                               aria-expanded="false"></i>
-                                            <div class="dropdown-menu"
-                                                 aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else
-                                                    here</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-
-                <div class="item col-md-3 col-lg-3 col-sm-4 col-6 custom-control custom-checkbox">
-                    <input type="checkbox" name="case" id="box_4" value="4"
-                           class="custom-control-input romiwills checkbox-custom case"/>
-                    <label for="box_4" class="custom-control-label custom-lable"></label>
-                        <div class="thumbnail card">
-                            <a href="product-detail.html"><div class="img-event">
-                                <img class="group list-group-image img-fluid"
-                                     src="./images/demo-product-4.png" alt=""/>
-                            </div></a>
-                            <div class="dropdown-divider"></div>
-                            <div class="caption product-card">
-                                <a href="product-detail.html"><h4 class="group inner list-group-item-heading">
-                                    Spiderman: Homecoming
-                                </h4></a>
-                                <span><a href="workspace-product-detail.html">PMGOA</a></span>
-                                <div class="row ">
-                                    <div class="col-xs-12 col-md-10">
-                                        <ul class="total-product mt-1">
-                                            <li><img class="img-fluid" src="./images/2-woocommerce.png" title="Woo Commerce logo" alt="Woo Commerce logo"> </li>
-                                            <li><img class="img-fluid" src="./images/2-magento.png" title="Magento logo" alt="Magento logo"> </li>
-                                            <li><img class="img-fluid" src="./images/2-etsy.png" title="ETSY" alt="ETSY"> </li>
-                                            <!--<li>+40 </li>-->
-                                        </ul>
-                                        <a class="viewall" href="#" data-toggle="tooltip" data-html="true" title="" data-original-title="Amazon</br>Shopify">+2 more</a>
-                                    </div>
-                                    <div class="col-xs-12 col-md-2">
-                                        <div class="dropdown lead float-right product-drop">
-                                            <i class="mdi mdi-dots-vertical" id="dropdownMenuButton"
-                                               data-toggle="dropdown" aria-haspopup="true"
-                                               aria-expanded="false"></i>
-                                            <div class="dropdown-menu"
-                                                 aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else
-                                                    here</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-md-9">
+                    <div class="pro-det-info">
+                        <h3>Croco Rock Baby T-Shirt</h3>
+                        <span class="pro-det-worknm">Workspace: PMGOA</span>
+                        <p class="comment more">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+                    </div>
                 </div>
             </div>
+
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <div class="pro-det-info">
+                    <h3>Variants</h3>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="table-responsive" >
+                        <table class="table prowithlist" style="border-collapse:separate; border-spacing:0 15px; margin-top:-15px;">
+                            <thead>
+                            <tr>
+                                <th scope="col">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="wschkbox1">
+                                        <label class="custom-control-label" for="wschkbox1"></label>
+                                    </div>
+                                </th>
+                                <th>Product</th>
+                                <th>Print File/Artwork</th>
+                                <th>Sample</th>
+                                <th>Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="wschkbox2">
+                                        <label class="custom-control-label" for="wschkbox2"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="pro-del-tab-img"><img class="img-fluid" src="./images/croc-tees.png"></div>
+                                    <div class="pro-del-tab-details">
+                                        <h6>Croco Rock Travel Mug</h6>
+                                        <div class="pro-size">SKU: EWI-4567</div>
+                                        <div class="pro-size">Category: Baby’s T-Shirt</div>
+                                        <div class="pro-size">Size: Large</div>
+                                        <div class="pro-size">Color: Red</div>
+                                    </div>
+                                </td>
+                                <td class="width-25">
+                                    <div class="d-flex flex-wrap">
+                                        <div class="pro-del-art-img"><img class="img-fluid" src="./images/coroc-art.png" alt="coroc art"><span>Front</span></div>
+                                        <div class="pro-del-art-img"><img class="img-fluid" src="./images/coroc-art.png" alt="coroc art"><span>Back</span></div>
+                                        <div class="pro-del-art-img"><img class="img-fluid" src="./images/coroc-art.png" alt="coroc art"><span>Right Side</span></div>
+                                        <div class="pro-del-art-img"><img class="img-fluid" src="./images/coroc-art.png" alt="coroc art"><span>Left Side</span></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="sample-order">
+                                        <a href="my-cart.html"><i class="mdi mdi-cart-outline"></i> Order a Sample</a>
+                                    </div>
+                                </td>
+                                <td><button type="button" class="btn btn-success">SYNC</button>
+                                    <button type="button" class="btn btn-secondary" onclick="window.location.href='design-studio.html'">Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="wschkbox3">
+                                        <label class="custom-control-label" for="wschkbox3"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="pro-del-tab-img"><img class="img-fluid" src="./images/croc-tees.png"></div>
+                                    <div class="pro-del-tab-details">
+                                        <h6>Croco Rock Travel Mug</h6>
+                                        <div class="pro-size">SKU: EWI-4567</div>
+                                        <div class="pro-size">Category: Baby’s T-Shirt</div>
+                                        <div class="pro-size">Size: Large</div>
+                                        <div class="pro-size">Color: Black</div>
+                                    </div>
+                                </td>
+                                <td class="width-25">
+                                    <div class="d-flex flex-wrap">
+                                        <div class="pro-del-art-img"><img class="img-fluid" src="./images/coroc-art.png" alt="coroc art"><span>Front</span></div>
+                                        <div class="pro-del-art-img"><img class="img-fluid" src="./images/coroc-art.png" alt="coroc art"><span>Back</span></div>
+                                        <div class="pro-del-art-img"><img class="img-fluid" src="./images/coroc-art.png" alt="coroc art"><span>Right Side</span></div>
+                                        <div class="pro-del-art-img"><img class="img-fluid" src="./images/coroc-art.png" alt="coroc art"><span>Left Side</span></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="sample-order">
+                                        <a href="my-cart.html"><i class="mdi mdi-cart-outline"></i> Order a Sample</a>
+                                    </div>
+                                </td>
+                                <td><button type="button" class="btn btn-success">SYNC</button>
+                                    <button type="button" class="btn btn-secondary" onclick="window.location.href='design-studio.html'">Edit</button></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
 
         </div>
         <!-- End Container fluid  -->
@@ -547,6 +456,7 @@
 <script src="assets/extra-libs/sparkline/sparkline.js"></script>
 <!--Wave Effects -->
 <script src="dist/js/waves.js"></script>
+<script type="text/javascript" src="https://www.viralpatel.net/demo/jquery/jquery.shorten.1.0.js"></script>
 <!--Menu sidebar -->
 <script src="dist/js/sidebarmenu.js"></script>
 <!--Custom JavaScript -->
@@ -565,5 +475,14 @@
 
 
 </body>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".comment").shorten({
+            "showChars" : 250,
+            "moreText"	: "Read more",
+            "lessText"	: "Less",
+        });
 
+    });
+</script>
 </html>
