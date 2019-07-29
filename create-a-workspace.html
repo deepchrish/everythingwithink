@@ -614,27 +614,28 @@
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <label for="wscrdba">Is this workspace also a separate entity or a dba?</label>
+                                <label for="wscrdba">Is this workspace also a separate entity or a dba? <span class="remove-red">*</span></label>
                                 <select class="form-control" id="wscrdba">
                                     <option value="dba" selected>DBA</option>
                                     <option value="entity">Entity</option>
                                 </select>
-                                <small id="wht"><button type="button" class="btn tooltip-btn" data-toggle="tooltip" data-placement="top" title="" data-original-title="We all know how hard it can be to make a site look like the demo, so to make your start into the world of X as easy as possible we have included the demo content from our showcase site. Simply import the sample files we ship with the theme and the core structure for your site is already built. ">?</button>What is DBA?</small>
+                                <small id="whatisdba"><button type="button" class="btn tooltip-btn" data-toggle="tooltip" data-placement="top" title="" data-original-title="We all know how hard it can be to make a site look like the demo, so to make your start into the world of X as easy as possible we have included the demo content from our showcase site. Simply import the sample files we ship with the theme and the core structure for your site is already built. ">?</button>What is DBA?</small>
+                                <small id="whatisentity" style="display: none;"><button type="button" class="btn tooltip-btn" data-toggle="tooltip" data-placement="top" title="" data-original-title="We all know how hard it can be to make a site look like the demo, so to make your start into the world of X as easy as possible we have included the demo content from our showcase site. Simply import the sample files we ship with the theme and the core structure for your site is already built. ">?</button>What is Entity?</small>
                             </div>
                             <div class="form-group col-md-6" id="dbavalue">
-                                <label for="dbanumber">DBA Name</label>
+                                <label for="dbanumber">DBA Name <span class="remove-red">*</span></label>
                                 <input type="text" class="form-control" id="dbanumber" placeholder="#DBA">
                             </div>
 
                             <div class="form-group col-md-6" id="dvPassport" style="display: none">
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
-                                        <label for="dbanumber">EIN#</label>
-                                        <input type="text" class="form-control" id="dbanumber" placeholder="EIN#">
+                                        <label for="dbanumber">EIN# <span class="remove-red">*</span></label>
+                                        <input type="text" class="form-control" id="dbanumber" placeholder="EIN#" required>
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label for="stateofentity">State of Entity</label>
-                                        <select id="stateofentity" class="form-control">
+                                        <label for="stateofentity">State of Entity <span class="remove-red">*</span></label>
+                                        <select id="stateofentity" class="form-control" required>
                                             <option value="AL">Alabama</option>
                                             <option value="AK">Alaska</option>
                                             <option value="AZ">Arizona</option>
@@ -740,19 +741,25 @@
     });
 </script>
 
+<!--SHOW/HIDE between DBA and Entity form field-->
 <script type="text/javascript">
     $(function () {
         $("#wscrdba").change(function () {
             if ($(this).val() == "entity") {
                 $("#dvPassport").show();
                 $("#dbavalue").hide();
+                $("#whatisentity").show();
+                $("#whatisdba").hide();
             } else {
                 $("#dvPassport").hide();
                 $("#dbavalue").show();
+                $("#whatisentity").hide();
+                $("#whatisdba").show();
             }
         });
     });
 </script>
+<!--SHOW/HIDE between DBA and Entity form field-->
 
 </body>
 
