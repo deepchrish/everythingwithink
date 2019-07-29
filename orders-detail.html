@@ -37,7 +37,7 @@
 <!-- ============================================================== -->
 <!-- Main wrapper - style you can find in pages.scss -->
 <!-- ============================================================== -->
-<div id="main-wrapper" data-sidebartype="mini-sidebar" class="mini-sidebar">
+<div id="main-wrapper" >
     <!-- ============================================================== -->
     <!-- Topbar header - style you can find in pages.scss -->
     <!-- ============================================================== -->
@@ -339,10 +339,9 @@
                                         <p>June 21, 2019</p></th>
                                     <th><span>Order ID</span><br>
                                         <p>256356</p></th>
-                                    <th><label>Fulfillment</label>
-                                        <select class="custom-sele">
-                                            <option selected>Partial</option>
-                                        </select></th>
+                                    <th class="width-20"><label for="fulfillment">Fulfillment</label>
+                                        <input class="form-control" value="Partial" id="fulfillment" disabled>
+                                    </th>
                                     <th><span>Store</span><br>
                                         <p><img class="img-fluid" src="./images/2-shopify.png"> Shopify</p></th>
                                 </tr>
@@ -358,8 +357,8 @@
                     <p class="orderdetails">CUSTOMER DETAILS</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-3 p-0">
+            <div class="row justify-content-center">
+                <div class="col-md-4 p-0">
                     <div class="od-cd-heading custom-m-lf"><h6>Shipping Information</h6></div>
                     <div class="oc-cd-info">
                         <div class="table-responsive table-borderless">
@@ -391,46 +390,46 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 custom-border-lf-rt p-0">
-                    <div class="od-cd-heading"><h6>Billing Information</h6></div>
-                    <div class="oc-cd-info">
-                        <div class="table-responsive table-borderless">
-                            <table class="table ordersinvoice">
-                                <thead>
-                                <tr>
-                                    <th><div class="invoicestatus"><span>Status</span> <i class="mdi mdi-checkbox-marked-circle"></i> <p>Calculating…</p></div></th>
-                                    <th ></th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>Discount Coupon<p class="text-muted">FIRSTORDER</p></td>
-                                    <td class="text-right">$08.95</td>
-                                </tr>
-                                <tr>
-                                    <td >Subtotal <span>2 Item(s)</span></td>
-                                    <td class="text-right">$08.95</td>
-                                </tr>
-                                <tr>
-                                    <td >Shipping <span>First Class Pkg. (0.26 Lbs)</span></td>
-                                    <td class="text-right">$08.95</td>
-                                </tr>
-                                <tr>
-                                    <td >Tax</td>
-                                    <td class="text-right">$00.00</td>
-                                </tr>
-                                </tbody>
-                                <tfoot>
-                                <tr>
-                                    <td >Total paid by customer</td>
-                                    <td class="text-right">$49.95</td>
-                                </tr>
-                                </tfoot>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 p-0">
+                <!--<div class="col-md-5 custom-border-lf-rt p-0">-->
+                    <!--<div class="od-cd-heading"><h6>Billing Information</h6></div>-->
+                    <!--<div class="oc-cd-info">-->
+                        <!--<div class="table-responsive table-borderless">-->
+                            <!--<table class="table ordersinvoice">-->
+                                <!--<thead>-->
+                                <!--<tr>-->
+                                    <!--<th><div class="invoicestatus"><span>Status</span> <i class="mdi mdi-checkbox-marked-circle"></i> <p>Calculating…</p></div></th>-->
+                                    <!--<th ></th>-->
+                                <!--</tr>-->
+                                <!--</thead>-->
+                                <!--<tbody>-->
+                                <!--<tr>-->
+                                    <!--<td>Discount Coupon<p class="text-muted">FIRSTORDER</p></td>-->
+                                    <!--<td class="text-right">$08.95</td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td >Subtotal <span>2 Item(s)</span></td>-->
+                                    <!--<td class="text-right">$08.95</td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td >Shipping <span>First Class Pkg. (0.26 Lbs)</span></td>-->
+                                    <!--<td class="text-right">$08.95</td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td >Tax</td>-->
+                                    <!--<td class="text-right">$00.00</td>-->
+                                <!--</tr>-->
+                                <!--</tbody>-->
+                                <!--<tfoot>-->
+                                <!--<tr>-->
+                                    <!--<td >Total paid by customer</td>-->
+                                    <!--<td class="text-right">$49.95</td>-->
+                                <!--</tr>-->
+                                <!--</tfoot>-->
+                            <!--</table>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <div class="col-md-8 p-0">
                     <div class="od-cd-heading custom-m-rt"><h6>Miscellaneous</h6></div>
                     <div class="oc-cd-info">
                         <div class="od-cd-mis-note-edit"><a href="#">Edit</a> </div>
@@ -455,6 +454,7 @@
                     <p class="orderdetails">ORDER DETAILS</p>
                 </div>
             </div>
+            <!--order detail section-->
             <div class="row">
                 <div class="col-md-12">
                     <div class="table-responsive">
@@ -465,44 +465,57 @@
                                 <th>PRODUCT</th>
                                 <th>QUANTITY</th>
                                 <th>COST</th>
+                                <th>Order status</th>
                                 <th>FULFILLMENT</th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
                                 <th><span class="orders-nums">1</span></th>
-                                <td>
+                                <td class="width-25">
                                     <div class="orderimg">
                                         <img class="img-fluid" src="./images/order-list-mug.png">
                                     </div>
                                     <div class="orderinfomation">
                                         <h6>Green Hulk Mug</h6>
-                                        <p>SKU: EWI-4567</p>
-                                        <span>Category: Coffee Mugs</span>
-                                        <span>Size: Large</span>
-                                        <span>Color: Black, Green</span>
+                                        <div class="pro-ord-details">SKU: EWI-4567</div>
+                                        <div class="pro-ord-details">Category: Coffee Mugs</div>
+                                        <div class="pro-ord-details">Size: Large</div>
+                                        <div class="pro-ord-details">Color: Black, Green</div>
                                     </div>
                                     <div class="d-flex">
                                         <button class="btn btn-outline-dark m-2">Submit issue</button>
                                         <button class="btn btn-secondary m-2" disabled>Track Shipment</button>
                                     </div>
                                 </td>
-                                <td>02</td>
-                                <td class="ratespath">
+                                <td class="width-10"><div class="od-quantity">02</div></td>
+                                <td class="width-15">
                                     <span class="perunit">(Per unit)</span>
                                     <div class="order-rate">
                                         $ 06.00-$09.00
                                     </div>
                                     <span class="instructions">Total Cost would be calculated upon fullfillment.</span>
                                 </td>
-                                <td>
-                                    <div class="flex-row od-full-table">
-                                        <select class="form-control od-custom-sel">
-                                            <option selected>More Option</option>
-                                            <option>1</option>
-                                            <option>2</option>
-                                        </select>
-                                    <button class="btn btn-secondary float-right" data-toggle="modal" data-target="#fulfillorder">Fulfill Now</button>
+                                <td class="width-25"><div class="green-text">01 out of 02 item fulfilled</div></td>
+                                <td class="width-25">
+                                    <div class="d-flex flex-row bd-highlight">
+                                        <!--<div class="p-2 bd-highlight"><select class="form-control ">-->
+                                            <!--<option selected>More Option</option>-->
+                                            <!--<option>1</option>-->
+                                            <!--<option>2</option>-->
+                                        <!--</select></div>-->
+                                        <div class="p-2 bd-highlight">
+                                            <button class="btn primary-button float-right" data-toggle="modal" data-target="#fulfillorder">Fulfill Now</button>
+                                        </div>
+                                            <div class="dropdown lead od-page-drops">
+                                                <i class="mdi mdi-dots-vertical" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" x-placement="top-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, -1px, 0px);">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else
+                                                        here</a>
+                                                </div>
+                                            </div>
                                     </div>
                                 </td>
                             </tr>
@@ -514,72 +527,13 @@
             <!--Start Accordion-->
             <div class="panel-group" id="accordion">
                 <div class="panel panel-default">
-                    <div class="panel-heading od-panel-heading" id="headingOne">
-                        <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Click here for fulfillment options <i class="more-less mdi mdi-chevron-down"></i>
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseOne" class="collapse od-fix-height-accordian show" aria-labelledby="headingOne" data-parent="#accordion">
-                        <div class="table-responsive">
-                                <table class="table orders-lists table-bordered">
-                                    <thead>
-                                    <tr>
-                                        <th></th>
-                                        <th>PRODUCT</th>
-                                        <th>QUANTITY</th>
-                                        <th>COST</th>
-                                        <th>FULFILLMENT</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <th><span class="orders-nums">2</span></th>
-                                        <td>
-                                            <div class="orderimg">
-                                                <img class="img-fluid" src="./images/cusion.png">
-                                            </div>
-                                            <div class="orderinfomation">
-                                                <h6>Printed Whale Cusion</h6>
-                                                <p>SKU: EWI-223</p>
-                                                <span>Category: Coffee Mugs</span>
-                                                <span>Size: Large</span>
-                                                <span>Color: Multi-colored</span>
-                                            </div>
-                                            <div class="d-flex">
-                                                <button class="btn btn-outline-dark m-2">Submit issue</button>
-                                                <button class="btn btn-secondary m-2" disabled>Track Shipment</button>
-                                            </div>
-                                        </td>
-                                        <td>02</td>
-                                        <td class="ratespath">
-                                            <span class="perunit">(Per unit)</span>
-                                            <div class="order-rate">
-                                                $ 06.00-$09.00
-                                            </div>
-                                            <span class="instructions">Total Cost would be calculated upon fullfillment.</span>
-                                        </td>
-                                        <td>
-                                            <div class="flex-row od-full-table">
-                                                <select class="form-control od-custom-sel">
-                                                    <option selected>More Option</option>
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                </select>
-                                                <button class="btn btn-secondary float-right" data-toggle="modal" data-target="#fulfillorder">Fulfill Now</button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                    <div id="collapseOne" class="collapse od-fix-height-accordian " aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="row mb-3">
                                 <div class="col-md-5">
                                     <div class="dropdown-divider"></div>
                                 </div>
                                 <div class="col-md-2 text-center">
-                                    <p class="mc-order-details">ORDER DETAILS</p>
+                                    <p class="mc-order-details">FULFILLMENT OPTIONS</p>
                                 </div>
                                 <div class="col-md-5">
                                     <div class="dropdown-divider"></div>
@@ -597,11 +551,16 @@
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <td><div class="d-flex flex-row od-cd-mis-user-img">
-                                            <img class="img-fluid" src="./images/1.jpg">
-                                            <div class="ml-3 ol-fullfill-opt-name"><p>Stellar Designs</p>
-                                                <span><i class="mdi mdi-star"> 4.5</i></span></div>
-                                        </div></td>
+                                        <td class="width-25">
+                                            <div class="d-flex flex-row od-cd-mis-user-img justify-content-center">
+                                                <div class="p-2 bd-highlight">
+                                                    <img class="img-fluid" src="./images/1.jpg">
+                                                </div>
+                                                <div class="ml-3 ol-fullfill-opt-name"><p>Stellar Designs</p>
+                                                    <span><i class="mdi mdi-star"> 4.5</i></span>
+                                                </div>
+                                            </div>
+                                        </td>
                                         <td><div class="green-text">In Stock</div></td>
                                         <td>
                                             <div class="d-flex flex-column">
@@ -609,14 +568,20 @@
                                                 <div>(1-2 Weeks)</div>
                                             </div>
                                         </td>
-                                        <td><button class="btn btn-secondary">Fulfill</button></td>
+                                        <td><button class="btn primary-button">Fulfill</button></td>
                                     </tr>
                                     <tr>
-                                        <td><div class="d-flex flex-row od-cd-mis-user-img">
-                                            <img class="img-fluid" src="./images/1.jpg">
-                                            <div class="ml-3 ol-fullfill-opt-name"><p>Carrot Creative</p>
-                                                <span><i class="mdi mdi-star"> 4.3</i></span></div>
-                                        </div></td>
+                                        <td class="width-25">
+                                            <div class="d-flex flex-row bd-highlight od-cd-mis-user-img justify-content-center">
+                                                <div class="p-2 bd-highlight">
+                                                    <img class="img-fluid" src="./images/1.jpg">
+                                                </div>
+                                                <div class="ml-3 ol-fullfill-opt-name">
+                                                    <p>Carrot Creative</p>
+                                                    <span><i class="mdi mdi-star"> 4.3</i></span>
+                                                </div>
+                                            </div>
+                                        </td>
                                         <td><div class="green-text">In Stock</div></td>
                                         <td>
                                             <div class="d-flex flex-column">
@@ -624,30 +589,176 @@
                                                 <div>(1-2 Weeks)</div>
                                             </div>
                                         </td>
-                                        <td><button class="btn btn-secondary">Fulfill</button></td>
+                                        <td><button class="btn primary-button">Fulfill</button></td>
                                     </tr>
                                     </tbody>
                                 </table>
                             </div>
                     </div>
-                </div>
-
-                <div class="panel panel-default">
-                    <div class="panel-heading od-panel-heading" id="headingTwo">
+                    <div class="panel-heading od-panel-heading" id="headingOne">
                         <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Hide Fulfillment options? <i class="more-less mdi mdi-chevron-up"></i>
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Click here for fulfillment options <i class="more-less mdi mdi-chevron-down"></i>
                             </a>
                         </h4>
-                    </div>
-                    <div id="collapseTwo" class=" collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                        <div class="card-body">
-                            <!--content is Missing-->
-                        </div>
                     </div>
                 </div>
             </div><!-- panel-group -->
             <!-- end of #accordion -->
+            <!--order detail section-->
+
+            <!--order detail section-->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="table-responsive">
+                        <table class="table orders-lists table-bordered">
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>PRODUCT</th>
+                                <th>QUANTITY</th>
+                                <th>COST</th>
+                                <th>Order status</th>
+                                <th>FULFILLMENT</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th><span class="orders-nums">1</span></th>
+                                <td class="width-25">
+                                    <div class="orderimg">
+                                        <img class="img-fluid" src="./images/order-list-mug.png">
+                                    </div>
+                                    <div class="orderinfomation">
+                                        <h6>Green Hulk Mug</h6>
+                                        <div class="pro-ord-details">SKU: EWI-4567</div>
+                                        <div class="pro-ord-details">Category: Coffee Mugs</div>
+                                        <div class="pro-ord-details">Size: Large</div>
+                                        <div class="pro-ord-details">Color: Black, Green</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <button class="btn btn-outline-dark m-2">Submit issue</button>
+                                        <button class="btn btn-secondary m-2" disabled>Track Shipment</button>
+                                    </div>
+                                </td>
+                                <td class="width-10"><div class="od-quantity">02</div></td>
+                                <td class="width-15">
+                                    <span class="perunit">(Per unit)</span>
+                                    <div class="order-rate">
+                                        $ 06.00-$09.00
+                                    </div>
+                                    <span class="instructions">Total Cost would be calculated upon fullfillment.</span>
+                                </td>
+                                <td class="width-25"><div class="green-text">01 out of 02 item fulfilled</div></td>
+                                <td class="width-25">
+                                    <div class="d-flex flex-row bd-highlight">
+                                        <!--<div class="p-2 bd-highlight"><select class="form-control ">-->
+                                            <!--<option selected>More Option</option>-->
+                                            <!--<option>1</option>-->
+                                            <!--<option>2</option>-->
+                                        <!--</select></div>-->
+                                        <div class="p-2 bd-highlight">
+                                            <button class="btn primary-button float-right" data-toggle="modal" data-target="#fulfillorder">Fulfill Now</button>
+                                        </div>
+                                        <div class="dropdown lead od-page-drops">
+                                            <i class="mdi mdi-dots-vertical" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" x-placement="top-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, -1px, 0px);">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else
+                                                    here</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--Start Accordion-->
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div id="collapsetwo" class="collapse od-fix-height-accordian" aria-labelledby="headingtwo" data-parent="#accordion">
+                        <div class="row mb-3">
+                            <div class="col-md-5">
+                                <div class="dropdown-divider"></div>
+                            </div>
+                            <div class="col-md-2 text-center">
+                                <p class="mc-order-details">FULFILLMENT OPTIONS</p>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="dropdown-divider"></div>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-borderless od-pro-availability">
+                                <thead>
+                                <tr>
+                                    <th>Vendor Name</th>
+                                    <th>Availability</th>
+                                    <th>Delivery</th>
+                                    <th>Action</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="width-25">
+                                        <div class="d-flex flex-row od-cd-mis-user-img justify-content-center">
+                                            <div class="p-2 bd-highlight">
+                                                <img class="img-fluid" src="./images/1.jpg">
+                                            </div>
+                                            <div class="ml-3 ol-fullfill-opt-name"><p>Stellar Designs</p>
+                                                <span><i class="mdi mdi-star"> 4.5</i></span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><div class="green-text">In Stock</div></td>
+                                    <td>
+                                        <div class="d-flex flex-column">
+                                            <div>Normal Delivery</div>
+                                            <div>(1-2 Weeks)</div>
+                                        </div>
+                                    </td>
+                                    <td><button class="btn primary-button">Fulfill</button></td>
+                                </tr>
+                                <tr>
+                                    <td class="width-25">
+                                        <div class="d-flex flex-row bd-highlight od-cd-mis-user-img justify-content-center">
+                                            <div class="p-2 bd-highlight">
+                                                <img class="img-fluid" src="./images/1.jpg">
+                                            </div>
+                                            <div class="ml-3 ol-fullfill-opt-name">
+                                                <p>Carrot Creative</p>
+                                                <span><i class="mdi mdi-star"> 4.3</i></span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><div class="green-text">In Stock</div></td>
+                                    <td>
+                                        <div class="d-flex flex-column">
+                                            <div>Normal Delivery</div>
+                                            <div>(1-2 Weeks)</div>
+                                        </div>
+                                    </td>
+                                    <td><button class="btn primary-button">Fulfill</button></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="panel-heading od-panel-heading" id="headingOne">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo">
+                                Click here for fulfillment options <i class="more-less mdi mdi-chevron-down"></i>
+                            </a>
+                        </h4>
+                    </div>
+                </div>
+            </div><!-- panel-group -->
+            <!-- end of #accordion -->
+            <!--order detail section-->
 
 
 
@@ -695,77 +806,23 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <p>Pick a vendor to fulfill this order</p>
-                                    <div class="table-responsive">
-                                        <table class="table venders">
-                                            <thead>
-                                            <tr>
-                                                <th>Vendor Name</th>
-                                                <th>Delivery</th>
-                                                <th>Cost</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div class="venders-detail">
-                                                        <label>
-                                                        <input type="checkbox" >
-                                                        <img class="img-fluid" src="./assets/images/users/1.jpg">
-                                                        <span class="vender-name">
-                                                            <span>Nick Retails</span>
-                                                            <i class="mdi mdi-star"> 4.5</i>
-                                                        </span>
-                                                        </label>
-                                                    </div>
-                                                </td>
-                                                <td>Est. June, 27</td>
-                                                <td class="text-center">
-                                                    <div class="itemcost">$12.00</div>
-                                                    <span class="perunits">Per Unit</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="venders-detail">
-                                                        <label>
-                                                        <input type="checkbox" >
-                                                        <img class="img-fluid" src="./assets/images/users/1.jpg">
-                                                        <span class="vender-name">
-                                                            <span>Stellar Designs</span>
-                                                            <i class="mdi mdi-star"> 4.5</i>
-                                                        </span>
-                                                        </label>
-                                                    </div>
-                                                </td>
-                                                <td>Est. June, 27</td>
-                                                <td class="text-center">
-                                                    <div class="itemcost">$13.00</div>
-                                                    <span class="perunits">Per Unit</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="venders-detail">
-                                                        <label>
-                                                        <input type="checkbox" >
-                                                        <img class="img-fluid" src="./assets/images/users/1.jpg">
-                                                        <span class="vender-name">
-                                                            <span>Stellar Designs</span>
-                                                            <i class="mdi mdi-star"> 4.5</i>
-                                                        </span>
-                                                        </label>
-                                                    </div>
-                                                </td>
-                                                <td>Est. June, 27</td>
-                                                <td class="text-center">
-                                                    <div class="itemcost">$13.00</div>
-                                                    <span class="perunits">Per Unit</span>
-                                                </td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
+                                    <p>Would you like to fulfill all the units with this Vendor?</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="d-flex flex-row">
+                                        <div class="p-2 bd-highlight ">
+                                            <img class="img-fluid" src="./images/1.jpg">
+                                        </div>
+                                        <div class="p-2 bd-highlight">
+                                            <p>Stellar Designs</p>
+                                            <span>$ 13.00 Per unit</span>
+                                        </div>
                                     </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>Would you like to fulfill all the units with this Vendor?</p>
                                 </div>
                             </div>
                             <div class="total-pro-cost">
