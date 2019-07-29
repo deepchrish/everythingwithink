@@ -16,6 +16,7 @@
     <!-- Custom CSS -->
     <link href="dist/css/style.min.css" rel="stylesheet">
     <link href="dist/css/custom.css" rel="stylesheet">
+    <link href="dist/css/bootstrap-colorpicker.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -338,20 +339,12 @@
                     </div>
                     <div class="tab-content custom-tab-content" id="v-pills-tabContent">
 
-                        <!--Bredcrumb START-->
-                        <div class="page-breadcrumb bredbread">
-                            <div class="row">
-                                <div class="col-12 no-block align-items-center">
-                                    <div class="ml-auto text-left">
-                                        <nav aria-label="breadcrumb">
-                                            <ol class="breadcrumb tab-breadcrumbs">
-                                                <li class="breadcrumb-item"><a href="#">Men’s Clothing </a></li>
-                                                <li class="breadcrumb-item active" aria-current="page">Champion T- Shirt
-                                                    Flex
-                                                </li>
-                                            </ol>
-                                        </nav>
-                                    </div>
+                        <!--Average price START-->
+                        <div class="row justify-content-end">
+                            <div class="col-md-5">
+                                <small class="ds-perunit">(Per unit)</small>
+                                <div class="ds-price-box">
+                                    $09.00-14.00
                                 </div>
                             </div>
                         </div>
@@ -393,7 +386,7 @@
                                             title="Sucks big time - 0.5 stars"></label>
                                     </fieldset>
                                     <span class="review-tab-links"><a href="#" data-toggle="modal"
-                                                                      data-target="#pricingandreviews">38 Reviews</a></span>
+                                                                      data-target="#pricingandreviews">View Description</a></span>
                                 </div>
                             </div>
                             <div class="hr-divider"></div>
@@ -415,11 +408,11 @@
                                     <span>Choose Technique</span>
                                     <div class="btn-group-toggle selectors-btn" data-toggle="buttons">
                                         <label class="btn checkbox-btn active">
-                                            <input type="checkbox" name="options" id="option1" autocomplete="off">
+                                            <input type="radio" name="options" id="option1" autocomplete="off">
                                             Printing (DTG)
                                         </label>
                                         <label class="btn checkbox-btn ">
-                                            <input type="checkbox" name="options" id="option2" autocomplete="off">
+                                            <input type="radio" name="options" id="option2" autocomplete="off">
                                             Embroidery
                                         </label>
                                     </div>
@@ -458,11 +451,60 @@
                         <div class="tab-pane fade" id="addtext" role="tabpanel" aria-labelledby="addtext-tab">
                             <form>
                                 <div class="form-row mt-3">
-                                    <div class="col">
+                                    <div class="col-12">
                                         <input type="text" class="form-control studio-input"
                                                placeholder="Enter text here">
                                         <p class="text-right mt-3"><a class="" href="#"><i
                                                 class="mdi mdi-plus-circle-outline"></i> Add to design</a></p>
+                                    </div>
+                                </div>
+                                <div class="hr-divider"></div>
+                                <div class="form-row mt-3 mb-3">
+                                    <div class="col-6">
+                                        <label for="fontselect">Select Font</label>
+                                        <select type="text" class="form-control ds-font-input" id="fontselect">
+                                            <optgroup label="Fantasy"></optgroup>
+                                            <option value="gandalf">Gandalf</option>
+                                            <option value="harry">Harry Potter</option>
+                                            <option value="jon">Jon Snow</option>
+
+                                            <optgroup label="Comics"></optgroup>
+                                            <option value="tony">Tony Stark</option>
+                                            <option value="steve">Steven Rogers</option>
+                                            <option value="natasha">Natasha Romanova</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="fontsize">Size</label>
+                                        <select class="form-control ds-font-input" id="fontsize">
+                                            <option selected>6</option>
+                                            <option selected>8</option>
+                                            <option selected>10</option>
+                                            <option selected>12</option>
+                                            <option selected>14</option>
+                                            <option selected>16</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-4">
+                                        <label for="fonttype">Type</label>
+                                        <select class="form-control ds-font-input" id="fonttype">
+                                            <option>Normal</option>
+                                            <option>Bold</option>
+                                            <option>Italic</option>
+                                            <option>Italic Bold</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="hr-divider mt-3"></div>
+                                <div class="form-row mt-3">
+                                    <div class="col-12">
+                                        <div id="cp2" class="input-group">
+                                            <label for="fontcolor" class="billing-page mr-3 mb-0">Font Color</label>
+                                            <input type="text" class="form-control input-lg" value="#902100" id="fontcolor"/>
+                                            <span class="input-group-append">
+    <span class="input-group-text colorpicker-input-addon"><i></i></span>
+  </span>
+                                        </div>
                                     </div>
                                 </div>
                             </form>
@@ -479,7 +521,7 @@
 
                         <!--Add art to design START-->
                         <div class="tab-pane fade" id="addart" role="tabpanel" aria-labelledby="addart-tab">
-                            <div class="before-art">
+                            <div class="demoart">
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div id="carouselExampleControls" class="carousel slide text-center"
@@ -515,12 +557,12 @@
                                             </div>
                                             <a class="carousel-control-prev" href="#carouselExampleControls"
                                                role="button" data-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="ds-art-cat-prev-icon" aria-hidden="true"><i class="mdi mdi-chevron-left"></i></span>
                                                 <span class="sr-only">Previous</span>
                                             </a>
                                             <a class="carousel-control-next" href="#carouselExampleControls"
                                                role="button" data-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="ds-art-cat-next-icon" aria-hidden="true"><i class="mdi mdi-chevron-right"></i></span>
                                                 <span class="sr-only">Next</span>
                                             </a>
                                         </div>
@@ -532,37 +574,37 @@
                                     </div>
                                 </div>
                                 <div class="row defaultart">
-                                    <div class="col-md-6 p-3">
-                                        <img class="img-fluid" src="./images/art-1.png">
+                                    <div class="col-md-6 p-2" >
+                                        <div class="ds-art-js"><a href="#"><img class="img-fluid ds-art-img" src="./images/art-1.png"></a></div>
                                     </div>
-                                    <div class="col-md-6 p-3">
-                                        <img class="img-fluid" src="./images/art-2.png">
+                                    <div class="col-md-6 p-2">
+                                        <div class="ds-art-js"><a href="#" ><img class="img-fluid ds-art-img" src="./images/art-2.png"></a></div>
                                     </div>
-                                    <div class="col-md-6 p-3">
-                                        <img class="img-fluid" src="./images/art-3.png">
+                                    <div class="col-md-6 p-2">
+                                        <div class="ds-art-js"><a href="#" ><img class="img-fluid ds-art-img" src="./images/art-3.png"></a></div>
                                     </div>
-                                    <div class="col-md-6 p-3">
-                                        <img class="img-fluid" src="./images/art-4.png">
+                                    <div class="col-md-6 p-2">
+                                        <div class="ds-art-js"><a href="#" ><img class="img-fluid ds-art-img" src="./images/art-4.png"></a></div>
                                     </div>
-                                    <div class="col-md-6 p-3">
-                                        <img class="img-fluid" src="./images/art-5.png">
+                                    <div class="col-md-6 p-2">
+                                        <div class="ds-art-js"><a href="#" ><img class="img-fluid ds-art-img" src="./images/art-5.png"></a></div>
                                     </div>
-                                    <div class="col-md-6 p-3">
-                                        <img class="img-fluid" src="./images/art-6.png">
+                                    <div class="col-md-6 p-2">
+                                        <div class="ds-art-js"><a href="#" ><img class="img-fluid ds-art-img" src="./images/art-6.png"></a></div>
                                     </div>
-                                    <div class="col-md-6 p-3">
-                                        <img class="img-fluid" src="./images/art-5.png">
+                                    <div class="col-md-6 p-2">
+                                        <div class="ds-art-js"><a href="#"><img class="img-fluid ds-art-img" src="./images/art-5.png"></a></div>
                                     </div>
-                                    <div class="col-md-6 p-3">
-                                        <img class="img-fluid" src="./images/art-6.png">
+                                    <div class="col-md-6 p-2">
+                                        <div class="ds-art-js"><a href="#" ><img class="img-fluid ds-art-img" src="./images/art-6.png"></a></div>
                                     </div>
 
                                 </div>
                             </div>
 
-                            <div class="row editable-art">
+                            <div class="row editable-art before-art">
                                 <div class="col-md-12">
-                                    <div class="ds-goback"><a href="#"><i class="mdi mdi-chevron-left"></i>Go back</a>
+                                    <div class="ds-goback"><a href="#"><i class="mdi mdi-chevron-left chev-left"></i>Go back</a>
                                     </div>
                                     <div class="ds-art-studio-clipart">
                                         <div class="ds-art-customization mt-3">
@@ -704,43 +746,28 @@
                                                 </div>
                                             </div>
                                             <div class="card">
-                                                <div class="card-header" role="tab" id="headingTwo2">
+                                                <div class="card-header addmoreart" role="tab" id="headingTwo2">
                                                     <h5 class="mb-0">
-                                                        <a class="collapsed" data-toggle="collapse"
-                                                           data-parent="#accordion2" href="#collapseTwo2"
-                                                           aria-expanded="false" aria-controls="collapseTwo2">
+                                                        <a class="collapsed" data-toggle="collapse" href="#">
                                                             Add more
                                                             <span class="float-right">Click me</span>
-
                                                         </a>
+                                                        <!--<a class="collapsed" data-toggle="collapse"-->
+                                                           <!--data-parent="#accordion2" href="#collapseTwo2"-->
+                                                           <!--aria-expanded="false" aria-controls="collapseTwo2">-->
+                                                            <!--Add more-->
+                                                            <!--<span class="float-right">Click me</span>-->
+
+                                                        <!--</a>-->
                                                     </h5>
                                                 </div>
-                                                <div id="collapseTwo2" class="collapse" role="tabpanel"
-                                                     aria-labelledby="headingTwo2">
-                                                    <div class="card-block">
-                                                        2
-                                                    </div>
-                                                </div>
+                                                <!--<div id="collapseTwo2" class="collapse" role="tabpanel"-->
+                                                     <!--aria-labelledby="headingTwo2">-->
+                                                    <!--<div class="card-block">-->
+                                                        <!--2-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
                                             </div>
-                                            <!--<div class="card">-->
-                                            <!--<div class="card-header" role="tab" id="headingThree2">-->
-                                            <!--<h5 class="mb-0">-->
-                                            <!--<a class="collapsed" data-toggle="collapse"-->
-                                            <!--data-parent="#accordion2" href="#collapseThree2"-->
-                                            <!--aria-expanded="false" aria-controls="collapseThree2">-->
-                                            <!--Collapsible Group Item #3-->
-                                            <!--<span class="float-right">Click me</span>-->
-
-                                            <!--</a>-->
-                                            <!--</h5>-->
-                                            <!--</div>-->
-                                            <!--<div id="collapseThree2" class="collapse" role="tabpanel"-->
-                                            <!--aria-labelledby="headingThree2">-->
-                                            <!--<div class="card-block">-->
-                                            <!--3-->
-                                            <!--</div>-->
-                                            <!--</div>-->
-                                            <!--</div>-->
                                         </div>
                                     </div>
                                 </div>
@@ -894,18 +921,6 @@
                             </div>
                         </div>
                         <!--Add Layers END-->
-
-                        <div class="row numbers-price">
-                            <div class="col-md-6 billing-page">
-                                Average Price
-                            </div>
-                            <div class="col-md-6 billing-page">
-                                <small class="ds-perunit">(Per unit)</small>
-                                <div class="ds-price-box">
-                                    $09.00-14.00
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <div class="functional-keys text-center">
                         <div class="undo-redo">
@@ -928,7 +943,6 @@
                         </div>
                     </div>
                 </div>
-
 
                 <!--right side screen-->
                 <div class="col-md-7">
@@ -985,15 +999,27 @@
                 </div>
             </div>
 
-            <div class="row mt-4 justify-content-end">
-                <div class="col-md-4 functional-btns">
-                    <a href="create-a-product.html" class="nonfilled-btn">Go Back</a>
-                    <a href="design-item-name.html" class="filled-button">Continue</a>
+            <div class="row mt-4">
+                <!--<div class="col-md-6">-->
+                    <!--<div class="row numbers-price ">-->
+                        <!--<div class="col-md-6 billing-page">-->
+                            <!--Average Price-->
+                        <!--</div>-->
+                        <!--<div class="col-md-6 billing-page">-->
+                            <!--<small class="ds-perunit">(Per unit)</small>-->
+                            <!--<div class="ds-price-box">-->
+                                <!--$09.00-14.00-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <div class="col-md-6 functional-btns">
+                    <button class="ds-nonfiled-btn text-uppercase" onclick="window.location.href='create-a-product.html'">Previous Step</button>
+                    <button class="ds-filled-btn text-uppercase" onclick="window.location.href='design-item-name.html'">Continue With 2sku (s)</button>
                 </div>
             </div>
 
             <!-- Modal -->
-
             <!--Add product into, pricing, file templates, review START -->
             <div class="modal right fade" id="pricingandreviews" tabindex="-1" role="dialog"
                  aria-labelledby="pricingandreviews">
@@ -1455,7 +1481,6 @@
             </div>
             <!--Add Names & Numbers END -->
             <!-- modal -->
-
         </div>
         <!-- End Container fluid  -->
     </div>
@@ -1478,21 +1503,12 @@
 <!--Custom JavaScript -->
 <script src="dist/js/custom.min.js"></script>
 <!--This page JavaScript -->
+<script src="dist/js/bootstrap-colorpicker.js"></script>
 <!-- <script src="dist/js/pages/dashboards/dashboard1.js"></script> -->
-<!-- Charts js Files -->
-<script src="assets/libs/flot/excanvas.js"></script>
-<script src="assets/libs/flot/jquery.flot.js"></script>
-<script src="assets/libs/flot/jquery.flot.pie.js"></script>
-<script src="assets/libs/flot/jquery.flot.time.js"></script>
-<script src="assets/libs/flot/jquery.flot.stack.js"></script>
-<script src="assets/libs/flot/jquery.flot.crosshair.js"></script>
-<script src="assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
-<script src="dist/js/pages/chart/chart-page-init.js"></script>
 
 <script src='https://unpkg.com/xzoom/dist/xzoom.min.js'></script>
 <script src='https://hammerjs.github.io/dist/hammer.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js'></script>
-
 
 <!--colors palette Start-->
 <script>
@@ -1583,17 +1599,6 @@
     <!--colors palette END-->
 </script>
 
-<!--<script>-->
-    <!--document.addEventListener("DOMContentLoaded", function(event) {-->
-        <!--var elements = document.getElementsByClassName('collapsed');-->
-        <!--Array.prototype.forEach.call(elements, function(element) { // get son panel heading-->
-            <!--element.addEventListener('click', () => {-->
-                <!--element.classList.toggle('collapsed');-->
-            <!--});-->
-        <!--});-->
-    <!--});-->
-<!--</script>-->
-
 <script>
     function toggleIcon(e) {
         $(e.target)
@@ -1603,6 +1608,40 @@
     }
     $('.panel-group').on('hidden.bs.collapse', toggleIcon);
     $('.panel-group').on('shown.bs.collapse', toggleIcon);
+</script>
+
+<script>
+    $(function () {
+        var n = 0;
+        $('#cp2')
+            .colorpicker({
+                debug: true
+            })
+            .on('colorpickerDebug', function (e) {
+                var dbg = $('#cp2_debug');
+                n++;
+                while (dbg.find('li').length > 10) {
+                    // only list last 10 events
+                    dbg.find('li').first().remove();
+                }
+                dbg.append('<li>' + n + ': ' + e.debug.eventName + '</li>');
+            });
+    });
+</script>
+
+<script>
+    $( ".ds-art-js" ).click(function() {
+        $('.demoart').hide();
+        $('.before-art').show();
+    });
+    $( ".ds-goback" ).click(function() {
+        $('.before-art').hide();
+        $('.demoart').show();
+    });
+    $( ".addmoreart" ).click(function() {
+        $('.before-art').hide();
+        $('.demoart').show();
+    });
 </script>
 </body>
 

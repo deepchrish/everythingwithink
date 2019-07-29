@@ -2979,9 +2979,13 @@ border-top: transparent;
 
 .functional-btns{
     /*position: absolute;*/
+    /*background: #FFFFFF;*/
+    padding: 5px 0;
+    position: fixed;
     bottom: 10px;
-    background: #FFFFFF;
-    padding: 20px 0;
+    text-align: right;
+    right: 40px;
+    z-index: 50;
 }
 .resultimg{
     width: 100%;
@@ -3049,6 +3053,108 @@ border-top: transparent;
     border: 1px solid #e9ecef;
     margin: 5px;
     background: #fff;
+    transition: all .4s ease-in-out;
+}
+.mini-sidebar .thumb-img li img{
+    width: 70px;
+    height: 90px;
+    object-fit: cover;
+    position: relative;
+    left: 24em;
+    top: -22em;
+    border: 1px solid #e9ecef;
+    margin: 5px;
+    background: #fff;
+    transition: all .4s ease-in-out;
+}
+.ds-studio-footer-fixed{
+    background: #ffffff;
+    padding: 5px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.ds-footer{
+    /*border: 1px solid #000000;*/
+    /*background: #fafafa;*/
+}
+.ds-average-rate{
+    width: 100%;
+    text-align: right;
+}
+.ds-average-rate span{
+    font-weight: 700;
+    color: #111111;
+    font-size: 14px;
+}
+.ds-nonfiled-btn{
+    background: #FFFFFF;
+    border: 2px solid #e9ecef;
+    border-radius: 4px;
+    padding: 10px 50px;
+    color: #111111;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0 2px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.ds-nonfiled-btn:hover{
+    background: #efefef;
+}
+.ds-filled-btn{
+    background: #2B44FF;
+    border: 2px solid #2B44FF;
+    border-radius: 4px;
+    padding: 10px 30px;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0 2px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.ds-filled-btn:hover{
+    background: #1b33e2;
+    color: #FFFFFF;
+}
+.ds-font-input{
+     background: transparent;
+     border: 1px solid #9e9e9e;
+     padding: 0 5px;
+}
+.ds-art-cat-prev-icon .mdi-chevron-left:before{
+    color: #000;
+    font-size: 22px;
+    transform: rotate(0deg);
+    top: -3px;
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    right: 10px;
+}
+.ds-art-cat-next-icon .mdi-chevron-right:before{
+    color: #000;
+    font-size: 22px;
+    transform: rotate(0deg);
+    top: -3px;
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    left: 10px;
+    position: relative;
+}
+.ds-art-img{
+    border-radius: 5px;
+    width: 156px;
+    height: 156px;
+    object-fit: contain;
+    border: 1px solid #e9ecef;
+    padding: 15px;
+}
+.mini-sidebar .chev-left:before{
+    transform: rotate(0deg);
+    top: 2px;
 }
 .footer-box{
     border: 1px solid #d8d8d8;
@@ -4027,9 +4133,7 @@ span.round-tab:hover {
 .ds-model-content-area{
     padding: 20px 30px;
 }
-.ds-avrage-price{
 
-}
 .ds-avrage-price span{
     color: #2B44FF;
     font-weight: 700;
