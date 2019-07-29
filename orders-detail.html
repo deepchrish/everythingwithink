@@ -812,17 +812,32 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="d-flex flex-row">
-                                        <div class="p-2 bd-highlight ">
+                                        <div class="p-2 bd-highlight od-pagemodal-img">
                                             <img class="img-fluid" src="./images/1.jpg">
                                         </div>
-                                        <div class="p-2 bd-highlight">
+                                        <div class="p-1 bd-highlight od-pagemodal-uname">
                                             <p>Stellar Designs</p>
                                             <span>$ 13.00 Per unit</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <p>Would you like to fulfill all the units with this Vendor?</p>
+                                <div class="col-md-6 p-2">
+                                    <div class="custom-control custom-radio ">
+                                        <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline1">Yes, All</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="letmechosseradio" name="letmechosseradioch" class="custom-control-input">
+                                        <label class="custom-control-label" for="letmechosseradio">No, Let me choose</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-md-12">
+                                    <div style="display: none;" id="dasobai">
+                                        <label for="letmechoose">How many units would you like to be fulfilled?</label>
+                                        <input type="text" class="form-control" id="letmechoose" placeholder="Enter amount here">
+                                    </div>
                                 </div>
                             </div>
                             <div class="total-pro-cost">
@@ -887,6 +902,20 @@
     }
     $('.panel-group').on('hidden.bs.collapse', toggleIcon);
     $('.panel-group').on('shown.bs.collapse', toggleIcon);
+</script>
+<script>
+    $(function()
+    {
+        $('[name="letmechosseradioch"]').change(function()
+        {
+            if ($(this).is(':checked'))  {
+                $("#dasobai").show();
+
+            } else {
+                $("#dasobai").hide();
+            }
+        });
+    });
 </script>
 <!--Faq page plus mins START-->
 

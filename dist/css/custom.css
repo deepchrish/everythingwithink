@@ -2417,6 +2417,21 @@ border-top: transparent;
     right: 30px;
     margin: 12px 0 0 0;
 }
+.od-pagemodal-img img{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 100%;
+}
+.od-pagemodal-uname p{
+    margin: 0;
+    font-weight: 700;
+}
+.od-pagemodal-uname span{
+    color: #2b44ff;
+    font-size: 13px;
+    font-weight: 700;
+}
 .perunit{
     font-size: 14px;
     position: relative;
