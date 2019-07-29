@@ -927,7 +927,7 @@ p{
 }
 .item.list-group-item .caption h4{
     margin: 0;
-    width: 40%;
+    width: 350px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
