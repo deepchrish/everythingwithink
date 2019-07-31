@@ -371,7 +371,7 @@
                                         </ul>
                                         <a class="viewall mt-1" href="#" data-toggle="tooltip" data-html="true" title="Woo Commerce</br>Everything with Ink">+2 more</a>
                                     </td>
-                                    <td><button type="button" class="btn btn-success">SYNC</button>
+                                    <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#pickstore">SYNC</button>
                                         <button type="button" class="btn btn-secondary">Edit</button></td>
                                 </tr>
                                 <tr>
@@ -392,7 +392,7 @@
                                         </ul>
                                         <a class="viewall mt-1" href="#" data-toggle="tooltip" data-html="true" title="Amazon</br>Shopify">+2 more</a>
                                     </td>
-                                    <td><button type="button" class="btn btn-success">SYNC</button>
+                                    <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#pickstore">SYNC</button>
                                         <button type="button" class="btn btn-secondary">Edit</button></td>
                                 </tr>
                                 <tr>
@@ -413,7 +413,7 @@
                                     </ul>
                                         <a class="viewall mt-1" href="#" data-toggle="tooltip" data-html="true" title="Everything with Ink</br>Shopify">+2 more</a>
                                     </td>
-                                    <td><button type="button" class="btn btn-success">SYNC</button>
+                                    <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#pickstore">SYNC</button>
                                         <button type="button" class="btn btn-secondary">Edit</button></td>
                                 </tr>
                                 </tbody>
@@ -422,6 +422,73 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Modal Pick stores -->
+            <div class="modal right fade" id="pickstore" tabindex="-1" role="dialog" aria-labelledby="pickstore">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 class="ds-store-pick-head">NOW SYNCING</h4>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-4">
+                                    <div class="ds-final-store-pick">
+                                        <img class="img-fluid" src="./images/simson.png">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="ds-final-store-pick-info">
+                                        <h6>Champion Fannypack bag</h6>
+                                        <p>Size: Large</p>
+                                        <p>Color: Black, Green</p>
+                                        <p>SKU: EWI-6902</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div>
+                                        <p>Pick stores to sync this product.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8 billing-page">
+                                    <div class="">
+                                        <h4 class="ds-store-pick-head">CONNECTED STORES TO PMGOA</h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 text-right">
+                                    <a href="#" class="btn secendary-button">Sync all</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="d-flex bd-highlight billing-page">
+                                        <div class="p-2 bd-highlight"><img class="img-fluid ds-pro-wanders" src="./images/2-shopify.png"></div>
+                                        <div class="p-2 w-100 bd-highlight">Shopify</div>
+                                        <div class="p-2 flex-shrink-1 bd-highlight"><a href="#" class="btn btn-success">Synced</a> </div>
+                                    </div>
+                                    <div class="d-flex bd-highlight billing-page">
+                                        <div class="p-2 bd-highlight"><img class="img-fluid ds-pro-wanders" src="./images/2-etsy.png"></div>
+                                        <div class="p-2 w-100 bd-highlight">ETSY</div>
+                                        <div class="p-2 flex-shrink-1 bd-highlight"><a href="#" class="btn btn-light">Sync</a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- modal-content -->
+                </div><!-- modal-dialog -->
+            </div><!-- modal -->
         </div>
         <!-- End Container fluid  -->
 

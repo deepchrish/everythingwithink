@@ -6,6 +6,12 @@ body{
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 500;
     font-style: normal;
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+html{
+    overflow-x: hidden;
 }
 #main-wrapper, #main-wrapper[data-sidebartype=full] .topbar .top-navbar .navbar-header, #main-wrapper .topbar .top-navbar .navbar-header[data-logobg=skin5], .navbar-expand-md .navbar-nav, #main-wrapper .left-sidebar[data-sidebarbg=skin5], #main-wrapper .left-sidebar[data-sidebarbg=skin5] ul, #main-wrapper[data-sidebartype=full] .page-wrapper, .page-wrapper>.container-fluid, .page-wrapper{
     transition: all .4s ease-in-out;
@@ -436,6 +442,9 @@ p{
 .check-list{
     padding: 10px 10px;
 }
+.min-height-465{
+    min-height: 465px;
+}
 .card-box{
     background: #ffffff;
     border: 1px solid #e9ecef;
@@ -579,7 +588,7 @@ p{
     -webkit-box-shadow: 0 2px 6px 1px rgba(0,0,0,0.2);
     -moz-box-shadow: 0 2px 6px 1px rgba(0,0,0,0.2);
     box-shadow: 0 2px 6px 1px rgba(0,0,0,0.2);
-    margin: 10px 0;
+    margin: 15px 0;
     cursor: pointer;
     transition: all .3s ease-in-out;
 }
