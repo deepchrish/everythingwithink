@@ -63,6 +63,7 @@
                              <!-- dark Logo text -->
                              Dashboard
                         </span>
+                    <!-- Logo icon -->
                     <!--End Logo icon -->
                 </a>
                 <!-- ============================================================== -->
@@ -91,29 +92,28 @@
                     <!-- create new -->
                     <!-- ============================================================== -->
                     <!--<li class="left-dropdown">-->
-                    <!--<div class="form-group top-nav-drop">-->
-                    <!--<select id="selectbox1" name="selectbox1" class="form-control">-->
-                    <!--<option value="">Select an option&hellip;</option>-->
-                    <!--<option value="Roger">Roger & co.</option>-->
-                    <!--<option value="Mark">Mark tech</option>-->
-                    <!--<option value="oso">Oso</option>-->
-                    <!--<option value="whoop">Whoop</option>-->
-                    <!--<option value="Roger">Roger & co.</option>-->
-                    <!--<option value="Mark">Mark tech</option>-->
-                    <!--<option value="oso">Oso</option>-->
-                    <!--<option value="whoop">Whoop</option>-->
-                    <!--<option value="Roger">Roger & co.</option>-->
-                    <!--<option value="Mark">Mark tech</option>-->
-                    <!--<option value="oso">Oso</option>-->
-                    <!--<option value="whoop">Whoop</option>-->
-                    <!--<option value="Roger">Roger & co.</option>-->
-                    <!--<option value="Mark">Mark tech</option>-->
-                    <!--<option value="oso">Oso</option>-->
-                    <!--<option value="whoop">Whoop</option>-->
-                    <!--</select>-->
-                    <!--</div>-->
+                        <!--<div class="form-group top-nav-drop">-->
+                            <!--<select id="selectbox1" name="selectbox1" class="form-control">-->
+                                <!--<option value="">Select an option&hellip;</option>-->
+                                <!--<option value="Roger">Roger & co.</option>-->
+                                <!--<option value="Mark">Mark tech</option>-->
+                                <!--<option value="oso">Oso</option>-->
+                                <!--<option value="whoop">Whoop</option>-->
+                                <!--<option value="Roger">Roger & co.</option>-->
+                                <!--<option value="Mark">Mark tech</option>-->
+                                <!--<option value="oso">Oso</option>-->
+                                <!--<option value="whoop">Whoop</option>-->
+                                <!--<option value="Roger">Roger & co.</option>-->
+                                <!--<option value="Mark">Mark tech</option>-->
+                                <!--<option value="oso">Oso</option>-->
+                                <!--<option value="whoop">Whoop</option>-->
+                                <!--<option value="Roger">Roger & co.</option>-->
+                                <!--<option value="Mark">Mark tech</option>-->
+                                <!--<option value="oso">Oso</option>-->
+                                <!--<option value="whoop">Whoop</option>-->
+                            <!--</select>-->
+                        <!--</div>-->
                     <!--</li>-->
-
                 </ul>
                 <!-- ============================================================== -->
                 <!-- Right side toggle and nav items -->
@@ -121,8 +121,7 @@
                 <ul class="navbar-nav float-right">
                     <!-- ============================================================== -->
                     <li>
-                        <a class="btn nav-product-btn primary-button" href="add-new-product-step-1.html"><i
-                                class="mdi mdi-tag-outline"></i> Add a new Product</a>
+                        <a class="btn nav-product-btn primary-button" href="add-new-product-step-1.html"><i class="mdi mdi-tag-outline"></i> Add a new Product</a>
                     </li>
                     <!-- ============================================================== -->
                     <li class="nav-item dropdown">
@@ -293,237 +292,106 @@
 
         <!-- Container fluid  -->
         <div class="container-fluid mt-5 pt-5">
-            <div class="row border-bottom">
+            <div class="row orders-bg">
                 <div class="col-md-12">
-                    <h1>Workspaces Settings: PMGOA</h1>
-                </div>
-            </div>
-            <!--Bread crumb and right sidebar toggle-->
-            <div class="page-breadcrumb">
-                <div class="row">
-                    <div class="col-12 d-flex no-block align-items-center">
-                        <div class="mr-auto">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="workspace-with-product.html">Workspaces</a></li>
-                                    <li class="breadcrumb-item"><a href="workspace-product-detail.html">PMGOA</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Settings</li>
-                                </ol>
-                            </nav>
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 mt-5 text-center">
+                            <h2>Your Cart Feels Empty</h2>
+                            <p class="mt-2 pt-1">Add products to your cart to order them now. <span class="cart-empty-span">Tip</span> - You could place orders to ensure the quality of your products</p>
+                            <div class="mt-4"><img class="img-fluid" src="./images/cart-box.png" alt="order cart"> </div>
+                            <button class="btn nav-product-btn primary-button mt-4" data-toggle="modal" data-target="#addprotocart"><i class="mdi mdi-cart"></i> Add Products to cart</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--End Bread crumb and right sidebar toggle-->
-            <div class="row border-bottom mt-2 mb-2">
-                <!--<div class="col-md-6 mt-3">-->
-                <!--<h2>Workspace Settings</h2>-->
-                <!--</div>-->
-                <div class="col-md-6">
-                    <form>
-                        <div class="form-group row">
-                            <div class="col-md-4 billing-page">
-                                <label for="selectworkspaceopt" >Choose Workspace:</label>
-                            </div>
-                            <div class="col-md-6">
-                                <select type="email" class="form-control" id="selectworkspaceopt">
-                                    <option selected>PMGOA</option>
-                                    <option>Sixty9 Shop</option>
-                                    <option>Tip Top Tees</option>
-                                    <option>Akash Mug</option>
-                                </select>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <ul class="nav nav-tabs ws-st-setting-tabs">
-                        <li class="nav-item createpro">
-                            <a class="nav-link "  href="workspace-settings.html">WorkSpace Settings</a>
-                        </li>
-                        <li class="nav-item createpro">
-                            <a class="nav-link active" href="store-settings.html" >Store Settings</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <!-- ============================================================== -->
+            <!--Add product into cart modal START-->
+            <div class="modal right fade" id="addprotocart" tabindex="-1" role="dialog" aria-labelledby="addprotocart">
+                <div class="modal-dialog aff-dialog" role="document">
+                    <div class="modal-content ">
 
-            <div class="row mt-3">
-                <div class="col-md-8 profileform">
-                    <div class="ws-setting">
-                        <h5>Store Currency</h5>
-                    </div>
-                    <form>
-                        <div class="form-row mt-3">
-                            <div class="form-group col-md-7">
-                                <div class="input-group mr-2">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="basic-addon1"><i
-                                                class="mdi mdi-currency-usd"></i></span>
-                                    </div>
-                                    <select type="email" class="form-control" id="lisofcountries">
-                                        <option value="USD" selected="selected">United States Dollars</option>
-                                        <option value="EUR">Euro</option>
-                                        <option value="GBP">United Kingdom Pounds</option>
-                                        <option value="DZD">Algeria Dinars</option>
-                                        <option value="ARP">Argentina Pesos</option>
-                                        <option value="AUD">Australia Dollars</option>
-                                        <option value="ATS">Austria Schillings</option>
-                                        <option value="BSD">Bahamas Dollars</option>
-                                        <option value="BBD">Barbados Dollars</option>
-                                        <option value="BEF">Belgium Francs</option>
-                                        <option value="BMD">Bermuda Dollars</option>
-                                        <option value="BRR">Brazil Real</option>
-                                        <option value="BGL">Bulgaria Lev</option>
-                                        <option value="CAD">Canada Dollars</option>
-                                        <option value="CLP">Chile Pesos</option>
-                                        <option value="CNY">China Yuan Renmimbi</option>
-                                        <option value="CYP">Cyprus Pounds</option>
-                                        <option value="CSK">Czech Republic Koruna</option>
-                                        <option value="DKK">Denmark Kroner</option>
-                                        <option value="NLG">Dutch Guilders</option>
-                                        <option value="XCD">Eastern Caribbean Dollars</option>
-                                        <option value="EGP">Egypt Pounds</option>
-                                        <option value="FJD">Fiji Dollars</option>
-                                        <option value="FIM">Finland Markka</option>
-                                        <option value="FRF">France Francs</option>
-                                        <option value="DEM">Germany Deutsche Marks</option>
-                                        <option value="XAU">Gold Ounces</option>
-                                        <option value="GRD">Greece Drachmas</option>
-                                        <option value="HKD">Hong Kong Dollars</option>
-                                        <option value="HUF">Hungary Forint</option>
-                                        <option value="ISK">Iceland Krona</option>
-                                        <option value="INR">India Rupees</option>
-                                        <option value="IDR">Indonesia Rupiah</option>
-                                        <option value="IEP">Ireland Punt</option>
-                                        <option value="ILS">Israel New Shekels</option>
-                                        <option value="ITL">Italy Lira</option>
-                                        <option value="JMD">Jamaica Dollars</option>
-                                        <option value="JPY">Japan Yen</option>
-                                        <option value="JOD">Jordan Dinar</option>
-                                        <option value="KRW">Korea (South) Won</option>
-                                        <option value="LBP">Lebanon Pounds</option>
-                                        <option value="LUF">Luxembourg Francs</option>
-                                        <option value="MYR">Malaysia Ringgit</option>
-                                        <option value="MXP">Mexico Pesos</option>
-                                        <option value="NLG">Netherlands Guilders</option>
-                                        <option value="NZD">New Zealand Dollars</option>
-                                        <option value="NOK">Norway Kroner</option>
-                                        <option value="PKR">Pakistan Rupees</option>
-                                        <option value="XPD">Palladium Ounces</option>
-                                        <option value="PHP">Philippines Pesos</option>
-                                        <option value="XPT">Platinum Ounces</option>
-                                        <option value="PLZ">Poland Zloty</option>
-                                        <option value="PTE">Portugal Escudo</option>
-                                        <option value="ROL">Romania Leu</option>
-                                        <option value="RUR">Russia Rubles</option>
-                                        <option value="SAR">Saudi Arabia Riyal</option>
-                                        <option value="XAG">Silver Ounces</option>
-                                        <option value="SGD">Singapore Dollars</option>
-                                        <option value="SKK">Slovakia Koruna</option>
-                                        <option value="ZAR">South Africa Rand</option>
-                                        <option value="KRW">South Korea Won</option>
-                                        <option value="ESP">Spain Pesetas</option>
-                                        <option value="XDR">Special Drawing Right (IMF)</option>
-                                        <option value="SDD">Sudan Dinar</option>
-                                        <option value="SEK">Sweden Krona</option>
-                                        <option value="CHF">Switzerland Francs</option>
-                                        <option value="TWD">Taiwan Dollars</option>
-                                        <option value="THB">Thailand Baht</option>
-                                        <option value="TTD">Trinidad and Tobago Dollars</option>
-                                        <option value="TRL">Turkey Lira</option>
-                                        <option value="VEB">Venezuela Bolivar</option>
-                                        <option value="ZMK">Zambia Kwacha</option>
-                                        <option value="EUR">Euro</option>
-                                        <option value="XCD">Eastern Caribbean Dollars</option>
-                                        <option value="XDR">Special Drawing Right (IMF)</option>
-                                        <option value="XAG">Silver Ounces</option>
-                                        <option value="XAU">Gold Ounces</option>
-                                        <option value="XPD">Palladium Ounces</option>
-                                        <option value="XPT">Platinum Ounces</option>
-                                    </select>
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h1>Pick products to order</h1>
                                 </div>
                             </div>
-                        </div>
-                    </form>
-                    <div class="ws-para">
-                        <p>Set the default currency for this store's payments to Everything With Ink. This won't change
-                            the currency of the retail prices on your storefront - you can do that in your e-commerce
-                            platform's settings. </p>
-                        <a href="#" class="btn secendary-button">Save</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-md-8 profileform">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="ws-setting">
-                                <h5>Stores</h5>
+                            <div class="dropdown-divider"></div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="d-flex flex-row bd-highlight billing-page" >
+                                        <div class="p-2 bd-highlight"><div class="form-group">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="notreceivedyet">
+                                                    <label class="custom-control-label label-dec" for="notreceivedyet"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-2 bd-highlight"><div class="cart-pick-pro"><img class="img-fluid" src="./images/pro-1.png"> </div></div>
+                                        <div class="p-2 bd-highlight">
+                                            <div class="cart-pro-info">
+                                                <h6 title="Champion Fannypack bag">Champion Fannypack bag</h6>
+                                                <div class="cart-pro-det">Size: Large</div>
+                                                <div class="cart-pro-det">Color: Black, Green</div>
+                                                <div class="cart-pro-det">SKU: EWI-6902</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-divider"></div>
+                                    <div class="d-flex flex-row bd-highlight billing-page" >
+                                        <div class="p-2 bd-highlight"><div class="form-group">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="notreceivedyet1">
+                                                <label class="custom-control-label label-dec" for="notreceivedyet1"></label>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="p-2 bd-highlight"><div class="cart-pick-pro"><img class="img-fluid" src="./images/pro-2.png"> </div></div>
+                                        <div class="p-2 bd-highlight">
+                                            <div class="cart-pro-info">
+                                                <h6 title="Champion Fannypack bag">Croco Rck Travel Mug</h6>
+                                                <div class="cart-pro-det">Size: Large</div>
+                                                <div class="cart-pro-det">Color: Black, Green</div>
+                                                <div class="cart-pro-det">SKU: EWI-6902</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-divider"></div>
+                                    <div class="d-flex flex-row bd-highlight billing-page" >
+                                        <div class="p-2 bd-highlight"><div class="form-group">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="notreceivedyet2">
+                                                <label class="custom-control-label label-dec" for="notreceivedyet2"></label>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="p-2 bd-highlight"><div class="cart-pick-pro"><img class="img-fluid" src="./images/pro-3.png"> </div></div>
+                                        <div class="p-2 bd-highlight">
+                                            <div class="cart-pro-info">
+                                                <h6 title="Champion Fannypack bag">Coffee Time Sticker</h6>
+                                                <div class="cart-pro-det">Size: Large</div>
+                                                <div class="cart-pro-det">Color: Black, Green</div>
+                                                <div class="cart-pro-det">SKU: EWI-6902</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-divider"></div>
+                                </div>
                             </div>
+                            <button type="submit" class="btn aff-submitbtn">Submit</button>
                         </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-md-6">
-                            <img class="img-fluid ws-stores" src="./images/2-shopify.png">
-                            <div class="pl-3 mt-2 d-flex flex-column ws-team-setup">
-                                <div><p>Shopify</p></div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 text-right">
-                            <p><button class="btn btn-success">Connected</button></p>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-md-6">
-                            <img class="img-fluid ws-stores" src="./images/2-etsy.png">
-                            <div class="pl-3 mt-2 d-flex flex-column ws-team-setup">
-                                <div><p>ETSY</p></div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 text-right">
-                            <p><button class="btn">Connect</button></p>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-md-6">
-                            <img class="img-fluid ws-stores" src="./images/2-woocommerce.png">
-                            <div class="pl-3 mt-2 d-flex flex-column ws-team-setup">
-                                <div><p>Woo Commerce</p></div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 text-right">
-                            <p><button class="btn">Connect</button></p>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-md-6">
-                            <img class="img-fluid ws-stores" src="./images/2-magento.png">
-                            <div class="pl-3 mt-2 d-flex flex-column ws-team-setup">
-                                <div><p>Magento 2</p></div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 text-right">
-                            <p><button class="btn">Connect</button></p>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-md-6">
-                            <img class="img-fluid ws-stores" src="./images/2-amazon.png">
-                            <div class="pl-3 mt-2 d-flex flex-column ws-team-setup">
-                                <div><p>Amazon</p></div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 text-right">
-                            <p><button class="btn">Connect</button></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    </div><!-- modal-content -->
+                </div><!-- modal-dialog -->
+            </div><!-- modal -->
+            <!--Add product into cart modal END-->
+
         </div>
         <!-- End Container fluid  -->
+
         <!-- End footer -->
     </div>
     <!-- End Page wrapper  -->
@@ -547,34 +415,16 @@
 <!--This page JavaScript -->
 <!-- <script src="dist/js/pages/dashboards/dashboard1.js"></script> -->
 <!-- Charts js Files -->
-<!--<script src="assets/libs/flot/excanvas.js"></script>-->
-<!--<script src="assets/libs/flot/jquery.flot.js"></script>-->
-<!--<script src="assets/libs/flot/jquery.flot.pie.js"></script>-->
-<!--<script src="assets/libs/flot/jquery.flot.time.js"></script>-->
-<!--<script src="assets/libs/flot/jquery.flot.stack.js"></script>-->
-<!--<script src="assets/libs/flot/jquery.flot.crosshair.js"></script>-->
-<!--<script src="assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>-->
-<!--<script src="dist/js/pages/chart/chart-page-init.js"></script>-->
+<script src="assets/libs/flot/excanvas.js"></script>
+<script src="assets/libs/flot/jquery.flot.js"></script>
+<script src="assets/libs/flot/jquery.flot.pie.js"></script>
+<script src="assets/libs/flot/jquery.flot.time.js"></script>
+<script src="assets/libs/flot/jquery.flot.stack.js"></script>
+<script src="assets/libs/flot/jquery.flot.crosshair.js"></script>
+<script src="assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+<script src="dist/js/pages/chart/chart-page-init.js"></script>
 
-<!--SHOW/HIDE between DBA and Entity form field-->
-<script type="text/javascript">
-    $(function () {
-        $("#wscrdba").change(function () {
-            if ($(this).val() == "entity") {
-                $("#dvPassport").show();
-                $("#dbavalue").hide();
-                $("#whatisentity").show();
-                $("#whatisdba").hide();
-            } else {
-                $("#dvPassport").hide();
-                $("#dbavalue").show();
-                $("#whatisentity").hide();
-                $("#whatisdba").show();
-            }
-        });
-    });
-</script>
-<!--SHOW/HIDE between DBA and Entity form field-->
+
 </body>
 
 </html>

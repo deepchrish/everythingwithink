@@ -461,18 +461,18 @@
                         <table class="table orders-lists table-bordered">
                             <thead>
                             <tr>
-                                <th></th>
-                                <th>PRODUCT</th>
-                                <th>QUANTITY</th>
-                                <th>COST</th>
-                                <th>Order status</th>
-                                <th>FULFILLMENT</th>
+                                <th class="width-10"></th>
+                                <th class="width-30">PRODUCT</th>
+                                <th class="width-20">QUANTITY</th>
+                                <th class="width-15">COST</th>
+                                <!--<th>Order status</th>-->
+                                <th class="width-20">FULFILLMENT</th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
                                 <th><span class="orders-nums">1</span></th>
-                                <td class="width-25">
+                                <td>
                                     <div class="orderimg">
                                         <img class="img-fluid" src="./images/order-list-mug.png">
                                     </div>
@@ -484,20 +484,20 @@
                                         <div class="pro-ord-details">Color: Black, Green</div>
                                     </div>
                                     <div class="d-flex">
-                                        <button class="btn btn-outline-dark m-2">Submit issue</button>
+                                        <button class="btn btn-outline-dark m-2" data-toggle="modal" data-target="#submitissue">Submit issue</button>
                                         <button class="btn btn-secondary m-2" disabled>Track Shipment</button>
                                     </div>
                                 </td>
-                                <td class="width-10"><div class="od-quantity">02</div></td>
-                                <td class="width-15">
+                                <td><div class="od-quantity">02</div></td>
+                                <td>
                                     <span class="perunit">(Per unit)</span>
                                     <div class="order-rate">
                                         $ 06.00-$09.00
                                     </div>
                                     <span class="instructions">Total Cost would be calculated upon fullfillment.</span>
                                 </td>
-                                <td class="width-25"><div class="green-text">01 out of 02 item fulfilled</div></td>
-                                <td class="width-25">
+                                <!--<td class="width-25"><div class="green-text">01 out of 02 item fulfilled</div></td>-->
+                                <td>
                                     <div class="d-flex flex-row bd-highlight">
                                         <!--<div class="p-2 bd-highlight"><select class="form-control ">-->
                                             <!--<option selected>More Option</option>-->
@@ -614,18 +614,18 @@
                         <table class="table orders-lists table-bordered">
                             <thead>
                             <tr>
-                                <th></th>
-                                <th>PRODUCT</th>
-                                <th>QUANTITY</th>
-                                <th>COST</th>
-                                <th>Order status</th>
-                                <th>FULFILLMENT</th>
+                                <th class="width-10"></th>
+                                <th class="width-30">PRODUCT</th>
+                                <th class="width-20">QUANTITY</th>
+                                <th class="width-15">COST</th>
+                                <!--<th>Order status</th>-->
+                                <th class="width-20">FULFILLMENT</th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
                                 <th><span class="orders-nums">1</span></th>
-                                <td class="width-25">
+                                <td>
                                     <div class="orderimg">
                                         <img class="img-fluid" src="./images/order-list-mug.png">
                                     </div>
@@ -637,25 +637,25 @@
                                         <div class="pro-ord-details">Color: Black, Green</div>
                                     </div>
                                     <div class="d-flex">
-                                        <button class="btn btn-outline-dark m-2">Submit issue</button>
+                                        <button class="btn btn-outline-dark m-2" data-toggle="modal" data-target="#submitissue">Submit issue</button>
                                         <button class="btn btn-secondary m-2" disabled>Track Shipment</button>
                                     </div>
                                 </td>
-                                <td class="width-10"><div class="od-quantity">02</div></td>
-                                <td class="width-15">
+                                <td><div class="od-quantity">02</div></td>
+                                <td>
                                     <span class="perunit">(Per unit)</span>
                                     <div class="order-rate">
                                         $ 06.00-$09.00
                                     </div>
                                     <span class="instructions">Total Cost would be calculated upon fullfillment.</span>
                                 </td>
-                                <td class="width-25"><div class="green-text">01 out of 02 item fulfilled</div></td>
-                                <td class="width-25">
+                                <!--<td class="width-25"><div class="green-text">01 out of 02 item fulfilled</div></td>-->
+                                <td>
                                     <div class="d-flex flex-row bd-highlight">
                                         <!--<div class="p-2 bd-highlight"><select class="form-control ">-->
-                                            <!--<option selected>More Option</option>-->
-                                            <!--<option>1</option>-->
-                                            <!--<option>2</option>-->
+                                        <!--<option selected>More Option</option>-->
+                                        <!--<option>1</option>-->
+                                        <!--<option>2</option>-->
                                         <!--</select></div>-->
                                         <div class="p-2 bd-highlight">
                                             <button class="btn primary-button float-right" data-toggle="modal" data-target="#fulfillorder">Fulfill Now</button>
@@ -860,6 +860,55 @@
                 </div><!-- modal-dialog -->
             </div><!-- modal -->
 
+            <!--Modal Submit Issue START-->
+            <div class="modal right fade" id="submitissue" tabindex="-1" role="dialog" aria-labelledby="submitissue">
+                <div class="modal-dialog aff-dialog" role="document">
+                    <div class="modal-content ">
+
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h1>Submit Issue</h1>
+                                </div>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <span>Order ID 124532</span>
+                                    <p>Please pick your issue from down below.</p>
+                                    <form>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="notreceivedyet">
+                                                <label class="custom-control-label label-dec" for="notreceivedyet">Order hasn’t been received yet.</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="orderdelivery">
+                                                <label class="custom-control-label label-dec" for="orderdelivery">There’s an issue with an order delivery.</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea class="form-control" rows="5" placeholder="Please mention your problem in this area."></textarea>
+                                        </div>
+                                        <div class="form-group od-attachment">
+                                            <input type="file" class="form-control" id="attachmentfile">
+                                            <label for="attachmentfile"><i class="mdi mdi-attachment"></i>Attach File</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn aff-submitbtn">Submit</button>
+                        </div>
+                    </div><!-- modal-content -->
+                </div><!-- modal-dialog -->
+            </div><!-- modal -->
+            <!--Modal Submit Issue END-->
         </div>
         <!-- End Container fluid  -->
     </div>
