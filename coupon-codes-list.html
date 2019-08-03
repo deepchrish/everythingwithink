@@ -121,7 +121,8 @@
                 <ul class="navbar-nav float-right">
                     <!-- ============================================================== -->
                     <li>
-                        <a class="btn nav-product-btn primary-button" href="add-new-product-step-1.html"><i class="mdi mdi-tag-outline"></i> Add a new Product</a>
+                        <a class="btn nav-product-btn primary-button" href="add-new-product-step-1.html"><i class="mdi mdi-tag-outline"></i> Add a
+                            new Product</a>
                     </li>
                     <!-- ============================================================== -->
                     <li class="nav-item dropdown">
@@ -292,52 +293,319 @@
 
         <!-- Container fluid  -->
         <div class="container-fluid mt-5 pt-5">
-            <div class="row orders-bg">
+            <div class="row border-bottom">
                 <div class="col-md-12">
-                    <div class="row justify-content-center">
-                        <div class="col-md-8 mt-5 text-center">
-                            <h2>Create your style. Design your Vision</h2>
-                            <p class="mt-2 pt-1">Follow a few easy steps and test out your design across our entire catalogue.</p>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center mt-5">
-                        <div class="col-md-4 text-center">
-                            <div class="onboardeasyink">
-                                <span class="floating-numbers">01</span>
-                                <img class="img-fluid" src="./images/easy-ink-1.png">
-                                <h5>UPLOAD YOUR DESIGN</h5>
-                                <p>Create designs for niche audiences or take advantage of trending topics to get your followers talking.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 text-center">
-                            <div class="onboardeasyink">
-                                <span class="floating-numbers">02</span>
-                                <img class="img-fluid" src="./images/easy-ink-2.png">
-                                <h5>Test on multiple products</h5>
-                                <p>Choose from a range of t-shirts, phone cases and much more that show off your design.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 text-center">
-                            <div class="onboardeasyink">
-                                <span class="floating-numbers">03</span>
-                                <img class="img-fluid" src="./images/easy-ink-3.png">
-                                <h5>EARN MONEY</h5>
-                                <p>What beats one sale? Two sales. What beats two sales? You get the idea.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <a href="easy-ink-step-1.html" class="primary-button">Try it yourself</a>
-                        </div>
+                    <div class="d-flex bd-highlight justify-content-between">
+                        <div class="p-2 bd-highlight"><h1>Coupon Codes</h1></div>
+                        <div class="p-2 bd-highlight"><button class="btn secendary-button" data-toggle="modal" data-target="#addcouponcode"><i class="mdi mdi-plus-circle-outline"></i> Add New Coupon</button></div>
                     </div>
                 </div>
             </div>
             <!-- ============================================================== -->
-            <!-- Sales Cards  -->
+            <div class="row mt-4">
+                <div class="col-md-2 billing-page">
+                    <div class="custom-control custom-checkbox pro-grid-chk">
+                        <input type="checkbox" class="custom-control-input" id="selectall">
+                        <label class="custom-control-label" for="selectall">All</label>
+                    </div>
+                </div>
+                <div class="col-md-10 ">
+                    <div class="form-row justify-content-end">
+                        <div class="col-3">
+                            <select class="form-control" id="allworkstation">
+                                <option selected>All Coupon</option>
+                                <option>Fixed Price</option>
+                                <option>Percentages</option>
+                            </select>
+                        </div>
+                        <div class="col-3">
+                            <select class="form-control" id="allstores">
+                                <option selected>All Stores</option>
+                                <option>Amazon</option>
+                                <option>Shopify</option>
+                                <option>ETSY</option>
+                                <option>Woo-Commerce</option>
+                                <option>Everything with ink</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-4 d-flex">
+                            <input type="search" class="form-control" id="searchitem" placeholder="Search Coupon">
+                            <button class="btn primary-button ml-2">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered orderlist">
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>Code</th>
+                                <th>Type</th>
+                                <th>Value</th>
+                                <th>Criteria</th>
+                                <th>Product Type</th>
+                                <th>Users</th>
+                                <th>Expiration</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <div class="item custom-control custom-checkbox ">
+                                        <input type="checkbox" id="box_1" name="case" value="1"
+                                           class="custom-control-input case"/>
+                                        <label for="box_1" class="custom-control-label"></label>
+                                    </div>
+                                </td>
+                                <td><div class="font-bold">SUM15</div></td>
+                                <td>Fixed</td>
+                                <td>$2300</td>
+                                <td>Specific Product</td>
+                                <td>Color t-shirt</td>
+                                <td>65</td>
+                                <td>Never</td>
+                                <td><a class="btn active-status">Active</a></td>
+                                <td>
+                                    <div class="d-flex">
+                                        <div class="edit-coupon pr-2" title="Edit Coupon"><a href="#" data-toggle="modal" data-target="#addcouponcode"><i class="mdi mdi-lead-pencil"></i></a></div>
+                                        <div class="delete-coupon pl-2" title="Delete Coupon"><a href="#"><i class="mdi mdi-delete"></i></a></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="item custom-control custom-checkbox ">
+                                        <input type="checkbox" id="box_2" name="case" value="1"
+                                               class="custom-control-input case"/>
+                                        <label for="box_2" class="custom-control-label"></label>
+                                    </div>
+                                </td>
+                                <td><div class="font-bold">OFF20</div></td>
+                                <td>Percentage</td>
+                                <td>15%</td>
+                                <td>All Products</td>
+                                <td>-</td>
+                                <td>100</td>
+                                <td>09/10/2019</td>
+                                <td><a class="btn inactive-status">Inactive</a></td>
+                                <td>
+                                    <div class="d-flex">
+                                        <div class="edit-coupon pr-2" title="Edit Coupon"><a href="#" data-toggle="modal" data-target="#addcouponcode"><i class="mdi mdi-lead-pencil"></i></a></div>
+                                        <div class="delete-coupon pl-2" title="Delete Coupon"><a href="#"><i class="mdi mdi-delete"></i></a></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="item custom-control custom-checkbox ">
+                                        <input type="checkbox" id="box_3" name="case" value="1"
+                                               class="custom-control-input case"/>
+                                        <label for="box_3" class="custom-control-label"></label>
+                                    </div>
+                                </td>
+                                <td><div class="font-bold">CUP50</div></td>
+                                <td>Percentage</td>
+                                <td>50%</td>
+                                <td>Specific Product</td>
+                                <td>Croco Mug</td>
+                                <td>50</td>
+                                <td>08/09/2019</td>
+                                <td><a class="btn active-status">Active</a></td>
+                                <td>
+                                    <div class="d-flex">
+                                        <div class="edit-coupon pr-2" title="Edit Coupon"><a href="#" data-toggle="modal" data-target="#addcouponcode"><i class="mdi mdi-lead-pencil"></i></a></div>
+                                        <div class="delete-coupon pl-2" title="Delete Coupon"><a href="#"><i class="mdi mdi-delete"></i></a></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="item custom-control custom-checkbox ">
+                                        <input type="checkbox" id="box_4" name="case" value="1"
+                                               class="custom-control-input case"/>
+                                        <label for="box_4" class="custom-control-label"></label>
+                                    </div>
+                                </td>
+                                <td><div class="font-bold">FIRST100</div></td>
+                                <td>Fixed</td>
+                                <td>$100</td>
+                                <td>Specific Product</td>
+                                <td>Wall Frame</td>
+                                <td>20</td>
+                                <td>10/09/2019</td>
+                                <td><a class="btn active-status">active</a></td>
+                                <td>
+                                    <div class="d-flex">
+                                        <div class="edit-coupon pr-2" title="Edit Coupon"><a href="#" data-toggle="modal" data-target="#addcouponcode"><i class="mdi mdi-lead-pencil"></i></a></div>
+                                        <div class="delete-coupon pl-2" title="Delete Coupon"><a href="#"><i class="mdi mdi-delete"></i></a></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="item custom-control custom-checkbox ">
+                                        <input type="checkbox" id="box_5" name="case" value="1"
+                                               class="custom-control-input case"/>
+                                        <label for="box_5" class="custom-control-label"></label>
+                                    </div>
+                                </td>
+                                <td><div class="font-bold">MOON12</div></td>
+                                <td>Percentage</td>
+                                <td>12%</td>
+                                <td>Specific Product</td>
+                                <td>Wrist Band</td>
+                                <td>200</td>
+                                <td>01/11/2019</td>
+                                <td><a class="btn inactive-status">Inactive</a></td>
+                                <td>
+                                    <div class="d-flex">
+                                        <div class="edit-coupon pr-2" title="Edit Coupon"><a href="#" data-toggle="modal" data-target="#addcouponcode"><i class="mdi mdi-lead-pencil"></i></a></div>
+                                        <div class="delete-coupon pl-2" title="Delete Coupon"><a href="#"><i class="mdi mdi-delete"></i></a></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="item custom-control custom-checkbox ">
+                                        <input type="checkbox" id="box_6" name="case" value="1"
+                                               class="custom-control-input case"/>
+                                        <label for="box_6" class="custom-control-label"></label>
+                                    </div>
+                                </td>
+                                <td><div class="font-bold">HOOD10</div></td>
+                                <td>Fixed Price</td>
+                                <td>$50</td>
+                                <td>Specific Product</td>
+                                <td>Men's Hoodies</td>
+                                <td>500</td>
+                                <td>09/10/2019</td>
+                                <td><a class="btn inactive-status">Inactive</a></td>
+                                <td>
+                                    <div class="d-flex">
+                                        <div class="edit-coupon pr-2" title="Edit Coupon"><a href="#" data-toggle="modal" data-target="#addcouponcode"><i class="mdi mdi-lead-pencil"></i></a></div>
+                                        <div class="delete-coupon pl-2" title="Delete Coupon"><a href="#"><i class="mdi mdi-delete"></i></a></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="item custom-control custom-checkbox ">
+                                        <input type="checkbox" id="box_7" name="case" value="1"
+                                               class="custom-control-input case"/>
+                                        <label for="box_7" class="custom-control-label"></label>
+                                    </div>
+                                </td>
+                                <td><div class="font-bold">OFF20</div></td>
+                                <td>Percentage</td>
+                                <td>15%</td>
+                                <td>Specific Product</td>
+                                <td>Mobile Cover</td>
+                                <td>30</td>
+                                <td>05/10/2019</td>
+                                <td><a class="btn active-status">active</a></td>
+                                <td>
+                                    <div class="d-flex">
+                                        <div class="edit-coupon pr-2" title="Edit Coupon"><a href="#" data-toggle="modal" data-target="#addcouponcode"><i class="mdi mdi-lead-pencil"></i></a></div>
+                                        <div class="delete-coupon pl-2" title="Delete Coupon"><a href="#"><i class="mdi mdi-delete"></i></a></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
 
         </div>
         <!-- End Container fluid  -->
+        <!-- Modal -->
+        <div class="modal fade" id="addcouponcode" tabindex="-1" role="dialog" aria-labelledby="addcouponcode" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered ws-invite-team-model" role="document">
+                <div class="modal-content">
+                    <div class="modal-header ">
+                        <h5 class="modal-title " id="exampleModalLongTitle">Add New Coupon</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="coupancode">Code</label>
+                                    <input type="text" class="form-control" id="coupancode" placeholder="SUM15">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label for="coupontype">Type</label>
+                                    <select class="form-control" id="coupontype">
+                                        <option selected>Select an option</option>
+                                        <option value="fixed">Fixed</option>
+                                        <option value="percentage">Percentage (%)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-12 hide" id="fixedvalues">
+                                    <label for="fixedprice">Fixed Value </label>
+                                    <input type="text" class="form-control" id="fixedprice" placeholder="$2300">
+                                </div>
+                                <div class="form-group col-12 hide" id="percentagevalues">
+                                    <label for="percentageprice">Percentage Value</label>
+                                    <input type="text" class="form-control" id="percentageprice" placeholder="10%">
+                                </div>
+
+                                <div class="form-group col-12">
+                                    <label for="productscriteria">Criteria</label>
+                                    <select class="form-control" id="productscriteria">
+                                        <option selected>Select an option</option>
+                                        <option value="allpro">All Products</option>
+                                        <option value="specificpro">Specific Product</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-12 hide" id="producttype">
+                                    <label for="listofproducts">Product Type</label>
+                                    <select class="form-control" id="listofproducts">
+                                        <option value="tees">Color T-shirts</option>
+                                        <option value="mugs">Mugs</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group col-12">
+                                    <label for="numberofusers">Users</label>
+                                    <input type="number" class="form-control" id="numberofusers" placeholder="35">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label for="expirationdate">Expiration</label>
+                                    <input type="date" class="form-control" id="expirationdate">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label for="statusofthecode">Status</label>
+                                    <select class="form-control" id="statusofthecode">
+                                        <option value="active">Active</option>
+                                        <option value="deactive">Deactivate</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn primary-button" onclick="window.location.href='coupon-codes-list.html'">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END Modal-->
+
+        <!-- footer START-->
+
+        <!--<footer class="footer text-center">-->
+        <!--All Rights Reserved by Matrix-admin. Designed and Developed by <a href="https://wrappixel.com">WrapPixel</a>.-->
+        <!--</footer>-->
 
         <!-- End footer -->
     </div>
@@ -362,15 +630,37 @@
 <!--This page JavaScript -->
 <!-- <script src="dist/js/pages/dashboards/dashboard1.js"></script> -->
 <!-- Charts js Files -->
-<script src="assets/libs/flot/excanvas.js"></script>
-<script src="assets/libs/flot/jquery.flot.js"></script>
-<script src="assets/libs/flot/jquery.flot.pie.js"></script>
-<script src="assets/libs/flot/jquery.flot.time.js"></script>
-<script src="assets/libs/flot/jquery.flot.stack.js"></script>
-<script src="assets/libs/flot/jquery.flot.crosshair.js"></script>
-<script src="assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
-<script src="dist/js/pages/chart/chart-page-init.js"></script>
-
+<!--<script src="assets/libs/flot/excanvas.js"></script>-->
+<!--<script src="assets/libs/flot/jquery.flot.js"></script>-->
+<!--<script src="assets/libs/flot/jquery.flot.pie.js"></script>-->
+<!--<script src="assets/libs/flot/jquery.flot.time.js"></script>-->
+<!--<script src="assets/libs/flot/jquery.flot.stack.js"></script>-->
+<!--<script src="assets/libs/flot/jquery.flot.crosshair.js"></script>-->
+<!--<script src="assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>-->
+<!--<script src="dist/js/pages/chart/chart-page-init.js"></script>-->
+<script type="text/javascript">
+    $(function () {
+        $("#coupontype").change(function () {
+            if ($(this).val() == "fixed") {
+                $("#fixedvalues").show();
+            } else {
+                $("#fixedvalues").hide();
+            }
+            if ($(this).val() == "percentage") {
+                $("#percentagevalues").show();
+            } else {
+                $("#percentagevalues").hide();
+            }
+        });
+        $("#productscriteria").change(function () {
+            if ($(this).val() == "specificpro") {
+                $("#producttype").show();
+            } else {
+                $("#producttype").hide();
+            }
+        });
+    });
+</script>
 
 </body>
 

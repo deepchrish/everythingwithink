@@ -252,7 +252,7 @@
             <nav class="sidebar-nav">
                 <ul id="sidebarnav">
                     <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.html" aria-expanded="false"><i class="mdi mdi-home-outline"></i><span class="hide-menu">My Home</span></a> </li>
-                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="orders-list.html" aria-expanded="false"><i class="mdi mdi-shopping"></i><span class="hide-menu">Orders</span><small class="new-item float-item">New</small></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="orders-list.html" aria-expanded="false"><i class="mdi mdi-shopping"></i><span class="hide-menu">Orders</span><small class="new-item float-item blink">New</small></a></li>
                     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="product-list.html" aria-expanded="false"><i class="mdi mdi-tag"></i><span class="hide-menu">Products</span></a></li>
                     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="file-library-files.html" aria-expanded="false"><i class="mdi mdi-image-multiple"></i><span class="hide-menu">File Library</span></a></li>
                     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="company-empty.html" aria-expanded="false"><i class="mdi mdi-store"></i><span class="hide-menu">Workspaces</span></a></li>
@@ -291,7 +291,6 @@
     <!-- Page wrapper  -->
     <!-- ============================================================== -->
     <div class="page-wrapper">
-
         <!-- Container fluid  -->
         <div class="container-fluid mt-5 pt-5">
             <div class="row border-bottom">
@@ -458,73 +457,66 @@
 <!--This page JavaScript -->
 <!-- <script src="dist/js/pages/dashboards/dashboard1.js"></script> -->
 <!-- Charts js Files -->
-<script src="assets/libs/flot/excanvas.js"></script>
-<script src="assets/libs/flot/jquery.flot.js"></script>
+<!--<script src="assets/libs/flot/excanvas.js"></script>-->
+<!--<script src="assets/libs/flot/jquery.flot.js"></script>-->
 <!--<script src="assets/libs/flot/jquery.flot.pie.js"></script>-->
 <!--<script src="assets/libs/flot/jquery.flot.time.js"></script>-->
 <!--<script src="assets/libs/flot/jquery.flot.stack.js"></script>-->
 <!--<script src="assets/libs/flot/jquery.flot.crosshair.js"></script>-->
-<script src="assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+<!--<script src="assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>-->
 <!--<script src="assets/libs/chart/turning-series.js"></script>-->
-<script src="dist/js/pages/chart/chart-page-init.js"></script>
+<!--<script src="dist/js/pages/chart/chart-page-init.js"></script>-->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
 <script>
-    var ctx = document.getElementById('myChart').getContext('2d');
-    var chart = new Chart(ctx, {
-        // The type of chart we want to create
-        type: 'line',
-        showLine:'undefined',
-        // The data for our dataset
-        data: {
-            labels: ['May 01', 'May 02', 'May 03', 'May 04', 'May 05', 'May 06', 'May 07', 'May 08', 'May 09', 'May 10', 'May 11', 'May 12', 'May 13', 'May 14', 'May 15', 'May 16', 'May 17', 'May 18', 'May 19', 'May 20', 'May 21', 'May 22', 'May 23', 'May 24', 'May 25', 'May 26', 'May 27', 'May 28', 'May 29', 'May 30', 'May 31',],
-            datasets: [{
-                label: 'Statistic',
-                backgroundColor: 'rgb(43, 68, 255, 0.1)',
-                borderColor: 'rgb(43, 68, 255, 1)',
-                data: [10, 13, 14, 13.5, 11.5, 9, 7, 6, 7, 9, 11.5, 14.3, 14.6, 14.2, 13, 11.9, 10.5, 8, 6, 8, 11, 12, 9, 9.5, 9.6, 9.8, 9.9, 11.5, 9, 10, 12,],
-            }]
-        },
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'line',
+            showLine: 'undefined',
+            responsive: true,
+            // The data for our dataset
+            data: {
+                labels: ['May 01', 'May 02', 'May 03', 'May 04', 'May 05', 'May 06', 'May 07', 'May 08', 'May 09', 'May 10', 'May 11', 'May 12', 'May 13', 'May 14', 'May 15', 'May 16', 'May 17', 'May 18', 'May 19', 'May 20', 'May 21', 'May 22', 'May 23', 'May 24', 'May 25', 'May 26', 'May 27', 'May 28', 'May 29', 'May 30', 'May 31',],
+                datasets: [{
+                    label: 'Statistic',
+                    backgroundColor: 'rgb(43, 68, 255, 0.1)',
+                    borderColor: 'rgb(43, 68, 255, 1)',
+                    data: [10, 13, 14, 13.5, 11.5, 9, 7, 6, 7, 9, 11.5, 14.3, 14.6, 14.2, 13, 11.9, 10.5, 8, 6, 8, 11, 12, 9, 9.5, 9.6, 9.8, 9.9, 11.5, 9, 10, 12,],
 
-        // Configuration options go here
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero: true
+                }],
+            },
+
+            // Configuration options go here
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true,
+                        }
+                    }]
+                },
+                animation: {
+                    duration: 400 // general animation time
+                },
+                legend: {
+                    display: false,
+                    labels: {
+                        fontColor: 'rgb(255, 99, 132, 0)',
                     }
-                }]
-            },
-            animation: {
-                duration: 400 // general animation time
-            },
-            legend: {
-                display: false,
-                labels: {
-                    fontColor: 'rgb(255, 99, 132, 0)',
-                }
-            },
-            elements: {
-                line: {
-                    tension: 0.3 // disables bezier curves
-                }
-            },
-            plugins: {
-                filler: {
-                    propagate: false
-                }
-            },
-
-        }
-
-    });
-    if (window.devicePixelRatio) {
-        context.canvas.style.width = width + "px";
-        context.canvas.style.height = height + "px";
-        context.canvas.height = height * window.devicePixelRatio;
-        context.canvas.width = width * window.devicePixelRatio;
-        context.scale(window.devicePixelRatio, window.devicePixelRatio);
-    }
+                },
+                elements: {
+                    line: {
+                        tension: 0.4 // disables bezier curves
+                    }
+                },
+                plugins: {
+                    filler: {
+                        propagate: false
+                    }
+                },
+            }
+        });
 </script>
 
 </body>

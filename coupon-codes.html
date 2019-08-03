@@ -292,50 +292,100 @@
 
         <!-- Container fluid  -->
         <div class="container-fluid mt-5 pt-5">
+            <div class="row border-bottom">
+                <div class="col-md-12">
+                    <h1>Coupon Codes</h1>
+                </div>
+            </div>
             <div class="row orders-bg">
                 <div class="col-md-12">
                     <div class="row justify-content-center">
                         <div class="col-md-8 mt-5 text-center">
-                            <h2>Create your style. Design your Vision</h2>
-                            <p class="mt-2 pt-1">Follow a few easy steps and test out your design across our entire catalogue.</p>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center mt-5">
-                        <div class="col-md-4 text-center">
-                            <div class="onboardeasyink">
-                                <span class="floating-numbers">01</span>
-                                <img class="img-fluid" src="./images/easy-ink-1.png">
-                                <h5>UPLOAD YOUR DESIGN</h5>
-                                <p>Create designs for niche audiences or take advantage of trending topics to get your followers talking.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 text-center">
-                            <div class="onboardeasyink">
-                                <span class="floating-numbers">02</span>
-                                <img class="img-fluid" src="./images/easy-ink-2.png">
-                                <h5>Test on multiple products</h5>
-                                <p>Choose from a range of t-shirts, phone cases and much more that show off your design.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 text-center">
-                            <div class="onboardeasyink">
-                                <span class="floating-numbers">03</span>
-                                <img class="img-fluid" src="./images/easy-ink-3.png">
-                                <h5>EARN MONEY</h5>
-                                <p>What beats one sale? Two sales. What beats two sales? You get the idea.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <a href="easy-ink-step-1.html" class="primary-button">Try it yourself</a>
+                            <h2>No Discount Coupons are available for the time being</h2>
+                            <p class="mt-2 pt-1">Create coupons for your customers and grow together.</p>
+                            <div class="mt-4"><img class="img-fluid" src="./images/coupan-code.png" alt="order cart"> </div>
+                            <button class="btn nav-product-btn primary-button mt-4" data-toggle="modal" data-target="#addcouponcode"><i class="mdi mdi-sale"></i> Add coupon</button>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- ============================================================== -->
-            <!-- Sales Cards  -->
+            <!-- Modal -->
+            <div class="modal fade" id="addcouponcode" tabindex="-1" role="dialog" aria-labelledby="addcouponcode" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered ws-invite-team-model" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header ">
+                            <h5 class="modal-title " id="exampleModalLongTitle">Add New Coupon</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-12">
+                                        <label for="coupancode">Code</label>
+                                        <input type="text" class="form-control" id="coupancode" placeholder="SUM15">
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label for="coupontype">Type</label>
+                                        <select class="form-control" id="coupontype">
+                                            <option selected>Select an option</option>
+                                            <option value="fixed">Fixed</option>
+                                            <option value="percentage">Percentage (%)</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-12 hide" id="fixedvalues">
+                                        <label for="fixedprice">Fixed Value </label>
+                                        <input type="text" class="form-control" id="fixedprice" placeholder="$2300">
+                                    </div>
+                                    <div class="form-group col-12 hide" id="percentagevalues">
+                                        <label for="percentageprice">Percentage Value</label>
+                                        <input type="text" class="form-control" id="percentageprice" placeholder="10%">
+                                    </div>
 
+                                    <div class="form-group col-12">
+                                        <label for="productscriteria">Criteria</label>
+                                        <select class="form-control" id="productscriteria">
+                                            <option selected>Select an option</option>
+                                            <option value="allpro">All Products</option>
+                                            <option value="specificpro">Specific Product</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-12 hide" id="producttype">
+                                        <label for="listofproducts">Product Type</label>
+                                        <select class="form-control" id="listofproducts">
+                                            <option value="tees">Color T-shirts</option>
+                                            <option value="mugs">Mugs</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group col-12">
+                                        <label for="numberofusers">Users</label>
+                                        <input type="number" class="form-control" id="numberofusers" placeholder="35">
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label for="expirationdate">Expiration</label>
+                                        <input type="date" class="form-control" id="expirationdate">
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label for="statusofthecode">Status</label>
+                                        <select class="form-control" id="statusofthecode">
+                                            <option value="active">Active</option>
+                                            <option value="deactive">Deactivate</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn primary-button" onclick="window.location.href='coupon-codes-list.html'">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--END Modal-->
         </div>
         <!-- End Container fluid  -->
 
@@ -361,16 +411,30 @@
 <script src="dist/js/custom.min.js"></script>
 <!--This page JavaScript -->
 <!-- <script src="dist/js/pages/dashboards/dashboard1.js"></script> -->
-<!-- Charts js Files -->
-<script src="assets/libs/flot/excanvas.js"></script>
-<script src="assets/libs/flot/jquery.flot.js"></script>
-<script src="assets/libs/flot/jquery.flot.pie.js"></script>
-<script src="assets/libs/flot/jquery.flot.time.js"></script>
-<script src="assets/libs/flot/jquery.flot.stack.js"></script>
-<script src="assets/libs/flot/jquery.flot.crosshair.js"></script>
-<script src="assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
-<script src="dist/js/pages/chart/chart-page-init.js"></script>
 
+<script type="text/javascript">
+    $(function () {
+        $("#coupontype").change(function () {
+            if ($(this).val() == "fixed") {
+                $("#fixedvalues").show();
+            } else {
+                $("#fixedvalues").hide();
+            }
+            if ($(this).val() == "percentage") {
+                $("#percentagevalues").show();
+            } else {
+                $("#percentagevalues").hide();
+            }
+        });
+        $("#productscriteria").change(function () {
+            if ($(this).val() == "specificpro") {
+                $("#producttype").show();
+            } else {
+                $("#producttype").hide();
+            }
+        });
+    });
+</script>
 
 </body>
 
