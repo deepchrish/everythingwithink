@@ -700,7 +700,7 @@ p{
     height: 30px;
     object-fit: contain;
 }
-.tooltip-arrow, .tooltip-inner {background-color: #2B44FF;}
+/*.tooltip-arrow, .tooltip-inner {background-color: #2B44FF;}*/
 
 .order-status{
     border-right: 1px solid #d8d8d8;
@@ -3863,6 +3863,7 @@ span.round-tab:hover {
     font-style: italic;
     color: #111111;
     font-weight: 500;
+    line-height: 25px;
 }
 .ws-team{
     float: left;
@@ -5397,4 +5398,54 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
     -webkit-animation: rainbow 0.5s linear 0.5s infinite alternate;
     -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-duration: 1s, 1.5s, 2s, 2.5s;
+}
+#image-gallery .modal-footer{
+    display: block;
+}
+.fl-file-options{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.fl-flex-btn-optn .mdi-download:before{
+    font-size: 24px;
+    color: #111111;
+}
+.fl-flex-btn-optn .mdi-delete:before {
+    font-size: 22px;
+    color: #111111;
+}
+.fl-preview-item{
+    padding: 0;
+    margin: 0;
+}
+.fl-preview-modal-close{
+    position: relative;
+    top: 10px;
+    right: 15px;
+}
+.fl-previewed-modal-img{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    min-height: 375px;
+}
+.fl-preview-modal-item-title{
+    resize: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #111;
+    padding: 0;
+    width: auto;
+    height: auto;
+    margin: 0;
+    line-height: 27px;
+}
+.fl-action-btn{
+    width: 180px;
+    transition: all .3s ease-in-out;
+    color: #333;
+}
+.fl-action-btn:hover{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
 }
