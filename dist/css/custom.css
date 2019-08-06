@@ -4972,7 +4972,7 @@ ul.stepper.horizontal .step .step-content::-webkit-scrollbar-thumb:hover {
     color: #0094FF;
     font-weight: 700;
     font-size: 14px;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
 }
 .red-btn{
     font-weight: 500;
@@ -5634,3 +5634,79 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
     background: #2B44FF !important;
     color: #fff !important;
 }
+
+/*Login page START*/
+.loginbg{
+    background: linear-gradient(to top, rgba(43,68,255,0.95) 0%, rgba(43,68,255,0.9) 100%), url(../../images/loginbg-2x.png) no-repeat center;
+    /*background: url(../../images/loginbg.png) no-repeat center;*/
+    height: 100vh;
+    background-size: cover;
+}
+.login-logo-img img{
+    filter: brightness(500%);
+}
+.login-logo-text{
+    margin: 4px 10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+.login-left-side{
+    height: 90vh;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+.login-icons{
+    text-align: center;
+}
+.login-icons .mdi-tshirt-crew:before{
+    font-size: 50px;
+    color: #fff;
+}
+.login-icons .mdi-arrange-send-to-back:before{
+    font-size: 50px;
+    color: #fff;
+}
+.login-icons .mdi-view-dashboard:before{
+    font-size: 50px;
+    color: #fff;
+}
+.login-icons .mdi-credit-card:before{
+    font-size: 50px;
+    color: #fff;
+}
+.login-info-line p{
+    margin: 0;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+.login-right-side{
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+.login-form-area{
+    margin: 0 auto;
+}
+.login-lable{
+    margin: 0;
+    position: absolute;
+    background: #fff;
+    bottom: 26px;
+    left: 20px;
+    color: #111 !important;
+    font-size: 12px;
+    width: 18%;
+    text-align: center;
+}
+.login-p{
+    margin: 0;
+    font-weight: 600;
+}
+.login-p a{
+    font-style: italic;
+    color: #0094FF;
+}
+/*Login page END*/
