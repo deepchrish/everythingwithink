@@ -3044,35 +3044,53 @@ border-top: transparent;
 
 .thumb-img {
     display: grid;
+    position: absolute;
+    /* right: 44px; */
+    top: 0;
+    left: 81%;
+    bottom: auto;
 }
 .thumb-img li{
     display: contents;
 }
 
 .thumb-img li img{
-    width: 70px;
-    height: 90px;
+    width: 60px;
+    height: 75px;
     object-fit: cover;
-    position: relative;
-    left: 20em;
-    top: -14em;
-    border: 1px solid #e9ecef;
+    /* position: relative; */
+    /* left: 20em; */
+    /* top: -14em; */
+    border: 2px solid #e9ecef;
     margin: 5px;
     background: #fff;
     transition: all .4s ease-in-out;
 }
-.mini-sidebar .thumb-img li img{
-    width: 70px;
-    height: 90px;
-    object-fit: cover;
-    position: relative;
-    left: 24em;
-    top: -22em;
-    border: 1px solid #e9ecef;
-    margin: 5px;
-    background: #fff;
+.thumb-text{
+    display: inherit;
+}
+.thumb-text span{
+    display: inherit;
+}
+.carousel-indicators{
     transition: all .4s ease-in-out;
 }
+.carousel-indicators .active img{
+    border: 2px solid #777;
+    transition: all .4s ease-in-out;
+}
+/*.mini-sidebar .thumb-img li img{*/
+    /*width: 70px;*/
+    /*height: 90px;*/
+    /*object-fit: cover;*/
+    /*position: relative;*/
+    /*left: 24em;*/
+    /*top: -22em;*/
+    /*border: 1px solid #e9ecef;*/
+    /*margin: 5px;*/
+    /*background: #fff;*/
+    /*transition: all .4s ease-in-out;*/
+/*}*/
 .ds-studio-footer-fixed{
     background: #ffffff;
     padding: 5px 0;
@@ -5508,11 +5526,11 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
     border-top-right-radius: 4px;
     background: rgba(255, 255, 255, 0.03);
     color: #111111;
-    margin: 0 20%;
+    margin: 0 0 0 40%;
     letter-spacing: 0.5px;
     position: relative;
     line-height: 1.4em;
-    padding: 20px 50px;
+    padding: 20px 30px;
     list-style: none;
     text-align: left;
 }
@@ -5551,24 +5569,64 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
     top: 0;
 }
 .timeline .event:before {
-    left: -217.5px;
+    left: -200px;
     color: #777777;
     content: attr(data-date);
     text-align: right;
-    font-weight: 100;
+    font-weight: 500;
     font-size: 0.9em;
     min-width: 120px;
-    font-family: 'Saira', sans-serif;
+    margin: 2px 0;
 }
-.timeline .event:after {
+.timeline .event:after{
     box-shadow: 0 0 0 4px #2b44ff;
-    left: -57.85px;
+    left: -37px;
     background: #e9ecef;
     border-radius: 50%;
     height: 11px;
     width: 11px;
     content: "";
     top: 5px;
+}
+.ripple:after {
+    position: absolute;
+    box-shadow: 0 0 0 4px #2b44ff;
+    left: -37px;
+    background: #2b44ff;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    content: "";
+    top: 5px;
+    z-index: 1;
+    opacity: 1;
+    -webkit-animation: ripple 1.2s infinite;
+    animation: ripple 1.2s infinite;
+    /*border: 1px solid #2b44ff;*/
+}
+@-webkit-keyframes ripple{
+    0%{
+        opacity:1;
+        -webkit-transform:scale(0);
+        transform:scale(0)
+    }
+    100%{
+        opacity:1;
+        -webkit-transform:scale(1);
+        transform:scale(1)
+    }
+}
+@keyframes ripple{
+    0%{
+        opacity:1;
+        -webkit-transform:scale(0);
+        transform:scale(0)
+    }
+    100%{
+        opacity:0;
+        -webkit-transform:scale(1.5);
+        transform:scale(1.5)
+    }
 }
 /* Timeline for order status END*/
 

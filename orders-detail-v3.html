@@ -89,31 +89,6 @@
                             data-sidebartype="mini-sidebar"><i class="mdi mdi-chevron-left left-arrow"></i></a>
                     </li>
                     <!-- ============================================================== -->
-                    <!-- create new -->
-                    <!-- ============================================================== -->
-                    <!--<li class="left-dropdown">-->
-                        <!--<div class="form-group top-nav-drop">-->
-                            <!--<select id="selectbox1" name="selectbox1" class="form-control">-->
-                                <!--<option value="">Select an option&hellip;</option>-->
-                                <!--<option value="Roger">Roger & co.</option>-->
-                                <!--<option value="Mark">Mark tech</option>-->
-                                <!--<option value="oso">Oso</option>-->
-                                <!--<option value="whoop">Whoop</option>-->
-                                <!--<option value="Roger">Roger & co.</option>-->
-                                <!--<option value="Mark">Mark tech</option>-->
-                                <!--<option value="oso">Oso</option>-->
-                                <!--<option value="whoop">Whoop</option>-->
-                                <!--<option value="Roger">Roger & co.</option>-->
-                                <!--<option value="Mark">Mark tech</option>-->
-                                <!--<option value="oso">Oso</option>-->
-                                <!--<option value="whoop">Whoop</option>-->
-                                <!--<option value="Roger">Roger & co.</option>-->
-                                <!--<option value="Mark">Mark tech</option>-->
-                                <!--<option value="oso">Oso</option>-->
-                                <!--<option value="whoop">Whoop</option>-->
-                            <!--</select>-->
-                        <!--</div>-->
-                    <!--</li>-->
                 </ul>
                 <!-- ============================================================== -->
                 <!-- Right side toggle and nav items -->
@@ -299,7 +274,6 @@
                     <h1>Orders</h1>
                 </div>
             </div>
-            <!--<div class="">-->
                 <div class="row ordershead">
                     <div class="col-md-6">
                         <span class="back-icon"><a href="#"><i
@@ -312,18 +286,18 @@
                             </div>
                             <div class="col-md-4">
                                 <select class="form-control custom-select" id="locationlist">
-                                    <option value="AFG">Lorem Lpsum</option>
-                                    <option value="ALA">Lorem Lpsum 1</option>
-                                    <option value="ALB">Lorem Lpsum 2</option>
-                                </select>
-                            </div>
-                            <div class="col-md-4">
-                                <select class="form-control custom-select primary-button" id="locationlist">
                                     <option value="oa">Order Action</option>
                                     <option value="ALA">Lorem Lpsum 1</option>
                                     <option value="ALB">Lorem Lpsum 2</option>
                                 </select>
                             </div>
+                            <!--<div class="col-md-4">-->
+                                <!--<select class="form-control custom-select primary-button" id="locationlist">-->
+                                    <!--<option value="oa">Order Action</option>-->
+                                    <!--<option value="ALA">Lorem Lpsum 1</option>-->
+                                    <!--<option value="ALB">Lorem Lpsum 2</option>-->
+                                <!--</select>-->
+                            <!--</div>-->
                         </div>
                     </div>
                 </div>
@@ -350,13 +324,13 @@
                         </div>
                     </div>
                 </div>
-            <!--</div>-->
 
             <div class="row">
                 <div class="col-md-12 mt-3">
                     <p class="orderdetails">CUSTOMER DETAILS</p>
                 </div>
             </div>
+
             <div class="row justify-content-center">
                 <div class="col-md-3 p-0">
                     <div class="od-cd-heading custom-m-lf"><h6>Shipping Information</h6></div>
@@ -449,11 +423,13 @@
                     </div>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-md-12">
                     <p class="orderdetails">ORDER Items</p>
                 </div>
             </div>
+
             <!--order detail section-->
             <div class="row">
                 <div class="col-md-12">
@@ -480,24 +456,20 @@
                                         <div class="pro-ord-details font-bold">SKU: EWI-4567</div>
                                         <div class="pro-ord-details">Coffee Mugs - Large - Black</div>
                                         <div class="d-flex">
-                                            <a class="anchor-text" href="#">View Timeline</a>
+                                            <a class="anchor-text" href="#" data-toggle="modal" data-target="#shipmenttimeline">View Timeline</a>
                                         </div>
                                     </div>
-                                    <!--<div class="d-flex">-->
-                                        <!--<button class="btn btn-outline-dark m-2" data-toggle="modal" data-target="#submitissue">Submit issue</button>-->
-                                        <!--<button class="btn btn-secondary m-2" disabled>Track Shipment</button>-->
-                                    <!--</div>-->
                                 </td>
                                 <td><div class="od-quantity">02</div></td>
                                 <td><div class="od-quantity">$34.95</div></td>
                                 <td>
                                     <div class="od-quantity">$16.95 x 2 = $34.20</div>
                                 </td>
-                                <td><div class="red-text">Awaiting Response</div></td>
+                                <td><div class="red-text">Awaiting Response</div><small>Nick Retails</small></td>
                                 <td>
                                     <div class="d-flex flex-row bd-highlight">
                                         <div class="p-2 bd-highlight">
-                                            <button class="btn red-btn" data-toggle="modal" data-target="#pickvendor2">Cancel</button>
+                                            <button class="btn red-btn">Cancel</button>
                                         </div>
                                         <div class="dropdown lead od-page-drops">
                                             <i class="mdi mdi-dots-vertical" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
@@ -511,81 +483,15 @@
                                 </td>
                             </tr>
 
-                            <tr>
-                                <td>
-                                    <div class="orderimg">
-                                        <img class="img-fluid" src="./images/header-base.png">
-                                    </div>
-                                    <div class="orderinfomation">
-                                        <h6>Green Croco Mug</h6>
-                                        <div class="pro-ord-details font-bold">SKU: EWI-4567</div>
-                                        <div class="pro-ord-details">Coffee Mugs - Large - White</div>
-                                        <div class="d-flex">
-                                            <a class="anchor-text" href="#">View Timeline</a>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td><div class="od-quantity">02</div></td>
-                                <td><div class="od-quantity">$40.05</div></td>
-                                <td>
-                                    <span class="perunit">(Per unit)</span>
-                                    <div class="order-rate">
-                                        $ 06.00-$09.00
-                                    </div>
-                                    <span class="instructions">Total Cost would be calculated upon fullfillment.</span>
-                                </td>
-                                <td><div class="blue-text">Need Fulfillment</div></td>
-                                <td>
-                                    <div class="d-flex flex-row bd-highlight">
-                                        <div class="p-2 bd-highlight">
-                                            <button class="btn primary-button" data-toggle="modal" data-target="#pickvendor2">Fulfill Now</button>
-                                        </div>
-                                        <div class="dropdown lead od-page-drops">
-                                            <i class="mdi mdi-dots-vertical" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" x-placement="top-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, -1px, 0px);">
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else here</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="5">
-                                    <div id="ordertracktimeline2" style="display: none;">
-                                        <ul class="timeline">
-                                            <li class="event" data-date="Aug 03, 2019 - 11:00AM">
-                                                <h3>Delivered</h3>
-                                                <p>Item have been received and sign by the customer</p>
-                                            </li>
-                                            <li class="event" data-date="Aug,02 2019 - 03:00PM">
-                                                <h3>In Transit</h3>
-                                                <p>Item Picked by FedEX and on its way to your customer.</p>
-                                            </li>
-                                            <li class="event" data-date="Aug,02 2019">
-                                                <h3>Sorting Complete</h3>
-                                                <p>Tulare, CA 93274</p>
-                                                <p>Expected delivery: Aug 03, 2019</p>
-                                            </li>
-                                            <li class="event" data-date="Aug,01 2019 - 6:51PM">
-                                                <h3>Item Arrived At Mailbox</h3>
-                                                <p>Tulare, CA 93274</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </td>
-                            </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
             <!--Start Accordion-->
-
-            <!--<div class="panel-group" id="accordion">
+            <div class="panel-group" id="accordion">
                 <div class="panel panel-default">
-                    <div id="collapseOne" class="collapse od-fix-height-accordian " aria-labelledby="headingOne" data-parent="#accordion">
+                    <div id="collapseOne" class="collapse od-fix-height-accordian" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="row mb-3">
                                 <div class="col-md-5">
                                     <div class="dropdown-divider"></div>
@@ -626,7 +532,7 @@
                                                 <div>(1-2 Weeks)</div>
                                             </div>
                                         </td>
-                                        <td><button class="btn primary-button">Fulfill</button></td>
+                                        <td><button class="btn primary-button">Pick Vendor</button></td>
                                     </tr>
                                     <tr>
                                         <td class="width-25">
@@ -647,60 +553,56 @@
                                                 <div>(1-2 Weeks)</div>
                                             </div>
                                         </td>
-                                        <td><button class="btn primary-button">Fulfill</button></td>
+                                        <td><button class="btn primary-button">Pick Vendor</button></td>
                                     </tr>
                                     </tbody>
                                 </table>
                             </div>
                     </div>
-                    <div class="panel-heading od-panel-heading" id="headingOne">
-                        <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <div class="panel-heading od-panel-heading " id="headingOne">
+                        <h4 class="panel-title ">
+                            <a class="text-muted" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne5" aria-expanded="false" aria-controls="collapseOne">
                                 Click here for fulfillment options <i class="more-less mdi mdi-chevron-down"></i>
                             </a>
                         </h4>
                     </div>
                 </div>
-            </div> -->
-
+            </div>
             <!-- panel-group -->
             <!-- end of #accordion -->
-            <!--order detail section-->
 
-            <!--order detail section-->
-            <!-- <div class="row">
+            <div class="row">
                 <div class="col-md-12">
                     <div class="table-responsive">
                         <table class="table orders-lists table-bordered">
                             <thead>
                             <tr>
-                                <th class="width-10"></th>
-                                <th class="width-30">PRODUCT</th>
-                                <th class="width-20">QUANTITY</th>
-                                <th class="width-15">COST</th>
+                                <th class="width-25">PRODUCT</th>
+                                <th class="width-10">QUANTITY</th>
+                                <th class="width-15">Retail Price</th>
+                                <th class="width-15">Vendor Price</th>
+                                <th class="width-15">status</th>
                                 <th class="width-20">FULFILLMENT</th>
                             </tr>
                             </thead>
                             <tbody>
+
                             <tr>
-                                <th><span class="orders-nums">1</span></th>
                                 <td>
                                     <div class="orderimg">
-                                        <img class="img-fluid" src="./images/order-list-mug.png">
+                                        <img class="img-fluid" src="./images/header-base.png">
                                     </div>
                                     <div class="orderinfomation">
-                                        <h6>Green Hulk Mug</h6>
-                                        <div class="pro-ord-details">SKU: EWI-4567</div>
-                                        <div class="pro-ord-details">Category: Coffee Mugs</div>
-                                        <div class="pro-ord-details">Size: Large</div>
-                                        <div class="pro-ord-details">Color: Black, Green</div>
-                                    </div>
-                                    <div class="d-flex">
-                                        <button class="btn btn-outline-dark m-2" data-toggle="modal" data-target="#submitissue">Submit issue</button>
-                                        <button class="btn btn-secondary m-2" disabled>Track Shipment</button>
+                                        <h6>Green Croco Mug</h6>
+                                        <div class="pro-ord-details font-bold">SKU: EWI-4567</div>
+                                        <div class="pro-ord-details">Coffee Mugs - Large - White</div>
+                                        <div class="d-flex">
+                                            <a class="anchor-text" href="#" data-toggle="modal" data-target="#shipmenttimeline">View Timeline</a>
+                                        </div>
                                     </div>
                                 </td>
                                 <td><div class="od-quantity">02</div></td>
+                                <td><div class="od-quantity">$40.05</div></td>
                                 <td>
                                     <span class="perunit">(Per unit)</span>
                                     <div class="order-rate">
@@ -708,18 +610,18 @@
                                     </div>
                                     <span class="instructions">Total Cost would be calculated upon fullfillment.</span>
                                 </td>
+                                <td><div class="blue-text">Need Fulfillment</div></td>
                                 <td>
                                     <div class="d-flex flex-row bd-highlight">
                                         <div class="p-2 bd-highlight">
-                                            <button class="btn primary-button float-right" data-toggle="modal" data-target="#fulfillorder">Fulfill Now</button>
+                                            <button class="btn primary-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo">Fulfill Now</button>
                                         </div>
                                         <div class="dropdown lead od-page-drops">
                                             <i class="mdi mdi-dots-vertical" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
                                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" x-placement="top-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, -1px, 0px);">
                                                 <a class="dropdown-item" href="#">Action</a>
                                                 <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else
-                                                    here</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
                                             </div>
                                         </div>
                                     </div>
@@ -729,9 +631,9 @@
                         </table>
                     </div>
                 </div>
-            </div>-->
+            </div>
             <!--Start Accordion-->
-            <!--<div class="panel-group" id="accordion">
+           <div class="panel-group" id="accordion">
                 <div class="panel panel-default">
                     <div id="collapsetwo" class="collapse od-fix-height-accordian" aria-labelledby="headingtwo" data-parent="#accordion">
                         <div class="row mb-3">
@@ -774,7 +676,7 @@
                                             <div>(1-2 Weeks)</div>
                                         </div>
                                     </td>
-                                    <td><button class="btn primary-button">Fulfill</button></td>
+                                    <td><button class="btn primary-button" data-toggle="modal" data-target="#pickvendor2">Pick Vendor</button></td>
                                 </tr>
                                 <tr>
                                     <td class="width-25">
@@ -795,7 +697,7 @@
                                             <div>(1-2 Weeks)</div>
                                         </div>
                                     </td>
-                                    <td><button class="btn primary-button">Fulfill</button></td>
+                                    <td><button class="btn primary-button" data-toggle="modal" data-target="#pickvendor2">Pick Vendor</button></td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -809,19 +711,61 @@
                         </h4>
                     </div>
                 </div>
-            </div>-->
-
+            </div>
             <!-- panel-group -->
             <!-- end of #accordion -->
             <!--order detail section-->
 
-
-
             <!-- ============================================================== -->
-            <!-- Modal -->
 
             <!-- Modal -->
-            <!-- Pick a vendor to fulfill -->
+            <!--Track Shipment START-->
+            <div class="modal fade" id="shipmenttimeline" tabindex="-1" role="dialog" aria-labelledby="shipmenttimeline" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered ws-invite-team-model" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header ">
+                            <h5 class="modal-title " id="exampleModalLongTitle">Shipment Status</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div id="ordertracktimeline2">
+                                        <ul class="timeline">
+                                            <li class="event ripple" data-date="Aug 03, 2019 - 11:00AM">
+                                                <h3>Delivered</h3>
+                                                <p>Item have been received and sign by the customer</p>
+                                            </li>
+                                            <li class="event" data-date="Aug 02, 2019 - 03:00PM">
+                                                <h3>In Transit</h3>
+                                                <p>Item Picked by FedEX and on its way to your customer.</p>
+                                            </li>
+                                            <li class="event" data-date="Aug 02, 2019">
+                                                <h3>Sorting Complete</h3>
+                                                <p>Tulare, CA 93274</p>
+                                                <p>Expected delivery: Aug 03, 2019</p>
+                                            </li>
+                                            <li class="event" data-date="Aug 01, 2019 - 06:51PM">
+                                                <h3>Item Arrived At Mailbox</h3>
+                                                <p>Tulare, CA 93274</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                            <!--<button type="button" class="btn primary-button" onclick="window.location.href='coupon-codes-list.html'">Add</button>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Track Shipment END-->
+
+            <!-- Pick a vendor to fulfill START-->
             <div class="modal right fade" id="pickvendor2" tabindex="-1" role="dialog" aria-labelledby="pickvendor2">
                 <div class="modal-dialog aff-dialog" role="document">
                     <div class="modal-content ">
@@ -954,11 +898,10 @@
                             </div>
                             <button type="submit" class="btn aff-submitbtn">Submit</button>
                         </div>
-
-                    </div><!-- modal-content -->
-                </div><!-- modal-dialog -->
+                    </div>
+                </div>
             </div>
-            <!-- modal -->
+            <!-- Pick a vendor to fulfill END-->
 
             <!--Modal Submit Issue START-->
             <!--<div class="modal right fade" id="submitissue" tabindex="-1" role="dialog" aria-labelledby="submitissue">
@@ -1005,11 +948,12 @@
                            </div>
                            <button type="submit" class="btn aff-submitbtn">Submit</button>
                        </div>
-                   </div><!-- modal-content -->
-                </div><!-- modal-dialog -->
+                   </div>
+                </div>
             </div>-->
-            <!-- modal -->
             <!--Modal Submit Issue END-->
+            <!-- modal -->
+
         </div>
         <!-- End Container fluid  -->
     </div>
