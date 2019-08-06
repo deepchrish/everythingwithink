@@ -298,40 +298,58 @@
                     <h1>Orders</h1>
                 </div>
             </div>
-            <div class="row mt-4 mb-2">
+            <div class="row mt-2 justify-content-between">
                 <div class="col-md-3">
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-magnify"></i></span>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="searchorder"></label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-magnify"></i></span>
+                                    </div>
+                                    <input type="search" class="form-control" placeholder="Search Order" aria-label="Search" id="searchorder">
+                                </div>
+                            </div>
                         </div>
-                        <input type="search" class="form-control" placeholder="Search Order" aria-label="Search">
-                    </div>
+                    </form>
                 </div>
-                <div class="col-md-9 ">
-                    <div class="form-group float-right orders-list-form">
-                        <select name="" id="" class="form-control custom-select">
-                            <option selected>All Orders</option>
-                            <option value="1">Fulfilled</option>
-                            <option value="2">Returned</option>
-                            <option value="3">Cancelled</option>
-                            <option value="4">Waiting to fulfill</option>
-                            <option value="5">Being Fulfilled</option>
-                            <option value="6">Cancelled</option>
-                        </select>
-                        <select class="form-control custom-select" id="inputGroupSelect04">
-                            <option selected>All Stores</option>
-                            <option value="1">Amazon</option>
-                            <option value="2">Shopify</option>
-                            <option value="3">Woo</option>
-                            <option value="3">Everything With ink</option>
-                        </select>
-                        <select class="form-control custom-select" id="inputGroupSelect05">
-                            <option selected>21 Per Pages</option>
-                            <option value="1">25 Per Pages</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
+                <div class="col-md-8">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="allorderslist"></label>
+                                <select name="" id="allorderslist" class="form-control custom-select">
+                                    <option selected>All Orders</option>
+                                    <option value="1">Fulfilled</option>
+                                    <option value="2">Returned</option>
+                                    <option value="3">Cancelled</option>
+                                    <option value="4">Waiting to fulfill</option>
+                                    <option value="5">Being Fulfilled</option>
+                                    <option value="6">Cancelled</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputGroupSelect04"></label>
+                                <select name="" id="inputGroupSelect04" class="form-control custom-select">
+                                    <option selected>All Stores</option>
+                                    <option value="1">Amazon</option>
+                                    <option value="2">Shopify</option>
+                                    <option value="3">Woo</option>
+                                    <option value="3">Everything With ink</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputGroupSelect05"></label>
+                                <select name="" id="inputGroupSelect05" class="form-control custom-select">
+                                    <option selected>21 Per Pages</option>
+                                    <option value="1">25 Per Pages</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
             <div class="row">
