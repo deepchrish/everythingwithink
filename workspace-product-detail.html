@@ -481,7 +481,9 @@
                                     <div class="d-flex bd-highlight billing-page">
                                         <div class="p-2 bd-highlight"><img class="img-fluid ds-pro-wanders" src="./images/2-etsy.png"></div>
                                         <div class="p-2 w-100 bd-highlight">ETSY</div>
-                                        <div class="p-2 flex-shrink-1 bd-highlight"><a href="#" class="btn btn-light">Sync</a> </div>
+                                        <div class="p-2 flex-shrink-1 bd-highlight"><button type="button" class="btn btn-light has-spinner" >
+                                            <span class="spinner"><i class="mdi mdi-cached"></i></span> Sync
+                                        </button> </div>
                                     </div>
                                 </div>
                             </div>
@@ -515,15 +517,24 @@
 <!--This page JavaScript -->
 <!-- <script src="dist/js/pages/dashboards/dashboard1.js"></script> -->
 <!-- Charts js Files -->
-<script src="assets/libs/flot/excanvas.js"></script>
-<script src="assets/libs/flot/jquery.flot.js"></script>
-<script src="assets/libs/flot/jquery.flot.pie.js"></script>
-<script src="assets/libs/flot/jquery.flot.time.js"></script>
-<script src="assets/libs/flot/jquery.flot.stack.js"></script>
-<script src="assets/libs/flot/jquery.flot.crosshair.js"></script>
-<script src="assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
-<script src="dist/js/pages/chart/chart-page-init.js"></script>
-
+<!--<script src="assets/libs/flot/excanvas.js"></script>-->
+<!--<script src="assets/libs/flot/jquery.flot.js"></script>-->
+<!--<script src="assets/libs/flot/jquery.flot.pie.js"></script>-->
+<!--<script src="assets/libs/flot/jquery.flot.time.js"></script>-->
+<!--<script src="assets/libs/flot/jquery.flot.stack.js"></script>-->
+<!--<script src="assets/libs/flot/jquery.flot.crosshair.js"></script>-->
+<!--<script src="assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>-->
+<!--<script src="dist/js/pages/chart/chart-page-init.js"></script>-->
+<script>
+    $(function(){
+        $('button').click(function() {
+            $(this).toggleClass('active');
+        });
+        setTimeout(function(){
+            $('button').removeClass('active');
+        }, 10000);
+    });
+</script>
 
 </body>
 

@@ -121,7 +121,8 @@
                 <ul class="navbar-nav float-right">
                     <!-- ============================================================== -->
                     <li>
-                        <a class="btn nav-product-btn primary-button" href="add-new-product-step-1.html"><i class="mdi mdi-tag-outline"></i> Add a
+                        <a class="btn nav-product-btn primary-button" href="add-new-product-step-1.html"><i
+                                class="mdi mdi-tag-outline"></i> Add a
                             new Product</a>
                     </li>
                     <!-- ============================================================== -->
@@ -290,157 +291,179 @@
     <!-- Page wrapper  -->
     <!-- ============================================================== -->
     <div class="page-wrapper">
-
         <!-- Container fluid  -->
         <div class="container-fluid mt-5 pt-5">
             <div class="row border-bottom">
                 <div class="col-md-12">
-                    <h1>Product Detail</h1>
-                </div>
-            </div>
-            <!--Bread crumb and right sidebar toggle-->
-            <div class="page-breadcrumb">
-                <div class="row">
-                    <div class="col-12 d-flex no-block align-items-center">
-                        <div class="mr-auto">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="workspace-with-product.html">Workspaces</a></li>
-                                    <li class="breadcrumb-item"><a href="workspace-product-detail.html">PMGOA</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Croco Rock Baby T-Shirt</li>
-                                </ol>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--End Bread crumb and right sidebar toggle-->
-            <div class="row mt-3">
-                <div class="col-md-3">
-                    <div class="pro-det-img">
-                        <img class="img-fluid" src="./images/croc-tees.png" alt="croco tees">
-                    </div>
-                </div>
-                <div class="col-md-9">
-                    <div class="pro-det-info">
-                        <h3>Croco Rock Baby T-Shirt</h3>
-                        <span class="pro-det-worknm">Workspace: PMGOA</span>
-                        <p class="comment more">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
-                    </div>
+                    <h1>Payouts</h1>
                 </div>
             </div>
 
-            <div class="row mt-5">
-                <div class="col-md-12">
-                    <div class="pro-det-info">
-                    <h3>Variants</h3>
+            <div class="row mt-4 justify-content-center">
+                <div class="col-md-2">
+                    <img class="img-fluid" src="./images/payout.png" alt="payout">
+                </div>
+                <div class="col-md-5 billing-page">
+                    <div class="payout-fetch">
+                        <p><span>$620.00</span> is available for you in the payout. Go fetch it!</p>
                     </div>
-                    <div class="dropdown-divider"></div>
+                </div>
+                <div class="col-md-4 billing-page">
+                    <div>
+                        <button class="btn primary-button">Request Payout</button>
+                    </div>
                 </div>
             </div>
+            <div class="row justify-content-end mt-2">
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="payoutdrop"></label>
+                                <select class="form-control" id="payoutdrop">
+                                    <option selected>Akil's Coffee Mugs</option>
+                                    <option>Jhon Coffee Mugs</option>
+                                    <option>Maria Coffee Mugs</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="searchorder"></label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-magnify"></i></span>
+                                    </div>
+                                    <input type="search" class="form-control" placeholder="Search by Name" aria-label="Search" id="searchorder">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
             <div class="row">
                 <div class="col-md-12">
-                    <div class="table-responsive" >
-                        <table class="table prowithlist" style="border-collapse:separate; border-spacing:0 15px; margin-top:-15px;">
-                            <thead>
-                            <tr>
-                                <th scope="col">
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="wschkbox1">
-                                        <label class="custom-control-label" for="wschkbox1"></label>
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item createpro">
+                            <a class="nav-link " href="payout-processed.html">Processed </a>
+                        </li>
+                        <li class="nav-item createpro">
+                            <a class="nav-link active" href="payout-available.html">Available (2)</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="row mt-3">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="table-responsive">
+                                        <table class="table payout-table">
+                                            <thead>
+                                            <tr>
+                                                <th class="width-20">Payouts</th>
+                                                <th class="width-20">Date</th>
+                                                <th class="width-20">Status</th>
+                                                <th class="width-20">Amount</th>
+                                                <th class="width-20">Action</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="flex-column payout-col-data">
+                                                        <p>Joke Cancer</p>
+                                                        <a class="payout-col-data-camp">Campaign</a>
+                                                    </div>
+                                                </td>
+                                                <td><div class="od-quantity">July 30, 2019</div></td>
+                                                <td>
+                                                    <div class="flex-column payout-col-data">
+                                                        <p>Available</p>
+                                                        <span>August 05, 2019</span>
+                                                    </div>
+                                                </td>
+                                                <td><div class="od-quantity">$240.00</div></td>
+                                                <td>
+                                                    <div class="flex-column payout-col-data">
+                                                        <button class="btn primary-button">Request Payout</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="flex-column payout-col-data">
+                                                        <p>Rescue Animal</p>
+                                                        <a class="payout-col-data-camp">Campaign</a>
+                                                    </div>
+                                                </td>
+                                                <td><div class="od-quantity">July 30, 2019</div></td>
+                                                <td>
+                                                    <div class="flex-column payout-col-data">
+                                                        <p>Available</p>
+                                                        <span>August 05, 2019</span>
+                                                    </div>
+                                                </td>
+                                                <td><div class="od-quantity">$240.00</div></td>
+                                                <td>
+                                                    <div class="flex-column payout-col-data">
+                                                        <div class="red-text">Requested</div>
+                                                        <span>August 05, 2019</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="flex-column payout-col-data">
+                                                        <p>Rescue Animal</p>
+                                                        <a class="payout-col-data-camp">Referral</a>
+                                                    </div>
+                                                </td>
+                                                <td><div class="od-quantity">July 30, 2019</div></td>
+                                                <td>
+                                                    <div class="flex-column payout-col-data">
+                                                        <p>Available</p>
+                                                        <span>August 05, 2019</span>
+                                                    </div>
+                                                </td>
+                                                <td><div class="od-quantity">$240.00</div></td>
+                                                <td>
+                                                    <div class="flex-column payout-col-data">
+                                                        <button class="btn primary-button">Request Payout</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
-                                </th>
-                                <th>Product</th>
-                                <th>Print File/Artwork</th>
-                                <th>Sample</th>
-                                <th>Action</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="wschkbox2">
-                                        <label class="custom-control-label" for="wschkbox2"></label>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="pro-del-tab-img"><img class="img-fluid" src="./images/croc-tees.png"></div>
-                                    <div class="pro-del-tab-details">
-                                        <h6>Croco Rock Travel Mug</h6>
-                                        <div class="pro-size">SKU: EWI-4567</div>
-                                        <div class="pro-size">Category: Baby’s T-Shirt</div>
-                                        <div class="pro-size">Size: Large</div>
-                                        <div class="pro-size">Color: Red</div>
-                                    </div>
-                                </td>
-                                <td class="width-25">
-                                    <div class="d-flex flex-wrap">
-                                        <div class="pro-del-art-img"><img class="img-fluid" src="./images/coroc-art.png" alt="coroc art"><span>Front</span></div>
-                                        <div class="pro-del-art-img"><img class="img-fluid" src="./images/coroc-art.png" alt="coroc art"><span>Back</span></div>
-                                        <div class="pro-del-art-img"><img class="img-fluid" src="./images/coroc-art.png" alt="coroc art"><span>Right Side</span></div>
-                                        <div class="pro-del-art-img"><img class="img-fluid" src="./images/coroc-art.png" alt="coroc art"><span>Left Side</span></div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="sample-order">
-                                        <a href="my-cart.html"><i class="mdi mdi-cart-outline"></i> Order a Sample</a>
-                                    </div>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-success has-spinner" >
-                                    <span class="spinner"><i class="mdi mdi-cached"></i></span> SYNC
-                                </button>
-                                    <button type="button" class="btn btn-secondary" onclick="window.location.href='design-studio.html'">Edit</button></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="wschkbox3">
-                                        <label class="custom-control-label" for="wschkbox3"></label>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="pro-del-tab-img"><img class="img-fluid" src="./images/croc-tees.png"></div>
-                                    <div class="pro-del-tab-details">
-                                        <h6>Croco Rock Travel Mug</h6>
-                                        <div class="pro-size">SKU: EWI-4567</div>
-                                        <div class="pro-size">Category: Baby’s T-Shirt</div>
-                                        <div class="pro-size">Size: Large</div>
-                                        <div class="pro-size">Color: Black</div>
-                                    </div>
-                                </td>
-                                <td class="width-25">
-                                    <div class="d-flex flex-wrap">
-                                        <div class="pro-del-art-img"><img class="img-fluid" src="./images/coroc-art.png" alt="coroc art"><span>Front</span></div>
-                                        <div class="pro-del-art-img"><img class="img-fluid" src="./images/coroc-art.png" alt="coroc art"><span>Back</span></div>
-                                        <div class="pro-del-art-img"><img class="img-fluid" src="./images/coroc-art.png" alt="coroc art"><span>Right Side</span></div>
-                                        <div class="pro-del-art-img"><img class="img-fluid" src="./images/coroc-art.png" alt="coroc art"><span>Left Side</span></div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="sample-order">
-                                        <a href="my-cart.html"><i class="mdi mdi-cart-outline"></i> Order a Sample</a>
-                                    </div>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-success has-spinner" >
-                                        <span class="spinner"><i class="mdi mdi-cached"></i></span> SYNC
-                                    </button>
-                                    <button type="button" class="btn btn-secondary" onclick="window.location.href='design-studio.html'">Edit</button></td>
-                            </tr>
-                            </tbody>
-                        </table>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+
                 </div>
+
             </div>
+
         </div>
         <!-- End Container fluid  -->
-        <!-- footer START-->
-        <!--<footer class="footer text-center">-->
-        <!--All Rights Reserved by Matrix-admin. Designed and Developed by <a href="https://wrappixel.com">WrapPixel</a>.-->
+        <!-- footer -->
+        <!--<footer class="footer">-->
+            <!--<div class="row samplefiles">-->
+                <!--<div class="col-md-2">-->
+                    <!--<img class="img-fluid" src="./images/handshake-colour.png">-->
+                <!--</div>-->
+                <!--<div class="col-md-7">-->
+                    <!--<div class="sampleinfo">-->
+                        <!--<h2>Learn more about vendors & fulfillment.</h2>-->
+                        <!--<span>Watch this video to learn how choosing right vendors may help you earn more. </span>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-md-3 text-center">-->
+                    <!--<div class="video-button">-->
+                        <!--<a href="#" class="btn"><i class="mdi mdi-play"></i> Watch video</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
         <!--</footer>-->
-
         <!-- End footer -->
     </div>
     <!-- End Page wrapper  -->
@@ -457,7 +480,6 @@
 <script src="assets/extra-libs/sparkline/sparkline.js"></script>
 <!--Wave Effects -->
 <script src="dist/js/waves.js"></script>
-<script type="text/javascript" src="https://www.viralpatel.net/demo/jquery/jquery.shorten.1.0.js"></script>
 <!--Menu sidebar -->
 <script src="dist/js/sidebarmenu.js"></script>
 <!--Custom JavaScript -->
@@ -474,27 +496,5 @@
 <!--<script src="assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>-->
 <!--<script src="dist/js/pages/chart/chart-page-init.js"></script>-->
 
-<script type="text/javascript">
-    $(document).ready(function() {
-        $(".comment").shorten({
-            "showChars" : 250,
-            "moreText"	: "Read more",
-            "lessText"	: "Less",
-        });
-
-    });
-</script>
-
-<script>
-    $(function(){
-        $('button').click(function() {
-            $(this).toggleClass('active');
-        });
-        setTimeout(function(){
-            $('button').removeClass('active');
-        }, 3000);
-    });
-</script>
 </body>
-
 </html>
