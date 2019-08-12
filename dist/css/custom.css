@@ -965,7 +965,7 @@ p {
 }
 
 .thumbnail {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding: 0;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -4192,9 +4192,13 @@ span.round-tab:hover {
     background: #2B44FF;
     color: #FFFFFF;
 }
-
+.modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 .newcampaign-modal{
     width: 85%;
+    margin: 20px auto;
 }
 /*.company-box-btn:not(:disabled):not(.disabled).active {*/
 /*background: #f1f1f1;*/
@@ -6617,7 +6621,19 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
     width: 100%;
     z-index: 1;
 }
-
+.modal-btn-fixed{
+    margin: 80px 0 0 0;
+}
+.nc-modal2-chkbox:before{
+    top: 15px;
+    left: 35px;
+    z-index: 1;
+}
+.nc-modal2-chkbox:after{
+    top: 15px;
+    left: 35px;
+    z-index: 1;
+}
 
 
 /*Responsive design*/
