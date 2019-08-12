@@ -169,13 +169,13 @@ a:hover {
 }
 
 h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', serif !important;
     font-size: 24px;
     color: #000000;
 }
 
 h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', serif !important;
     font-size: 20px;
     color: #000000;
 }
@@ -716,6 +716,7 @@ p {
 
 .box-details {
     transition: all .3s ease-in-out;
+    margin: 5px 0;
 }
 
 .box-details:hover {
@@ -771,6 +772,7 @@ p {
     font-weight: 600;
     color: #111111;
     vertical-align: middle;
+    white-space: nowrap;
 }
 
 .orderlist tbody tr td a {
@@ -1663,9 +1665,7 @@ p {
     font-size: 12px;
 }
 
-/*.single-product-info-modal{*/
-
-/*}*/
+/*.single-product-info-modal{}*/
 .single-product-info-modal h2 {
     font-family: "Nunito Sans", sans-serif;
     font-size: 20px;
@@ -2521,7 +2521,7 @@ p {
 }
 
 .sampleinfo {
-    padding: 35px 0 35px 0;
+    /*padding: 35px 0 35px 0;*/
 }
 
 .settingtext p {
@@ -3642,7 +3642,7 @@ p {
 }
 
 .video-button {
-    padding: 44px 0;
+    /*padding: 44px 0;*/
 }
 
 .video-button a {
@@ -5580,6 +5580,9 @@ ul.stepper.horizontal .step .step-content::-webkit-scrollbar-thumb:hover {
     top: 2px;
 }
 
+.panel-content {
+}
+
 .panel-title {
     font-size: 14px;
 }
@@ -6494,18 +6497,23 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
 
 .login-form-area {
     margin: 0 auto;
+    width: 100%;
 }
+.login-form-area select.form-control:not([size]):not([multiple]){
+    height: calc(2.0625rem + 10px);
+}
+.login-form-area .form-control{padding: 0.655rem 0.75rem;}
 
 .login-lable {
     margin: 0;
     position: absolute;
     background: #fff;
-    bottom: 26px;
+    bottom: 35px;
     left: 20px;
     color: #111 !important;
     font-size: 12px;
-    width: 18%;
     text-align: center;
+    padding: 0 4px;
 }
 
 .login-p {
@@ -6544,7 +6552,6 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
 }
 
 /*Loading button*/
-
 /*Payout page*/
 .payout-fetch{
     width: 100%;
@@ -6586,3 +6593,73 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
     font-weight: 700;
     text-transform: uppercase;
 }
+
+
+
+/*Responsive design*/
+
+/*==========  Mobile First Method  ==========*/
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Extra large devices (large laptops and desktops, 1200px and Down) */
+@media only screen and (max-width: 1200px) {}
+
+/* Large devices (laptops/desktops, 992px and Down) */
+@media only screen and (max-width: 992px) {}
+
+/* Medium devices (tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+    .dashboard-center-area{padding: 0;margin: 0;}
+    .card-list-line{padding: 8px 12px 8px 12px;}
+    .check-list{padding: 10px 0;}
+    .card-list-line:after{right: 8%;}
+    .box-details p{padding: 0 0;}
+    .guide-list li{padding: 0 15px 0 10px;}
+    .samplefiles{padding: 0 5% 0 0;}
+}
+@media only screen and (max-width: 766px){
+    #main-wrapper .topbar .top-navbar .navbar-header[data-logobg=skin5]{box-shadow: 4px 0 16px -5px rgba(72,89,102,0.1);}
+    .topbar .nav-toggler, .topbar .topbartoggler{color: #111111;}
+    .item-numbers{top: auto; right: auto; left: auto; margin: 10px 0 0 20px;}
+    .card-box{margin: 10px 0;}
+    .samplefiles{padding: 0 2% 0 0;}
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .p-xs-0{padding: 10px 0 0 0;}
+}
+
+@media only screen and (max-width: 576px) {
+    .order-status{border-top: 1px solid #d8d8d8; border-bottom: 1px solid #d8d8d8; margin: 15px 0; border-right:none; border-left: none;}
+    .video-button a{padding: 5px 10px;}
+    .samplefiles img{margin: 10px auto;}
+    .sampleinfo {margin: 15px auto; text-align: center;}
+    .video-button{margin: 10px auto 20px;}
+}
+/* Extra small devices (phones, 480px and down) */
+@media only screen and (max-width: 480px) {
+    .guide-list{padding:0;}
+    .guide-list li {padding: 0 5px 0 6px;}
+    .guide-list li a {font-size: 12px; top: 8px;color: #777;font-weight: 600;}
+    .guide-list li:after{font: normal normal normal 18px/1 "Material Design Icons"; top: -10px;}
+    .min-height-465{min-height: 410px;}
+}
+
+/* Extra small devices (phones, 360px and down) */
+@media only screen and (max-width: 360px) {}
+
+/* Extra small devices (phones, 320px and down) */
+@media only screen and (max-width: 320px) {}

@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="./images/withink_logo.png">
-    <title>Connect to Amazon</title>
+    <title>Sign up</title>
     <!-- Custom CSS -->
     <link href="dist/css/style.min.css" rel="stylesheet">
     <link href="dist/css/custom.css" rel="stylesheet">
@@ -88,28 +88,59 @@
                     <div class="col-md-7 login-right-side">
                         <div class="login-form-area">
                             <div class="text-center">
-                                <h1>Hello there, Glad to see you back!</h1>
-                                <p class="login-p">Login to your account</p>
+                                <h1>Add an address so we you can get paid</h1>
+                                <p class="login-p">This will be used as your default business </p>
                             </div>
-                            <form>
-                                <div class="form-row mt-5 justify-content-center">
+                            <form action="index.html">
+                                <div class="form-row mt-4 justify-content-center">
                                     <div class="form-group col-md-6">
-                                        <label for="loginemail" class="login-lable">Enter Email</label>
-                                        <input type="email" class="form-control" id="loginemail" placeholder="johndoe@example.com">
+                                        <label for="fullname" class="login-lable">Full Name</label>
+                                        <input type="text" class="form-control" id="fullname" placeholder="John Doe">
                                     </div>
                                 </div>
                                 <div class="form-row mt-2 justify-content-center">
                                     <div class="form-group col-md-6">
-                                        <label for="loginpassword" class="login-lable">Password</label>
-                                        <input type="password" class="form-control" id="loginpassword" placeholder="Minimum 8 character long">
+                                        <label for="address" class="login-lable">Address</label>
+                                        <input type="text" class="form-control" id="address" placeholder="###">
                                     </div>
                                 </div>
                                 <div class="form-row mt-2 justify-content-center">
+                                    <div class="form-group col-md-6">
+                                        <label for="citylist" class="login-lable">City</label>
+                                        <select class="form-control" id="citylist">
+                                            <option selected>Please Choose One</option>
+                                            <option>Tees</option>
+                                            <option>Mobile Cover</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-row mt-2 justify-content-center">
+                                    <div class="form-group col-md-6">
+                                        <label for="statelist" class="login-lable">State</label>
+                                        <select class="form-control" id="statelist">
+                                            <option selected>Please Choose One</option>
+                                            <option>0-1k</option>
+                                            <option>1k-5k</option>
+                                            <option>5k-10k</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-row mt-2 justify-content-center">
+                                    <div class="form-group col-md-6">
+                                        <label for="phnnbr" class="login-lable">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phnnbr" placeholder="999-999-9999">
+                                    </div>
+                                </div>
+                                <div class="form-row mt-2 justify-content-center">
+                                    <div class="form-group col-md-6">
+                                        <label for="websiteurl" class="login-lable">Business or personal website (optional)</label>
+                                        <input type="url" class="form-control" id="websiteurl" placeholder="http://">
+                                    </div>
+                                </div>
+                                <div class="form-row justify-content-center">
                                     <div class=" form-group col-md-6 text-center">
                                         <div class="d-flex flex-column">
-                                            <a class="anchor-text mb-1" href="reset-password.html">Forgot Password</a>
-                                            <button class="btn primary-button mt-3 p-2">Login Now</button>
-                                            <span class="mt-3 login-p">Not a member yet? <a class="anchor-text" href="sign-up-step-1.html">Sign up for free</a> </span>
+                                            <button type="submit" class="btn primary-button p-2">Finish & Take me to my store</button>
                                         </div>
                                     </div>
                                 </div>

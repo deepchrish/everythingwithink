@@ -365,6 +365,7 @@ body[data-theme="dark"] {
   body[data-theme="dark"] .ct-grid {
     stroke: #262d35; }
 
+
 /*!
  * Bootstrap v4.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -2953,7 +2954,7 @@ fieldset:disabled a.btn {
     .btn-outline-orange:not(:disabled):not(.disabled):active:focus, .btn-outline-orange:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-orange.dropdown-toggle:focus {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(251, 140, 0, 0.5);
-      box-shadow: 0 0 0 0.2rem rgba(251, 140, 0, 0.5); }
+      box-shadow: 0 0 0 0.2rem rgba(251, 140, 0, 0.5);}
 
 .btn-outline-purple {
   color: #7460ee;
@@ -8238,7 +8239,7 @@ html[dir="ltr"] body .p-l-0 {
     #main-wrapper[data-layout="vertical"] .left-sidebar[data-sidebarbg="skin2"]::after, #main-wrapper[data-layout="vertical"] .left-sidebar[data-sidebarbg="skin2"] ul::after, #main-wrapper[data-layout="horizontal"] .left-sidebar[data-sidebarbg="skin2"]::after, #main-wrapper[data-layout="horizontal"] .left-sidebar[data-sidebarbg="skin2"] ul::after {
       background: url(../../assets/images/background/sidebarbg.png) no-repeat;
       position: absolute;
-      top: 0px;
+      top: 0;
       content: "";
       width: 100%;
       height: 100%;
@@ -9077,9 +9078,8 @@ Topbar Responsive
       display: none; } }
 
 /*
-Template Name: Admin Template
-Author: Wrappixel
-
+Template Name: Everything With Ink
+Author: Deepak / Chrishan Technology
 File: scss
 */
 /*******************
@@ -14768,11 +14768,11 @@ This is for the horizontal layout
           z-index: -1; }
       #main-wrapper[data-layout="horizontal"] .sidebar-nav #sidebarnav > .sidebar-item ul.second-level {
         left: 220px;
-        top: 0px; }
+        top: 0; }
       #main-wrapper[data-layout="horizontal"] .sidebar-nav #sidebarnav > .sidebar-item:last-child > .first-level ul.second-level,
       #main-wrapper[data-layout="horizontal"] .sidebar-nav #sidebarnav > .sidebar-item .first-level .right-side-dd ul.second-level {
         right: 220px;
-        top: 0px;
+        top: 0;
         left: auto; }
       #main-wrapper[data-layout="horizontal"] .sidebar-nav #sidebarnav ul.first-level > .sidebar-item:hover ul.second-level {
         display: block; }
@@ -14797,8 +14797,8 @@ This is for the horizontal layout
     overflow: auto; } }
 
 /*
-Template Name: Admin Template
-Author: Wrappixel
+Template Name: Everything With Ink
+Author: Deepak/ Chrishan Technology
 
 File: scss
 */
