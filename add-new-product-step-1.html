@@ -294,17 +294,34 @@
         </div>
         <!-- Container fluid  -->
         <div class="container-fluid mt-5 pt-5">
-            <div class="row mt-5 justify-content-center">
+            <div class="row mt-1 justify-content-center">
                 <div class="col-md-7 text-center">
                     <h2>Add a new product</h2>
-                    <p>Pick a workspace to start adding a product. The product you create will be added to the slected workspace.</p>
+                    <p class="m-0">Pick a workspace to start adding a product. The product you create will be added to the selected workspace.</p>
                 </div>
             </div>
-            <div class="row justify-content-center mt-3">
+            <div class="row justify-content-center">
+                <div class="col-md-3 text-center">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="searchorder"></label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-magnify"></i></span>
+                                    </div>
+                                    <input type="search" class="form-control" placeholder="Search Order" aria-label="Search" id="searchorder">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-5">
                 <div class="col-md-3">
-                    <div class="btn-group-toggle" data-toggle="buttons">
-                        <label class="btn  company-box-btn">
-                        <div class="company-store">
+                    <a class="btn-group-toggle" href="add-new-product-step-2.html">
+                        <div class="btn company-box-btn">
+                        <div class="company-store campaign-box">
                                <div class="comp-name">
                                    <span>PM</span>
                                    <h6>Pmgoa</h6>
@@ -317,17 +334,17 @@
                                 <p>44</p>
 
                             </div>
-                            <input class="" type="checkbox" name="options" id="my-checkbox" autocomplete="off">
-                            <span class="buttonoption selectoption1" >Selected</span>
+                            <!--<input class="" type="checkbox" name="options" id="my-checkbox" autocomplete="off">-->
+                            <!--<span class="buttonoption selectoption1">Selected</span>-->
                             <span class="buttonoption selectoption2">Choose</span>
                         </div>
-                        </label>
-                    </div>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-md-3">
-                    <div class="btn-group-toggle" data-toggle="buttons">
-                        <label class="btn  company-box-btn">
-                            <div class="company-store">
+                    <a class="btn-group-toggle" href="add-new-product-step-2.html">
+                        <div class="btn  company-box-btn">
+                            <div class="company-store campaign-box">
                                 <div class="comp-name">
                                     <span>RC</span>
                                     <h6>Rogers & Co.</h6>
@@ -340,17 +357,17 @@
                                     <p>12</p>
 
                                 </div>
-                                <input class="" type="checkbox" name="options" id="my-checkbox2" onclick="validate()" autocomplete="off">
-                                <span class="buttonoption selectoption1">Selected</span>
+                                <!--<input class="" type="checkbox" name="options" id="my-checkbox2" autocomplete="off">-->
+                                <!--<span class="buttonoption selectoption1">Selected</span>-->
                                 <span class="buttonoption selectoption2">Choose</span>
                             </div>
-                        </label>
-                    </div>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-md-3">
-                    <div class="btn-group-toggle" data-toggle="buttons">
-                        <label class="btn company-box-btn">
-                            <div class="company-store">
+                    <a class="btn-group-toggle" href="add-new-product-step-2.html">
+                        <div class="btn company-box-btn">
+                            <div class="company-store campaign-box">
                                 <div class="comp-name">
                                     <span>NM</span>
                                     <h6>Nick’s Mugs</h6>
@@ -361,30 +378,40 @@
                                     <p>Amazon, ETSY</p>
                                     <span>Products</span>
                                     <p>02</p>
-
                                 </div>
-                                <input class="" type="checkbox" name="options" id="my-checkbox2" onclick="validate()" autocomplete="off">
-                                <span class="buttonoption selectoption1">Selected</span>
+                                <!--<input class="" type="checkbox" name="options" id="my-checkbox2" autocomplete="off">-->
+                                <!--<span class="buttonoption selectoption1">Selected</span>-->
                                 <span class="buttonoption selectoption2">Choose</span>
                             </div>
-                        </label>
-                    </div>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-md-3 text-center">
-                    <a  href="#" class="text-center" data-toggle="modal" data-target="#createworkspace">
+                    <a  href="create-a-workspace.html" class="text-center">
                     <div class="comp-store-workspace">
-                        <i class="mdi mdi-plus-circle"></i>
-                        <p>Create Workspace</p>
+                       <div class="comp-store-workspace-new">
+                           <i class="mdi mdi-plus-circle"></i>
+                           <p>Create Workspace</p>
+                       </div>
                     </div>
                     </a>
                 </div>
             </div>
-            <div class="row mt-5">
-                <div class="col-md-12 text-center">
-                    <a href="add-new-product-step-2.html" class="btn btn-success">NEXT STEP : ORDER TYPE</a>
-                    <p class="mt-2"><a href="#">Cancel and Exit</a></p>
-                </div>
-            </div>
+            <!--<div class="row mt-5">-->
+                <!--<div class="col-md-12 text-center">-->
+                    <!--<a href="add-new-product-step-2.html" class="btn btn-success text-uppercase">Next Step : Order Type</a>-->
+                    <!--<p class="mt-2 anchor-text"><a href="index.html">Cancel and Exit</a></p>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="row mt-4">-->
+                <!--<div class="col-md-6 functional-btns">-->
+                    <!--<button class="ds-nonfiled-btn text-uppercase" onclick="window.location.href='create-a-product.html'">Previous Step-->
+                    <!--</button>-->
+                    <!--<button class="ds-filled-btn text-uppercase" onclick="window.location.href='design-item-name.html'">-->
+                        <!--Continue With 2sku (s)-->
+                    <!--</button>-->
+                <!--</div>-->
+            <!--</div>-->
         </div>
         <!-- End Container fluid  -->
 
@@ -420,25 +447,25 @@
 <script src="assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
 <script src="dist/js/pages/chart/chart-page-init.js"></script>
 
-<script>
+<!--<script>-->
 
-    $(function()
-    {
-        $('[name="options"]').change(function()
-        {
-            if ($(this).is(':checked')) {
-                document.getElementsByClassName("selectoption1")[0].style.display = "block";
-                document.getElementsByClassName("selectoption2")[0].style.display = "none";
-            }
-            else
-            {
-                document.getElementsByClassName("selectoption1")[0].style.display = "none";
-                document.getElementsByClassName("selectoption2")[0].style.display = "block";
-            }
-        });
-    });
+    <!--$(function()-->
+    <!--{-->
+        <!--$('[name="options"]').change(function()-->
+        <!--{-->
+            <!--if ($(this).is(':checked')) {-->
+                <!--document.getElementsByClassName("selectoption1")[0].style.display = "block";-->
+                <!--document.getElementsByClassName("selectoption2")[0].style.display = "none";-->
+            <!--}-->
+            <!--else-->
+            <!--{-->
+                <!--document.getElementsByClassName("selectoption1")[0].style.display = "none";-->
+                <!--document.getElementsByClassName("selectoption2")[0].style.display = "block";-->
+            <!--}-->
+        <!--});-->
+    <!--});-->
 
-</script>
+<!--</script>-->
 
 </body>
 

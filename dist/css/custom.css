@@ -1302,9 +1302,13 @@ p {
 
 .workspace-box {
     border: 2px dashed #2b44ff;
-    padding: 45% 15px;
+    /*padding: 45% 15px;*/
     border-radius: 4px;
+    display: flex;
+    align-items: center;
+    align-content: center;
     transition: all .3s ease-in-out;
+    min-height: 300px;
 }
 
 .workspace-box i {
@@ -1313,9 +1317,9 @@ p {
 }
 
 .workspace-box:hover {
-    -webkit-box-shadow: 0 0 30px -10px rgba(43, 68, 255, 1);
-    -moz-box-shadow: 0 0 30px -10px rgba(43, 68, 255, 1);
-    box-shadow: 0 0 30px -10px rgba(43, 68, 255, 1);
+    -webkit-box-shadow: 0 0 30px -10px rgba(43, 68, 255, 0.5);
+    -moz-box-shadow: 0 0 30px -10px rgba(43, 68, 255, 0.5);
+    box-shadow: 0 0 30px -10px rgba(43, 68, 255, 0.5);
 }
 
 .workspace-box:hover i {
@@ -4188,13 +4192,22 @@ span.round-tab:hover {
     transition: all .3s ease-in-out;
     font-weight: 600;
 }
-.company-store:hover .buttonoption{
-    background: #2B44FF;
-    color: #FFFFFF;
-}
+/*.company-store:hover .buttonoption{*/
+    /*background: #2B44FF;*/
+    /*color: #FFFFFF;*/
+/*}*/
 .modal {
     overflow-x: hidden;
     overflow-y: auto;
+}
+.modal::-webkit-scrollbar-track{
+    background: transparent;
+}
+.modal::-webkit-scrollbar-thumb{
+    background: transparent;
+}
+.modal::-webkit-scrollbar-thumb:hover{
+    background: #1b33e2;
 }
 .newcampaign-modal{
     width: 85%;
@@ -4207,6 +4220,43 @@ span.round-tab:hover {
     background: #2B44FF;
     border: 1px solid #2B44FF;
     color: white;
+}
+/*.company-box-btn:not(:disabled):not(.disabled).active{*/
+    /*background: #2B44FF;*/
+    /*border: 1px solid #2B44FF;*/
+    /*color: white;*/
+/*}*/
+
+.selectors-btn {
+    margin: 0 auto;
+    text-align: center;
+}
+.selectors-btn .btn-secondary-2 {
+    color: #000;
+    background-color: #fff;
+    border-color: #223a5e;
+    border-radius: 1px;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+.btn-secondary-2{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.selectors-btn .slc-btn-size1 {
+    min-width: 80px;
+}
+.selectors-btn .slc-btn-size2 {
+    min-width: 100px;
+}
+.selectors-btn .slc-btn-size3 {
+    min-width: 80px;
+}
+.btn-secondary-2:not(:disabled):not(.disabled).active .buttonoption {
+    color: #fff;
+    background-color: #2B44FF;
+    border-color: #2B44FF;
 }
 
 .selectoption1 {
@@ -4223,7 +4273,13 @@ span.round-tab:hover {
     border-radius: 4px;
     transition: all .3s ease-in-out;
     width: 100%;
-    min-height: 275px;
+    min-height: 295px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.comp-store-workspace-new{
+    margin: 0 auto;
 }
 
 .comp-store-workspace i {
@@ -4241,16 +4297,21 @@ span.round-tab:hover {
 .select-order-type-text p {
     color: #8e8e8e;
     font-size: 12px;
+    line-height: 20px;
 }
 
 .store-img {
-    padding: 55px 12px;
+    /*padding: 55px 12px;*/
     min-height: 252px;
+    display: flex;
+    align-items: center;
+    align-content: center;
 }
 .store-img img{
     width: 100%;
     height: 150px;
     object-fit: contain;
+    margin: 0 auto;
 }
 .v-line {
     border-right: 1px solid #e9ecef;
@@ -6571,7 +6632,6 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
     max-width: 50px;
     /* More than it will ever come, notice that this affects on animation duration */
 }
-
 /*Loading button*/
 /*Payout page*/
 .payout-fetch{
@@ -6634,6 +6694,118 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
     left: 35px;
     z-index: 1;
 }
+.nc-pub-btn{
+    position: relative;
+    bottom: 8px;
+}
+.nc-text-info-input{
+    display: table;
+}
+.mc-text-input{
+    border: 2px dashed #e9ecef;
+    padding: 10px 30px 10px 15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #111;
+    resize: none;
+}
+.nc-edit-pencil{
+    position: relative;
+    left: 90%;
+    bottom: 40px;
+    color: #777;
+    font-size: 16px;
+    cursor: pointer;
+}
+.mc-textarea-input{
+    border: 2px dashed #e9ecef;
+    padding: 10px 30px 10px 15px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #111;
+    resize: none;
+}
+.nc-edit-pencil-textarea{
+    position: relative;
+    left: 94%;
+    bottom: 45px;
+    color: #777;
+    font-size: 16px;
+    cursor: pointer;
+}
+.nc-title p{
+    font-weight: 700;
+    font-size: 14px;
+}
+.nc-input-text{
+    padding: 10px 15px;
+    font-size: 14px;
+}
+.nc-price-input {
+    border: 1px solid #e9ecef;
+    width: 12%;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 10px;
+}
+.nc-sizes-radio-selct{
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 4px 25px;
+    color: #111111;
+    font-weight: 600;
+    margin: 0 1px;
+}
+.nc-sizes-radio-selct:not(:disabled):not(.disabled).active{
+    color: #FFFFFF;
+    background-color: #2b44ff;
+    border-color: #2b44ff;
+}
+#campaignurl{
+    display: inline;
+    color: #0094FF;
+    font-weight: 600;
+}
+.nc-edit-pencil-shorttext{
+    position: relative;
+    left: 95%;
+    bottom: 35px;
+    color: #777;
+    font-size: 16px;
+    cursor: pointer;
+}
+.nc-option-box{
+    border: 1px solid #e9ecef;
+    padding: 8px;
+    display: grid;
+    text-align: center;
+    min-width: 160px;
+    transition: box-shadow .3s,-webkit-box-shadow .3s;
+}
+.nc-option-box i{
+    font-size: 35px;
+    color: #ababab;
+}
+.nc-option-box span{
+    color: #111111;
+    font-size: 14px;
+    font-weight: 700;
+}
+.nc-option-box:hover{
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 0 0 0 #f1f4f8, 8px 16px 36px 0 rgba(61,72,83,.21);
+    box-shadow: inset 0 0 0 0 #f1f4f8, 8px 16px 36px 0 rgba(61,72,83,.21);
+}
+.campaign-box:hover{
+    border: 1px solid #2B44FF;
+}
+.campaign-box:hover .buttonoption{
+    background: #2B44FF;
+    border: 1px solid #2B44FF;
+    color: #ffffff;
+}
+
+
 
 
 /*Responsive design*/
