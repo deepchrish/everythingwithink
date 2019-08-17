@@ -6808,7 +6808,26 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
     border: 1px solid #2B44FF;
     color: #ffffff;
 }
-
+.cart-pro-img img{
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    padding: 3px;
+}
+.cart-pro-info {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.cart-pro-info h5{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mailbox{
+    min-width: 280px;
+    max-width: 280px;
+}
 
 
 
