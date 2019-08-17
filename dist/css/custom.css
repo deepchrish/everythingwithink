@@ -305,7 +305,6 @@ p {
 
 .mini-sidebar .mdi-chevron-left:before {
     transform: rotate(180deg);
-    top: 2px;
 }
 
 .custom-arrow:hover {
@@ -1249,7 +1248,7 @@ p {
     border-right: 3px solid #2b44ff;
     border-left: 0 solid #2b44ff;
     border-radius: 50%;
-    animation: animateCircle 1s linear infinite;
+    animation: animateCircle 0.8s linear infinite;
 }
 
 /*span {*/
@@ -2184,7 +2183,7 @@ p {
     border: 1px solid #e9ecef;
     border-radius: 5px 5px 0 0;
     width: 100%;
-    min-height: 274px;
+    min-height: 260px;
 }
 
 .workspace-detail {
@@ -2405,7 +2404,8 @@ p {
 }
 
 .prowithlist tbody td a {
-    color: #0094FF;
+    /*color: #0094FF;*/
+    color: #111111;
 }
 
 .prowithlist tbody td a:hover {
@@ -3136,6 +3136,7 @@ p {
 
 .custom-tabs {
     background: #f9f9f9;
+    display: inline-flex;
 }
 
 .custom-order-tabs {
@@ -3635,7 +3636,9 @@ p {
     text-transform: uppercase;
     font-size: 14px;
 }
-
+.ds-art-js a{
+    margin: 0 auto;
+}
 .label-dec {
     color: #111111;
 }
@@ -4701,6 +4704,7 @@ span.round-tab:hover {
     -ms-flex-align: center;
     align-items: center;
     border-bottom: 1px solid #e2e2e2;
+    padding: 10px 0;
 }
 
 .ws-teams-set {
@@ -5418,9 +5422,9 @@ span.round-tab:hover {
     border: 1px solid #179BD7;
     color: #ffffff;
     border-radius: 4px;
-    -webkit-box-shadow: 0 4px 20px -5px rgba(43, 68, 255, 0.4);
-    -moz-box-shadow: 0 4px 20px -5px rgba(43, 68, 255, 0.4);
-    box-shadow: 0 4px 20px -5px rgba(43, 68, 255, 0.4);
+    -webkit-box-shadow: 0 4px 20px -5px rgba(31, 155, 215, 0.2);
+    -moz-box-shadow: 0 4px 20px -5px rgba(31, 155, 215, 0.2);
+    box-shadow: 0 4px 20px -5px rgba(31, 155, 215, 0.2);
     transition: all .3s ease-in-out;
     padding: 5px 20px;
 }
