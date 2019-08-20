@@ -211,22 +211,11 @@
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
                                 src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31"></a>
                         <div class="dropdown-menu dropdown-menu-right user-dd animated">
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i> My
-                                Profile</a>
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="ti-wallet m-r-5 m-l-5"></i> My
-                                Balance</a>
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="ti-email m-r-5 m-l-5"></i>
-                                Inbox</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="ti-settings m-r-5 m-l-5"></i>
-                                Account Setting</a>
-                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="setting.html"><i class="ti-settings m-r-5 m-l-5"></i>
+                                Account Settings</a>
+                            <!--<div class="dropdown-divider"></div>-->
                             <a class="dropdown-item" href="javascript:void(0)"><i
-                                    class="fa fa-power-off m-r-5 m-l-5"></i> Logout</a>
-                            <div class="dropdown-divider"></div>
-                            <div class="p-l-30 p-10"><a href="javascript:void(0)"
-                                                        class="btn btn-sm btn-success btn-rounded">View Profile</a>
-                            </div>
+                                    class="fa fa-power-off m-r-5 m-l-5"></i>Logout</a>
                         </div>
                     </li>
                     <!-- ============================================================== -->
@@ -317,13 +306,13 @@
                 <!--<div class="col-md-6 mt-3">-->
                     <!--<h2>Workspace Settings</h2>-->
                 <!--</div>-->
-                <div class="col-md-6">
+                <div class="col-xl-6 col-lg-6 col-md-10">
                     <form>
                         <div class="form-group row">
-                            <div class="col-md-4 billing-page">
+                            <div class="col-xl-4 col-lg-4 col-md-4 billing-page">
                                 <label for="selectworkspaceopt" >Choose Workspace:</label>
                             </div>
-                                <div class="col-md-6">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-11 col-12">
                                     <select type="email" class="form-control" id="selectworkspaceopt">
                                         <option selected>PMGOA</option>
                                         <option>Sixty9 Shop</option>
@@ -336,8 +325,8 @@
                 </div>
             </div>
             <div class="row ws-st-setting-tabs">
-                <div class="col-md-12">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <ul class="nav nav-tabs " id="myTab" role="tablist">
                         <li class="nav-item createpro">
                             <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#workspacesettings" role="tab"
                                aria-controls="profile" aria-selected="true">WorkSpace Settings</a>
@@ -352,7 +341,7 @@
                         <div class="tab-pane fade show active" id="workspacesettings" role="tabpanel"
                              aria-labelledby="workspacesettings-tab">
                             <div class="row mt-3">
-                                <div class="col-md-8 profileform">
+                                <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 profileform">
                                     <div class="ws-setting">
                                         <h5>Workspace Defaults</h5>
                                         <form>
@@ -379,7 +368,7 @@
                                 </div>
                             </div>
                             <div class="row mt-3">
-                                <div class="col-md-8 profileform">
+                                <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 profileform">
                                     <div class="ws-setting">
                                         <h5>Business Details</h5>
                                         <form>
@@ -423,27 +412,27 @@
 
                                             <!--</div>-->
                                             <div class="form-row">
-                                                <div class="form-group col-md-6">
+                                                <div class="form-group col-xl-6 col-lg-6 col-md-12 col-12">
                                                     <label for="wscrdba">Is this workspace also a separate entity or a dba? <span class="remove-red">*</span></label>
                                                     <select class="form-control" id="wscrdba">
                                                         <option value="dba" selected>DBA</option>
                                                         <option value="entity">Entity</option>
                                                     </select>
-                                                    <small id="whatisdba"><button type="button" class="btn tooltip-btn" data-toggle="tooltip" data-placement="top" title="" data-original-title="We all know how hard it can be to make a site look like the demo, so to make your start into the world of X as easy as possible we have included the demo content from our showcase site. Simply import the sample files we ship with the theme and the core structure for your site is already built. ">?</button>What is DBA?</small>
-                                                    <small id="whatisentity" style="display: none;"><button type="button" class="btn tooltip-btn" data-toggle="tooltip" data-placement="top" title="" data-original-title="We all know how hard it can be to make a site look like the demo, so to make your start into the world of X as easy as possible we have included the demo content from our showcase site. Simply import the sample files we ship with the theme and the core structure for your site is already built. ">?</button>What is Entity?</small>
+                                                    <small id="whatisdba"><button type="button" class="btn tooltip-btn" data-toggle="tooltip" data-placement="top" title="" data-original-title="The operating name of a company, as opposed to the legal name of the company. Some states require DBA or fictitious business name filings to be made for the protection of consumers conducting business with the entity.">?</button>What is DBA?</small>
+                                                    <small id="whatisentity" style="display: none;"><button type="button" class="btn tooltip-btn" data-toggle="tooltip" data-placement="top" title="" data-original-title="Organization established as a separate existence for the purposes of taxes. Corporations, limited liability companies, and sole proprietorships are types of common business entities.">?</button>What is Entity?</small>
                                                 </div>
-                                                <div class="form-group col-md-6" id="dbavalue">
+                                                <div class="form-group col-xl-6 col-lg-6 col-md-12 col-12" id="dbavalue">
                                                     <label for="dbanumber">DBA Name <span class="remove-red">*</span></label>
                                                     <input type="text" class="form-control" id="dbanumber" placeholder="#DBA">
                                                 </div>
 
-                                                <div class="form-group col-md-6" id="dvPassport" style="display: none">
+                                                <div class="form-group col-xl-6 col-lg-6 col-md-12 col-12" id="dvPassport" style="display: none">
                                                     <div class="form-row">
-                                                        <div class="form-group col-md-6">
-                                                            <label for="einnumb">EIN# <span class="remove-red">*</span></label>
-                                                            <input type="text" class="form-control" id="einnumb" placeholder="EIN#" required>
+                                                        <div class="form-group col-md-6 col-12">
+                                                            <label for="dbanumber">EIN# <span class="remove-red">*</span></label>
+                                                            <input type="text" class="form-control" id="dbanumber" placeholder="EIN#" required>
                                                         </div>
-                                                        <div class="form-group col-md-6">
+                                                        <div class="form-group col-md-6 col-12">
                                                             <label for="stateofentity">State of Entity <span class="remove-red">*</span></label>
                                                             <select id="stateofentity" class="form-control" required>
                                                                 <option value="AL">Alabama</option>
@@ -512,20 +501,20 @@
                                 </div>
                             </div>
                             <div class="row mt-3">
-                                <div class="col-md-8 profileform">
+                                <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 profileform">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="ws-setting">
                                                 <h5>Team Members</h5>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 text-right">
+                                        <div class="col-md-6 text-md-right text-center">
                                             <button class="btn secendary-button"><i class="mdi mdi-plus-circle-outline"></i> Invite Team
                                                 Members
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="row mt-3">
+                                    <div class="row mt-3 justify-content-between">
                                         <div class="col-md-6">
                                             <img class="img-fluid ws-team" src="./images/art-6.png">
                                             <div class="pl-3 d-flex flex-column ws-team-setup">
@@ -535,11 +524,11 @@
                                             </div>
 
                                         </div>
-                                        <div class="col-md-6 text-right">
+                                        <div class="col-md-3 text-md-right text-center">
                                             <p><strong>OWNER</strong></p>
                                         </div>
                                     </div>
-                                    <div class="row mt-3">
+                                    <div class="row mt-3 justify-content-between">
                                         <div class="col-md-6">
                                             <div class="ws-team">
                                                 <span>SK</span>
@@ -551,8 +540,8 @@
                                             </div>
 
                                         </div>
-                                        <div class="col-md-6 text-right">
-                                            <form class="float-right">
+                                        <div class="col-md-3 text-md-right text-center">
+                                            <form class="">
                                                 <div class="form-group">
                                                     <label for="userviewsopt" class="col-form-label"></label>
                                                     <select type="email" class="form-control" id="userviewsopt">
@@ -565,7 +554,7 @@
                                             </form>
                                         </div>
                                     </div>
-                                    <div class="row mt-3">
+                                    <div class="row mt-3 justify-content-between">
                                         <div class="col-md-6">
                                             <div class="ws-team">
                                                 <span>NJ</span>
@@ -577,8 +566,8 @@
                                             </div>
 
                                         </div>
-                                        <div class="col-md-6 text-right">
-                                            <form class="float-right">
+                                        <div class="col-md-3 text-md-right text-center">
+                                            <form class="">
                                                 <div class="form-group">
                                                     <label for="workstationform" class="col-form-label"></label>
                                                     <select type="email" class="form-control" id="workstationform">
@@ -591,7 +580,7 @@
                                             </form>
                                         </div>
                                     </div>
-                                    <div class="row mt-3">
+                                    <div class="row mt-3 justify-content-between">
                                         <div class="col-md-6">
                                             <div class="ws-team">
                                                 <span>DK</span>
@@ -603,8 +592,8 @@
                                             </div>
 
                                         </div>
-                                        <div class="col-md-6 text-right">
-                                            <form class="float-right">
+                                        <div class="col-md-3 text-md-right text-center">
+                                            <form class="">
                                                 <div class="form-group">
                                                     <label for="workspaeform" class="col-form-label"></label>
                                                     <select type="email" class="form-control" id="workspaeform">
@@ -620,7 +609,7 @@
                                 </div>
                             </div>
                             <div class="row mt-3">
-                                <div class="col-md-8 profileform">
+                                <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 profileform">
                                     <div class="ws-setting">
                                         <h5>Remove Workspace</h5>
                                     </div>
@@ -638,7 +627,7 @@
                         <div class="tab-pane fade" id="storesettings" role="tabpanel"
                              aria-labelledby="storesettings-tab">
                             <div class="row mt-3">
-                                <div class="col-md-8 profileform">
+                                <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 profileform">
                                     <div class="ws-setting">
                                         <h5>Store Currency</h5>
                                     </div>
@@ -855,7 +844,7 @@
                             </div>
 
                             <div class="row mt-3">
-                                <div class="col-md-8 profileform">
+                                <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 profileform">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="ws-setting">
@@ -864,57 +853,57 @@
                                         </div>
                                     </div>
                                     <div class="row mt-3">
-                                        <div class="col-md-6">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-8">
                                             <img class="img-fluid ws-stores" src="./images/2-shopify.png">
                                             <div class="pl-3 mt-2 d-flex flex-column ws-team-setup">
                                                 <div><p>Shopify</p></div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 text-right">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-4 text-right">
                                             <p><button class="btn btn-success">Connected</button></p>
                                         </div>
                                     </div>
                                     <div class="row mt-3">
-                                        <div class="col-md-6">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-8">
                                             <img class="img-fluid ws-stores" src="./images/2-etsy.png">
                                             <div class="pl-3 mt-2 d-flex flex-column ws-team-setup">
                                                 <div><p>ETSY</p></div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 text-right">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-4 text-right">
                                             <p><button class="btn">Connect</button></p>
                                         </div>
                                     </div>
                                     <div class="row mt-3">
-                                        <div class="col-md-6">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-8">
                                             <img class="img-fluid ws-stores" src="./images/2-woocommerce.png">
                                             <div class="pl-3 mt-2 d-flex flex-column ws-team-setup">
                                                 <div><p>Woo Commerce</p></div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 text-right">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-4 text-right">
                                             <p><button class="btn">Connect</button></p>
                                         </div>
                                     </div>
                                     <div class="row mt-3">
-                                        <div class="col-md-6">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-8">
                                             <img class="img-fluid ws-stores" src="./images/2-magento.png">
                                             <div class="pl-3 mt-2 d-flex flex-column ws-team-setup">
                                                 <div><p>Magento 2</p></div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 text-right">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-4 text-right">
                                             <p><button class="btn">Connect</button></p>
                                         </div>
                                     </div>
                                     <div class="row mt-3">
-                                        <div class="col-md-6">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-8">
                                             <img class="img-fluid ws-stores" src="./images/2-amazon.png">
                                             <div class="pl-3 mt-2 d-flex flex-column ws-team-setup">
                                                 <div><p>Amazon</p></div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 text-right">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-4 text-right">
                                             <p><button class="btn">Connect</button></p>
                                         </div>
                                     </div>

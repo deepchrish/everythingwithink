@@ -211,22 +211,11 @@
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
                                 src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31"></a>
                         <div class="dropdown-menu dropdown-menu-right user-dd animated">
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i> My
-                                Profile</a>
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="ti-wallet m-r-5 m-l-5"></i> My
-                                Balance</a>
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="ti-email m-r-5 m-l-5"></i>
-                                Inbox</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="ti-settings m-r-5 m-l-5"></i>
-                                Account Setting</a>
-                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="setting.html"><i class="ti-settings m-r-5 m-l-5"></i>
+                                Account Settings</a>
+                            <!--<div class="dropdown-divider"></div>-->
                             <a class="dropdown-item" href="javascript:void(0)"><i
-                                    class="fa fa-power-off m-r-5 m-l-5"></i> Logout</a>
-                            <div class="dropdown-divider"></div>
-                            <div class="p-l-30 p-10"><a href="javascript:void(0)"
-                                                        class="btn btn-sm btn-success btn-rounded">View Profile</a>
-                            </div>
+                                    class="fa fa-power-off m-r-5 m-l-5"></i>Logout</a>
                         </div>
                     </li>
                     <!-- ============================================================== -->
@@ -298,51 +287,55 @@
             </div>
             <!-- ============================================================== -->
             <div class="row mt-4">
-                <div class="col-md-2">
+                <div class="form-group col-xl-2 col-lg-2 col-md-1 billing-page">
                     <div class="custom-control custom-checkbox pro-grid-chk">
                         <input type="checkbox" class="custom-control-input" id="selectall">
                         <label class="custom-control-label" for="selectall">All</label>
                     </div>
                 </div>
-                <div class="col-md-10 ">
-                    <div class="form-row">
-                        <div class="col-3">
-                            <select class="form-control" id="allworkstation">
-                                <option selected>All Workspace</option>
-                                <option>Akil's Coffee shop</option>
-                                <option>John Doe's Tees</option>
-                            </select>
-                        </div>
-                        <div class="col-3">
-                            <select class="form-control" id="allstores">
-                                <option selected>All Stores</option>
-                                <option>Amazon</option>
-                                <option>Shopify</option>
-                                <option>ETSY</option>
-                                <option>Woo-Commerce</option>
-                                <option>Everything with ink</option>
-                            </select>
-                        </div>
-                        <div class="col-3">
-                            <input type="search" class="form-control" id="searchitem" placeholder="Search Products">
-                        </div>
-                        <div class="col-3 pro-btns-group">
-                            <button class="btn primary-button">Search</button>
-                            <div class="btn-group">
-                                <button class="btn btn-light active" id="grid">
-                                    <i class="mdi mdi-view-grid"></i>
-                                </button>
-                                <button class="btn btn-secondary " id="list">
-                                    <i class="mdi mdi-view-list"></i>
-                                </button>
+                <div class="col-xl-10 col-lg-10 col-md-12">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                                <select class="form-control" id="allworkstation">
+                                    <option selected>All Workspace</option>
+                                    <option>Akil's Coffee shop</option>
+                                    <option>John Doe's Tees</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                                <select class="form-control" id="allstores">
+                                    <option selected>All Stores</option>
+                                    <option>Amazon</option>
+                                    <option>Shopify</option>
+                                    <option>ETSY</option>
+                                    <option>Woo-Commerce</option>
+                                    <option>Everything with ink</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                <div class="d-flex flex-row">
+                                <input type="search" class="form-control" id="searchitem" placeholder="Search Products">
+                                <button class="btn searchbtn">Search</button>
+                                </div>
+                            </div>
+                            <div class="form-group col-xl-2 col-lg-2 col-md-2 col-sm-6 col-3 d-none d-lg-block">
+                                <div class="btn-group">
+                                    <button class="btn btn-light active" id="grid">
+                                        <i class="mdi mdi-view-grid"></i>
+                                    </button>
+                                    <button class="btn btn-secondary " id="list">
+                                        <i class="mdi mdi-view-list"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
 
             <div id="products" class="row view-group mt-4">
-                <div class="item col-md-3 col-lg-3 col-sm-4 col-6 custom-control custom-checkbox">
+                <div class="item col-md-6 col-lg-3 col-sm-6 col-12 custom-control custom-checkbox p-1">
                     <input type="checkbox" id="box_1" name="case" value="1"
                            class="custom-control-input romiwills checkbox-custom case"/>
                     <label for="box_1" class="custom-control-label custom-lable"></label>
@@ -386,7 +379,7 @@
                         </div>
                 </div>
 
-                <div class="item col-md-3 col-lg-3 col-sm-4 col-6 custom-control custom-checkbox">
+                <div class="item col-md-6 col-lg-3 col-sm-6 col-12 custom-control custom-checkbox p-1">
                     <input type="checkbox" name="case" id="box_2" value="2"
                            class="custom-control-input romiwills checkbox-custom case"/>
                     <label for="box_2" class="custom-control-label custom-lable"></label>
@@ -431,7 +424,7 @@
                         </div>
                 </div>
 
-                <div class="item col-md-3 col-lg-3 col-sm-4 col-6 custom-control custom-checkbox">
+                <div class="item col-md-6 col-lg-3 col-sm-6 col-12 custom-control custom-checkbox p-1">
                     <input type="checkbox" name="case" id="box_3" value="3"
                            class="custom-control-input romiwills checkbox-custom case"/>
                     <label for="box_3" class="custom-control-label custom-lable"></label>
@@ -475,7 +468,7 @@
                         </div>
                 </div>
 
-                <div class="item col-md-3 col-lg-3 col-sm-4 col-6 custom-control custom-checkbox">
+                <div class="item col-md-6 col-lg-3 col-sm-6 col-12 custom-control custom-checkbox p-1">
                     <input type="checkbox" name="case" id="box_4" value="4"
                            class="custom-control-input romiwills checkbox-custom case"/>
                     <label for="box_4" class="custom-control-label custom-lable"></label>
@@ -517,6 +510,29 @@
                                 </div>
                             </div>
                         </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <span class="page-link">Previous</span>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item active" aria-current="page">
+      <span class="page-link">
+        2
+        <span class="sr-only">(current)</span>
+      </span>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
 

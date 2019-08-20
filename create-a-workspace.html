@@ -214,22 +214,11 @@
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
                                 src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31"></a>
                         <div class="dropdown-menu dropdown-menu-right user-dd animated">
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i> My
-                                Profile</a>
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="ti-wallet m-r-5 m-l-5"></i> My
-                                Balance</a>
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="ti-email m-r-5 m-l-5"></i>
-                                Inbox</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="ti-settings m-r-5 m-l-5"></i>
-                                Account Setting</a>
-                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="setting.html"><i class="ti-settings m-r-5 m-l-5"></i>
+                                Account Settings</a>
+                            <!--<div class="dropdown-divider"></div>-->
                             <a class="dropdown-item" href="javascript:void(0)"><i
-                                    class="fa fa-power-off m-r-5 m-l-5"></i> Logout</a>
-                            <div class="dropdown-divider"></div>
-                            <div class="p-l-30 p-10"><a href="javascript:void(0)"
-                                                        class="btn btn-sm btn-success btn-rounded">View Profile</a>
-                            </div>
+                                    class="fa fa-power-off m-r-5 m-l-5"></i>Logout</a>
                         </div>
                     </li>
                     <!-- ============================================================== -->
@@ -300,21 +289,21 @@
                 </div>
             </div>
             <div class="row mt-3">
-                <div class="col-md-10">
+                <div class="col-xl-10 col-lg-10 col-md-12">
                     <p><i>Workspaces help you manage your different businesses under one dashboard. Create different
                         workspaces to manage your different kind of products.</i></p>
                 </div>
             </div>
             <div class="row mt-3">
-                <div class="col-md-10">
+                <div class="col-xl-10 col-lg-10 col-md-12">
                     <form>
                         <div class="form-row">
-                            <div class="form-group col-md-6">
+                            <div class="form-group col-md-6 col-12">
                                 <label for="wsnamebuss">Name your Workspace <span class="remove-red">*</span></label>
                                 <input type="text" class="form-control" id="wsnamebuss"
                                        placeholder="Workspace Name (e.g. John Doe's T-Shirts)">
                             </div>
-                            <div class="form-group col-md-6">
+                            <div class="form-group col-md-6 col-12">
                                 <label for="wscrstatus">Status</label>
                                 <select class="form-control" id="wscrstatus">
                                     <option selected>Active</option>
@@ -324,12 +313,12 @@
                         </div>
 
                         <div class="form-row">
-                            <div class="form-group col-md-6">
+                            <div class="form-group col-md-6 col-12">
                                 <label for="wscompynm">Company Name <span class="remove-red">*</span></label>
                                 <input type="text" class="form-control" id="wscompynm"
                                        placeholder="Compay name">
                             </div>
-                            <div class="form-group col-md-6">
+                            <div class="form-group col-md-6 col-12">
                                 <label for="wscrphn">Phone number</label>
                                 <input type="tel" class="form-control" id="wscrphn"
                                        placeholder="Phone Number">
@@ -337,12 +326,12 @@
                         </div>
 
                         <div class="form-row">
-                            <div class="form-group col-md-6">
+                            <div class="form-group col-md-6 col-12">
                                 <label for="weburl">Website URL</label>
                                 <input type="url" class="form-control" id="weburl"
                                        placeholder="https://">
                             </div>
-                            <div class="form-group col-md-6">
+                            <div class="form-group col-md-6 col-12">
                                 <label for="wscrcountry">Country <span class="remove-red">*</span></label>
                                 <select class="js-example-basic-single form-control" name="state" id="wscrcountry">
                                     <option value="AFG">Afghanistan</option>
@@ -599,19 +588,19 @@
                         </div>
 
                         <div class="form-row">
-                            <div class="form-group col-md-6">
+                            <div class="form-group col-md-6 col-12">
                                 <label for="wscrcity">City</label>
                                 <input type="text" class="form-control" id="wscrcity"
                                        placeholder="Ludhiana">
                             </div>
-                            <div class="form-group col-md-6">
+                            <div class="form-group col-md-6 col-12">
                                 <label for="wscraddress">Address <span class="remove-red">*</span></label>
                                 <input type="tel" class="form-control" id="wscraddress"
                                        placeholder="###">
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="form-group col-md-6">
+                            <div class="form-group col-xl-6 col-lg-6 col-md-12 col-12">
                                 <label for="wscrdba">Is this workspace also a separate entity or a dba? <span class="remove-red">*</span></label>
                                 <select class="form-control" id="wscrdba">
                                     <option value="dba" selected>DBA</option>
@@ -620,18 +609,18 @@
                                 <small id="whatisdba"><button type="button" class="btn tooltip-btn" data-toggle="tooltip" data-placement="top" title="" data-original-title="The operating name of a company, as opposed to the legal name of the company. Some states require DBA or fictitious business name filings to be made for the protection of consumers conducting business with the entity.">?</button>What is DBA?</small>
                                 <small id="whatisentity" style="display: none;"><button type="button" class="btn tooltip-btn" data-toggle="tooltip" data-placement="top" title="" data-original-title="Organization established as a separate existence for the purposes of taxes. Corporations, limited liability companies, and sole proprietorships are types of common business entities.">?</button>What is Entity?</small>
                             </div>
-                            <div class="form-group col-md-6" id="dbavalue">
+                            <div class="form-group col-xl-6 col-lg-6 col-md-12 col-12" id="dbavalue">
                                 <label for="dbanumber">DBA Name <span class="remove-red">*</span></label>
                                 <input type="text" class="form-control" id="dbanumber" placeholder="#DBA">
                             </div>
 
-                            <div class="form-group col-md-6" id="dvPassport" style="display: none">
+                            <div class="form-group col-xl-6 col-lg-6 col-md-12 col-12" id="dvPassport" style="display: none">
                                 <div class="form-row">
-                                    <div class="form-group col-md-6">
+                                    <div class="form-group col-md-6 col-12">
                                         <label for="dbanumber">EIN# <span class="remove-red">*</span></label>
                                         <input type="text" class="form-control" id="dbanumber" placeholder="EIN#" required>
                                     </div>
-                                    <div class="form-group col-md-6">
+                                    <div class="form-group col-md-6 col-12">
                                         <label for="stateofentity">State of Entity <span class="remove-red">*</span></label>
                                         <select id="stateofentity" class="form-control" required>
                                             <option value="AL">Alabama</option>
