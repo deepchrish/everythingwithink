@@ -785,6 +785,7 @@ p {
     font-weight: 700;
     font-size: 12px;
     text-transform: uppercase;
+    white-space: nowrap;
 }
 
 .orderlist tbody tr td {
@@ -1561,7 +1562,7 @@ p {
 
 .add-product {
     text-decoration: none;
-    margin-top: 40px;
+    margin-top: 20px;
     transition: all .3s ease-in-out;
 }
 
@@ -2273,7 +2274,7 @@ p {
 .calc-total {
     text-align: center;
     margin: 0 auto;
-    padding: 75px 0 75px 0;
+    /*padding: 75px 0 75px 0;*/
 }
 
 .calc-total label {
@@ -2319,7 +2320,7 @@ p {
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 700;
-    padding: 8px 30px;
+    /*padding: 8px 30px;*/
 }
 
 .nav-tabs .createpro .nav-link.active {
@@ -2340,10 +2341,10 @@ p {
 }
 
 .upload-custom-design {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 22;
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*right: 0;*/
+    /*z-index: 22;*/
 }
 
 .upload-custom-design label input {
@@ -2416,6 +2417,8 @@ p {
 .prowithlist thead tr th {
     background: #f2f3ff;
     font-weight: 600;
+    font-size: 12px;
+    white-space: nowrap;
 }
 
 .prowithlist td {
@@ -2463,7 +2466,7 @@ p {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 22;
+    /*z-index: 22;*/
 }
 
 .custom-upload label {
@@ -2480,7 +2483,7 @@ p {
     /*box-shadow: 0 2px 6px 1px rgba(0,0,0,0.2);*/
     border: 1px solid #e9ecef;
     border-radius: 1px;
-    margin-top: 40px;
+    margin-top: 20px;
     transition: all .3s ease-in-out;
 }
 
@@ -3103,7 +3106,7 @@ p {
 }
 
 .onboardeasyink {
-    padding: 10px 60px;
+    padding: 10px 50px;
 }
 
 .onboardeasyink img {
@@ -3309,6 +3312,7 @@ p {
     color: #2b44ff;
     font-weight: 700;
     margin: 0 2px;
+    background: #fff;
     transition: all 0.3s ease-in-out;
 }
 
@@ -4361,7 +4365,10 @@ span.round-tab:hover {
     -moz-box-shadow: 0 2px 15px -6px rgba(0, 0, 0, 0.4);
     box-shadow: 0 2px 15px -6px rgba(0, 0, 0, 0.4);
 }
-
+.drop-menu-test{
+    -webkit-transition: background 2s; /* For Safari 3.1 to 6.0 */
+    transition: background 2s;
+}
 .drop-menu-test ul {
     padding: 0;
     margin: 0;
@@ -4370,8 +4377,9 @@ span.round-tab:hover {
 
 .drop-menu-test ul li {
     list-style: none;
-    display: inline;
+    display: inline-flex;
     margin: 0 15px;
+    white-space: nowrap;
 }
 
 .drop-menu-test ul li a {
@@ -4384,7 +4392,19 @@ span.round-tab:hover {
 .drop-menu-test ul li a:hover {
     color: #000000;
 }
+.product__header h4{
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: #111111;
+}
 
+.product-drop-menu{
+    position: fixed;
+    width: 100%;
+    top: 62px;
+    left: 0;
+    z-index: 1;
+}
 /*------------------------new ds css---------------------*/
 
 .ds-art-btn {
@@ -6640,7 +6660,7 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
 /*Login page END*/
 
 /*Loading button*/
-.spinner {
+.spinner-boot4 {
     display: inline-block;
     opacity: 0;
     max-width: 0;
@@ -6656,7 +6676,7 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
 .has-spinner.active {
     cursor: progress;
 }
-.has-spinner.active .spinner {
+.has-spinner.active .spinner-boot4 {
     opacity: 1;
     max-width: 50px;
     /* More than it will ever come, notice that this affects on animation duration */
@@ -6884,10 +6904,13 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
     .item.list-group-item .caption span{width: 30%;}
     .list-group-item .custom-lable::before{left: 20px;}
     .list-group-item .custom-lable::after{left: 20px;}
+    .onboardeasyink{padding: 10px 30px;}
+    .nav-tabs .createpro{width: 25%;display: flex; padding: 0 15% 0 0;}
 }
 @media only screen and (max-width: 1024px){
     .item.list-group-item .caption h4{ width: 245px;}
     .item.list-group-item .caption{margin: 20px 0 0 0;}
+    .onboardeasyink {padding: 10px 15px;}
 }
     /* Large devices (laptops/desktops, 992px and Down) */
 @media only screen and (max-width: 992px) {
@@ -6898,6 +6921,7 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
     .workspacepro{margin: 8px 0 0 0;position: relative;right: 0;}
     .viewall{display: none;}
     .profileform{margin-left: 0;}
+    .pd-art-grid{width: max-content;}
 }
 
 /* Medium devices (tablets, 768px and down) */
@@ -6908,6 +6932,8 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
     .card-list-line:after{right: 8%;}
     .box-details p{padding: 0 0;}
     .samplefiles{padding: 0 5% 0 0;}
+    .nav-tabs .warehousepricing-nav a{font-size: 10px;}
+    .pricingtable td:first-child{width: 35%;}
 }
 
 @media only screen and (max-width: 766px){
@@ -6916,6 +6942,11 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
     .item-numbers{top: auto; right: auto; left: auto; margin: 10px 0 0 20px;}
     .card-box{margin: 10px 0;}
     .samplefiles{padding: 0 2% 0 0;}
+    .nav-tabs .warehousepricing-nav a{padding: 8px 5px;}
+    .nav-tabs .createpro {width: 30%;display: flex;padding: 0 15% 0 5%;}
+    .pro-det-info{text-align: center;}
+    .pro-det-img img{margin: 0 auto 20px;}
+    .mailbox{max-width: 100%;}
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -6930,10 +6961,16 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
     .sampleinfo {margin: 15px auto; text-align: center;}
     .video-button{margin: 10px auto 20px;}
     .custom-upload{position: relative; top: 0; display: grid;}
-    .workspacepro{margin: -24px 0 0 0;position: absolute;right: -17px;}
+    .workspacepro{position: absolute;right: -17px;}
     .profileform{margin-left: 0;}
     .nav-tabs .createpro a{padding: 8px 0;}
     .nav-tabs .createpro{flex: 1 1 auto;text-align: center;}
+    .box-img, .box-img img{height: 115px;}
+    .box-hover-btn{height: 115px; padding: 45px 0;}
+    .secendary-button{padding: 5px 10px;font-size: 12px;}
+    .fl-file-options{top: -10%;}
+    .onboardeasyink {padding: 20px 15px;}
+    .drop-menu-test ul li{margin: 0 auto; width: 30%;padding: 5px 10% 5px 5%;}
 }
 /* Extra small devices (phones, 480px and down) */
 @media only screen and (max-width: 480px) {
@@ -6943,10 +6980,16 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
     .guide-list li:after{font: normal normal normal 18px/1 "Material Design Icons"; top: -10px;}
     .min-height-465{min-height: 410px;}
     .teamrole-radio-btn{padding: 5px 10px;}
+    .nav-tabs .createpro {width: 35%;display: flex;padding: 0 15% 0 10%;}
+    .prod-img, .hoverdata, .prod-img img{height: 170px;}
+    .lefthover, .righthover{padding: 70px 0;}
+    .drop-menu-test ul li{width: 35%;}
 }
 
 /* Extra small devices (phones, 360px and down) */
-@media only screen and (max-width: 360px) {}
+@media only screen and (max-width: 360px) {
+    .drop-menu-test ul li{width: 40%;padding: 5px 5% 5px 5%;}
+}
 
 /* Extra small devices (phones, 320px and down) */
 @media only screen and (max-width: 320px) {}

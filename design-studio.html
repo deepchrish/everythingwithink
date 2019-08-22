@@ -74,7 +74,7 @@
                 <!-- ============================================================== -->
                 <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)"
                    data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                   aria-expanded="false" aria-label="Toggle navigation"><i class="ti-more"></i></a>
+                   aria-expanded="false" aria-label="Toggle navigation"><i class="mdi mdi-dialpad"></i></a>
             </div>
             <!-- ============================================================== -->
             <!-- End Logo -->
@@ -90,30 +90,6 @@
                     </li>
                     <!-- ============================================================== -->
                     <!-- create new -->
-                    <!-- ============================================================== -->
-                    <!--<li class="left-dropdown">-->
-                    <!--<div class="form-group top-nav-drop">-->
-                    <!--<select id="selectbox1" name="selectbox1" class="form-control">-->
-                    <!--<option value="">Select an option&hellip;</option>-->
-                    <!--<option value="Roger">Roger & co.</option>-->
-                    <!--<option value="Mark">Mark tech</option>-->
-                    <!--<option value="oso">Oso</option>-->
-                    <!--<option value="whoop">Whoop</option>-->
-                    <!--<option value="Roger">Roger & co.</option>-->
-                    <!--<option value="Mark">Mark tech</option>-->
-                    <!--<option value="oso">Oso</option>-->
-                    <!--<option value="whoop">Whoop</option>-->
-                    <!--<option value="Roger">Roger & co.</option>-->
-                    <!--<option value="Mark">Mark tech</option>-->
-                    <!--<option value="oso">Oso</option>-->
-                    <!--<option value="whoop">Whoop</option>-->
-                    <!--<option value="Roger">Roger & co.</option>-->
-                    <!--<option value="Mark">Mark tech</option>-->
-                    <!--<option value="oso">Oso</option>-->
-                    <!--<option value="whoop">Whoop</option>-->
-                    <!--</select>-->
-                    <!--</div>-->
-                    <!--</li>-->
                 </ul>
                 <!-- ============================================================== -->
                 <!-- Right side toggle and nav items -->
@@ -871,101 +847,115 @@
 
                         <!--Names & Numbers START-->
                         <div class="tab-pane fade" id="numbers" role="tabpanel" aria-labelledby="number-tab">
-                            <div class="row">
+
+                            <div class="row dsnumbsadd">
                                 <div class="col-md-12 text-center">
                                     <div class="addnumbers">
-                                        <p>Step: 1</p>
+                                        <p>Use personalized Names & Numbers for projects like team jerseys where you
+                                            need a unique name and/or number for each item.</p>
+                                        <img class="img-fluid mb-4" src="./images/base.png">
+                                        <button class="btn nonfilled-btn dsnumsinfo">Add Names & Numbers</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-6 pr-0">
-                                    <div class="ds-numbers-border-left">
-                                        <div class="ds-num-box-name border-bottom">Names</div>
-                                        <div class="form-group row justify-content-center mt-2">
-                                            <label for="numside" class="col-sm-3 col-form-label">Side</label>
-                                            <div class="col-sm-8">
-                                                <select class="form-control" id="numside">
-                                                    <option selected>None</option>
-                                                    <option>Front</option>
-                                                    <option>Back</option>
-                                                    <option>Left</option>
-                                                    <option>Right</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row justify-content-center">
-                                            <label for="numheight" class="col-sm-3 col-form-label">Height</label>
-                                            <div class="col-sm-8">
-                                                <select class="form-control" id="numheight">
-                                                    <option selected>None</option>
-                                                    <option>8 in</option>
-                                                    <option>9 in</option>
-                                                    <option>10 in</option>
-                                                    <option>12 in</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row justify-content-center">
-                                            <label for="numheight" class="col-sm-3 col-form-label">Color</label>
-                                            <div class="col-sm-8">
-                                                <div class="d-flex flex-row">
-                                                    <div class="mt-2">White</div>
-                                                    <div class="component-colors-preview m-0">
-                                                        <div class="color-item flex-inline-container"
-                                                             style="background-color: rgb(250, 250, 250);"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
 
+                            <div class="dsnums2" style="display: none">
+                                <div class="row">
+                                    <div class="col-md-12 text-center">
+                                        <div class="addnumbers">
+                                            <p>Step: 1</p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6 pl-0">
-                                    <div class="ds-numbers-border-right ">
-                                        <div class="ds-num-box-name border-bottom">Numbers</div>
-                                        <div class="form-group row justify-content-center mt-2">
-                                            <label for="numside" class="col-sm-3 col-form-label">Side</label>
-                                            <div class="col-sm-8">
-                                                <select class="form-control" id="numside">
-                                                    <option selected>None</option>
-                                                    <option>Front</option>
-                                                    <option>Back</option>
-                                                    <option>Left</option>
-                                                    <option>Right</option>
-                                                </select>
+                                <div class="row">
+                                    <div class="col-md-6 pr-0">
+                                        <div class="ds-numbers-border-left">
+                                            <div class="ds-num-box-name border-bottom">Names</div>
+                                            <div class="form-group row justify-content-center mt-2">
+                                                <label for="numside" class="col-sm-3 col-form-label">Side</label>
+                                                <div class="col-sm-8">
+                                                    <select class="form-control" id="numside">
+                                                        <option selected>None</option>
+                                                        <option>Front</option>
+                                                        <option>Back</option>
+                                                        <option>Left</option>
+                                                        <option>Right</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="form-group row justify-content-center">
-                                            <label for="numheight" class="col-sm-3 col-form-label">Height</label>
-                                            <div class="col-sm-8">
-                                                <select class="form-control" id="numheight">
-                                                    <option selected>None</option>
-                                                    <option>8 in</option>
-                                                    <option>9 in</option>
-                                                    <option>10 in</option>
-                                                    <option>12 in</option>
-                                                </select>
+                                            <div class="form-group row justify-content-center">
+                                                <label for="numheight" class="col-sm-3 col-form-label">Height</label>
+                                                <div class="col-sm-8">
+                                                    <select class="form-control" id="numheight">
+                                                        <option selected>None</option>
+                                                        <option>8 in</option>
+                                                        <option>9 in</option>
+                                                        <option>10 in</option>
+                                                        <option>12 in</option>
+                                                    </select>
+                                                </div>
                                             </div>
+                                            <div class="form-group row justify-content-center">
+                                                <label for="numheight" class="col-sm-3 col-form-label">Color</label>
+                                                <div class="col-sm-8">
+                                                    <div class="d-flex flex-row">
+                                                        <div class="mt-2">White</div>
+                                                        <div class="component-colors-preview m-0">
+                                                            <div class="color-item flex-inline-container"
+                                                                 style="background-color: rgb(250, 250, 250);"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                         </div>
-                                        <div class="form-group row justify-content-center">
-                                            <label for="numheight" class="col-sm-3 col-form-label">Color</label>
-                                            <div class="col-sm-8">
-                                                <div class="d-flex flex-row">
-                                                    <div class="mt-2">White</div>
-                                                    <div class="component-colors-preview m-0">
-                                                        <div class="color-item flex-inline-container"
-                                                             style="background-color: rgb(250, 250, 250);"></div>
+                                    </div>
+                                    <div class="col-md-6 pl-0">
+                                        <div class="ds-numbers-border-right ">
+                                            <div class="ds-num-box-name border-bottom">Numbers</div>
+                                            <div class="form-group row justify-content-center mt-2">
+                                                <label for="numside" class="col-sm-3 col-form-label">Side</label>
+                                                <div class="col-sm-8">
+                                                    <select class="form-control" id="numside">
+                                                        <option selected>None</option>
+                                                        <option>Front</option>
+                                                        <option>Back</option>
+                                                        <option>Left</option>
+                                                        <option>Right</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row justify-content-center">
+                                                <label for="numheight" class="col-sm-3 col-form-label">Height</label>
+                                                <div class="col-sm-8">
+                                                    <select class="form-control" id="numheight">
+                                                        <option selected>None</option>
+                                                        <option>8 in</option>
+                                                        <option>9 in</option>
+                                                        <option>10 in</option>
+                                                        <option>12 in</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row justify-content-center">
+                                                <label for="numheight" class="col-sm-3 col-form-label">Color</label>
+                                                <div class="col-sm-8">
+                                                    <div class="d-flex flex-row">
+                                                        <div class="mt-2">White</div>
+                                                        <div class="component-colors-preview m-0">
+                                                            <div class="color-item flex-inline-container"
+                                                                 style="background-color: rgb(250, 250, 250);"></div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="addnumbers">
-                                <a href="#" class="nonfilled-btn" data-toggle="modal" data-target="#nameandnumbers">Step-2 Add
-                                    Names &amp; Numbers</a>
+                                <div class="addnumbers">
+                                    <a href="#" class="nonfilled-btn" data-toggle="modal" data-target="#nameandnumbers">Step-2 Add
+                                        Names &amp; Numbers</a>
+                                </div>
                             </div>
                         </div>
                         <!--Names & Numbers END-->
@@ -994,7 +984,7 @@
                         <!--default Templates END-->
 
                         <!--Add notes START-->
-                        <div class="tab-pane fade" id="note" role="tabpanel" aria-labelledby="note-tab">
+                        <!--<div class="tab-pane fade" id="note" role="tabpanel" aria-labelledby="note-tab">
                             <div class="row">
                                 <div class="col-md-12 text-center">
                                     <div class="addnumbers">
@@ -1017,7 +1007,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
                         <!--Add notes END-->
 
                         <!--Add Layers START-->
@@ -1044,6 +1034,7 @@
                         </div>
                         <!--Add Layers END-->
                     </div>
+
                     <div class="functional-keys text-center">
                         <div class="undo-redo">
                             <a href="#">
@@ -1848,6 +1839,10 @@
     $(".addmoreart").click(function () {
         $('.before-art').hide();
         $('.demoart').show();
+    });
+    $(".dsnumsinfo").click(function () {
+        $('.dsnumbsadd').hide();
+        $('.dsnums2').show();
     });
 </script>
 <!--Design Studio Add Art show/hide END-->
