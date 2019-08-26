@@ -3668,6 +3668,15 @@ p {
 .ds-art-js a{
     margin: 0 auto;
 }
+.ds-average-range{
+    text-align: center;
+}
+.ds-average-range span{
+    background: #FFFFFF;
+    position: absolute;
+    top: 32px;
+    left: 25px;
+}
 .label-dec {
     color: #111111;
 }
@@ -6922,6 +6931,7 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
     .viewall{display: none;}
     .profileform{margin-left: 0;}
     .pd-art-grid{width: max-content;}
+    /*.nc-option-box{min-width: 125px;}*/
 }
 
 /* Medium devices (tablets, 768px and down) */
@@ -6947,6 +6957,10 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
     .pro-det-info{text-align: center;}
     .pro-det-img img{margin: 0 auto 20px;}
     .mailbox{max-width: 100%;}
+    .functional-btns {position: relative;margin: 0 auto;text-align: center;left: 0;right: 0;}
+    .nc-price-input{width: 30%;}
+    .nc-edit-pencil-textarea{left: 92%;}
+    .nc-sizes-radio-selct{padding: 4px 15px;}
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -6972,6 +6986,7 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
     .onboardeasyink {padding: 20px 15px;}
     .drop-menu-test ul li{margin: 0 auto; width: 30%;padding: 5px 10% 5px 5%;}
     .affiliate-ben{padding: 0; margin: 0 auto;}
+    .nc-option-box{min-width: 200px;}
 }
 /* Extra small devices (phones, 480px and down) */
 @media only screen and (max-width: 480px) {
@@ -6985,11 +7000,14 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
     .prod-img, .hoverdata, .prod-img img{height: 170px;}
     .lefthover, .righthover{padding: 70px 0;}
     .drop-menu-test ul li{width: 35%;}
+    .modal.right .modal-dialog{width: 100%;}
+    .nc-option-box{min-width: 142px;}
 }
 
 /* Extra small devices (phones, 360px and down) */
 @media only screen and (max-width: 360px) {
     .drop-menu-test ul li{width: 40%;padding: 5px 5% 5px 5%;}
+    .nc-option-box{min-width: 120px;}
 }
 
 /* Extra small devices (phones, 320px and down) */
