@@ -281,6 +281,7 @@
                     <p>Drag and drop your design or upload below.</p>
                 </div>
             </div>
+            <!--
             <div class="row justify-content-center mt-3">
                 <div class="col-lg-4 col-md-6 col-sm-10 col-10 text-center">
                     <div class="upload-img mb-2">
@@ -288,7 +289,7 @@
                                                     alt="image"/>
                             <input type="file" class="form-control" id="basic-url" accept="image/*"
                                    onchange="showMyImage(this)">
-                            <!---<span class="primary-button mt-2">Upload your Design</span>--></label>
+                            <!---<span class="primary-button mt-2">Upload your Design</span>--><!--</label>
                     </div>
                     <a href="create-a-product.html" class="primary-button mt-2">Upload your Design</a>
                     <div class="upinstructions">
@@ -297,6 +298,29 @@
                             resolution of 2400px(w) x 3300px(h) at 300dpi.</p>
                         <p class="mt-4">Maximum upload file size is <strong>25MB.</strong></p>
                     </div>
+                </div>
+            </div>
+            -->
+
+            <div class="row justify-content-center">
+                <div class="col-md-3 text-center m-auto">
+                    <div class="file-upload">
+                        <!--<button class="btn primary-button" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>-->
+                        <div class="image-upload-wrap">
+                            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                            <div class="drag-text">
+                                <img id="thumbnil" class="img-fluid" src="./images/attach.png" alt="image">
+                            </div>
+                        </div>
+                        <div class="file-upload-content">
+                            <img class="file-upload-image" src="#" alt="your image" />
+                            <div class="image-title-wrap">
+                                <a onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></a>
+                            </div>
+                        </div>
+                        <button type="button" onclick="window.location.href='create-a-product.html'" class="primary-button mt-3 disable-btn" disabled>Upload your Design</button>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -324,7 +348,18 @@
 <script src="dist/js/custom.min.js"></script>
 <!--This page JavaScript -->
 
+<script>
+    var uppy = Uppy.Core()
+        .use(Uppy.Dashboard, {
+            inline: true,
+            target: '#drag-drop-area'
+        })
+        .use(Uppy.Tus, {endpoint: 'https://master.tus.io/files/'})
 
+    uppy.on('complete', (result) => {
+        console.log('Upload complete! We’ve uploaded these files:', result.successful)
+    })
+</script>
 </body>
 
 </html>
