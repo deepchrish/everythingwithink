@@ -5245,11 +5245,12 @@ span.round-tab:hover {
     background: #f2f3ff;
     border-bottom: none;
     text-transform: uppercase;
+    white-space: nowrap;
 }
 
 .mc-table tbody td {
     vertical-align: middle;
-    width: 25%;
+    /*width: 25%;*/
     border-bottom: 1px solid #dee2e6;
 }
 
@@ -5309,6 +5310,7 @@ span.round-tab:hover {
     text-align: center;
     font-weight: 700;
     color: #111111;
+    white-space: nowrap;
 }
 
 .mc-perunit {
@@ -7033,6 +7035,10 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
     .pd-art-grid{width: max-content;}
     .v-line{right: 28px;}
     .nc-price-input{width: 25%;}
+    ul.stepper{padding-left: 0;}
+    .wizard-mobile-cls{padding:0;}
+    .mc-table tbody td{padding: 20px 0;}
+    .mc-checkout-pro-info{display: table;}
     /*.nc-option-box{min-width: 125px;}*/
 }
 
@@ -7048,6 +7054,7 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
     .nav-tabs .warehousepricing-nav a{font-size: 10px;}
     .pricingtable td:first-child{width: 35%;}
     .v-line{right: 18px;}
+    .mc-perunit{right: 15px;}
 }
 
 @media only screen and (max-width: 766px){
@@ -7069,6 +7076,9 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .p-xs-0{padding: 10px 0 0 0;}
+    .mc-pro-price{max-width: 100%;}
+    .mc-vender-rep{margin: 0 0 0 20px;}
+    .mc-order-rate{padding: 8px 8px; font-weight: 600;}
 }
 
 @media only screen and (max-width: 576px) {

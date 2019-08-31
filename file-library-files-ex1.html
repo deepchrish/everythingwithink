@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/withink_logo.png">
+    <title>Everything With Ink</title>
+    <!-- Custom CSS -->
+    <link href="assets/libs/flot/css/float-chart.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="dist/css/style.min.css" rel="stylesheet">
+    <link href="dist/css/custom.css" rel="stylesheet">
+    <link href="dist/css/jquery-labelauty.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<!-- ============================================================== -->
+<!-- Preloader - style you can find in spinners.css -->
+<!-- ============================================================== -->
+<div class="preloader">
+    <div class="lds-ripple">
+        <div class="lds-pos"></div>
+        <div class="lds-pos"></div>
+    </div>
+</div>
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<div id="main-wrapper">
+    <!-- ============================================================== -->
+    <!-- Topbar header - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <header class="topbar" data-navbarbg="skin5">
+        <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+            <div class="navbar-header" data-logobg="skin5">
+                <!-- This is for the sidebar toggle which is visible on mobile only -->
+                <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i
+                        class="ti-menu ti-close"></i></a>
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <a class="navbar-brand" href="index.html">
+                    <!-- Logo icon -->
+                    <b class="logo-icon p-l-10">
+                        <!-- Dark Logo icon -->
+                        <img src="./images/withink_logo.png" alt="homepage" class="light-logo"/>
+
+                    </b>
+                    <!--End Logo icon -->
+                    <!-- Logo text -->
+                    <span class="logo-text">
+                             <!-- dark Logo text -->
+                             Dashboard
+                        </span>
+                    <!-- Logo icon -->
+                    <!--End Logo icon -->
+                </a>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Toggle which is visible on mobile only -->
+                <!-- ============================================================== -->
+                <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)"
+                   data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                   aria-expanded="false" aria-label="Toggle navigation"><i class="mdi mdi-dialpad"></i></a>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Logo -->
+            <!-- ============================================================== -->
+            <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
+                <!-- ============================================================== -->
+                <!-- toggle and nav items -->
+                <!-- ============================================================== -->
+                <ul class="navbar-nav float-left mr-auto">
+                    <li class="d-none d-md-block custom-arrow"><a
+                            class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)"
+                            data-sidebartype="mini-sidebar"><i class="mdi mdi-chevron-left left-arrow"></i></a>
+                    </li>
+                    <!-- ============================================================== -->
+                </ul>
+                <!-- ============================================================== -->
+                <!-- Right side toggle and nav items -->
+                <!-- ============================================================== -->
+                <ul class="navbar-nav float-right">
+                    <!-- ============================================================== -->
+                    <li>
+                        <a class="btn nav-product-btn primary-button" href="add-new-product-step-1.html"><i
+                                class="mdi mdi-tag-outline"></i> Add a new Product</a>
+                    </li>
+                    <!-- ============================================================== -->
+                    <li class="nav-item dropdown">
+                        <span class="item-numbers">10</span>
+                        <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-bell-ring-outline font-24"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <!-- ============================================================== -->
+                    <!-- End Comment -->
+                    <!-- ============================================================== -->
+                    <!-- ============================================================== -->
+                    <!-- Messages -->
+                    <!-- ============================================================== -->
+                    <li class="nav-item dropdown">
+                        <span class="item-numbers">4</span>
+                        <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" id="2"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i
+                                class="font-24 mdi mdi-cart-outline"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right mailbox "
+                             aria-labelledby="2">
+                            <ul class="list-style-none">
+                                <li>
+                                    <div class="">
+                                        <!-- Message -->
+                                        <a href="my-cart.html" class="link border-top">
+                                            <div class="d-flex no-block align-items-center p-10">
+                                                <span class="cart-pro-img"><img src="./images/demo-product-1.png"
+                                                                                alt="product"></span>
+                                                <div class="m-l-10 cart-pro-info">
+                                                    <h5 class="m-b-0">Captain America sleeveless t-shirt </h5>
+                                                    <span class="mail-desc">PMGOA</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <!-- Message -->
+                                        <a href="my-cart.html" class="link border-top">
+                                            <div class="d-flex no-block align-items-center p-10">
+                                                <span class="cart-pro-img"><img src="./images/demo-product-2.png"
+                                                                                alt="product"></span>
+                                                <div class="m-l-10 cart-pro-info">
+                                                    <h5 class="m-b-0">Marvel Full Sleeve T-shirt</h5>
+                                                    <span class="mail-desc">Akil's Tees Store</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <!-- Message -->
+                                        <a href="my-cart.html" class="link border-top">
+                                            <div class="d-flex no-block align-items-center p-10">
+                                                <span class="cart-pro-img"><img src="./images/demo-product-3.png"
+                                                                                alt="product"></span>
+                                                <div class="m-l-10 cart-pro-info">
+                                                    <h5 class="m-b-0">3000 Iron-Man T-shirt</h5>
+                                                    <span class="mail-desc">Demo content</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <!-- Message -->
+                                        <a href="my-cart.html" class="link border-top">
+                                            <div class="d-flex no-block align-items-center p-10">
+                                                <span class="cart-pro-img"><img src="./images/demo-product-4.png"
+                                                                                alt="product"></span>
+                                                <div class="m-l-10 cart-pro-info">
+                                                    <h5 class="m-b-0">Spider=Man T-shirt</h5>
+                                                    <span class="mail-desc">Spider tore</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- ============================================================== -->
+                    <!-- End Messages -->
+                    <!-- ============================================================== -->
+
+                    <!-- ============================================================== -->
+                    <!-- User profile and search -->
+                    <!-- ============================================================== -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href=""
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                                src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31"></a>
+                        <div class="dropdown-menu dropdown-menu-right user-dd animated">
+                            <a class="dropdown-item" href="setting.html"><i class="ti-settings m-r-5 m-l-5"></i>
+                                Account Settings</a>
+                            <!--<div class="dropdown-divider"></div>-->
+                            <a class="dropdown-item" href="javascript:void(0)"><i
+                                    class="fa fa-power-off m-r-5 m-l-5"></i>Logout</a>
+                        </div>
+                    </li>
+                    <!-- ============================================================== -->
+                    <!-- User profile and search -->
+                    <!-- ============================================================== -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- ============================================================== -->
+    <!-- End Topbar header -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Left Sidebar - style you can find in sidebar.scss  -->
+    <!-- ============================================================== -->
+    <aside class="left-sidebar" data-sidebarbg="skin5">
+        <!-- Sidebar scroll-->
+        <div class="scroll-sidebar">
+            <!-- Sidebar navigation-->
+            <nav class="sidebar-nav">
+                <ul id="sidebarnav">
+                    <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                                href="index.html" aria-expanded="false"><i
+                            class="mdi mdi-home-outline"></i><span class="hide-menu">My Home</span></a></li>
+                    <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                                href="company-empty.html" aria-expanded="false"><i
+                            class="mdi mdi-store"></i><span class="hide-menu">Workspaces</span></a></li>
+                    <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                                href="product-list.html" aria-expanded="false"><i
+                            class="mdi mdi-tag"></i><span class="hide-menu">Products</span></a></li>
+                    <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                                href="file-library-files.html" aria-expanded="false"><i
+                            class="mdi mdi-image-multiple"></i><span class="hide-menu">File Library</span></a></li>
+                    <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                                href="easy-ink-on-boarding.html" aria-expanded="false"><i
+                            class="mdi mdi-invert-colors"></i><span class="hide-menu">Easy Ink</span></a></li>
+                    <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                                href="orders-list.html" aria-expanded="false"><i
+                            class="mdi mdi-shopping"></i><span class="hide-menu">Orders</span>
+                        <small class="new-item float-item blink">New</small>
+                    </a></li>
+                    <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                                href="statistics.html" aria-expanded="false"><i
+                            class="mdi mdi-chart-areaspline"></i><span class="hide-menu">Statistics</span></a></li>
+                    <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                                href="campaign-empty.html" aria-expanded="false"><i
+                            class="mdi mdi-trending-up"></i><span class="hide-menu">Campaign</span></a></li>
+                    <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                                href="monthly-subscription.html" aria-expanded="false"><i
+                            class="mdi mdi-sale"></i><span class="hide-menu">Subscription</span></a></li>
+                    <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                                href="payout-processed.html" aria-expanded="false"><i
+                            class="mdi mdi-cash-multiple"></i><span class="hide-menu">Payout</span></a></li>
+                    <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                                href="javascript:void(0)" aria-expanded="false"><i
+                            class="mdi mdi-cash-usd"></i><span class="hide-menu">Billing</span><i
+                            class="mdi mdi-chevron-down open-sub-menu"></i></a>
+                        <ul aria-expanded="false" class="collapse  first-level">
+                            <li class="sidebar-item"><a href="billing.html" class="sidebar-link"><i
+                                    class="mdi mdi-sale"></i><span class="hide-menu">Subscription History</span></a>
+                            </li>
+                            <li class="sidebar-item"><a href="billing-copy.html" class="sidebar-link"><i
+                                    class="mdi mdi-cart-outline"></i><span class="hide-menu">Sample Orders</span></a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!--<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="company-empty.html" aria-expanded="false"><i class="mdi mdi-border-inside"></i><span class="hide-menu">Companies</span></a></li>-->
+                    <!-- <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-package-variant-closed"></i><span class="hide-menu">Warehouse</span><i class="mdi mdi-chevron-down open-sub-menu"></i></a>
+                        <ul aria-expanded="false" class="collapse  first-level">
+                            <li class="sidebar-item"><a href="warehouse.html" class="sidebar-link"><i class="mdi mdi-hospital-building"></i><span class="hide-menu">Inventory</span></a></li>
+                            <li class="sidebar-item"><a href="warehouse-pricing.html" class="sidebar-link"><i class="mdi mdi-cards-playing-outline"></i><span class="hide-menu">Pricing</span></a></li>
+                            <li class="sidebar-item"><a href="warehouse-currency-settings.html" class="sidebar-link"><i class="mdi mdi-currency-btc"></i><span class="hide-menu">Currency</span></a></li>
+                            <li class="sidebar-item"><a href="warehouse-shipment.html" class="sidebar-link"><i class="mdi mdi-truck-delivery"></i><span class="hide-menu">Shipment</span></a></li>
+                        </ul>
+                    </li> -->
+                    <!--<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="file-library.html" aria-expanded="false"><i class="mdi mdi-library-books"></i><span class="hide-menu">File Library</span></a></li>-->
+                    <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                                href="reports.html" aria-expanded="false"><i
+                            class="mdi mdi-file-chart"></i><span class="hide-menu">Reports</span></a></li>
+                    <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                                href="javascript:void(0)" aria-expanded="false"><i
+                            class="mdi mdi-tune"></i><span class="hide-menu">Settings</span><i
+                            class="mdi mdi-chevron-down open-sub-menu"></i></a>
+                        <ul aria-expanded="false" class="collapse  first-level">
+                            <li class="sidebar-item"><a href="setting.html" class="sidebar-link"><i
+                                    class="mdi mdi-account-settings-variant"></i><span class="hide-menu">Account Settings</span></a>
+                            </li>
+                            <li class="sidebar-item"><a href="workspace-settings.html" class="sidebar-link"><i
+                                    class="mdi mdi-store-24-hour"></i><span class="hide-menu">Workspace Settings</span></a>
+                            </li>
+                            <li class="sidebar-item"><a href="store-settings.html" class="sidebar-link"><i
+                                    class="mdi mdi-currency-btc"></i><span class="hide-menu">Store Settings</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                                href="affiliate.html" aria-expanded="false"><i class="mdi mdi-home"></i><span
+                            class="hide-menu">Go to homepage</span></a></li>
+                    <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                                href="affiliate.html" aria-expanded="false"><i
+                            class="mdi mdi-account-multiple"></i><span class="hide-menu">Affiliate</span></a></li>
+                    <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                                href="affiliate.html" aria-expanded="false"><i
+                            class="mdi mdi-assistant"></i><span class="hide-menu">Support</span></a></li>
+                    <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                                href="affiliate.html" aria-expanded="false"><i
+                            class="mdi mdi-network-question"></i><span class="hide-menu">FAQs</span></a></li>
+                </ul>
+            </nav>
+            <!-- End Sidebar navigation -->
+        </div>
+        <!-- End Sidebar scroll-->
+    </aside>
+    <!-- ============================================================== -->
+    <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Page wrapper  -->
+    <!-- ============================================================== -->
+    <div class="page-wrapper">
+
+
+        <!-- Container fluid  -->
+        <div class="container-fluid mt-5 pt-5">
+
+            <!--<div id="loading-wrapper" class="billing-page">-->
+            <!--<div id="loading-content"></div>-->
+            <!--&lt;!&ndash;<div id="loading-text">Uploading..</div>&ndash;&gt;-->
+            <!--</div>-->
+
+            <div class="row border-bottom">
+                <div class="col-md-12">
+                    <h1>File Library</h1>
+                </div>
+            </div>
+
+            <!--<div class="form-row mt-4">-->
+            <!--<div class="form-group col-xl-3 col-lg-3 col-md-5 col-sm-5 col-12">-->
+            <!--<select class="form-control custom-select" id="locationlist">-->
+            <!--<option value="mugs" selected>Akil's coffee Mugs</option>-->
+            <!--<option value="mug2">Mugs another</option>-->
+            <!--<option value="mug3">Jumanji mug</option>-->
+            <!--<option value="mug4">Alumai mug</option>-->
+
+            <!--</select>-->
+            <!--</div>-->
+            <!--<div class="form-group col-xl-3 col-lg-3 col-md-5 col-sm-5 col-12">-->
+            <!--<div class="input-group mr-2">-->
+            <!--<div class="input-group-prepend">-->
+            <!--<span class="input-group-text" id="basic-addon1"><i class="mdi mdi-magnify"></i></span>-->
+            <!--</div>-->
+            <!--<input type="search" class="form-control" placeholder="Search Files" aria-label="Search">-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="form-group col-xl-6 col-lg-6 col-md-2 col-sm-2 col-12">-->
+            <!--<div class="custom-upload">-->
+            <!--<label class="btn primary-button">-->
+            <!--Upload <input type="file" />-->
+            <!--</label>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+
+
+            <div class="row">
+                <div class="col-md-12 mt-2">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item createpro">
+                            <a class="nav-link active" href="file-library-files-ex1.html">My Files </a>
+                        </li>
+                        <li class="nav-item createpro">
+                            <a class="nav-link" href="file-library-files-ex2.html">Sample Files</a>
+                        </li>
+                    </ul>
+
+                    <div class="mt-4">
+                        <div class="form-row mt-4">
+                            <div class="form-group col-xl-3 col-lg-3 col-md-5 col-sm-5 col-12">
+                                <select class="form-control custom-select" id="locationlist">
+                                    <option value="mugs" selected>Akil's coffee Mugs</option>
+                                    <option value="mug2">Mugs another</option>
+                                    <option value="mug3">Jumanji mug</option>
+                                    <option value="mug4">Alumai mug</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-xl-3 col-lg-3 col-md-5 col-sm-5 col-12">
+                                <div class="input-group mr-2">
+                                    <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1"><i
+                                                    class="mdi mdi-magnify"></i></span>
+                                    </div>
+                                    <input type="search" class="form-control" placeholder="Search Files"
+                                           aria-label="Search">
+                                </div>
+                            </div>
+                            <div class="form-group col-xl-6 col-lg-6 col-md-2 col-sm-2 col-12">
+                                <div class="custom-upload">
+                                    <label class="btn primary-button">
+                                        Upload <input type="file"/>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6">
+                                <div class="sample-box">
+                                    <div class="box-img">
+                                        <div class="box-hover-btn">
+                                            <div class="d-flex fl-file-options">
+                                                <div class="m-2 fl-flex-btn-optn" title="Preview"
+                                                     data-toggle="tooltip" data-placement="top"><a href="#"
+                                                                                                   class="thumbimage"
+                                                                                                   data-image-id=""
+                                                                                                   data-toggle="modal"
+                                                                                                   data-title=""
+                                                                                                   data-image="./images/clip.png"
+                                                                                                   data-target="#image-gallery">
+                                                    <i class="mdi mdi-eye"></i></a></div>
+                                                <div class="m-2 fl-flex-btn-optn" title="Download"
+                                                     data-toggle="tooltip" data-placement="top"><a href="#"><i
+                                                        class="mdi mdi-download"></i></a></div>
+                                                <div class="m-2 fl-flex-btn-optn" title="Delete"
+                                                     data-toggle="tooltip" data-placement="top"><a href="#"><i
+                                                        class="mdi mdi-delete"></i></a></div>
+                                            </div>
+                                            <a class="thumbimage btn secendary-button" href="#" data-image-id=""
+                                               data-toggle="modal" data-title=""
+                                               data-image="./images/clip.png"
+                                               data-target="#image-gallery">Preview</a>
+                                        </div>
+                                        <img class="img-fluid" src="./images/clip.png" alt="Clip art 1">
+                                        <!--<img class="img-fluid" src="./images/clip.png">-->
+                                    </div>
+                                    <div class="pro-details">
+                                        <p>Fun-pattern.png</p>
+                                        <div class="img-info">
+                                            <p><span>Type:</span> Printfile</p>
+                                            <p><span>Size:</span> 1.03 MB</p>
+                                            <p><span>Resolution:</span> 1920x1080</p>
+                                            <p><span>File:</span> 343456789</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6">
+                                <div class="sample-box">
+                                    <div class="box-img">
+                                        <div class="box-hover-btn">
+                                            <div class="d-flex fl-file-options">
+                                                <div class="m-2 fl-flex-btn-optn" title="Preview"
+                                                     data-toggle="tooltip" data-placement="top">
+                                                    <a href="#" class="thumbimage" data-image-id=""
+                                                       data-toggle="modal" data-title=""
+                                                       data-image="./images/store-woocommerce.png"
+                                                       data-target="#image-gallery"><i class="mdi mdi-eye"></i></a>
+                                                </div>
+                                                <div class="m-2 fl-flex-btn-optn" title="Download"
+                                                     data-toggle="tooltip" data-placement="top"><a href="#"><i
+                                                        class="mdi mdi-download"></i></a></div>
+                                                <div class="m-2 fl-flex-btn-optn" title="Delete"
+                                                     data-toggle="tooltip" data-placement="top"><a href="#"><i
+                                                        class="mdi mdi-delete"></i></a></div>
+                                            </div>
+                                            <a class="thumbimage btn secendary-button" href="#" data-image-id=""
+                                               data-toggle="modal" data-title=""
+                                               data-image="./images/store-woocommerce.png"
+                                               data-target="#image-gallery">Preview</a>
+                                        </div>
+                                        <img class="img-fluid" src="./images/store-woocommerce.png"
+                                             alt="Another alt text">
+                                        <!--<img class="img-fluid" src="./images/clip-2.png">-->
+                                    </div>
+                                    <div class="pro-details">
+                                        <p>Fun-pattern.png</p>
+                                        <div class="img-info">
+                                            <p><span>Type:</span> Printfile</p>
+                                            <p><span>Size:</span> 1.03 MB</p>
+                                            <p><span>Resolution:</span> 1920x1080</p>
+                                            <p><span>File:</span> 343456789</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-12">
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item disabled">
+                                            <span class="page-link">Previous</span>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item active" aria-current="page">
+      <span class="page-link">
+        2
+        <span class="sr-only">(current)</span>
+      </span>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Next</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--modal for image info-->
+            <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header fl-preview-item">
+                            <h4 class="modal-title" id="image-gallery-title"></h4>
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"
+                                                                                           class="fl-preview-modal-close">×</span><span
+                                    class="sr-only">Close</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-8"><img id="image-gallery-image"
+                                                           class="img-fluid fl-previewed-modal-img" src=""></div>
+                                <div class="col-md-4">
+                                    <div>
+                                        <form>
+                                            <label for="filename"></label>
+                                            <textarea class="form-control-plaintext fl-preview-modal-item-title"
+                                                      id="filename">Name of the image</textarea>
+                                        </form>
+                                        <div class="fl-other-info">0.13 MB / 840x1034</div>
+                                        <div class="fl-other-info">Jul 29, 4:14am</div>
+                                        <div class="d-flex flex-column text-center mt-4">
+                                            <div class="p-2">
+                                                <button class="btn fl-action-btn">Download File</button>
+                                            </div>
+                                            <div class="p-2">
+                                                <button class="btn fl-action-btn">View Full Size</button>
+                                            </div>
+                                            <div class="p-2">
+                                                <button class="btn fl-action-btn">Delete File</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i
+                                    class="fa fa-arrow-left"></i>
+                            </button>
+
+                            <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i
+                                    class="fa fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--modal for image info-->
+        </div>
+        <!-- End Container fluid  -->
+        <!-- End footer -->
+    </div>
+    <!-- End Page wrapper  -->
+</div>
+<!-- End Wrapper -->
+<!-- ============================================================== -->
+
+<!-- All Jquery -->
+<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap tether Core JavaScript -->
+<script src="assets/libs/popper.js/dist/umd/popper.min.js"></script>
+<script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+<script src="assets/extra-libs/sparkline/sparkline.js"></script>
+<!--Check box-->
+<script src="dist/js/jquery-labelauty.js"></script>
+
+<!--inputfield copy clicpbord-->
+<script src="dist/js/clipboard.min.js"></script>
+<!--Wave Effects -->
+<script src="dist/js/waves.js"></script>
+<!--Menu sidebar -->
+<script src="dist/js/sidebarmenu.js"></script>
+<!--Custom JavaScript -->
+<script src="dist/js/custom.min.js"></script>
+<!--This page JavaScript -->
+<!-- <script src="dist/js/pages/dashboards/dashboard1.js"></script> -->
+<script>
+    let modalId = $('#image-gallery');
+
+    $(document)
+        .ready(function () {
+
+            loadGallery(true, 'a.thumbimage');
+
+            //This function disables buttons when needed
+            function disableButtons(counter_max, counter_current) {
+                $('#show-previous-image, #show-next-image')
+                    .show();
+                if (counter_max === counter_current) {
+                    $('#show-next-image')
+                        .hide();
+                } else if (counter_current === 1) {
+                    $('#show-previous-image')
+                        .hide();
+                }
+            }
+
+            /**
+             *
+             * @param setIDs        Sets IDs when DOM is loaded. If using a PHP counter, set to false.
+             * @param setClickAttr  Sets the attribute for the click handler.
+             */
+
+            function loadGallery(setIDs, setClickAttr) {
+                let current_image,
+                    selector,
+                    counter = 0;
+
+                $('#show-next-image, #show-previous-image')
+                    .click(function () {
+                        if ($(this)
+                            .attr('id') === 'show-previous-image') {
+                            current_image--;
+                        } else {
+                            current_image++;
+                        }
+
+                        selector = $('[data-image-id="' + current_image + '"]');
+                        updateGallery(selector);
+                    });
+
+                function updateGallery(selector) {
+                    let $sel = selector;
+                    current_image = $sel.data('image-id');
+                    $('#image-gallery-title')
+                        .text($sel.data('title'));
+                    $('#image-gallery-image')
+                        .attr('src', $sel.data('image'));
+                    disableButtons(counter, $sel.data('image-id'));
+                }
+
+                if (setIDs == true) {
+                    $('[data-image-id]')
+                        .each(function () {
+                            counter++;
+                            $(this)
+                                .attr('data-image-id', counter);
+                        });
+                }
+                $(setClickAttr)
+                    .on('click', function () {
+                        updateGallery($(this));
+                    });
+            }
+        });
+
+    // build key actions
+    $(document)
+        .keydown(function (e) {
+            switch (e.which) {
+                case 37: // left
+                    if ((modalId.data('bs.modal') || {})._isShown && $('#show-previous-image').is(":visible")) {
+                        $('#show-previous-image')
+                            .click();
+                    }
+                    break;
+
+                case 39: // right
+                    if ((modalId.data('bs.modal') || {})._isShown && $('#show-next-image').is(":visible")) {
+                        $('#show-next-image')
+                            .click();
+                    }
+                    break;
+
+                default:
+                    return; // exit this handler for other keys
+            }
+            e.preventDefault(); // prevent the default action (scroll / move caret)
+        });
+</script>
+
+</body>
+
+</html>

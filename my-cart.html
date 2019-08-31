@@ -284,38 +284,36 @@
             </div>
             <!--Wizard START-->
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 wizard-mobile-cls">
                     <ul class="stepper horizontal demos" id="horizontal">
                         <!---------------------------Step 1--------------------------->
                         <li class="step active">
                             <div class="step-title waves-effect">Overview</div>
                             <div class="step-content">
                                 <div class="row">
-                                    <div class="col-md-12">
+                                    <div class="col-md-12 wizard-mobile-cls">
                                         <div class="table-responsive">
                                             <table class="table mc-table">
                                                 <thead>
                                                 <tr>
                                                     <th>PRODUCT DETAILS</th>
                                                     <th>QUANTITY</th>
-                                                    <th>Price</th>
+                                                    <th class="width-20">Price</th>
                                                     <th>ACTION</th>
                                                 </tr>
                                                 </thead>
                                                 <tbody>
                                                 <tr>
                                                     <td>
-                                                        <div class="d-flex flex-row">
-                                                            <div class="mc-checkout-pro">
-                                                                <img class="img-fluid" src="./images/header-base.png">
-                                                            </div>
-                                                            <div class="mc-checkout-pro-info">
-                                                                <h6 title="Croco Rock Travel Mug">Croco Rock Travel Mug</h6>
-                                                                <p>Size: Large</p>
-                                                                <p>Color: Black, Green</p>
-                                                                <p>SKU: EWI-6902</p>
-                                                                <a href="#" class="remove-red ">Remove</a>
-                                                            </div>
+                                                        <div class="mc-checkout-pro">
+                                                            <img class="img-fluid" src="./images/header-base.png">
+                                                        </div>
+                                                        <div class="mc-checkout-pro-info">
+                                                            <h6 title="Croco Rock Travel Mug">Croco Rock Travel Mug</h6>
+                                                            <p>Size: Large</p>
+                                                            <p>Color: Black, Green</p>
+                                                            <p>SKU: EWI-6902</p>
+                                                            <a href="#" class="remove-red ">Remove</a>
                                                         </div>
                                                     </td>
                                                     <td>
@@ -329,8 +327,12 @@
                                                         </div>
                                                         <span class="instructions">Total Cost would be calculated upon fullfillment.</span>
                                                     </td>
-                                                    <td><a href="#" class="btn primary-button" data-toggle="modal"
-                                                           data-target="#pickvendor">Pick Vendor</a></td>
+                                                    <td>
+                                                        <div class="mc-vender-rep">
+                                                        <button class="btn primary-button" data-toggle="modal"
+                                                           data-target="#pickvendor">Pick Vendor</button>
+                                                        </div>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>
@@ -364,7 +366,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-left border-0">
+                                                    <td class="text-left border-0" colspan="4">
                                                         <button class="secendary-button">Add more Products</button>
                                                     </td>
                                                 </tr>
@@ -375,7 +377,8 @@
                                 </div>
                                 <div class="step-actions">
                                     <!-- Here goes your actions buttons -->
-                                    <button class="waves-effect waves-dark btn primary-button next-step">Pick Shipping Address
+                                    <button class="waves-effect waves-dark btn primary-button next-step">Pick Shipping
+                                        Address
                                     </button>
                                 </div>
                             </div>
@@ -768,9 +771,11 @@
                                 <!--When address is already saved-->
 
                                 <div class="step-actions">
-                                    <button class="waves-effect waves-dark btn-flat secendary-button previous-step mt-3">Go back to Overview
+                                    <button class="waves-effect waves-dark btn-flat secendary-button previous-step mt-3">
+                                        Go back to Overview
                                     </button>
-                                    <button class="waves-effect waves-dark btn primary-button blue next-step mt-3">Pick Shipping Address
+                                    <button class="waves-effect waves-dark btn primary-button blue next-step mt-3">Pick
+                                        Shipping Address
                                     </button>
                                 </div>
                             </div>
@@ -1113,15 +1118,12 @@
                             </div>
                             <button type="submit" class="btn aff-submitbtn">Submit</button>
                         </div>
-
                     </div><!-- modal-content -->
                 </div><!-- modal-dialog -->
             </div>
             <!-- modal -->
-
         </div>
         <!-- End Container fluid  -->
-
     </div>
     <!-- End Page wrapper  -->
 </div>
