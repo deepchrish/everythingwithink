@@ -188,6 +188,9 @@ p {
     color: #000000;
     line-height: 27px;
 }
+.error-box .error-title{
+    color: #2B44FF;
+}
 
 .page-breadcrumb .breadcrumb .breadcrumb-item + .breadcrumb-item:before {
     content: "\f142";
