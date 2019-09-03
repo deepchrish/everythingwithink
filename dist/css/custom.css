@@ -2237,6 +2237,9 @@ p {
 .store-name p {
     margin: 0;
     font-weight: 700;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .store-name span {
@@ -6102,6 +6105,7 @@ ul.stepper.horizontal .step .step-content::-webkit-scrollbar-thumb:hover {
     -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
 .connect-stores-form {
@@ -6122,16 +6126,18 @@ ul.stepper.horizontal .step .step-content::-webkit-scrollbar-thumb:hover {
 }
 
 .con-sto-left {
-    height: 95vh;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
+    margin: 0 auto;
+    text-align: center;
+    /*height: 95vh;*/
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*align-content: center;*/
+    /*display: -webkit-box;*/
+    /*display: -webkit-flex;*/
+    /*display: -ms-flexbox;*/
+    /*-webkit-box-align: center;*/
+    /*-webkit-align-items: center;*/
+    /*-ms-flex-align: center;*/
 }
 
 /*Connect Stores CSS END*/
@@ -7144,13 +7150,13 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
     height: 100%;
 }
 .drag-text #loading-wrapper{
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     left: 0;
     top: 0;
     right: 0;
-    z-index: 99999999;
+    z-index: 9;
     background: rgba(0, 0, 0, 0.4);
     bottom: 0;
 }
@@ -7242,6 +7248,7 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
     .nc-edit-pencil-textarea{left: 92%;}
     .nc-sizes-radio-selct{padding: 4px 15px;}
     .subs-recommendation{margin: 0 50px;}
+    .connect-stores-form{width: 80%;}
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -7273,6 +7280,11 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
     .nc-option-box{min-width: 200px;}
     .select-order-type-text{min-height: 0;}
     .payout-mobil{margin: 10px auto;}
+    .con-sto-left{height: auto;}
+    .connect-stores-form{width: 90%;padding: 15% 0 15% 0;}
+    .con-sto-right{height: auto; margin: 10% auto;}
+    .connect-stores{height: auto;}
+    .con-sto-left img{width: 80%;margin: 5% auto 0;}
 }
 /* Extra small devices (phones, 480px and down) */
 @media only screen and (max-width: 480px) {
@@ -7301,8 +7313,5 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
 
 /* Extra small devices (phones, 320px and down) */
 @media only screen and (max-width: 320px) {}
-
-
-
 
 /*Unwritten code*/

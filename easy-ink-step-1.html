@@ -308,11 +308,11 @@
                         <div class="image-upload-wrap">
                             <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
                             <div class="drag-text">
-                                <div id="loading-wrapper" class="billing-page">
+                                <img id="thumbnil" class="img-fluid" src="./images/add-image.png" alt="image">
+                                <div id="loading-wrapper" class="billing-page loading-img" style="display: none;">
                                     <div id="loading-content"></div>
                                     <!--<div id="loading-text">Uploading..</div>-->
                                 </div>
-                                <img id="thumbnil" class="img-fluid" src="./images/add-image.png" alt="image">
                             </div>
                         </div>
                         <div class="file-upload-content">
@@ -351,18 +351,18 @@
 <script src="dist/js/custom.min.js"></script>
 <!--This page JavaScript -->
 
-<script>
-    var uppy = Uppy.Core()
-        .use(Uppy.Dashboard, {
-            inline: true,
-            target: '#drag-drop-area'
-        })
-        .use(Uppy.Tus, {endpoint: 'https://master.tus.io/files/'})
+<!--<script>-->
+    <!--var uppy = Uppy.Core()-->
+        <!--.use(Uppy.Dashboard, {-->
+            <!--inline: true,-->
+            <!--target: '#drag-drop-area'-->
+        <!--})-->
+        <!--.use(Uppy.Tus, {endpoint: 'https://master.tus.io/files/'})-->
 
-    uppy.on('complete', (result) => {
-        console.log('Upload complete! We’ve uploaded these files:', result.successful)
-    })
-</script>
+    <!--uppy.on('complete', (result) => {-->
+        <!--console.log('Upload complete! We’ve uploaded these files:', result.successful)-->
+    <!--})-->
+<!--</script>-->
 </body>
 
 </html>
