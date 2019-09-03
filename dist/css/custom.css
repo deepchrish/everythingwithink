@@ -7128,6 +7128,32 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
     border: 0;
     transition: all .2s ease;
 }
+.drag-add-image{
+    margin: 0 auto;
+}
+.drag-add-image i{
+    font-size: 80px;
+    color: #ddd;
+}
+.drag-add-image p{
+    color: #0094FF;
+    font-weight: 800;
+    text-decoration: underline;
+}
+.height-100{
+    height: 100%;
+}
+.drag-text #loading-wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99999999;
+    background: rgba(0, 0, 0, 0.4);
+    bottom: 0;
+}
 /*upload image drag and drop END*/
 
 
