@@ -6648,25 +6648,25 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
     text-align: center;
 }
 
-.login-icons .mdi-tshirt-crew:before {
+.login-icons .mdi-tshirt-crew:before, .mdi-arrange-send-to-back:before, .mdi-view-dashboard:before, .mdi-credit-card:before {
     font-size: 50px;
     color: #fff;
 }
 
-.login-icons .mdi-arrange-send-to-back:before {
-    font-size: 50px;
-    color: #fff;
-}
+/*.login-icons  {*/
+    /*font-size: 50px;*/
+    /*color: #fff;*/
+/*}*/
 
-.login-icons .mdi-view-dashboard:before {
-    font-size: 50px;
-    color: #fff;
-}
+/*.login-icons  {*/
+    /*font-size: 50px;*/
+    /*color: #fff;*/
+/*}*/
 
-.login-icons .mdi-credit-card:before {
-    font-size: 50px;
-    color: #fff;
-}
+/*.login-icons  {*/
+    /*font-size: 50px;*/
+    /*color: #fff;*/
+/*}*/
 
 .login-info-line p {
     margin: 0;
@@ -6841,6 +6841,7 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
 .nc-title p{
     font-weight: 700;
     font-size: 14px;
+    margin-bottom: 5px;
 }
 .nc-input-text{
     padding: 10px 15px;
@@ -7215,6 +7216,8 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
     .wizard-mobile-cls{padding:0;}
     .mc-table tbody td{padding: 20px 0;}
     .mc-checkout-pro-info{display: table;}
+    .login-left-side{height: 80vh;}
+    .login-info-line p{font-size: 14px;line-height: 22px;}
     /*.nc-option-box{min-width: 125px;}*/
 }
 
@@ -7234,6 +7237,7 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
 }
 
 @media only screen and (max-width: 766px){
+    .sidebar-nav{margin-top: 10px;}
     #main-wrapper .topbar .top-navbar .navbar-header[data-logobg=skin5]{box-shadow: 4px 0 16px -5px rgba(72,89,102,0.1);}
     .topbar .nav-toggler, .topbar .topbartoggler{color: #111111;}
     .item-numbers{top: auto; right: auto; left: auto; margin: 10px 0 0 20px;}
@@ -7249,6 +7253,8 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
     .nc-sizes-radio-selct{padding: 4px 15px;}
     .subs-recommendation{margin: 0 50px;}
     .connect-stores-form{width: 80%;}
+    .login-left-side{height: 80vh;}
+    .login-icons .mdi-tshirt-crew:before, .mdi-arrange-send-to-back:before, .mdi-view-dashboard:before, .mdi-credit-card:before{font-size: 40px;}
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -7259,7 +7265,6 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
 }
 
 @media only screen and (max-width: 576px) {
-    .sidebar-nav{margin-top: 10px;}
     .order-status{border-top: 1px solid #d8d8d8; margin: 15px 0; border-right:none; border-left: none;}
     .video-button a{padding: 5px 10px;}
     .samplefiles img{margin: 10px auto;}
@@ -7285,6 +7290,10 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
     .con-sto-right{height: auto; margin: 10% auto;}
     .connect-stores{height: auto;}
     .con-sto-left img{width: 80%;margin: 5% auto 0;}
+    .ws-invite-team-model{max-width:100%;}
+    .loginbg {height: auto;}
+    .login-left-side {height: auto; padding: 10px;}
+    .login-right-side{height: auto; padding: 10% 5%;}
 }
 /* Extra small devices (phones, 480px and down) */
 @media only screen and (max-width: 480px) {
