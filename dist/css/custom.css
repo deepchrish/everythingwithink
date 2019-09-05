@@ -4645,7 +4645,8 @@ span.round-tab:hover {
 }
 
 .join-workspace {
-    background: url("../../images/join-workspace.png") center no-repeat;
+    /*background: url("../../images/join-workspace.png") center no-repeat;*/
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../images/join-workspace.png) center no-repeat;
     height: 100vh;
 }
 
@@ -5101,15 +5102,18 @@ span.round-tab:hover {
 
 .ds-final-sync-pro img {
     float: left;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
 }
 
 .ds-final-sync-info {
-    display: grid;
+    display:inline-block;
     white-space: nowrap;
-    padding-left: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*padding-left: 12px;*/
     text-align: left;
+    padding: 12px 0 0 10px;
 }
 
 .ds-final-sync-info h6 {
@@ -5119,16 +5123,20 @@ span.round-tab:hover {
     overflow: hidden;
 }
 
-.ds-final-sync-info span {
+.ds-final-sync-info div {
     font-size: 13px;
     line-height: 27px;
     color: #777;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
-
+.ds-final-sync-info .ds-final-sku{
+    font-weight: 700;
+}
 .ds-final-art-down img {
     border: 2px dashed #e2e2e2;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     padding: 5px;
 }
 
@@ -7218,6 +7226,7 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
     .mc-checkout-pro-info{display: table;}
     .login-left-side{height: 80vh;}
     .login-info-line p{font-size: 14px;line-height: 22px;}
+    .ds-final-sync-info{display: inherit; padding: 12px 0 0 0;}
     /*.nc-option-box{min-width: 125px;}*/
 }
 
