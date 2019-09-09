@@ -1,0 +1,1800 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/withink_logo.png">
+    <title>Everything With Ink</title>
+    <!-- Custom CSS -->
+    <link href="assets/libs/flot/css/float-chart.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="dist/css/style.min.css" rel="stylesheet">
+    <link href="dist/css/custom.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<!-- ============================================================== -->
+<!-- Preloader - style you can find in spinners.css -->
+<!-- ============================================================== -->
+<div class="preloader">
+    <div class="lds-ripple">
+        <div class="lds-pos"></div>
+        <div class="lds-pos"></div>
+    </div>
+</div>
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<div id="main-wrapper" data-sidebartype="mini-sidebar" class="mini-sidebar">
+    <!-- Topbar header -->
+    <header class="topbar" data-navbarbg="skin5">
+        <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+            <div class="navbar-header" data-logobg="skin5">
+                <!-- This is for the sidebar toggle which is visible on mobile only -->
+                <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i
+                        class="ti-menu ti-close"></i></a>
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <a class="navbar-brand" href="index.html">
+                    <!-- Logo icon -->
+                    <b class="logo-icon p-l-10">
+                        <!-- Dark Logo icon -->
+                        <img src="./images/withink_logo.png" alt="homepage" class="light-logo"/>
+
+                    </b>
+                    <!--End Logo icon -->
+                    <!-- Logo text -->
+                    <span class="logo-text">
+                             <!-- dark Logo text -->
+                             Dashboard
+                        </span>
+                    <!-- Logo icon -->
+                    <!--End Logo icon -->
+                </a>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Toggle which is visible on mobile only -->
+                <!-- ============================================================== -->
+                <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)"
+                   data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                   aria-expanded="false" aria-label="Toggle navigation"><i class="mdi mdi-dialpad"></i></a>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Logo -->
+            <!-- ============================================================== -->
+            <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
+                <!-- ============================================================== -->
+                <!-- toggle and nav items -->
+                <!-- ============================================================== -->
+                <ul class="navbar-nav float-left mr-auto">
+                    <li class="d-none d-md-block custom-arrow"><a
+                            class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)"
+                            data-sidebartype="mini-sidebar"><i class="mdi mdi-chevron-left left-arrow"></i></a>
+                    </li>
+                    <!-- ============================================================== -->
+                </ul>
+
+                <!-- Right side toggle and nav items -->
+                <ul class="navbar-nav float-right">
+                    <li>
+                        <a class="btn nav-product-btn primary-button" href="add-new-product-step-1.html"><i
+                                class="mdi mdi-tag-outline"></i> Add a
+                            new Product</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <span class="item-numbers">10</span>
+                        <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-bell-ring-outline font-24"></i>
+                        </a>
+                        <div class="dropdown-menu accessories" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <!-- End Comment -->
+
+                    <!-- Messages -->
+                    <li class="nav-item dropdown">
+                        <span class="item-numbers">4</span>
+                        <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" id="2"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i
+                                class="font-24 mdi mdi-cart-outline"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right mailbox animated bounceInDown"
+                             aria-labelledby="2">
+                            <ul class="list-style-none">
+                                <li>
+                                    <div class="">
+                                        <!-- Message -->
+                                        <a href="javascript:void(0)" class="link border-top">
+                                            <div class="d-flex no-block align-items-center p-10">
+                                                <span class="btn btn-success btn-circle"><i
+                                                        class="ti-calendar"></i></span>
+                                                <div class="m-l-10">
+                                                    <h5 class="m-b-0">Item 1</h5>
+                                                    <span class="mail-desc">Demo content</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <!-- Message -->
+                                        <a href="javascript:void(0)" class="link border-top">
+                                            <div class="d-flex no-block align-items-center p-10">
+                                                <span class="btn btn-info btn-circle"><i class="ti-settings"></i></span>
+                                                <div class="m-l-10">
+                                                    <h5 class="m-b-0">Item 2</h5>
+                                                    <span class="mail-desc">Demo content</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <!-- Message -->
+                                        <a href="javascript:void(0)" class="link border-top">
+                                            <div class="d-flex no-block align-items-center p-10">
+                                                <span class="btn btn-primary btn-circle"><i class="ti-user"></i></span>
+                                                <div class="m-l-10">
+                                                    <h5 class="m-b-0">Item 3</h5>
+                                                    <span class="mail-desc">Demo content</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <!-- Message -->
+                                        <a href="javascript:void(0)" class="link border-top">
+                                            <div class="d-flex no-block align-items-center p-10">
+                                                <span class="btn btn-danger btn-circle"><i
+                                                        class="fa fa-link"></i></span>
+                                                <div class="m-l-10">
+                                                    <h5 class="m-b-0">Item 4</h5>
+                                                    <span class="mail-desc">Demo content</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- End Messages -->
+
+                    <!-- User profile and search -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href=""
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                                src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31"></a>
+                        <div class="dropdown-menu dropdown-menu-right user-dd animated">
+                            <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i> My
+                                Profile</a>
+                            <a class="dropdown-item" href="javascript:void(0)"><i class="ti-wallet m-r-5 m-l-5"></i> My
+                                Balance</a>
+                            <a class="dropdown-item" href="javascript:void(0)"><i class="ti-email m-r-5 m-l-5"></i>
+                                Inbox</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="javascript:void(0)"><i class="ti-settings m-r-5 m-l-5"></i>
+                                Account Setting</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="javascript:void(0)"><i
+                                    class="fa fa-power-off m-r-5 m-l-5"></i> Logout</a>
+                            <div class="dropdown-divider"></div>
+                            <div class="p-l-30 p-10"><a href="javascript:void(0)"
+                                                        class="btn btn-sm btn-success btn-rounded">View Profile</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- User profile and search -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- End Topbar header -->
+
+    <!-- Left Sidebar   -->
+    <aside class="left-sidebar" data-sidebarbg="skin5">
+        <!-- Sidebar scroll-->
+        <div class="scroll-sidebar">
+            <!-- Sidebar navigation-->
+            <nav class="sidebar-nav">
+                <ul id="sidebarnav">
+                    <li class="sidebar-item"><a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.html" aria-expanded="false"><i class="mdi mdi-home-outline"></i><span class="hide-menu">My Home</span></a> </li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="company-empty.html" aria-expanded="false"><i class="mdi mdi-store"></i><span class="hide-menu">Workspaces</span></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="product-list.html" aria-expanded="false"><i class="mdi mdi-tag"></i><span class="hide-menu">Products</span></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="file-library-files.html" aria-expanded="false"><i class="mdi mdi-image-multiple"></i><span class="hide-menu">File Library</span></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="easy-ink-on-boarding.html" aria-expanded="false"><i class="mdi mdi-invert-colors"></i><span class="hide-menu">Easy Ink</span></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="orders-list.html" aria-expanded="false"><i class="mdi mdi-shopping"></i><span class="hide-menu">Orders</span><small class="new-item float-item blink">New</small></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="statistics.html" aria-expanded="false"><i class="mdi mdi-chart-areaspline"></i><span class="hide-menu">Statistics</span></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="campaign-empty.html" aria-expanded="false"><i class="mdi mdi-trending-up"></i><span class="hide-menu">Campaign</span></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="monthly-subscription.html" aria-expanded="false"><i class="mdi mdi-sale"></i><span class="hide-menu">Subscription</span></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="payout-processed.html" aria-expanded="false"><i class="mdi mdi-cash-multiple"></i><span class="hide-menu">Payout</span></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-cash-usd"></i><span class="hide-menu">Billing</span><i class="mdi mdi-chevron-down open-sub-menu"></i></a>
+                        <ul aria-expanded="false" class="collapse  first-level">
+                            <li class="sidebar-item"><a href="billing.html" class="sidebar-link"><i class="mdi mdi-sale"></i><span class="hide-menu">Subscription History</span></a></li>
+                            <li class="sidebar-item"><a href="billing-copy.html" class="sidebar-link"><i class="mdi mdi-cart-outline"></i><span class="hide-menu">Sample Orders</span></a></li>
+                        </ul>
+                    </li>
+
+                    <!--<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="company-empty.html" aria-expanded="false"><i class="mdi mdi-border-inside"></i><span class="hide-menu">Companies</span></a></li>-->
+                    <!-- <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-package-variant-closed"></i><span class="hide-menu">Warehouse</span><i class="mdi mdi-chevron-down open-sub-menu"></i></a>
+                        <ul aria-expanded="false" class="collapse  first-level">
+                            <li class="sidebar-item"><a href="warehouse.html" class="sidebar-link"><i class="mdi mdi-hospital-building"></i><span class="hide-menu">Inventory</span></a></li>
+                            <li class="sidebar-item"><a href="warehouse-pricing.html" class="sidebar-link"><i class="mdi mdi-cards-playing-outline"></i><span class="hide-menu">Pricing</span></a></li>
+                            <li class="sidebar-item"><a href="warehouse-currency-settings.html" class="sidebar-link"><i class="mdi mdi-currency-btc"></i><span class="hide-menu">Currency</span></a></li>
+                            <li class="sidebar-item"><a href="warehouse-shipment.html" class="sidebar-link"><i class="mdi mdi-truck-delivery"></i><span class="hide-menu">Shipment</span></a></li>
+                        </ul>
+                    </li> -->
+                    <!--<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="file-library.html" aria-expanded="false"><i class="mdi mdi-library-books"></i><span class="hide-menu">File Library</span></a></li>-->
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="reports.html" aria-expanded="false"><i class="mdi mdi-file-chart"></i><span class="hide-menu">Reports</span></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-tune"></i><span class="hide-menu">Settings</span><i class="mdi mdi-chevron-down open-sub-menu"></i></a>
+                        <ul aria-expanded="false" class="collapse  first-level">
+                            <li class="sidebar-item"><a href="setting.html" class="sidebar-link"><i class="mdi mdi-account-settings-variant"></i><span class="hide-menu">Account Settings</span></a></li>
+                            <li class="sidebar-item"><a href="workspace-settings.html" class="sidebar-link"><i class="mdi mdi-store-24-hour"></i><span class="hide-menu">Workspace Settings</span></a></li>
+                            <li class="sidebar-item"><a href="store-settings.html" class="sidebar-link"><i class="mdi mdi-currency-btc"></i><span class="hide-menu">Store Settings</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="affiliate.html" aria-expanded="false"><i class="mdi mdi-home"></i><span class="hide-menu">Go to homepage</span></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="affiliate.html" aria-expanded="false"><i class="mdi mdi-account-multiple"></i><span class="hide-menu">Affiliate</span></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="affiliate.html" aria-expanded="false"><i class="mdi mdi-assistant"></i><span class="hide-menu">Support</span></a></li>
+                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="affiliate.html" aria-expanded="false"><i class="mdi mdi-network-question"></i><span class="hide-menu">FAQs</span></a></li>
+                </ul>
+            </nav>
+            <!-- End Sidebar navigation -->
+        </div>
+        <!-- End Sidebar scroll-->
+    </aside>
+    <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+
+    <!-- Page wrapper  -->
+    <div class="page-wrapper">
+        <!-- Container fluid  -->
+        <div class="container-fluid mt-5 pt-5">
+            <div class="row border-bottom">
+                <div class="col-md-12">
+                    <h1 id="procato">Product Catalogue</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 mt-2 p-0">
+                    <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                        <li class="nav-item createpro">
+                            <a class="nav-link active" id="trending-tab" data-toggle="tab" href="#trending"
+                               role="tab"
+                               aria-controls="trending" aria-selected="true" onclick="setdropdown('1');">Trending</a>
+                        </li>
+                        <li class="nav-item createpro dropdown">
+                            <a class="nav-link " id="accessories-tab" data-toggle="tab" href="#accessories"
+                               role="tab" aria-controls="accessories" aria-selected="false" onclick="setdropdown('2');">Accessories</a>
+                            <!--<div class="dropdown-menu menus myaccessories" aria-labelledby="accessories-tab">-->
+                                <!--<a class="dropdown-item" href="#">Action</a>-->
+                                <!--<a class="dropdown-item" href="#">Another action</a>-->
+                                <!--<a class="dropdown-item" href="#">Something else here</a>-->
+                            <!--</div>-->
+                        </li>
+                        <li class="nav-item createpro">
+                            <a class="nav-link" id="homeliving-tab" data-toggle="tab" href="#homeliving"
+                               role="tab" aria-controls="homeliving" aria-selected="false" onclick="setdropdown('3');">Home & Living</a>
+                        </li>
+                        <li class="nav-item createpro">
+                            <a class="nav-link" id="printproducts-tab" data-toggle="tab" href="#printproducts"
+                               role="tab" aria-controls="printproducts" aria-selected="false">Print Products</a>
+                        </li>
+                        <li class="nav-item createpro">
+                            <a class="nav-link" id="wallart-tab" data-toggle="tab" href="#wallart"
+                               role="tab" aria-controls="wallart" aria-selected="false">Wall Art</a>
+                        </li>
+                        <li class="nav-item createpro">
+                            <a class="nav-link" id="apparel-tab" data-toggle="tab" href="#apparel"
+                               role="tab" aria-controls="apparel" aria-selected="false">Apparel</a>
+                        </li>
+                        <li class="nav-item createpro">
+                            <a class="nav-link" id="kidsitem-tab" data-toggle="tab" href="#kidsitem"
+                               role="tab" aria-controls="kidsitem" aria-selected="false">Kids</a>
+                        </li>
+                        <li class="nav-item createpro">
+                            <a class="nav-link" id="petsitem-tab" data-toggle="tab" href="#petsitem"
+                               role="tab" aria-controls="petsitem" aria-selected="false">Pets</a>
+                        </li>
+                        <li class="nav-item createpro">
+                            <a class="nav-link" id="allitems-tab" data-toggle="tab" href="#allitems"
+                               role="tab" aria-controls="allitems" aria-selected="false">All</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="trending" role="tabpanel"
+                             aria-labelledby="trending-tab">
+                            <div class="form-row mt-4 justify-content-sm-end text-center">
+                                <div class="text-sm-right col-lg-3 col-md-4 col-sm-4 col-12">
+                                    <div class="upload-custom-design">
+                                        <label class="btn btn-outline-dark">
+                                            <i class="mdi mdi-cloud-upload"></i> Upload your design <input
+                                                type="file">
+                                        </label>
+                                        <!--<small>Learn how it works</small>-->
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                    <div class="input-group mr-2">
+                                        <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1"><i
+                                                        class="mdi mdi-magnify"></i></span>
+                                        </div>
+                                        <input type="search" class="form-control" placeholder="Search Order"
+                                               aria-label="Search">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                    <div class="add-product">
+                                        <div class="product-box">
+                                            <div class="prod-img">
+                                                <div class="dualcoloron-hover">
+                                                    <div class="hoverdata">
+                                                        <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                            <div class="lefthover">
+                                                                <p>Details</p>
+                                                            </div>
+                                                        </a>
+                                                        <a href="design-studio.html">
+                                                            <div class="righthover">
+                                                                <p>Pick This</p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <img class="img-fluid" src="./images/pro-1.png">
+                                            </div>
+                                            <div class="pro-details">
+                                                <p>Champion T- Shirt Flex</p>
+                                                <div class="pro-price">
+                                                    <p>Average Price $16.95 - $20.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                    <div class="add-product">
+                                        <div class="product-box">
+                                            <div class="prod-img">
+                                                <div class="dualcoloron-hover">
+                                                    <div class="hoverdata">
+                                                        <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                            <div class="lefthover">
+                                                                <p>Details</p>
+                                                            </div>
+                                                        </a>
+                                                        <a href="design-studio.html">
+                                                            <div class="righthover">
+                                                                <p>Pick This</p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <img class="img-fluid" src="./images/pro-2.png">
+                                            </div>
+                                            <div class="pro-details">
+                                                <p>Champion T- Shirt Flex</p>
+                                                <div class="pro-price">
+                                                    <p>Average Price $16.95 - $20.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                    <div class="add-product">
+                                        <div class="product-box">
+                                            <div class="prod-img">
+                                                <div class="dualcoloron-hover">
+                                                    <div class="hoverdata">
+                                                        <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                            <div class="lefthover">
+                                                                <p>Details</p>
+                                                            </div>
+                                                        </a>
+                                                        <a href="design-studio.html">
+                                                            <div class="righthover">
+                                                                <p>Pick This</p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <img class="img-fluid" src="./images/pro-3.png">
+                                            </div>
+                                            <div class="pro-details">
+                                                <p>Champion T- Shirt Flex</p>
+                                                <div class="pro-price">
+                                                    <p>Average Price $16.95 - $20.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                    <div class="add-product">
+                                        <div class="product-box">
+                                            <div class="prod-img">
+                                                <div class="dualcoloron-hover">
+                                                    <div class="hoverdata">
+                                                        <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                            <div class="lefthover">
+                                                                <p>Details</p>
+                                                            </div>
+                                                        </a>
+                                                        <a href="design-studio.html">
+                                                            <div class="righthover">
+                                                                <p>Pick This</p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <img class="img-fluid" src="./images/pro-4.png">
+                                            </div>
+                                            <div class="pro-details">
+                                                <p>Champion T- Shirt Flex</p>
+                                                <div class="pro-price">
+                                                    <p>Average Price $16.95 - $20.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                    <div class="add-product">
+                                        <div class="product-box">
+                                            <div class="prod-img">
+                                                <div class="dualcoloron-hover">
+                                                    <div class="hoverdata">
+                                                        <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                            <div class="lefthover">
+                                                                <p>Details</p>
+                                                            </div>
+                                                        </a>
+                                                        <a href="design-studio.html">
+                                                            <div class="righthover">
+                                                                <p>Pick This</p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <img class="img-fluid" src="./images/pro-1.png">
+                                            </div>
+                                            <div class="pro-details">
+                                                <p>Champion T- Shirt Flex</p>
+                                                <div class="pro-price">
+                                                    <p>Average Price $16.95 - $20.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                    <div class="add-product">
+                                        <div class="product-box">
+                                            <div class="prod-img">
+                                                <div class="dualcoloron-hover">
+                                                    <div class="hoverdata">
+                                                        <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                            <div class="lefthover">
+                                                                <p>Details</p>
+                                                            </div>
+                                                        </a>
+                                                        <a href="design-studio.html">
+                                                            <div class="righthover">
+                                                                <p>Pick This</p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <img class="img-fluid" src="./images/pro-1.png">
+                                            </div>
+                                            <div class="pro-details">
+                                                <p>Champion T- Shirt Flex</p>
+                                                <div class="pro-price">
+                                                    <p>Average Price $16.95 - $20.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                    <div class="add-product">
+                                        <div class="product-box">
+                                            <div class="prod-img">
+                                                <div class="dualcoloron-hover">
+                                                    <div class="hoverdata">
+                                                        <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                            <div class="lefthover">
+                                                                <p>Details</p>
+                                                            </div>
+                                                        </a>
+                                                        <a href="design-studio.html">
+                                                            <div class="righthover">
+                                                                <p>Pick This</p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <img class="img-fluid" src="./images/pro-1.png">
+                                            </div>
+                                            <div class="pro-details">
+                                                <p>Champion T- Shirt Flex</p>
+                                                <div class="pro-price">
+                                                    <p>Average Price $16.95 - $20.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                    <div class="add-product">
+                                        <div class="product-box">
+                                            <div class="prod-img">
+                                                <div class="dualcoloron-hover">
+                                                    <div class="hoverdata">
+                                                        <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                            <div class="lefthover">
+                                                                <p>Details</p>
+                                                            </div>
+                                                        </a>
+                                                        <a href="design-studio.html">
+                                                            <div class="righthover">
+                                                                <p>Pick This</p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <img class="img-fluid" src="./images/pro-1.png">
+                                            </div>
+                                            <div class="pro-details">
+                                                <p>Champion T- Shirt Flex</p>
+                                                <div class="pro-price">
+                                                    <p>Average Price $16.95 - $20.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="accessories" role="tabpanel"
+                             aria-labelledby="accessories-tab">
+                            <div class="drop-menu-test">
+                                <ul>
+                                    <li><a href="#procato">All</a></li>
+                                    <li><a href="#subcat1">Sub category 1</a></li>
+                                    <li><a href="#subcat2">Sub category 2</a></li>
+                                    <li><a href="#subcat3">Sub category 3</a></li>
+                                    <li><a href="#subcat4">Sub category 4</a></li>
+                                    <li><a href="#subcat5">Sub category 5</a></li>
+                                </ul>
+                            </div>
+                            <div class="container-fluid pt-5">
+                                <div class="product__header" id="subcat1"> <h4>Sub category 1</h4> </div>
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="add-product">
+                                            <div class="product-box">
+                                                <div class="prod-img">
+                                                    <div class="dualcoloron-hover">
+                                                        <div class="hoverdata">
+                                                            <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                                <div class="lefthover">
+                                                                    <p>Details</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="design-studio.html">
+                                                                <div class="righthover">
+                                                                    <p>Pick This</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-fluid" src="./images/pro-1.png">
+                                                </div>
+                                                <div class="pro-details">
+                                                    <p>Champion T- Shirt Flex</p>
+                                                    <div class="pro-price">
+                                                        <p>Average Price $16.95 - $20.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="add-product">
+                                            <div class="product-box">
+                                                <div class="prod-img">
+                                                    <div class="dualcoloron-hover">
+                                                        <div class="hoverdata">
+                                                            <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                                <div class="lefthover">
+                                                                    <p>Details</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="design-studio.html">
+                                                                <div class="righthover">
+                                                                    <p>Pick This</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-fluid" src="./images/pro-2.png">
+                                                </div>
+                                                <div class="pro-details">
+                                                    <p>Champion T- Shirt Flex</p>
+                                                    <div class="pro-price">
+                                                        <p>Average Price $16.95 - $20.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__header pt-5" id="subcat2"> <h4>Sub category 2</h4> </div>
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="add-product">
+                                            <div class="product-box">
+                                                <div class="prod-img">
+                                                    <div class="dualcoloron-hover">
+                                                        <div class="hoverdata">
+                                                            <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                                <div class="lefthover">
+                                                                    <p>Details</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="design-studio.html">
+                                                                <div class="righthover">
+                                                                    <p>Pick This</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-fluid" src="./images/pro-1.png">
+                                                </div>
+                                                <div class="pro-details">
+                                                    <p>Champion T- Shirt Flex</p>
+                                                    <div class="pro-price">
+                                                        <p>Average Price $16.95 - $20.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="add-product">
+                                            <div class="product-box">
+                                                <div class="prod-img">
+                                                    <div class="dualcoloron-hover">
+                                                        <div class="hoverdata">
+                                                            <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                                <div class="lefthover">
+                                                                    <p>Details</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="design-studio.html">
+                                                                <div class="righthover">
+                                                                    <p>Pick This</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-fluid" src="./images/pro-2.png">
+                                                </div>
+                                                <div class="pro-details">
+                                                    <p>Champion T- Shirt Flex</p>
+                                                    <div class="pro-price">
+                                                        <p>Average Price $16.95 - $20.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="add-product">
+                                            <div class="product-box">
+                                                <div class="prod-img">
+                                                    <div class="dualcoloron-hover">
+                                                        <div class="hoverdata">
+                                                            <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                                <div class="lefthover">
+                                                                    <p>Details</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="design-studio.html">
+                                                                <div class="righthover">
+                                                                    <p>Pick This</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-fluid" src="./images/pro-3.png">
+                                                </div>
+                                                <div class="pro-details">
+                                                    <p>Champion T- Shirt Flex</p>
+                                                    <div class="pro-price">
+                                                        <p>Average Price $16.95 - $20.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="add-product">
+                                            <div class="product-box">
+                                                <div class="prod-img">
+                                                    <div class="dualcoloron-hover">
+                                                        <div class="hoverdata">
+                                                            <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                                <div class="lefthover">
+                                                                    <p>Details</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="design-studio.html">
+                                                                <div class="righthover">
+                                                                    <p>Pick This</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-fluid" src="./images/pro-4.png">
+                                                </div>
+                                                <div class="pro-details">
+                                                    <p>Champion T- Shirt Flex</p>
+                                                    <div class="pro-price">
+                                                        <p>Average Price $16.95 - $20.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product__header pt-5" id="subcat3"> <h4>Sub category 3</h4> </div>
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="add-product">
+                                            <div class="product-box">
+                                                <div class="prod-img">
+                                                    <div class="dualcoloron-hover">
+                                                        <div class="hoverdata">
+                                                            <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                                <div class="lefthover">
+                                                                    <p>Details</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="design-studio.html">
+                                                                <div class="righthover">
+                                                                    <p>Pick This</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-fluid" src="./images/pro-1.png">
+                                                </div>
+                                                <div class="pro-details">
+                                                    <p>Champion T- Shirt Flex</p>
+                                                    <div class="pro-price">
+                                                        <p>Average Price $16.95 - $20.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="add-product">
+                                            <div class="product-box">
+                                                <div class="prod-img">
+                                                    <div class="dualcoloron-hover">
+                                                        <div class="hoverdata">
+                                                            <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                                <div class="lefthover">
+                                                                    <p>Details</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="design-studio.html">
+                                                                <div class="righthover">
+                                                                    <p>Pick This</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-fluid" src="./images/pro-2.png">
+                                                </div>
+                                                <div class="pro-details">
+                                                    <p>Champion T- Shirt Flex</p>
+                                                    <div class="pro-price">
+                                                        <p>Average Price $16.95 - $20.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="add-product">
+                                            <div class="product-box">
+                                                <div class="prod-img">
+                                                    <div class="dualcoloron-hover">
+                                                        <div class="hoverdata">
+                                                            <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                                <div class="lefthover">
+                                                                    <p>Details</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="design-studio.html">
+                                                                <div class="righthover">
+                                                                    <p>Pick This</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-fluid" src="./images/pro-3.png">
+                                                </div>
+                                                <div class="pro-details">
+                                                    <p>Champion T- Shirt Flex</p>
+                                                    <div class="pro-price">
+                                                        <p>Average Price $16.95 - $20.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="add-product">
+                                            <div class="product-box">
+                                                <div class="prod-img">
+                                                    <div class="dualcoloron-hover">
+                                                        <div class="hoverdata">
+                                                            <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                                <div class="lefthover">
+                                                                    <p>Details</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="design-studio.html">
+                                                                <div class="righthover">
+                                                                    <p>Pick This</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-fluid" src="./images/pro-4.png">
+                                                </div>
+                                                <div class="pro-details">
+                                                    <p>Champion T- Shirt Flex</p>
+                                                    <div class="pro-price">
+                                                        <p>Average Price $16.95 - $20.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="add-product">
+                                            <div class="product-box">
+                                                <div class="prod-img">
+                                                    <div class="dualcoloron-hover">
+                                                        <div class="hoverdata">
+                                                            <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                                <div class="lefthover">
+                                                                    <p>Details</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="design-studio.html">
+                                                                <div class="righthover">
+                                                                    <p>Pick This</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-fluid" src="./images/pro-1.png">
+                                                </div>
+                                                <div class="pro-details">
+                                                    <p>Champion T- Shirt Flex</p>
+                                                    <div class="pro-price">
+                                                        <p>Average Price $16.95 - $20.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="add-product">
+                                            <div class="product-box">
+                                                <div class="prod-img">
+                                                    <div class="dualcoloron-hover">
+                                                        <div class="hoverdata">
+                                                            <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                                <div class="lefthover">
+                                                                    <p>Details</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="design-studio.html">
+                                                                <div class="righthover">
+                                                                    <p>Pick This</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-fluid" src="./images/pro-2.png">
+                                                </div>
+                                                <div class="pro-details">
+                                                    <p>Champion T- Shirt Flex</p>
+                                                    <div class="pro-price">
+                                                        <p>Average Price $16.95 - $20.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product__header pt-5" id="subcat4"> <h4>Sub category 4</h4> </div>
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="add-product">
+                                            <div class="product-box">
+                                                <div class="prod-img">
+                                                    <div class="dualcoloron-hover">
+                                                        <div class="hoverdata">
+                                                            <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                                <div class="lefthover">
+                                                                    <p>Details</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="design-studio.html">
+                                                                <div class="righthover">
+                                                                    <p>Pick This</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-fluid" src="./images/pro-1.png">
+                                                </div>
+                                                <div class="pro-details">
+                                                    <p>Champion T- Shirt Flex</p>
+                                                    <div class="pro-price">
+                                                        <p>Average Price $16.95 - $20.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="add-product">
+                                            <div class="product-box">
+                                                <div class="prod-img">
+                                                    <div class="dualcoloron-hover">
+                                                        <div class="hoverdata">
+                                                            <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                                <div class="lefthover">
+                                                                    <p>Details</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="design-studio.html">
+                                                                <div class="righthover">
+                                                                    <p>Pick This</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-fluid" src="./images/pro-2.png">
+                                                </div>
+                                                <div class="pro-details">
+                                                    <p>Champion T- Shirt Flex</p>
+                                                    <div class="pro-price">
+                                                        <p>Average Price $16.95 - $20.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="add-product">
+                                            <div class="product-box">
+                                                    <div class="prod-img">
+                                                    <div class="dualcoloron-hover">
+                                                        <div class="hoverdata">
+                                                            <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                                <div class="lefthover">
+                                                                    <p>Details</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="design-studio.html">
+                                                                <div class="righthover">
+                                                                    <p>Pick This</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-fluid" src="./images/pro-3.png">
+                                                </div>
+                                                <div class="pro-details">
+                                                    <p>Champion T- Shirt Flex</p>
+                                                    <div class="pro-price">
+                                                        <p>Average Price $16.95 - $20.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="add-product">
+                                            <div class="product-box">
+                                                <div class="prod-img">
+                                                    <div class="dualcoloron-hover">
+                                                        <div class="hoverdata">
+                                                            <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                                <div class="lefthover">
+                                                                    <p>Details</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="design-studio.html">
+                                                                <div class="righthover">
+                                                                    <p>Pick This</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-fluid" src="./images/pro-4.png">
+                                                </div>
+                                                <div class="pro-details">
+                                                    <p>Champion T- Shirt Flex</p>
+                                                    <div class="pro-price">
+                                                        <p>Average Price $16.95 - $20.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="add-product">
+                                            <div class="product-box">
+                                                <div class="prod-img">
+                                                    <div class="dualcoloron-hover">
+                                                        <div class="hoverdata">
+                                                            <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                                <div class="lefthover">
+                                                                    <p>Details</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="design-studio.html">
+                                                                <div class="righthover">
+                                                                    <p>Pick This</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-fluid" src="./images/pro-1.png">
+                                                </div>
+                                                <div class="pro-details">
+                                                    <p>Champion T- Shirt Flex</p>
+                                                    <div class="pro-price">
+                                                        <p>Average Price $16.95 - $20.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="add-product">
+                                            <div class="product-box">
+                                                <div class="prod-img">
+                                                    <div class="dualcoloron-hover">
+                                                        <div class="hoverdata">
+                                                            <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                                <div class="lefthover">
+                                                                    <p>Details</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="design-studio.html">
+                                                                <div class="righthover">
+                                                                    <p>Pick This</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-fluid" src="./images/pro-2.png">
+                                                </div>
+                                                <div class="pro-details">
+                                                    <p>Champion T- Shirt Flex</p>
+                                                    <div class="pro-price">
+                                                        <p>Average Price $16.95 - $20.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="add-product">
+                                            <div class="product-box">
+                                                <div class="prod-img">
+                                                    <div class="dualcoloron-hover">
+                                                        <div class="hoverdata">
+                                                            <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                                <div class="lefthover">
+                                                                    <p>Details</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="design-studio.html">
+                                                                <div class="righthover">
+                                                                    <p>Pick This</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-fluid" src="./images/pro-1.png">
+                                                </div>
+                                                <div class="pro-details">
+                                                    <p>Champion T- Shirt Flex</p>
+                                                    <div class="pro-price">
+                                                        <p>Average Price $16.95 - $20.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="add-product">
+                                            <div class="product-box">
+                                                <div class="prod-img">
+                                                    <div class="dualcoloron-hover">
+                                                        <div class="hoverdata">
+                                                            <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                                <div class="lefthover">
+                                                                    <p>Details</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="design-studio.html">
+                                                                <div class="righthover">
+                                                                    <p>Pick This</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-fluid" src="./images/pro-2.png">
+                                                </div>
+                                                <div class="pro-details">
+                                                    <p>Champion T- Shirt Flex</p>
+                                                    <div class="pro-price">
+                                                        <p>Average Price $16.95 - $20.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product__header pt-5" id="subcat5"> <h4>Sub category 5</h4> </div>
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="add-product">
+                                            <div class="product-box">
+                                                <div class="prod-img">
+                                                    <div class="dualcoloron-hover">
+                                                        <div class="hoverdata">
+                                                            <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                                <div class="lefthover">
+                                                                    <p>Details</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="design-studio.html">
+                                                                <div class="righthover">
+                                                                    <p>Pick This</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-fluid" src="./images/pro-1.png">
+                                                </div>
+                                                <div class="pro-details">
+                                                    <p>Champion T- Shirt Flex</p>
+                                                    <div class="pro-price">
+                                                        <p>Average Price $16.95 - $20.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="add-product">
+                                            <div class="product-box">
+                                                <div class="prod-img">
+                                                    <div class="dualcoloron-hover">
+                                                        <div class="hoverdata">
+                                                            <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                                <div class="lefthover">
+                                                                    <p>Details</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="design-studio.html">
+                                                                <div class="righthover">
+                                                                    <p>Pick This</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-fluid" src="./images/pro-2.png">
+                                                </div>
+                                                <div class="pro-details">
+                                                    <p>Champion T- Shirt Flex</p>
+                                                    <div class="pro-price">
+                                                        <p>Average Price $16.95 - $20.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="add-product">
+                                            <div class="product-box">
+                                                <div class="prod-img">
+                                                    <div class="dualcoloron-hover">
+                                                        <div class="hoverdata">
+                                                            <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                                <div class="lefthover">
+                                                                    <p>Details</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="design-studio.html">
+                                                                <div class="righthover">
+                                                                    <p>Pick This</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-fluid" src="./images/pro-3.png">
+                                                </div>
+                                                <div class="pro-details">
+                                                    <p>Champion T- Shirt Flex</p>
+                                                    <div class="pro-price">
+                                                        <p>Average Price $16.95 - $20.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="add-product">
+                                            <div class="product-box">
+                                                <div class="prod-img">
+                                                    <div class="dualcoloron-hover">
+                                                        <div class="hoverdata">
+                                                            <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                                <div class="lefthover">
+                                                                    <p>Details</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="design-studio.html">
+                                                                <div class="righthover">
+                                                                    <p>Pick This</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-fluid" src="./images/pro-4.png">
+                                                </div>
+                                                <div class="pro-details">
+                                                    <p>Champion T- Shirt Flex</p>
+                                                    <div class="pro-price">
+                                                        <p>Average Price $16.95 - $20.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="add-product">
+                                            <div class="product-box">
+                                                <div class="prod-img">
+                                                    <div class="dualcoloron-hover">
+                                                        <div class="hoverdata">
+                                                            <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                                <div class="lefthover">
+                                                                    <p>Details</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="design-studio.html">
+                                                                <div class="righthover">
+                                                                    <p>Pick This</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-fluid" src="./images/pro-1.png">
+                                                </div>
+                                                <div class="pro-details">
+                                                    <p>Champion T- Shirt Flex</p>
+                                                    <div class="pro-price">
+                                                        <p>Average Price $16.95 - $20.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="add-product">
+                                            <div class="product-box">
+                                                <div class="prod-img">
+                                                    <div class="dualcoloron-hover">
+                                                        <div class="hoverdata">
+                                                            <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                                <div class="lefthover">
+                                                                    <p>Details</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="design-studio.html">
+                                                                <div class="righthover">
+                                                                    <p>Pick This</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-fluid" src="./images/pro-2.png">
+                                                </div>
+                                                <div class="pro-details">
+                                                    <p>Champion T- Shirt Flex</p>
+                                                    <div class="pro-price">
+                                                        <p>Average Price $16.95 - $20.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="add-product">
+                                            <div class="product-box">
+                                                <div class="prod-img">
+                                                    <div class="dualcoloron-hover">
+                                                        <div class="hoverdata">
+                                                            <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                                <div class="lefthover">
+                                                                    <p>Details</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="design-studio.html">
+                                                                <div class="righthover">
+                                                                    <p>Pick This</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-fluid" src="./images/pro-1.png">
+                                                </div>
+                                                <div class="pro-details">
+                                                    <p>Champion T- Shirt Flex</p>
+                                                    <div class="pro-price">
+                                                        <p>Average Price $16.95 - $20.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="add-product">
+                                            <div class="product-box">
+                                                <div class="prod-img">
+                                                    <div class="dualcoloron-hover">
+                                                        <div class="hoverdata">
+                                                            <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                                <div class="lefthover">
+                                                                    <p>Details</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="design-studio.html">
+                                                                <div class="righthover">
+                                                                    <p>Pick This</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-fluid" src="./images/pro-2.png">
+                                                </div>
+                                                <div class="pro-details">
+                                                    <p>Champion T- Shirt Flex</p>
+                                                    <div class="pro-price">
+                                                        <p>Average Price $16.95 - $20.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="add-product">
+                                            <div class="product-box">
+                                                <div class="prod-img">
+                                                    <div class="dualcoloron-hover">
+                                                        <div class="hoverdata">
+                                                            <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                                <div class="lefthover">
+                                                                    <p>Details</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="design-studio.html">
+                                                                <div class="righthover">
+                                                                    <p>Pick This</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-fluid" src="./images/pro-1.png">
+                                                </div>
+                                                <div class="pro-details">
+                                                    <p>Champion T- Shirt Flex</p>
+                                                    <div class="pro-price">
+                                                        <p>Average Price $16.95 - $20.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="add-product">
+                                            <div class="product-box">
+                                                <div class="prod-img">
+                                                    <div class="dualcoloron-hover">
+                                                        <div class="hoverdata">
+                                                            <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                                <div class="lefthover">
+                                                                    <p>Details</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="design-studio.html">
+                                                                <div class="righthover">
+                                                                    <p>Pick This</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-fluid" src="./images/pro-2.png">
+                                                </div>
+                                                <div class="pro-details">
+                                                    <p>Champion T- Shirt Flex</p>
+                                                    <div class="pro-price">
+                                                        <p>Average Price $16.95 - $20.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="add-product">
+                                            <div class="product-box">
+                                                <div class="prod-img">
+                                                    <div class="dualcoloron-hover">
+                                                        <div class="hoverdata">
+                                                            <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                                <div class="lefthover">
+                                                                    <p>Details</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="design-studio.html">
+                                                                <div class="righthover">
+                                                                    <p>Pick This</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-fluid" src="./images/pro-1.png">
+                                                </div>
+                                                <div class="pro-details">
+                                                    <p>Champion T- Shirt Flex</p>
+                                                    <div class="pro-price">
+                                                        <p>Average Price $16.95 - $20.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                        <div class="add-product">
+                                            <div class="product-box">
+                                                <div class="prod-img">
+                                                    <div class="dualcoloron-hover">
+                                                        <div class="hoverdata">
+                                                            <a href="#" data-toggle="modal" data-target="#howitworks">
+                                                                <div class="lefthover">
+                                                                    <p>Details</p>
+                                                                </div>
+                                                            </a>
+                                                            <a href="design-studio.html">
+                                                                <div class="righthover">
+                                                                    <p>Pick This</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <img class="img-fluid" src="./images/pro-2.png">
+                                                </div>
+                                                <div class="pro-details">
+                                                    <p>Champion T- Shirt Flex</p>
+                                                    <div class="pro-price">
+                                                        <p>Average Price $16.95 - $20.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="homeliving" role="tabpanel"
+                             aria-labelledby="homeliving-tab">
+                            <div class="row">
+                                <div class="">fsdfgsdfgd</div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="printproducts" role="tabpanel"
+                             aria-labelledby="printproducts-tab">
+                            44444444
+                        </div>
+
+                        <div class="tab-pane fade" id="wallart" role="tabpanel"
+                             aria-labelledby="wallart-tab">
+                            5555555
+                        </div>
+
+                        <div class="tab-pane fade" id="apparel" role="tabpanel"
+                             aria-labelledby="apparel-tab">
+                            6462312655
+                        </div>
+
+                        <div class="tab-pane fade" id="kidsitem" role="tabpanel"
+                             aria-labelledby="kidsitem-tab">
+                            7777777777
+                        </div>
+
+                        <div class="tab-pane fade" id="petsitem" role="tabpanel"
+                             aria-labelledby="petsitem-tab">
+                            8888888
+                        </div>
+
+                        <div class="tab-pane fade" id="allitems" role="tabpanel"
+                             aria-labelledby="allitems-tab">
+                            9999999
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Product detail -->
+            <div class="modal fade" id="howitworks" tabindex="-1" role="dialog" aria-labelledby="howitworks" aria-hidden="true">
+                <div class="modal-dialog newcampaign-modal" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title text-center" id="exampleModalLongTitle">Champion T- Shirt Flex</h2>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="dropdown-divider m-0"></div>
+
+                        <div class="modal-body">
+                            <div class="single-product-info-modal">
+                                <p>Average price - $16.95 to $25.00</p>
+                                <div>6 review</div>
+                            </div>
+                            <div class="other-details">
+                                <p>Shipping Price</p>
+                                <hr>
+                                <span>Cheapest standard: $1.71</span>
+                            </div>
+                            <div class="other-details">
+                                <p>Colors</p>
+                                <hr>
+                                <div class="component-colors-preview">
+                                    <div class="color-item flex-inline-container"
+                                         style="background-color: rgb(94, 85, 65);"></div>
+                                    <div class="color-item flex-inline-container"
+                                         style="background-color: rgb(197, 197, 198);"></div>
+                                    <div class="color-item flex-inline-container"
+                                         style="background-color: rgb(89, 89, 89);"></div>
+                                    <div class="color-item flex-inline-container"
+                                         style="background-color: rgb(159, 174, 190);"></div>
+                                    <div class="color-item flex-inline-container"
+                                         style="background-color: rgb(47, 47, 48);"></div>
+                                    <div class="color-item flex-inline-container"
+                                         style="background-color: rgb(113, 95, 85);"></div>
+                                    <div class="color-item flex-inline-container"
+                                         style="background-color: rgb(162, 160, 161);"></div>
+                                    <div class="color-item flex-inline-container"
+                                         style="background-color: rgb(195, 153, 83);"></div>
+                                    <div class="color-item flex-inline-container"
+                                         style="background-color: rgb(87, 111, 161);"></div>
+                                    <div class="color-item flex-inline-container"
+                                         style="background-color: rgb(104, 123, 94);"></div>
+                                    <div class="color-item flex-inline-container"
+                                         style="background-color: rgb(65, 167, 148);"></div>
+                                    <div class="color-item flex-inline-container"
+                                         style="background-color: rgb(62, 72, 94);"></div>
+                                    <div class="color-item flex-inline-container"
+                                         style="background-color: rgb(202, 116, 76);"></div>
+                                    <div class="color-item flex-inline-container"
+                                         style="background-color: rgb(137, 126, 119);"></div>
+                                    <div class="color-item flex-inline-container"
+                                         style="background-color: rgb(212, 178, 183);"></div>
+                                    <div class="color-item flex-inline-container"
+                                         style="background-color: rgb(194, 56, 75);"></div>
+                                    <div class="color-item flex-inline-container"
+                                         style="background-color: rgb(183, 182, 179);"></div>
+                                    <div class="color-item flex-inline-container"
+                                         style="background-color: rgb(96, 55, 133);"></div>
+                                    <div class="color-item flex-inline-container"
+                                         style="background-color: rgb(118, 189, 203);"></div>
+                                    <div class="color-item flex-inline-container"
+                                         style="background-color: rgb(255, 255, 255);"></div>
+                                    <div class="color-item flex-inline-container"
+                                         style="background-color: rgb(213, 201, 137);"></div>
+                                </div>
+                            </div>
+                            <div class="other-details clearfix">
+                                <p>Gender</p>
+                                <hr>
+                                <span>Unisex</span>
+                            </div>
+                            <div class="other-details">
+                                <p>Brand</p>
+                                <hr>
+                                <span>Champion</span>
+                            </div>
+                            <div class="other-details">
+                                <p>Model</p>
+                                <hr>
+                                <span>Men’s Short Sleeve Tee</span>
+                            </div>
+                            <div class="other-details">
+                                <p>Size</p>
+                                <hr>
+                                <ul>
+                                    <li>Extra Small (XS)</li>
+                                    <li>Small (S)</li>
+                                    <li>Large (L)</li>
+                                    <li>Extra Large (XL)</li>
+                                    <li>XXL (2XL)</li>
+                                </ul>
+                            </div>
+                            <div class="other-details">
+                                <p>Print Placement</p>
+                                <hr>
+                                <ul>
+                                    <li>Center Back</li>
+                                    <li>Center Front</li>
+                                    <li>Center Front and Center Back</li>
+                                </ul>
+                            </div>
+                            <div class="other-details">
+                                <p>Materials</p>
+                                <hr>
+                                <span>Solid Colors - 100% Airlume combed and ring-spun cotton, 32 single 4.2 oz. (Ash - 99% Airlume combed and ring-spun cotton, 1% poly)
+Heather CVC/Blend Colors - 52% Airlume combed and ring-spun cotton, 48% poly</span>
+                            </div>
+
+                            <div class="other-details">
+                                <p>Care</p>
+                                <hr>
+                                <span>Safe to machine wash and tumble dry on low.</span>
+                            </div>
+
+                            <div class="other-details">
+                                <p>Packaging</p>
+                                <hr>
+                                <span>Packaged in a poly mailer.</span>
+                            </div>
+
+                            <div class="other-details">
+                                <p>Available Shipping Methods</p>
+                                <hr>
+                                <ul>
+                                    <li>Standard</li>
+                                    <li>Expedited</li>
+                                    <li>Overnight</li>
+                                </ul>
+                            </div>
+
+                            <div class="other-details">
+                                <p>Production time</p>
+                                <hr>
+                                <span>4 business days - Army (XS, S, M, L, XL, 2XL), Black (XS, S, M, L, XL, 2XL), Brown (XS, S, M, L, XL, 2XL), Gold (S, M, L, XL, 2XL), Heather True Royal (S, M, L, XL, 2XL), Kelly Green (XS, S, M, L, XL, 2XL, 3XL, 4XL), Navy (XS, S, M, L, XL, 2XL), Pebble Brown (XS, S, M, L, XL, 2XL), Pink (S, M, L, XL, 2XL), Red (S, M, L, XL, 2XL), Silver (S, M, L, XL, 2XL), Team Purple (XS, S, M, L, XL, 2XL), White (XS, S, M, L, XL, 2XL), Yellow (XS, S, M, L, XL, 2XL)</span>
+                                <span>7 business days - Ash (XS, S, M, L, XL, 2XL), Asphalt (XS, S, M, L, XL, 2XL), Baby Blue (XS, S, M, L, XL, 2XL), Deep Heather (XS, S, M, L, XL, 2XL), Heather True Royal (XS), Leaf (XS, S, M, L, XL, 2XL), Orange (XS, S, M, L, XL, 2XL), Pink (XS), Red (XS), Silver (XS), Turquoise (XS, S, M, L, XL, 2XL)</span>
+                            </div>
+
+                            <div class="other-details">
+                                <p>Features</p>
+                                <hr>
+                                <span>Sideseamed. Slim fit. Shoulder taping. Longer body length.</span>
+                            </div>
+
+                            <div class="other-details">
+                                <p>Print Technique</p>
+                                <hr>
+                                <span>Direct to garment with white Underbase, white has no Underbase</span>
+                            </div>
+
+                            <div class="other-details">
+                                <p>Fit</p>
+                                <hr>
+                                <span>Junior Cut - tends to be narrower and shorter and designed to be more snug-fitting. A junior size is cut to fit a body with fewer curves, smaller bust and less size difference between waist and hips.</span>
+                            </div>
+
+                            <div class="other-details">
+                                <p>Product Note</p>
+                                <hr>
+                                <span>This product is transitioning from woven labels to tear-away labels. Orders may contain a combination of both labels</span>
+                            </div>
+
+                            <div class="other-details">
+                                <p>Production Tolerance</p>
+                                <hr>
+                                <span>Please allow variances in the size of this tshirt of +/- 1" in width and/or length.</span>
+                            </div>
+
+                            <div class="other-details">
+                                <p>Shipping Methods</p>
+                                <hr>
+                                <span>Standard shipping - no tracking available</span>
+                                <span>Expedited shipping - tracking available</span>
+                            </div>
+                            <div class="other-details text-center">
+                                <button class="btn secendary-button">PICK THIS</button>
+                            </div>
+                        </div>
+                    </div><!-- modal-content -->
+                </div><!-- modal-dialog -->
+            </div><!-- modal -->
+        </div>
+        <!--End Container fluid-->
+    </div>
+    <!-- End Wrapper -->
+</div>
+<!-- End Wrapper -->
+
+<!-- All Jquery -->
+<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap tether Core JavaScript -->
+<script src="assets/libs/popper.js/dist/umd/popper.min.js"></script>
+<script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+<script src="assets/extra-libs/sparkline/sparkline.js"></script>
+<!--Wave Effects -->
+<script src="dist/js/waves.js"></script>
+<!--Menu sidebar -->
+<script src="dist/js/sidebarmenu.js"></script>
+<!--Custom JavaScript -->
+<script src="dist/js/custom.min.js"></script>
+<!--This page JavaScript -->
+<!-- <script src="dist/js/pages/dashboards/dashboard1.js"></script> -->
+
+
+<script>
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll > 100) {
+            $(".drop-menu-test").addClass("product-drop-menu");
+        }else if (scroll <= 100) {
+            $(".drop-menu-test").removeClass("product-drop-menu");
+        }
+    });
+</script>
+
+</body>
+
+</html>
