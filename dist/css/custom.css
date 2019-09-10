@@ -485,16 +485,21 @@ p {
     width: 20px;
     height: 20px;
     text-align: center;
-    top: 10px;
-    left: 25px;
+    top: 0;
+    left: auto;
     z-index: 2;
     border-radius: 100%;
     font-size: 0.800em;
-    /* display: flex; */
+    display: flex;
     vertical-align: middle;
     align-items: center;
     align-content: center;
-    padding: 3px 0 0 0;
+    padding: 0;
+    right: auto;
+    margin: 10px 0 0 10px;
+}
+.item-numbers i{
+    margin: 0 auto;
 }
 
 .dashbord-left-area {
@@ -2247,10 +2252,19 @@ p {
 
 .workspace-connect {
     background: #f8f9fa;
+    color: #696969;
     padding: 10px 0;
     border-radius: 0 0 5px 5px;
-    color: #696969;
     border: 1px solid #e9ecef;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+}
+.workspace-connected{
+    background: #4acb66;
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid #4acb66;
     font-weight: 600;
     transition: all .3s ease-in-out;
 }
@@ -7351,8 +7365,12 @@ svg {
     color: #0094FF;
 }
 /*products catalogue v2 START*/
-
-
+.mobile-header{
+    display: none;
+}
+.mobile-version{
+    display: none;
+}
 
 
 
@@ -7433,13 +7451,18 @@ svg {
     .pricingtable td:first-child{width: 35%;}
     .v-line{right: 18px;}
     .mc-perunit{right: 15px;}
+    .mobilebar-hide{display: none !important;}
+    .mobile-header{display: block;}
+    ul.list-style-none li a{line-height: 27px;}
+    .dropdown-item{line-height: 27px;}
+    .topbar .top-navbar .dropdown-menu{margin: 0;}
 }
 
 @media only screen and (max-width: 766px){
+    .logo-text{display: none;}
     .sidebar-nav{margin-top: 10px;}
     #main-wrapper .topbar .top-navbar .navbar-header[data-logobg=skin5]{box-shadow: 4px 0 16px -5px rgba(72,89,102,0.1);}
     .topbar .nav-toggler, .topbar .topbartoggler{color: #111111;}
-    .item-numbers{top: auto; right: auto; left: auto; margin: 10px 0 0 20px;}
     .card-box{margin: 10px 0;}
     .samplefiles{padding: 0 2% 0 0;}
     .nav-tabs .warehousepricing-nav a{padding: 8px 5px;}
@@ -7454,6 +7477,10 @@ svg {
     .connect-stores-form{width: 80%;}
     .login-left-side{height: 80vh;}
     .login-icons .mdi-tshirt-crew:before, .mdi-arrange-send-to-back:before, .mdi-view-dashboard:before, .mdi-credit-card:before{font-size: 40px;}
+    .topbar .top-navbar .navbar-header .navbar-brand{padding: 0;margin: 0;position: relative;left: 6%;}
+    .mobile-version{display: block;text-align: center; margin: 15px auto;}
+    .mobile-version a{color: #FFFFFF !important;background: #2c44ff;margin: 5px 15px;text-align: center; padding:8px 32px; border-radius: 5px;}
+    .mobile-version a i{color: #FFFFFF !important;font-size: 16px !important;}
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -7513,6 +7540,7 @@ svg {
     .nc-option-box{min-width: 142px;}
     .nc-edit-pencil-shorttext{left: 92%;}
     .back-icon a{font-size: 13px; font-weight: 700;}
+    .topbar .top-navbar .navbar-header .navbar-brand{left: 8%;}
 }
 
 /* Extra small devices (phones, 360px and down) */
@@ -7521,6 +7549,7 @@ svg {
     .nc-option-box{min-width: 120px;}
     .subs-plan-box {padding: 0 5%;}
     .cart-pick-pro{width: 80px;height: 80px;}
+    .topbar .top-navbar .navbar-header .navbar-brand{left: 10%;}
 }
 
 /* Extra small devices (phones, 320px and down) */

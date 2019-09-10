@@ -62,7 +62,7 @@
                     <span class="logo-text">
                              <!-- dark Logo text -->
                              Dashboard
-                        </span>
+                    </span>
                     <!-- Logo icon -->
                     <!--End Logo icon -->
                 </a>
@@ -71,8 +71,103 @@
                 <!-- ============================================================== -->
                 <!-- ============================================================== -->
                 <!-- Toggle which is visible on mobile only -->
+                <div class="mobile-header">
+                    <ul class="navbar-nav float-right">
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-bell-ring-outline font-24"></i>
+                                <span class="item-numbers"><i>10</i></span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- End Comment -->
+                        <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- Messages -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" id="2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="font-24 mdi mdi-cart-outline"></i>
+                                <span class="item-numbers"><i>4</i></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right mailbox " aria-labelledby="2">
+                                <ul class="list-style-none">
+                                    <li>
+                                        <div class="">
+                                            <!-- Message -->
+                                            <a href="my-cart.html" class="link border-top">
+                                                <div class="d-flex no-block align-items-center p-10">
+                                                    <span class="cart-pro-img"><img src="./images/demo-product-1.png" alt="product"></span>
+                                                    <div class="m-l-10 cart-pro-info">
+                                                        <h5 class="m-b-0">Captain America sleeveless t-shirt </h5>
+                                                        <span class="mail-desc">PMGOA</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="my-cart.html" class="link border-top">
+                                                <div class="d-flex no-block align-items-center p-10">
+                                                    <span class="cart-pro-img"><img src="./images/demo-product-2.png" alt="product"></span>
+                                                    <div class="m-l-10 cart-pro-info">
+                                                        <h5 class="m-b-0">Marvel Full Sleeve T-shirt</h5>
+                                                        <span class="mail-desc">Akil's Tees Store</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="my-cart.html" class="link border-top">
+                                                <div class="d-flex no-block align-items-center p-10">
+                                                    <span class="cart-pro-img"><img src="./images/demo-product-3.png" alt="product"></span>
+                                                    <div class="m-l-10 cart-pro-info">
+                                                        <h5 class="m-b-0">3000 Iron-Man T-shirt</h5>
+                                                        <span class="mail-desc">Demo content</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="my-cart.html" class="link border-top">
+                                                <div class="d-flex no-block align-items-center p-10">
+                                                    <span class="cart-pro-img"><img src="./images/demo-product-4.png" alt="product"></span>
+                                                    <div class="m-l-10 cart-pro-info">
+                                                        <h5 class="m-b-0">Spider=Man T-shirt</h5>
+                                                        <span class="mail-desc">Spider tore</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- End Messages -->
+                        <!-- ============================================================== -->
+
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31"></a>
+                            <div class="dropdown-menu dropdown-menu-right user-dd animated">
+                                <a class="dropdown-item" href="setting.html"><i class="ti-settings m-r-5 m-l-5"></i>
+                                    Account Settings</a>
+                                <!--<div class="dropdown-divider"></div>-->
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-power-off m-r-5 m-l-5"></i>Logout</a>
+                            </div>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                    </ul>
+                </div>
                 <!-- ============================================================== -->
-                <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)"
+
+                <a class="mobilebar-hide topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)"
                    data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                    aria-expanded="false" aria-label="Toggle navigation"><i class="mdi mdi-dialpad"></i></a>
             </div>
@@ -96,13 +191,14 @@
                 <ul class="navbar-nav float-right">
                     <!-- ============================================================== -->
                     <li>
-                        <a class="btn nav-product-btn primary-button" href="add-new-product-step-1.html"><i class="mdi mdi-tag-outline"></i> Add a new Product</a>
+                        <a class="btn nav-product-btn primary-button" href="add-new-product-step-1.html"><i
+                                class="mdi mdi-tag-outline"></i> Add a new Product</a>
                     </li>
                     <!-- ============================================================== -->
                     <li class="nav-item dropdown">
-                        <span class="item-numbers">10</span>
                         <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-bell-ring-outline font-24"></i>
+                            <span class="item-numbers"><i>10</i></span>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Action</a>
@@ -118,10 +214,11 @@
                     <!-- Messages -->
                     <!-- ============================================================== -->
                     <li class="nav-item dropdown">
-                        <span class="item-numbers">4</span>
+
                         <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" id="2"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i
                                 class="font-24 mdi mdi-cart-outline"></i>
+                            <span class="item-numbers"><i>4</i></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right mailbox "
                              aria-labelledby="2">
@@ -131,7 +228,8 @@
                                         <!-- Message -->
                                         <a href="my-cart.html" class="link border-top">
                                             <div class="d-flex no-block align-items-center p-10">
-                                                <span class="cart-pro-img"><img src="./images/demo-product-1.png" alt="product"></span>
+                                                <span class="cart-pro-img"><img src="./images/demo-product-1.png"
+                                                                                alt="product"></span>
                                                 <div class="m-l-10 cart-pro-info">
                                                     <h5 class="m-b-0">Captain America sleeveless t-shirt </h5>
                                                     <span class="mail-desc">PMGOA</span>
@@ -141,7 +239,8 @@
                                         <!-- Message -->
                                         <a href="my-cart.html" class="link border-top">
                                             <div class="d-flex no-block align-items-center p-10">
-                                                <span class="cart-pro-img"><img src="./images/demo-product-2.png" alt="product"></span>
+                                                <span class="cart-pro-img"><img src="./images/demo-product-2.png"
+                                                                                alt="product"></span>
                                                 <div class="m-l-10 cart-pro-info">
                                                     <h5 class="m-b-0">Marvel Full Sleeve T-shirt</h5>
                                                     <span class="mail-desc">Akil's Tees Store</span>
@@ -151,7 +250,8 @@
                                         <!-- Message -->
                                         <a href="my-cart.html" class="link border-top">
                                             <div class="d-flex no-block align-items-center p-10">
-                                                <span class="cart-pro-img"><img src="./images/demo-product-3.png" alt="product"></span>
+                                                <span class="cart-pro-img"><img src="./images/demo-product-3.png"
+                                                                                alt="product"></span>
                                                 <div class="m-l-10 cart-pro-info">
                                                     <h5 class="m-b-0">3000 Iron-Man T-shirt</h5>
                                                     <span class="mail-desc">Demo content</span>
@@ -161,7 +261,8 @@
                                         <!-- Message -->
                                         <a href="my-cart.html" class="link border-top">
                                             <div class="d-flex no-block align-items-center p-10">
-                                                <span class="cart-pro-img"><img src="./images/demo-product-4.png" alt="product"></span>
+                                                <span class="cart-pro-img"><img src="./images/demo-product-4.png"
+                                                                                alt="product"></span>
                                                 <div class="m-l-10 cart-pro-info">
                                                     <h5 class="m-b-0">Spider=Man T-shirt</h5>
                                                     <span class="mail-desc">Spider tore</span>
@@ -227,7 +328,6 @@
                             <li class="sidebar-item"><a href="billing-copy.html" class="sidebar-link"><i class="mdi mdi-cart-outline"></i><span class="hide-menu">Sample Orders</span></a></li>
                         </ul>
                     </li>
-
                     <!--<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="company-empty.html" aria-expanded="false"><i class="mdi mdi-border-inside"></i><span class="hide-menu">Companies</span></a></li>-->
                     <!-- <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-package-variant-closed"></i><span class="hide-menu">Warehouse</span><i class="mdi mdi-chevron-down open-sub-menu"></i></a>
                         <ul aria-expanded="false" class="collapse  first-level">
@@ -246,6 +346,8 @@
                             <li class="sidebar-item"><a href="store-settings.html" class="sidebar-link"><i class="mdi mdi-currency-btc"></i><span class="hide-menu">Store Settings</span></a></li>
                         </ul>
                     </li>
+                    <!--mobile button-->
+                    <li class="sidebar-item mobile-version"> <a class="" href="add-new-product-step-1.html" aria-expanded="false"><i class="mdi mdi-tag-outline"></i> <span class="hide-menu">Add New Product</span></a></li>
                     <li class="dropdown-divider"></li>
                     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="affiliate.html" aria-expanded="false"><i class="mdi mdi-home"></i><span class="hide-menu">Go to homepage</span></a></li>
                     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="affiliate.html" aria-expanded="false"><i class="mdi mdi-account-multiple"></i><span class="hide-menu">Affiliate</span></a></li>
