@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -370,154 +370,479 @@
         <!-- Container fluid  -->
         <div class="container-fluid mt-5 pt-5">
             <div class="row border-bottom">
-                <div class="col-md-12 col-sm-12 col-12">
-                    <h1>Good Morning, Akil!</h1>
-                    <p>How are ya, today?</p>
+                <div class="col-md-12">
+                    <h1>Campaigns</h1>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12">
+                    <form>
+                        <div class="form-row justify-content-between">
+                            <div class="form-group col-xl-2 col-lg-3 col-md-3">
+                                <select class="form-control" id="workspacelist">
+                                    <option selected>All Campaign</option>
+                                    <option>Draft (1)</option>
+                                    <option>Ended (5)</option>
+                                    <option>Active (3)</option>
+                                    <option>Ready (0)</option>
+                                </select>
+                            </div>
+                            <div class="col-xl-1 col-lg-3 col-md-3 text-md-right">
+                                <a  href="#" class="btn primary-button" data-toggle="modal" data-target="#creatacampaign2">Create New Campaign</a>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-3 col-lg-3 col-md-2 col-sm-2 col-12 p-0 dashbord-left-area d-none d-sm-block">
-                    <img class="img-fluid mt-5 pt-5" src="./images/left-guy.png">
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-12 dashboard-center-area">
-                    <h2 class="text-center mt-4">Let’s get you all geared up! Follow these steps</h2>
-                    <div class="check-list">
-                        <div class="card-box">
-                            <div class="card-list-line">
-                                <a class="d-inline-flex list-anchor" href="#">
-                                    <i class="mdi mdi-check-circle list-circle"></i>
-                                    <div class="d-inline-flex ">
-                                        <h6 class="list-heading complete-line">Create your Account</h6>
-                                        <!--<i class="mdi mdi-chevron-right list-arrow"></i>-->
+                <div class="col-md-12 mt-2">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered campaign-table">
+                            <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Name</th>
+                                <th>Total Earned</th>
+                                <th>Current Batch</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <div class="campaign-img">
+                                        <img class="img-fluid" src="./images/pro-1.png" alt="campaign product">
                                     </div>
-                                </a>
-                            </div>
-                            <div class="card-list-line">
-                                <a class="d-inline-flex list-anchor" href="#">
-                                    <i class="mdi mdi-checkbox-blank-circle-outline list-circle"></i>
-                                    <div class="d-inline-flex ">
-                                        <h6 class="list-heading">Confirm your email address</h6>
-                                        <!--<i class="mdi mdi-chevron-right list-arrow"></i>-->
+                                </td>
+                                <td>
+                                    <div class="campaign-name">
+                                        <p><a href="#" data-toggle="tooltip" data-placement="top" title="Cat T-shirt Woo Woo Paw">Cat T-shirt Woo Woo Paw</a></p>
+                                        <span>Created a month ago</span>
                                     </div>
-                                </a>
-                            </div>
-                            <div class="card-list-line">
-                                <a class="d-inline-flex list-anchor" href="create-a-workspace.html">
-                                    <i class="mdi mdi-checkbox-blank-circle-outline list-circle"></i>
-                                    <div class="d-inline-flex ">
-                                        <h6 class="list-heading">Create workspaces</h6>
-                                        <!--<i class="mdi mdi-chevron-right list-arrow"></i>-->
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="card-list-line">
-                                <a class="d-inline-flex list-anchor" href="workspace-connect-store.html">
-                                    <i class="mdi mdi-checkbox-blank-circle-outline list-circle"></i>
-                                    <div class="d-inline-flex ">
-                                        <h6 class="list-heading">Connect your stores</h6>
-                                        <!--<i class="mdi mdi-chevron-right list-arrow"></i>-->
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="card-list-line">
-                                <a class="d-inline-flex list-anchor" href="create-a-product.html">
-                                    <i class="mdi mdi-checkbox-blank-circle-outline list-circle"></i>
-                                    <div class="d-inline-flex ">
-                                        <h6 class="list-heading">Add/Create Products</h6>
-                                        <!--<i class="mdi mdi-chevron-right list-arrow"></i>-->
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="card-list-line">
-                                <a class="d-inline-flex list-anchor" href="setting.html#billing" data-toggle="tab"
-                                   id="billing-tab" role="tab" aria-controls="billing">
-                                    <i class="mdi mdi-checkbox-blank-circle-outline list-circle"></i>
-                                    <div class="d-inline-flex">
-                                        <h6 class="list-heading">Add Payment Methods</h6>
-                                        <!--<i class="mdi mdi-chevron-right list-arrow"></i>-->
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="card-list-line">
-                                <a class="d-inline-flex list-anchor" href="cart-empty.html">
-                                    <i class="mdi mdi-checkbox-blank-circle-outline list-circle"></i>
-                                    <div class="d-inline-flex ">
-                                        <h6 class="list-heading">Order Samples to ensure quality</h6>
-                                        <!--<i class="mdi mdi-chevron-right list-arrow"></i>-->
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                </td>
+                                <td>Null</td>
+                                <td>Null</td>
+                                <td><span class="btn btn-orange text-white">Draft</span></td>
+                                <td>Delete</td>
+                            </tr>
 
-                <div class="col-xl-3 col-lg-3 col-md-2 col-sm-2 col-12 p-0 dashbord-right-area d-none d-sm-block">
-                    <img class="img-fluid mt-5 pt-5" src="./images/right-guy.png">
+                            <tr>
+                                <td>
+                                    <div class="campaign-img">
+                                        <img class="img-fluid" src="./images/2-mug.png" alt="campaign product">
+                                    </div>
+                                </td>
+                                <td><div class="campaign-name">
+                                    <p><a href="#" data-toggle="tooltip" data-placement="top" title="Coffee Mugs">Coffee Mugs</a></p>
+                                    <span>Created a week ago</span>
+                                </div></td>
+                                <td>
+                                    <div class="campaign-name">
+                                        <p>$25</p>
+                                        <span>10 Sold</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="campaign-name">
+                                        <p>200 Items</p>
+                                        <!--<span>10 Items</span>-->
+                                    </div>
+                                </td>
+                                <td><span class="btn btn-success">Acive</span></td>
+                                <td>Delete</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 ">
-                    <div class="card-box min-height-465">
-                        <div class="text-center mt-3"><h2>Guides and Tutorials</h2></div>
-                        <hr>
-                        <ul class="guide-list">
-                            <li><a href="#">How to Start online store using Everything with Ink?</a></li>
-                            <li><a href="#">How to design your product mockups?</a></li>
-                            <li><a href="#">Free Alternatives to photoshop to test your mockups</a></li>
-                            <li><a href="#">Free Alternatives to photoshop to test your mockups</a></li>
-                            <li><a href="#">How to build a successful e-commerce platform</a></li>
-                            <li><a href="#">How to setup different company workspaces</a></li>
+
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <span class="page-link">Previous</span>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item active" aria-current="page">
+      <span class="page-link">
+        2
+        <span class="sr-only">(current)</span>
+      </span>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
                         </ul>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                    <div class="card-box min-height-465">
-                        <div class="text-center mt-3"><h2>Quick Shortcuts and Links</h2></div>
-                        <hr>
-                        <div class="row">
-                            <div class="col-md-6 col-sm-6 col-12">
-                                <a class="grid-box" href="#">
-                                    <div class="card-box text-center box-details">
-                                        <i class="mdi mdi-auto-fix"></i>
-                                        <h6>Create Workspaces</h6>
-                                        <p>Setup your workspaces for different product categories.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-sm-6 col-12">
-                                <a class="grid-box" href="#">
-                                    <div class="card-box text-center box-details">
-                                        <i class="mdi mdi-tshirt-crew"></i>
-                                        <h6>DESIGN MOCKUPS</h6>
-                                        <p>Setup your workspaces for different product categories.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-sm-6 col-12">
-                                <a class="grid-box" href="#">
-                                    <div class="card-box text-center box-details">
-                                        <i class="mdi mdi-format-page-break"></i>
-                                        <h6>EWI BLOG</h6>
-                                        <p>Setup your workspaces for different product categories.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-sm-6 col-12">
-                                <a class="grid-box" href="#">
-                                    <div class="card-box text-center box-details">
-                                        <i class="mdi mdi-gift"></i>
-                                        <h6>REWARDS</h6>
-                                        <p>Setup your workspaces for different product categories.</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    </nav>
                 </div>
             </div>
         </div>
         <!-- End Container fluid  -->
+        <!-- footer -->
         <!-- End footer -->
+
+        <!-- Large modal Start - Pick a workspace -->
+        <div class="modal fade" id="creatacampaign2" tabindex="-1" role="dialog" aria-labelledby="creatacampaign"
+             aria-hidden="true">
+            <div class="modal-dialog newcampaign-modal" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!--<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>-->
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h2>Pick a workspace to add products from</h2>
+                                <p class="mb-0">Pick a workspace to start adding products to the campaign from.</p>
+                            </div>
+                        </div>
+                        <div class="row mt-2 justify-content-center">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-10 text-center">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label for="searchorder1"></label>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                        <span class="input-group-text" id="basic-addon2"><i
+                                                                class="mdi mdi-magnify"></i></span>
+                                                </div>
+                                                <input type="search" class="form-control" placeholder="Search workspace"
+                                                       aria-label="Search" id="searchorder1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row pb-4">
+                            <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6 col-12 mt-3">
+                                <a class="btn-group-toggle" data-toggle="modal"
+                                   data-target="#selctproduct" data-dismiss="modal">
+                                    <div class="btn company-box-btn">
+                                        <div class="company-store campaign-box">
+                                            <div class="comp-name">
+                                                <span>PM</span>
+                                                <h6>Pmgoa</h6>
+                                            </div>
+                                            <div class="dropdown-divider"></div>
+                                            <div class="company-stores-info">
+                                                <span>Stores</span>
+                                                <p>Amazon, ETSY</p>
+                                                <span>Products</span>
+                                                <p>44</p>
+
+                                            </div>
+                                            <!--<input class="" type="checkbox" name="options" id="my-checkbox" autocomplete="off">-->
+                                            <!--<span class="buttonoption selectoption1">Selected</span>-->
+                                            <span class="buttonoption selectoption2">Choose</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6 col-12 mt-3">
+                                <a class="btn-group-toggle" data-toggle="modal"
+                                   data-target="#selctproduct" data-dismiss="modal">
+                                    <div class="btn company-box-btn">
+                                        <div class="company-store campaign-box">
+                                            <div class="comp-name">
+                                                <span>PM</span>
+                                                <h6>Pmgoa</h6>
+                                            </div>
+                                            <div class="dropdown-divider"></div>
+                                            <div class="company-stores-info">
+                                                <span>Stores</span>
+                                                <p>Amazon, ETSY</p>
+                                                <span>Products</span>
+                                                <p>44</p>
+                                            </div>
+                                            <!--<input class="" type="checkbox" name="options" id="my-checkbox" autocomplete="off">-->
+                                            <!--<span class="buttonoption selectoption1">Selected</span>-->
+                                            <span class="buttonoption selectoption2">Choose</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6 col-12 mt-3">
+                                <a class="btn-group-toggle" data-toggle="modal"
+                                   data-target="#selctproduct" data-dismiss="modal">
+                                    <div class="btn company-box-btn">
+                                        <div class="company-store campaign-box">
+                                            <div class="comp-name">
+                                                <span>PM</span>
+                                                <h6>Pmgoa</h6>
+                                            </div>
+                                            <div class="dropdown-divider"></div>
+                                            <div class="company-stores-info">
+                                                <span>Stores</span>
+                                                <p>Amazon, ETSY</p>
+                                                <span>Products</span>
+                                                <p>44</p>
+
+                                            </div>
+                                            <!--<input class="" type="checkbox" name="options" id="my-checkbox" autocomplete="off">-->
+                                            <!--<span class="buttonoption selectoption1">Selected</span>-->
+                                            <span class="buttonoption selectoption2">Choose</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6 col-12 mt-3">
+                                <a class="btn-group-toggle" data-toggle="modal"
+                                   data-target="#selctproduct" data-dismiss="modal">
+                                    <div class="btn company-box-btn">
+                                        <div class="company-store campaign-box">
+                                            <div class="comp-name">
+                                                <span>PM</span>
+                                                <h6>Pmgoa</h6>
+                                            </div>
+                                            <div class="dropdown-divider"></div>
+                                            <div class="company-stores-info">
+                                                <span>Stores</span>
+                                                <p>Amazon, ETSY</p>
+                                                <span>Products</span>
+                                                <p>44</p>
+
+                                            </div>
+                                            <!--<input class="" type="checkbox" name="options" id="my-checkbox" autocomplete="off">-->
+                                            <!--<span class="buttonoption selectoption1">Selected</span>-->
+                                            <span class="buttonoption selectoption2">Choose</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--<div class="modal-btn-fixed">-->
+                        <!--<button class="btn text-uppercase aff-submitbtn" data-toggle="modal"-->
+                        <!--data-target="#selctproduct" data-dismiss="modal">Continue-->
+                        <!--</button>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Large modal end - Pick a workspace -->
+
+        <!-- Large modal Start - Select Product -->
+        <div class="modal fade" id="selctproduct" tabindex="-2" role="dialog" aria-labelledby="selctproduct"
+             aria-hidden="true">
+            <div class="modal-dialog newcampaign-modal" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!--<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>-->
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h2>Select products you want to use for this campaign</h2>
+                                <p class="mb-0">Select products from the list below. You may choose multiple products</p>
+                            </div>
+                        </div>
+                        <div class="row mt-2 justify-content-center">
+                            <div class="col-md-3 text-center">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label for="searchorder"></label>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                        <span class="input-group-text" id="basic-addon5"><i
+                                                                class="mdi mdi-magnify"></i></span>
+                                                </div>
+                                                <input type="search" class="form-control" placeholder="Search product"
+                                                       aria-label="Search" id="searchorder">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                                <div class="custom-control">
+                                    <!--<input type="radio" class="custom-control-input" id="selectpro1" name="campaignpro">-->
+                                    <a class="nc-modal2-chkbox" href="campaign-details.html">
+                                        <div class="thumbnail card">
+                                            <div>
+                                                <div class="img-event">
+                                                    <img class="group list-group-image img-fluid"
+                                                         src="./images/demo-product-3.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-divider"></div>
+                                            <div class="caption product-card">
+                                                <a><h4
+                                                        class="group inner list-group-item-heading">
+                                                    Avengers Endgame: 3008
+                                                </h4></a>
+                                                <span><a>PMGOA</a></span>
+                                                <div class="row ">
+                                                    <div class="col-xs-12 col-md-10">
+                                                        <ul class="total-product mt-1">
+                                                            <li><img class="img-fluid"
+                                                                     src="./images/2-woocommerce.png"
+                                                                     title="Woo Commerce logo"
+                                                                     alt="Woo Commerce logo"></li>
+                                                            <li><img class="img-fluid" src="./images/2-magento.png"
+                                                                     title="Magento logo" alt="Magento logo"></li>
+                                                            <li><img class="img-fluid" src="./images/2-etsy.png"
+                                                                     title="ETSY" alt="ETSY"></li>
+                                                            <!--<li>+40 </li>-->
+                                                        </ul>
+                                                        <a class="viewall" href="#" data-toggle="tooltip"
+                                                           data-html="true" title=""
+                                                           data-original-title="Amazon</br>Shopify">+2 more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                                <div class="custom-control">
+                                    <!--<input type="radio" class="custom-control-input" id="selectpro1" name="campaignpro">-->
+                                    <a class="nc-modal2-chkbox" href="campaign-details.html">
+                                        <div class="thumbnail card">
+                                            <div>
+                                                <div class="img-event">
+                                                    <img class="group list-group-image img-fluid"
+                                                         src="./images/demo-product-3.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-divider"></div>
+                                            <div class="caption product-card">
+                                                <a><h4
+                                                        class="group inner list-group-item-heading">
+                                                    Avengers Endgame: 3008
+                                                </h4></a>
+                                                <span><a>PMGOA</a></span>
+                                                <div class="row ">
+                                                    <div class="col-xs-12 col-md-10">
+                                                        <ul class="total-product mt-1">
+                                                            <li><img class="img-fluid"
+                                                                     src="./images/2-woocommerce.png"
+                                                                     title="Woo Commerce logo"
+                                                                     alt="Woo Commerce logo"></li>
+                                                            <li><img class="img-fluid" src="./images/2-magento.png"
+                                                                     title="Magento logo" alt="Magento logo"></li>
+                                                            <li><img class="img-fluid" src="./images/2-etsy.png"
+                                                                     title="ETSY" alt="ETSY"></li>
+                                                            <!--<li>+40 </li>-->
+                                                        </ul>
+                                                        <a class="viewall" href="#" data-toggle="tooltip"
+                                                           data-html="true" title=""
+                                                           data-original-title="Amazon</br>Shopify">+2 more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                                <div class="custom-control">
+                                    <!--<input type="radio" class="custom-control-input" id="selectpro1" name="campaignpro">-->
+                                    <a class="nc-modal2-chkbox" href="campaign-details.html">
+                                        <div class="thumbnail card">
+                                            <div>
+                                                <div class="img-event">
+                                                    <img class="group list-group-image img-fluid"
+                                                         src="./images/demo-product-3.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-divider"></div>
+                                            <div class="caption product-card">
+                                                <a><h4
+                                                        class="group inner list-group-item-heading">
+                                                    Avengers Endgame: 3008
+                                                </h4></a>
+                                                <span><a>PMGOA</a></span>
+                                                <div class="row ">
+                                                    <div class="col-xs-12 col-md-10">
+                                                        <ul class="total-product mt-1">
+                                                            <li><img class="img-fluid"
+                                                                     src="./images/2-woocommerce.png"
+                                                                     title="Woo Commerce logo"
+                                                                     alt="Woo Commerce logo"></li>
+                                                            <li><img class="img-fluid" src="./images/2-magento.png"
+                                                                     title="Magento logo" alt="Magento logo"></li>
+                                                            <li><img class="img-fluid" src="./images/2-etsy.png"
+                                                                     title="ETSY" alt="ETSY"></li>
+                                                            <!--<li>+40 </li>-->
+                                                        </ul>
+                                                        <a class="viewall" href="#" data-toggle="tooltip"
+                                                           data-html="true" title=""
+                                                           data-original-title="Amazon</br>Shopify">+2 more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                                <div class="custom-control">
+                                    <!--<input type="radio" class="custom-control-input" id="selectpro1" name="campaignpro">-->
+                                    <a class="nc-modal2-chkbox" href="campaign-details.html">
+                                        <div class="thumbnail card">
+                                            <div>
+                                                <div class="img-event">
+                                                    <img class="group list-group-image img-fluid"
+                                                         src="./images/demo-product-3.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-divider"></div>
+                                            <div class="caption product-card">
+                                                <a><h4
+                                                        class="group inner list-group-item-heading">
+                                                    Avengers Endgame: 3008
+                                                </h4></a>
+                                                <span><a>PMGOA</a></span>
+                                                <div class="row ">
+                                                    <div class="col-xs-12 col-md-10">
+                                                        <ul class="total-product mt-1">
+                                                            <li><img class="img-fluid"
+                                                                     src="./images/2-woocommerce.png"
+                                                                     title="Woo Commerce logo"
+                                                                     alt="Woo Commerce logo"></li>
+                                                            <li><img class="img-fluid" src="./images/2-magento.png"
+                                                                     title="Magento logo" alt="Magento logo"></li>
+                                                            <li><img class="img-fluid" src="./images/2-etsy.png"
+                                                                     title="ETSY" alt="ETSY"></li>
+                                                            <!--<li>+40 </li>-->
+                                                        </ul>
+                                                        <a class="viewall" href="#" data-toggle="tooltip"
+                                                           data-html="true" title=""
+                                                           data-original-title="Amazon</br>Shopify">+2 more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div class="modal-btn-fixed">-->
+                        <!--<button class="btn text-uppercase aff-submitbtn"-->
+                        <!--onclick="window.location.href='campaign-details.html'">Continue-->
+                        <!--</button>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Large modal end - Select Product -->
+
     </div>
     <!-- End Page wrapper  -->
 </div>
@@ -537,10 +862,7 @@
 <script src="dist/js/sidebarmenu.js"></script>
 <!--Custom JavaScript -->
 <script src="dist/js/custom.min.js"></script>
-<!--This page JavaScript -->
-<!-- <script src="dist/js/pages/dashboards/dashboard1.js"></script> -->
-<!-- Charts js Files -->
-
+<!--Date range picker-->
 
 </body>
 

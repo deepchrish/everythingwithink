@@ -4777,7 +4777,11 @@ span.round-tab:hover {
     text-decoration: underline;
     color: #0094FF;
 }
-
+.ws-connected-store p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #777;
+}
 /*.custom-control-label:before{*/
 /*background-color: #ffffff;*/
 /*border: 1px solid #e2e2e2;*/
@@ -7286,6 +7290,9 @@ svg {
     width: 100%;
     display: flex;
 }
+.pro-foto a{
+    display: flex;
+}
 .pro-foto img{
     object-fit: contain;
     margin: 0 auto;
@@ -7371,8 +7378,63 @@ svg {
 .mobile-version{
     display: none;
 }
-
-
+.campaign-table thead tr th{
+    background: #f2f3ff;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.campaign-table tbody tr td{
+    font-weight: 600;
+    color: #111111;
+    vertical-align: middle;
+    /*white-space: nowrap;*/
+}
+.campaign-table tbody tr td a{
+    color: #111111;
+}
+.campaign-table .campaign-name {
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.campaign-table .campaign-name p{
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.campaign-table .campaign-name p a{
+    font-size: 16px;
+}
+.campaign-table .campaign-name span{
+    font-size: 13px;
+    color: #777777;
+}
+.campaign-table .campaign-img img{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #e9ecef;
+    object-fit: contain;
+}
+.pro-info-slider{
+    display: grid;
+    position: absolute;
+    right: 72%;
+    top: 0;
+    left: auto;
+    bottom: auto;
+}
+.pro-info-star-rating{
+    display: inline-grid;
+}
+.pro-info-star-rating a{
+    font-size: 14px;
+    font-weight: 700;
+    color: #0094FF;
+    text-decoration: underline;
+}
 
 
 
