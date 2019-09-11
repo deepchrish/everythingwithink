@@ -7500,6 +7500,7 @@ svg {
     .od-page-drops{right: -8px;}
     .perunit{left: -18px;}
     .pro-cat-text{font-size: 12px;}
+    .campaign-table .campaign-img img{width: 60px;height: 60px;}
     /*.nc-option-box{min-width: 125px;}*/
 }
 
@@ -7517,10 +7518,10 @@ svg {
     .v-line{right: 18px;}
     .mc-perunit{right: 15px;}
     .mobilebar-hide{display: none !important;}
-    .mobile-header{display: block;}
     ul.list-style-none li a{line-height: 27px;}
     .dropdown-item{line-height: 27px;}
     .topbar .top-navbar .dropdown-menu{margin: 0;}
+    .campaign-table .campaign-img img{width: 40px;height: 40px;}
 }
 
 @media only screen and (max-width: 766px){
@@ -7548,6 +7549,7 @@ svg {
     .mobile-version a i{color: #FFFFFF !important;font-size: 16px !important;}
     .pro-info-slider{right: 68%; z-index: 1;}
     .thumb-img li img{width: 55px;height: 65px;}
+    .mobile-header{display: block;}
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
