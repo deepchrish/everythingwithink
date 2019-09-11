@@ -7435,7 +7435,10 @@ svg {
     color: #0094FF;
     text-decoration: underline;
 }
-
+.pro-info-pricing h3{
+    font-size: 22px;
+    color: #111111;
+}
 
 
 /*Responsive design*/
@@ -7543,6 +7546,8 @@ svg {
     .mobile-version{display: block;text-align: center; margin: 15px auto;}
     .mobile-version a{color: #FFFFFF !important;background: #2c44ff;margin: 5px 15px;text-align: center; padding:8px 32px; border-radius: 5px;}
     .mobile-version a i{color: #FFFFFF !important;font-size: 16px !important;}
+    .pro-info-slider{right: 68%; z-index: 1;}
+    .thumb-img li img{width: 55px;height: 65px;}
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -7551,6 +7556,7 @@ svg {
     .mc-vender-rep{margin: 0 0 0 20px;}
     .mc-order-rate{padding: 8px 8px; font-weight: 600;}
     .invoicestatus p{font-size: 13px;}
+    .thumb-img li img{width: 45px;height: 55px;}
 }
 
 @media only screen and (max-width: 576px) {
@@ -7585,6 +7591,8 @@ svg {
     .login-right-side{height: auto; padding: 10% 5%;}
     .od-cd-heading{border-top: 1px solid #e9ecef;}
     .ordershead {padding: 20px 0;}
+    .pro-info-slider{right: 70%;}
+    .thumb-img li img{width: 60px;height: 75px;}
 }
 /* Extra small devices (phones, 480px and down) */
 @media only screen and (max-width: 480px) {
@@ -7612,6 +7620,7 @@ svg {
     .subs-plan-box {padding: 0 5%;}
     .cart-pick-pro{width: 80px;height: 80px;}
     .topbar .top-navbar .navbar-header .navbar-brand{left: 10%;}
+    .thumb-img li img{width: 50px;height: 55px;}
 }
 
 /* Extra small devices (phones, 320px and down) */
