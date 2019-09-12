@@ -720,8 +720,8 @@
                                         <!--<button class="btn btn-success" data-toggle="modal"-->
                                                 <!--data-target="#pickvendor2">Pick Vendor-->
                                         <!--</button>-->
-                                        <button class="btn btn-success has-spinner">
-                                            <span class="spinner-boot4"><i class="mdi mdi-cached"></i></span> Pick Vendor
+                                        <button class="btnspinner btn btn-success has-spinner">
+                                            <span class="spinner-boot4"><i class="mdi mdi-cached"></i></span><span class="sync-text">Pick Vendor</span><span class="syncing-text hide">Picking Vender</span>
                                         </button>
                                     </td>
                                 </tr>
@@ -749,8 +749,8 @@
                                         <span class="perunits">Per Unit</span>
                                     </td>
                                     <td>
-                                        <button class="btn btn-success has-spinner">
-                                            <span class="spinner-boot4"><i class="mdi mdi-cached"></i></span> Pick Vendor
+                                        <button class="btnspinner btn btn-success has-spinner">
+                                            <span class="spinner-boot4"><i class="mdi mdi-cached"></i></span><span class="sync-text">Pick Vendor</span><span class="syncing-text hide">Picking Vender</span>
                                         </button>
                                     </td>
                                 </tr>
@@ -1207,11 +1207,15 @@
 <!--Processing icon show/hide START-->
 <script>
     $(function () {
-        $('button').click(function () {
+        $('.btnspinner').click(function () {
             $(this).toggleClass('active');
+            $('.sync-text').addClass('hide');
+            $('.syncing-text').removeClass('hide');
         });
         setTimeout(function () {
             $('button').removeClass('active');
+            $('.sync-text').removeClass('hide');
+            $('.syncing-text').addClass('hide');
         }, 3000);
     });
 </script>

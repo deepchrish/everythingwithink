@@ -16,7 +16,7 @@
     <!-- Custom CSS -->
     <link href="dist/css/style.min.css" rel="stylesheet">
     <link href="dist/css/custom.css" rel="stylesheet">
-    <link href="dist/css/jquery-labelauty.css" rel="stylesheet">
+    <link href="https://foliotek.github.io/Croppie/croppie.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -432,13 +432,28 @@
                                         </div>
                                         <div class="col-md-4 text-center">
                                             <p>Profile Picture</p>
-                                            <div class="imgUp">
-                                                <div class="imagePreview"></div>
-                                                <label class="btn btn-upload">
-                                                    Upload<input type="file" class="uploadFile img" value="Upload Photo"
-                                                                 style="width: 0;height: 0;overflow: hidden;">
-                                                </label>
-                                            </div><!-- col-2 -->
+                                            <!--<div class="file-upload-content">-->
+                                                <!--<img class="file-upload-image" src="#" alt="your image"/>-->
+                                                <!--<div class="image-title-wrap">-->
+                                                    <!--<a onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></a>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                            <label class="cabinet center-block">
+                                                <figure>
+                                                    <img src="" class="gambar img-responsive img-thumbnail" id="item-img-output" />
+                                                    <figcaption><i class="mdi mdi-camera"></i></figcaption>
+                                                </figure>
+                                                <input type="file" class="item-img file center-block" onchange="readURL(this);" accept="image/*" name="file_photo"/>
+                                                <span class="btn secendary-button">Upload</span>
+                                            </label>
+
+                                            <!--<div class="imgUp">-->
+                                                <!--<div class="imagePreview"></div>-->
+                                                <!--<label class="btn btn-upload">-->
+                                                    <!--Upload<input type="file" class="uploadFile img" value="Upload Photo"-->
+                                                                 <!--style="width: 0;height: 0;overflow: hidden;">-->
+                                                <!--</label>-->
+                                            <!--</div>&lt;!&ndash; col-2 &ndash;&gt;-->
                                         </div>
                                     </div>
                                     <div class="row">
@@ -1085,6 +1100,28 @@
                     </div>
                 </div>
             </div>
+            <div class="modal fade" id="cropImagePop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog ws-invite-team-model">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">
+                                <?=multiLanguage( "Edit Foto" , "Edit Photo" )?></h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div id="upload-demo" class="center-block"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn secendary-button" data-dismiss="modal">Close</button>
+                            <button type="button" id="cropImageBtn" class="btn primary-button">Crop</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- End Container fluid  -->
 
@@ -1102,8 +1139,6 @@
 <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
 <script src="assets/extra-libs/sparkline/sparkline.js"></script>
-<!--Check box-->
-<script src="dist/js/jquery-labelauty.js"></script>
 <!--inputfield copy clicpbord-->
 <!--<script src="dist/js/clipboard.min.js"></script>-->
 <!--Wave Effects -->
@@ -1114,16 +1149,61 @@
 <script src="dist/js/custom.min.js"></script>
 <!--This page JavaScript -->
 <!-- <script src="dist/js/pages/dashboards/dashboard1.js"></script> -->
+<script src="https://foliotek.github.io/Croppie/croppie.js"></script>
 <!-- Charts js Files -->
-<!--<script src="assets/libs/flot/excanvas.js"></script>-->
-<!--<script src="assets/libs/flot/jquery.flot.js"></script>-->
-<!--<script src="assets/libs/flot/jquery.flot.pie.js"></script>-->
-<!--<script src="assets/libs/flot/jquery.flot.time.js"></script>-->
-<!--<script src="assets/libs/flot/jquery.flot.stack.js"></script>-->
-<!--<script src="assets/libs/flot/jquery.flot.crosshair.js"></script>-->
-<!--<script src="assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>-->
-<!--<script src="dist/js/pages/chart/chart-page-init.js"></script>-->
+<script>
+    // Start upload preview image
+    $(".gambar").attr("src", "https://i.imgur.com/1r8n38B.png");
+    var $uploadCrop,
+        tempFilename,
+        rawImg,
+        imageId;
+    function readFile(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('.upload-demo').addClass('ready');
+                $('#cropImagePop').modal('show');
+                rawImg = e.target.result;
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+        else {
+            swal("Sorry - you're browser doesn't support the FileReader API");
+        }
+    }
 
+    $uploadCrop = $('#upload-demo').croppie({
+        viewport: {
+            width: 150,
+            height: 150,
+        },
+        enforceBoundary: false,
+        enableExif: true
+    });
+    $('#cropImagePop').on('shown.bs.modal', function(){
+        // alert('Shown pop');
+        $uploadCrop.croppie('bind', {
+            url: rawImg
+        }).then(function(){
+            console.log('jQuery bind complete');
+        });
+    });
+
+    $('.item-img').on('change', function () { imageId = $(this).data('id'); tempFilename = $(this).val();
+        $('#cancelCropBtn').data('id', imageId); readFile(this); });
+    $('#cropImageBtn').on('click', function (ev) {
+        $uploadCrop.croppie('result', {
+            type: 'base64',
+            format: 'jpeg',
+            size: {width: 120, height: 120}
+        }).then(function (resp) {
+            $('#item-img-output').attr('src', resp);
+            $('#cropImagePop').modal('hide');
+        });
+    });
+    // End upload preview image
+</script>
 </body>
 
 </html>

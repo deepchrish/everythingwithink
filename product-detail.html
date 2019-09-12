@@ -220,7 +220,7 @@
                                 class="font-24 mdi mdi-cart-outline"></i>
                             <span class="item-numbers"><i>4</i></span>
                         </a>
-                        <div class="dropdown-menu dropdown-menu-right mailbox "
+                        <div class="dropdown-menu dropdown-menu-right mailbox"
                              aria-labelledby="2">
                             <ul class="list-style-none">
                                 <li>
@@ -474,8 +474,8 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-success has-spinner">
-                                        <span class="spinner-boot4"><i class="mdi mdi-cached"></i></span> SYNC
+                                    <button type="button" class="btnspinner btn btn-success has-spinner">
+                                        <span class="spinner-boot4"><i class="mdi mdi-cached"></i></span><span class="sync-text">Sync</span><span class="syncing-text hide">Syncing</span>
                                     </button>
                                     <button type="button" class="btn btn-secondary"
                                             onclick="window.location.href='design-studio.html'">Edit
@@ -518,8 +518,8 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-success has-spinner">
-                                        <span class="spinner-boot4"><i class="mdi mdi-cached"></i></span> SYNC
+                                    <button type="button" class="btnspinner btn btn-success has-spinner">
+                                        <span class="spinner-boot4"><i class="mdi mdi-cached"></i></span><span class="sync-text">Sync</span><span class="syncing-text hide">Syncing</span>
                                     </button>
                                     <button type="button" class="btn btn-secondary"
                                             onclick="window.location.href='design-studio.html'">Edit
@@ -598,11 +598,15 @@
 <!--Processing icon show/hide START-->
 <script>
     $(function () {
-        $('button').click(function () {
+        $('.btnspinner').click(function () {
             $(this).toggleClass('active');
+            $('.sync-text').addClass('hide');
+            $('.syncing-text').removeClass('hide');
         });
         setTimeout(function () {
             $('button').removeClass('active');
+            $('.sync-text').removeClass('hide');
+            $('.syncing-text').addClass('hide');
         }, 3000);
     });
 </script>
