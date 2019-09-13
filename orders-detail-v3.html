@@ -809,7 +809,7 @@
                             </table>
                         </div>
                         <div class="text-center mt-4">
-                            <button class="btn secendary-button text-uppercase">Edit shipping Details</button>
+                            <button class="btn secendary-button text-uppercase" data-toggle="modal" data-target="#changeaddress">Edit shipping Details</button>
                         </div>
                     </div>
                 </div>
@@ -1075,59 +1075,51 @@
                     </div>
                 </div>
             </div>
-            <!-- Pick a vendor to fulfill END-->
+            <!-- Pick a vendor to fulfill MODAL  END-->
 
-            <!--Modal Submit Issue START-->
-            <!--<div class="modal right fade" id="submitissue" tabindex="-1" role="dialog" aria-labelledby="submitissue">
-               <div class="modal-dialog aff-dialog" role="document">
-                   <div class="modal-content ">
+            <!--change address START-->
 
-                       <div class="modal-header">
-                           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                       </div>
-
-                       <div class="modal-body">
-                           <div class="row">
-                               <div class="col-md-12">
-                                   <h1>Submit Issue</h1>
-                               </div>
-                           </div>
-                           <div class="dropdown-divider"></div>
-                           <div class="row">
-                               <div class="col-md-12">
-                                   <span>Order ID 124532</span>
-                                   <p>Please pick your issue from down below.</p>
-                                   <form>
-                                       <div class="form-group">
-                                           <div class="custom-control custom-checkbox">
-                                               <input type="checkbox" class="custom-control-input" id="notreceivedyet">
-                                               <label class="custom-control-label label-dec" for="notreceivedyet">Order hasn’t been received yet.</label>
-                                           </div>
-                                       </div>
-                                       <div class="form-group">
-                                           <div class="custom-control custom-checkbox">
-                                               <input type="checkbox" class="custom-control-input" id="orderdelivery">
-                                               <label class="custom-control-label label-dec" for="orderdelivery">There’s an issue with an order delivery.</label>
-                                           </div>
-                                       </div>
-                                       <div class="form-group">
-                                           <textarea class="form-control" rows="5" placeholder="Please mention your problem in this area."></textarea>
-                                       </div>
-                                       <div class="form-group od-attachment">
-                                           <input type="file" class="form-control" id="attachmentfile">
-                                           <label for="attachmentfile"><i class="mdi mdi-attachment"></i>Attach File</label>
-                                       </div>
-                                   </form>
-                               </div>
-                           </div>
-                           <button type="submit" class="btn aff-submitbtn">Submit</button>
-                       </div>
-                   </div>
+            <!-- Modal -->
+            <div class="modal fade" id="changeaddress" tabindex="-1" role="dialog" aria-labelledby="changeaddress" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered ws-invite-team-model" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header ">
+                            <h5 class="modal-title " id="exampleModalLongTitle">Edit Shipping Details</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-row justify-content-center">
+                                    <div class="form-group col-10">
+                                        <label for="addname">Name</label>
+                                        <input type="text" class="form-control" id="addname" value="Johnathan Kaskey">
+                                    </div>
+                                    <div class="form-group col-10">
+                                        <label for="addPhone">Phone Number</label>
+                                        <input type="text" class="form-control" id="addPhone" value="765-900-8923">
+                                    </div>
+                                    <div class="form-group col-10">
+                                        <label for="addemail">Email Address</label>
+                                        <input type="text" class="form-control" id="addemail" value="john86@gmail.com">
+                                    </div>
+                                    <div class="form-group col-10">
+                                        <label for="addemail">Address</label>
+                                        <input type="text" class="form-control" id="addemail" value="1717 Toomney Rd, #221 Austin, TX 78704">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn primary-button">Save</button>
+                        </div>
+                    </div>
                 </div>
-            </div> -->
-
-            <!--Modal Submit Issue END-->
-            <!-- modal -->
+            </div>
+            <!--END Modal-->
+            <!--change address MODAL END-->
         </div>
         <!-- End Container fluid  -->
     </div>

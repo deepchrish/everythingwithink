@@ -2000,6 +2000,7 @@ p {
     margin-top: 10px;
     color: #000000;
     list-style: disc;
+    white-space: initial;
 }
 
 .chkcustom .chkcstm {
@@ -6466,6 +6467,7 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
     min-height: 375px;
     border-right: 1px solid #e9ecef;
     padding: 0 10px;
+    object-fit: contain;
 }
 
 .fl-preview-modal-item-title {
@@ -7507,7 +7509,7 @@ figure figcaption i{
     .list-group-item .custom-lable::before{left: 20px;}
     .list-group-item .custom-lable::after{left: 20px;}
     .onboardeasyink{padding: 10px 30px;}
-    .nav-tabs .createpro{width: 25%;display: flex; padding: 0 15% 0 0;}
+    .nav-tabs .createpro{width: 25%;}
     .subs-recommendation{margin: 0 60px;}
     .pro-cat-action a{font-size: 12px;}
 }
@@ -7573,7 +7575,7 @@ figure figcaption i{
     .card-box{margin: 10px 0;}
     .samplefiles{padding: 0 2% 0 0;}
     .nav-tabs .warehousepricing-nav a{padding: 8px 5px;}
-    .nav-tabs .createpro {width: 30%;display: flex;padding: 0 15% 0 5%;}
+    /*.nav-tabs .createpro {width: 25%;display: flex;padding: 0 5% 0 5%;}*/
     .pro-det-info{text-align: center;}
     .pro-det-img img{margin: 0 auto 20px;}
     .mailbox{max-width: 100%;}
@@ -7636,6 +7638,7 @@ figure figcaption i{
     .ordershead {padding: 20px 0;}
     .pro-info-slider{right: 70%;}
     .thumb-img li img{width: 60px;height: 75px;}
+    figure figcaption{right: 38%;}
 }
 /* Extra small devices (phones, 480px and down) */
 @media only screen and (max-width: 480px) {
@@ -7645,7 +7648,7 @@ figure figcaption i{
     .guide-list li:after{font: normal normal normal 18px/1 "Material Design Icons"; top: -10px;}
     .min-height-465{min-height: 410px;}
     .teamrole-radio-btn{padding: 5px 10px;}
-    .nav-tabs .createpro {width: 35%;display: flex;padding: 0 15% 0 10%;}
+    .nav-tabs .createpro {width: 35%;display: flex;padding: 0 10% 0 10%;}
     .prod-img, .hoverdata, .prod-img img{height: 170px;}
     .lefthover, .righthover{padding: 70px 0;}
     .drop-menu-test ul li{width: 35%;}
