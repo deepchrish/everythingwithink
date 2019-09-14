@@ -14,13 +14,13 @@
     <!-- Custom CSS -->
     <link href="assets/libs/flot/css/float-chart.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="dist/css/style.min.css" rel="stylesheet">
-    <link href="dist/css/custom.css" rel="stylesheet">
+    <link type="text/css" href="dist/css/style.min.css" rel="stylesheet">
+    <link type="text/css" href="dist/css/custom.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script type="text/javascript" src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
 
@@ -412,8 +412,13 @@
 
             <div class="row mt-5">
                 <div class="col-md-12">
-                    <div class="pro-det-info">
-                        <h3>Variants</h3>
+                    <div class="d-flex justify-content-between">
+                        <div class="pro-det-info mb-3">
+                            <h3>Variants</h3>
+                        </div>
+                        <div>
+                            <button id="dvPassport" class="btn btn-danger" style="display: none;"><i class="mdi mdi-delete"></i> Delete</button>
+                        </div>
                     </div>
                     <div class="dropdown-divider"></div>
                 </div>
@@ -426,9 +431,9 @@
                             <thead>
                             <tr>
                                 <th scope="col">
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="wschkbox1">
-                                        <label class="custom-control-label" for="wschkbox1"></label>
+                                    <div class="custom-control custom-checkbox pro-grid-chk">
+                                        <input type="checkbox" class="custom-control-input chkchknoow" id="selectall">
+                                        <label class="custom-control-label" for="selectall"></label>
                                     </div>
                                 </th>
                                 <th>Product</th>
@@ -440,9 +445,10 @@
                             <tbody>
                             <tr>
                                 <td>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="wschkbox2">
-                                        <label class="custom-control-label" for="wschkbox2"></label>
+                                    <div class="item custom-control custom-checkbox">
+                                        <input type="checkbox" id="box_1" name="case" value="1"
+                                               class="custom-control-input checkbox-custom case chkchknoow"/>
+                                        <label for="box_1" class="custom-control-label"></label>
                                     </div>
                                 </td>
                                 <td>
@@ -484,9 +490,10 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="wschkbox3">
-                                        <label class="custom-control-label" for="wschkbox3"></label>
+                                    <div class="item custom-control custom-checkbox">
+                                        <input type="checkbox" id="box_2" name="case" value="1"
+                                               class="custom-control-input checkbox-custom case chkchknoow"/>
+                                        <label for="box_2" class="custom-control-label"></label>
                                     </div>
                                 </td>
                                 <td>
@@ -611,6 +618,19 @@
     });
 </script>
 <!--Processing icon show/hide END-->
+
+<!--show/hide after check-->
+<script type="text/javascript">
+    $(function () {
+        $(".chkchknoow").click(function () {
+            if ($(this).is(":checked")) {
+                $("#dvPassport").show();
+            } else {
+                $("#dvPassport").hide();
+            }
+        });
+    });
+</script>
 </body>
 
 </html>

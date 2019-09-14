@@ -399,13 +399,16 @@
                     <a href="workspace-settings.html"><i class="mdi mdi-tune"></i> Settings</a>
                 </div>
             </div>
-            <div class="row justify-content-end mt-3">
-                <div class="col-xl-3 col-lg-3 col-md-6">
+            <div class="row justify-content-between">
+                <div class="col-xl-3 col-lg-3 col-md-6 mt-3">
+                    <button id="dvPassport" class="btn btn-danger" style="display: none;"><i class="mdi mdi-delete"></i> Delete</button>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 mt-3">
                     <div class="input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-magnify"></i></span>
                         </div>
-                        <input type="search" class="form-control" placeholder="Search Order" aria-label="Search">
+                        <input type="search" class="form-control" placeholder="Search Products" aria-label="Search">
                     </div>
                 </div>
             </div>
@@ -419,9 +422,9 @@
                                 <thead>
                                 <tr>
                                     <th scope="col">
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="wschkbox1">
-                                            <label class="custom-control-label" for="wschkbox1"></label>
+                                        <div class="custom-control custom-checkbox pro-grid-chk">
+                                            <input type="checkbox" class="custom-control-input chkchknoow" id="selectall">
+                                            <label class="custom-control-label" for="selectall"></label>
                                         </div>
                                     </th>
                                     <th>Product</th>
@@ -433,9 +436,10 @@
                                 <tbody>
                                 <tr>
                                     <td>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="wschkbox2">
-                                            <label class="custom-control-label" for="wschkbox2"></label>
+                                        <div class="item custom-control custom-checkbox">
+                                            <input type="checkbox" id="box_1" name="case" value="1"
+                                                   class="custom-control-input checkbox-custom case chkchknoow"/>
+                                            <label for="box_1" class="custom-control-label"></label>
                                         </div>
                                     </td>
                                     <td><img class="img-fluid" src="./images/header-base.png"><span class="ml-3"
@@ -460,13 +464,15 @@
                                                 data-target="#pickstore">SYNC
                                         </button>
                                         <button type="button" class="btn btn-secondary">Edit</button>
+                                        <a class="delete-coupon text-right delebtn" data-toggle="tooltip" data-placement="top" title="Delete"><i class="mdi mdi-delete"></i></a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td valign="middle">
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="wschkbox3">
-                                            <label class="custom-control-label" for="wschkbox3"></label>
+                                        <div class="item custom-control custom-checkbox">
+                                            <input type="checkbox" id="box_2" name="case" value="1"
+                                                   class="custom-control-input checkbox-custom case chkchknoow"/>
+                                            <label for="box_2" class="custom-control-label"></label>
                                         </div>
                                     </td>
                                     <td valign="middle"><img class="img-fluid" src="./images/2-mug.png"><span
@@ -490,13 +496,15 @@
                                                 data-target="#pickstore">SYNC
                                         </button>
                                         <button type="button" class="btn btn-secondary">Edit</button>
+                                        <a class="delete-coupon text-right delebtn" data-toggle="tooltip" data-placement="top" title="Delete"><i class="mdi mdi-delete"></i></a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td valign="middle">
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="wschkbox4">
-                                            <label class="custom-control-label" for="wschkbox4"></label>
+                                        <div class="item custom-control custom-checkbox">
+                                            <input type="checkbox" id="box_3" name="case" value="1"
+                                                   class="custom-control-input checkbox-custom case chkchknoow"/>
+                                            <label for="box_3" class="custom-control-label"></label>
                                         </div>
                                     </td>
                                     <td valign="middle"><img class="img-fluid" src="./images/1-mug.png"><span
@@ -520,6 +528,7 @@
                                                 data-target="#pickstore">SYNC
                                         </button>
                                         <button type="button" class="btn btn-secondary">Edit</button>
+                                        <a class="delete-coupon text-right delebtn" data-toggle="tooltip" data-placement="top" title="Delete"><i class="mdi mdi-delete"></i></a>
                                     </td>
                                 </tr>
                                 </tbody>
@@ -653,6 +662,19 @@
         setTimeout(function () {
             $('button').removeClass('active');
         }, 10000);
+    });
+</script>
+
+<!--show/hide after check-->
+<script type="text/javascript">
+    $(function () {
+        $(".chkchknoow").click(function () {
+            if ($(this).is(":checked")) {
+                $("#dvPassport").show();
+            } else {
+                $("#dvPassport").hide();
+            }
+        });
     });
 </script>
 

@@ -207,7 +207,9 @@ p {
     margin: 10px 6px 12px 0;
     font-size: 12px;
 }
-
+.topbar .mailbox, .topbar .user-dd{
+    min-width: auto;
+}
 .primary-button {
     /*font-family: 'Avenir Next';*/
     font-family: 'Nunito Sans', sans-serif;
@@ -284,7 +286,11 @@ p {
 .sidebar-nav ul .sidebar-item.selected > .sidebar-link i {
     color: #2B44FF;
 }
-
+.btn-danger{
+    color: #fff;
+    background-color: #df333f;
+    border-color: #df333f;
+}
 .custom-arrow {
     position: relative;
     right: 20px;
@@ -2452,6 +2458,7 @@ p {
     font-weight: 600;
     font-size: 12px;
     white-space: nowrap;
+    text-transform: uppercase;
 }
 
 .prowithlist td {
@@ -2587,6 +2594,10 @@ p {
 
 .sampleinfo {
     /*padding: 35px 0 35px 0;*/
+}
+.sampleinfo h3{
+    color: #111111;
+    font-size: 20px;
 }
 
 .settingtext p {
@@ -4360,6 +4371,11 @@ span.round-tab:hover {
     display: flex;
     align-items: center;
     align-content: center;
+}
+.comp-store-workspace:hover{
+    -webkit-box-shadow: 0 0 10px 3px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0 0 10px 3px rgba(0,0,0,0.16);
+    box-shadow: 0 0 10px 3px rgba(0,0,0,0.16);
 }
 .comp-store-workspace-new{
     margin: 0 auto;
@@ -6401,8 +6417,18 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
 }
 
 .delete-coupon i {
-    color: #C70039;
+    color: #a0a0a0;
     font-size: 20px;
+    transition: all .3s ease-in-out;
+}
+.delete-coupon i:hover{
+    color: #fd0000;
+}
+.delebtn{
+    position: relative;
+    top: 5px;
+    margin-left: 10px;
+    cursor: pointer;
 }
 
 @-webkit-keyframes rainbow {
@@ -7272,7 +7298,6 @@ svg {
         stroke-dashoffset: 900;
     }
 }
-
 /*Animation success button*/
 
 /*products catalogue v2 START*/
