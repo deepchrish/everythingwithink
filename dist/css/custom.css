@@ -6376,7 +6376,6 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
     object-fit: contain;
 }
 
-
 .cart-pro-info h6 {
     font-size: 14px;
     font-weight: 700;
@@ -6421,9 +6420,11 @@ div.sceditor-group:nth-child(1), div.sceditor-group:nth-child(2), div.sceditor-g
     font-size: 20px;
     transition: all .3s ease-in-out;
 }
+
 .delete-coupon i:hover{
     color: #fd0000;
 }
+
 .delebtn{
     position: relative;
     top: 5px;
@@ -7508,6 +7509,9 @@ figure figcaption i{
     border-radius: 100% ;
 }
 
+#myChart{
+    background: #fff;
+}
 
 /*Responsive design*/
 /*==========  Mobile First Method  ==========*/
