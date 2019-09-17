@@ -7773,6 +7773,14 @@ background: #ccc;
 .delete-btn .delebtn{
     top: 0;
 }
+.coming-soon{
+    background: #ffbf00;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 10px;
+    padding: 0px 5px;
+    text-transform: capitalize;
+}
 
 
 /*Responsive design*/
