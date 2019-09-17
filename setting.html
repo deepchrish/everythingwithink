@@ -391,6 +391,10 @@
                                <!--role="tab" aria-controls="api" aria-selected="false">API</a>-->
                         <!--</li>-->
                         <li class="nav-item createpro">
+                            <a class="nav-link" id="payment-tab" data-toggle="tab" href="#payment"
+                               role="tab" aria-controls="payment" aria-selected="false">Payment Method</a>
+                        </li>
+                        <li class="nav-item createpro">
                             <a class="nav-link" id="security-tab" data-toggle="tab" href="#security"
                                role="tab" aria-controls="security" aria-selected="false">Security</a>
                         </li>
@@ -924,47 +928,7 @@
                                 </div>
                             </div>
 
-                            <div class="row mt-4">
-                                <div class="col-xl-6 col-lg-8 col-md-12 col-sm-12 col-12 profileform">
-                                    <div class="row">
-                                        <div class="col-md-12 prof-heading col-sm-12 col-12">
-                                            <h2>Credit Card Information</h2>
-                                            <p>Your credit card or PayPal will be used to accept and charge orders
-                                                placed by you or your customers.</p>
-                                        </div>
-                                    </div>
-                                    <div class="row mt-3">
-                                        <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
-                                            <form>
-                                                <div class="form-row">
-                                                    <div class="form-group col-md-12 col-sm-12 col-12">
-                                                        <label for="cardnumber">Card Number <span class="remove-red">*</span></label>
-                                                        <input type="text" class="form-control" id="cardnumber"
-                                                               placeholder="number...                                                                                      MM/YY   CVC">
-                                                    </div>
-                                                    <div class="form-group col-md-12 col-sm-12 col-12">
-                                                        <label for="cardname">Name on Card <span class="remove-red">*</span></label>
-                                                        <input type="text" class="form-control" id="cardname"
-                                                               placeholder="Name....">
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12 col-sm-12 col-12">
-                                            <form>
-                                                <button type="submit" class="btn secendary-button">Update Card
-                                                    Information
-                                                </button>
-                                            </form>
-                                            <p class="mt-3">or Connect to Paypal</p>
-                                            <img class="img-fluid" src="./images/paypal.png" alt="paypal mr-2">
-                                            <button class="btn paypal-btn">Connect Paypal</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
 
                         </div>
 
@@ -1044,6 +1008,102 @@
                                  </div>
                              </div>
                          </div> -->
+
+                         <div class="tab-pane fade" id="payment" role="tabpanel"
+                             aria-labelledby="payment-tab">
+                             <div class="row mt-4">
+                                <div class="col-xl-6 col-lg-8 col-md-12 col-sm-12 col-12 profileform">
+                                    <div class="row">
+                                        <div class="col-md-12 prof-heading col-sm-12 col-12">
+                                            <h2>Saved Card</h2>
+                                            <p>You can remove or change this card anytime.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12 prof-heading col-sm-12 col-12">
+                                            <div class="table-responsive subscription-plan">
+                                                <table class="table table-striped table-bordered orderlist">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>Created Date</th>
+                                                        <th>Name</th>
+                                                        <th>Card</th>
+                                                        <th>Type</th>
+                                                        <th>Expiry</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>02/03/19</td>
+                                                        <td>John Doe</td>
+                                                        <td>***5968</td>
+                                                        <td>Master</td>
+                                                        <td>03/24</td>
+                                                        <td><div class="delete-btn"><a class="delete-coupon text-right delebtn" data-toggle="tooltip" data-placement="top" title="" data-original-title="Remove Card"><i class="mdi mdi-delete"></i></a></div></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <!-- <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-12">
+                                            <form>
+                                                <button type="submit" class="btn secendary-button">Update Card
+                                                    Information
+                                                </button>
+                                            </form>
+                                            <p class="mt-3">or Connect to Paypal</p>
+                                            <img class="img-fluid" src="./images/paypal.png" alt="paypal mr-2">
+                                            <button class="btn paypal-btn">Connect Paypal</button>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-xl-6 col-lg-8 col-md-12 col-sm-12 col-12 profileform">
+                                    <div class="row">
+                                        <div class="col-md-12 prof-heading col-sm-12 col-12">
+                                            <h2>Add New Card</h2>
+                                            <p>Your credit card or PayPal will be used to accept and charge orders placed by you or your customers.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-12 col-sm-12 col-12">
+                                                        <label for="cardnumber">Card Number <span class="remove-red">*</span></label>
+                                                        <input type="text" class="form-control" id="cardnumber"
+                                                               placeholder="number...                                                                                      MM/YY   CVC">
+                                                    </div>
+                                                    <div class="form-group col-md-12 col-sm-12 col-12">
+                                                        <label for="cardname">Name on Card <span class="remove-red">*</span></label>
+                                                        <input type="text" class="form-control" id="cardname"
+                                                               placeholder="Name....">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-12">
+                                            <form>
+                                                <button type="submit" class="btn secendary-button">Update Card
+                                                    Information
+                                                </button>
+                                            </form>
+                                            <p class="mt-3">or Connect to Paypal</p>
+                                            <img class="img-fluid" src="./images/paypal.png" alt="paypal mr-2">
+                                            <button class="btn paypal-btn">Connect Paypal</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
 
                         <div class="tab-pane fade" id="security" role="tabpanel"
                              aria-labelledby="security-tab">
@@ -1128,6 +1188,8 @@
                                 </div>
                             </div>
                         </div>
+
+                    
                     </div>
                 </div>
             </div>

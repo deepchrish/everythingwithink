@@ -7770,7 +7770,9 @@ background: #ccc;
     align-content: center;
 }
 
-
+.delete-btn .delebtn{
+    top: 0;
+}
 
 
 /*Responsive design*/
