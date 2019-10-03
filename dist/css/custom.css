@@ -7778,11 +7778,20 @@ background: #ccc;
     color: #ffffff;
     border-radius: 4px;
     font-size: 10px;
-    padding: 0px 5px;
+    padding: 0 5px;
     text-transform: capitalize;
 }
-
-
+.pro-cata-new{
+    text-align: center;
+    display: flow-root;
+}
+.pro-cata-new .createpro{
+    display: inline-block;
+    margin: 0 15px;
+}
+.pro-det-ship tbody td span{
+    font-weight: 700;
+}
 /*Responsive design*/
 /*==========  Mobile First Method  ==========*/
 /* Small devices (portrait tablets and large phones, 600px and up) */
