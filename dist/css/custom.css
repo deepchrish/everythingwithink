@@ -4446,13 +4446,16 @@ span.round-tab:hover {
     box-shadow: 0 2px 15px -6px rgba(0, 0, 0, 0.4);
 }
 .drop-menu-test{
+	background: #f5f5f5;
     -webkit-transition: background 2s; /* For Safari 3.1 to 6.0 */
     transition: background 2s;
 }
 .drop-menu-test ul {
-    padding: 0;
-    margin: 0;
-    text-align: center;
+       padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    position: relative;
+    z-index: 10;
 }
 
 .drop-menu-test ul li {
@@ -4460,6 +4463,7 @@ span.round-tab:hover {
     display: inline-flex;
     margin: 0 15px;
     white-space: nowrap;
+	    text-align: center;
 }
 
 .drop-menu-test ul li a {
@@ -7791,6 +7795,9 @@ background: #ccc;
 }
 .pro-det-ship tbody td span{
     font-weight: 700;
+}
+.modrennav ul li a.active{
+    color:#000;
 }
 /*Responsive design*/
 /*==========  Mobile First Method  ==========*/
