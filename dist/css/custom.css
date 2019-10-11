@@ -13,7 +13,7 @@ body {
 
 html {
     overflow-x: hidden;
-    scroll-behavior: smooth;
+    /*scroll-behavior: smooth;*/
 }
 
 #main-wrapper, #main-wrapper[data-sidebartype=full] .topbar .top-navbar .navbar-header, #main-wrapper .topbar .top-navbar .navbar-header[data-logobg=skin5], .navbar-expand-md .navbar-nav, #main-wrapper .left-sidebar[data-sidebarbg=skin5], #main-wrapper .left-sidebar[data-sidebarbg=skin5] ul, #main-wrapper[data-sidebartype=full] .page-wrapper, .page-wrapper > .container-fluid, .page-wrapper {
